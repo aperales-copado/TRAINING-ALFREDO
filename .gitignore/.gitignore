@@ -1,0 +1,13 @@
+package.xml
+
+installedPackages/*
+
+classes/copado__*
+triggers/copado__*
+pages/copado__*
+
+# profiles/*
+# permissionsets/*
+
+# sites/*
+# siteDotComSites/*
