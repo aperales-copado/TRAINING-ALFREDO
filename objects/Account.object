@@ -112,6 +112,45 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Color_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Color Target</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Select one</fullName>
+                    <default>true</default>
+                    <label>Select one</label>
+                </value>
+                <value>
+                    <fullName>White</fullName>
+                    <default>false</default>
+                    <label>White</label>
+                </value>
+                <value>
+                    <fullName>Blue</fullName>
+                    <default>false</default>
+                    <label>Blue</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+                <value>
+                    <fullName>Black</fullName>
+                    <default>false</default>
+                    <label>Black</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>CustomerPriority__c</fullName>
         <externalId>false</externalId>
         <label>Customer Priority</label>
