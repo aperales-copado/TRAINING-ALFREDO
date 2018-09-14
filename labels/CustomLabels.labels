@@ -7,4 +7,11 @@
         <shortDescription>Blue</shortDescription>
         <value>True Colour</value>
     </labels>
+    <labels>
+        <fullName>White</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Brown</shortDescription>
+        <value>Real colour</value>
+    </labels>
 </CustomLabels>
