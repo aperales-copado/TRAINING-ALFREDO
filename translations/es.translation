@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customLabels>
+        <label>Azul</label>
+        <name>Blue</name>
+    </customLabels>
+    <customLabels>
+        <label>Verde</label>
+        <name>Green</name>
+    </customLabels>
+    <customLabels>
+        <label>Blanco</label>
+        <name>White</name>
+    </customLabels>
+</Translations>
