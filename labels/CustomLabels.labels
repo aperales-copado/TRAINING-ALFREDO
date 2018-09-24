@@ -1,3 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata"/>
-
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ColourBlue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ColourBlue</shortDescription>
+        <value>Blue</value>
+    </labels>
+    <labels>
+        <fullName>ColourRed</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ColourRed</shortDescription>
+        <value>Red</value>
+    </labels>
+    <labels>
+        <fullName>ColourWhite</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ColourWhite</shortDescription>
+        <value>White</value>
+    </labels>
+</CustomLabels>
