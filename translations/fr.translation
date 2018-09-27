@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Translations xmlns="http://soap.sforce.com/2006/04/metadata">
     <customLabels>
-        <label>Paquete</label>
+        <label>Necesita mejorar</label>
         <name>Benzema</name>
-    </customLabels>
-    <customLabels>
-        <label>Heroe</label>
-        <name>Platini</name>
-    </customLabels>
-    <customLabels>
-        <label>Genio</label>
-        <name>Zidane</name>
     </customLabels>
 </Translations>
