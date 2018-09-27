@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
+        <fullName>Benzema</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Benzema</shortDescription>
+        <value>Delantero</value>
+    </labels>
+    <labels>
         <fullName>Blue</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -15,10 +22,24 @@
         <value>Colour</value>
     </labels>
     <labels>
+        <fullName>Platini</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Platini</shortDescription>
+        <value>Viejo</value>
+    </labels>
+    <labels>
         <fullName>White</fullName>
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>Brown</shortDescription>
         <value>Real colour</value>
+    </labels>
+    <labels>
+        <fullName>Zidane</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Zidane</shortDescription>
+        <value>Centrocampista</value>
     </labels>
 </CustomLabels>
