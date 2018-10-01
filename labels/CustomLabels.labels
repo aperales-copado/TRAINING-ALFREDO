@@ -28,4 +28,11 @@
         <shortDescription>ColourWhite</shortDescription>
         <value>White</value>
     </labels>
+    <labels>
+        <fullName>Troubleshooting_10506</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Troubleshooting  10506</shortDescription>
+        <value>Troubleshooting  10506 segundo caso</value>
+    </labels>
 </CustomLabels>
