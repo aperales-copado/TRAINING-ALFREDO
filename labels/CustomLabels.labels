@@ -49,4 +49,11 @@
         <shortDescription>Zidane</shortDescription>
         <value>Centrocampista</value>
     </labels>
+    <labels>
+        <fullName>Troubleshooting_10506</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Troubleshooting  10506</shortDescription>
+        <value>Troubleshooting  10506</value>
+    </labels>
 </CustomLabels>
