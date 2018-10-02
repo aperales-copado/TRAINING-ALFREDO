@@ -42,4 +42,11 @@
         <shortDescription>Troubleshooting  10506</shortDescription>
         <value>Troubleshooting  10506</value>
     </labels>
+    <labels>
+        <fullName>test</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>test</shortDescription>
+        <value>testeo</value>
+    </labels>
 </CustomLabels>
