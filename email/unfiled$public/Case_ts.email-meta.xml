@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>ALFREDO</letterhead>
+    <name>Case ts</name>
+    <style>freeForm</style>
+    <subject>{!Case.Type} Case Opened: {!Case.Account} - Case #{!Case.CaseNumber} - [{!Case.Thread_Id}]</subject>
+    <textOnly>{!Case.OwnerFullName},
+
+A weekend customer case has been opened on {!Case.CreatedDate} with the following details:
+
+Case Type: {!Case.Type}
+Subject: {!Case.Subject}
+{!Case.Description}
+
+Case Detail
+Case Number: {!Case.CaseNumber}
+Product Line: {!Case.Product_Line__c}
+Server Version: {!Case.VCAS_Server_Version__c}
+Priority: {!Case.Priority}
+
+Contact Info
+Account: {!Case.Account}
+Name: {!Case.SuppliedName} - {!Case.Contact}
+Email: {!Case.SuppliedEmail}
+Work: {!Case.SuppliedPhone} - {!Contact.Phone}
+Mobile: {!Contact.MobilePhone}
+
+Please take the following actions:
+
+Discuss and delegate a specific Case Owner before the beginning of next week
+Follow-up with this contact via email and/or phone within 15 minutes of receipt of this email.
+
+Salesforce URL: https://na3.salesforce.com/{!Case.Id}
+
+Warmest regards,
+Christopher
+
+Thread ID: {!Case.Thread_Id}
+
+&lt;EID: 00X50000001FrY5&gt;</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
