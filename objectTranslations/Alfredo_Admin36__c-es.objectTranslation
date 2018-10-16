@@ -9,4 +9,26 @@
         <value>Alfredo Admin36s</value>
     </caseValues>
     <gender>Masculine</gender>
+    <layouts>
+        <layout>Test2</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Test3</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
 </CustomObjectTranslation>
