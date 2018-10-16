@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"
+      xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
     <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
@@ -56,6 +57,26 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <businessProcesses>
+        <fullName>Alfredo1</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Working</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>test_alfredo</fullName>
@@ -66,6 +87,14 @@
         <fields>ContactEmail</fields>
         <label>test alfredo</label>
     </compactLayouts>
+    <compactLayouts>
+        <fullName>test_alfredo2</fullName>
+        <fields>BusinessHoursId</fields>
+        <fields>Type</fields>
+        <fields>SuppliedCompany</fields>
+        <label>test alfredo2</label>
+    </compactLayouts>
+    <description n1:nil="true" />
     <enableFeeds>true</enableFeeds>
     <fields>
         <fullName>AccountId</fullName>
@@ -372,6 +401,21 @@
         </filters>
         <label>My Open Cases</label>
     </listViews>
+    <nameField n1:nil="true" />
+    <recordTypes>
+        <fullName>AlfredoPG</fullName>
+        <active>true</active>
+        <businessProcess>Alfredo1</businessProcess>
+        <compactLayoutAssignment>test_alfredo2</compactLayoutAssignment>
+        <label>AlfredoPG</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>AlfredoRT</fullName>
+        <active>true</active>
+        <businessProcess>Alfredo1</businessProcess>
+        <compactLayoutAssignment>test_alfredo</compactLayoutAssignment>
+        <label>AlfredoRT</label>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
         <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
