@@ -57,6 +57,15 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>test_alfredo</fullName>
+        <fields>AccountId</fields>
+        <fields>CaseNumber</fields>
+        <fields>Origin</fields>
+        <fields>OwnerId</fields>
+        <fields>ContactEmail</fields>
+        <label>test alfredo</label>
+    </compactLayouts>
     <enableFeeds>true</enableFeeds>
     <fields>
         <fullName>AccountId</fullName>
