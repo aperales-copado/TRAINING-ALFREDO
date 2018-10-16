@@ -56,7 +56,43 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
+    <businessProcesses>
+        <fullName>Alfredo1</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Working</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>test_alfredo</fullName>
+        <fields>AccountId</fields>
+        <fields>CaseNumber</fields>
+        <fields>Origin</fields>
+        <fields>OwnerId</fields>
+        <fields>ContactEmail</fields>
+        <label>test alfredo</label>
+    </compactLayouts>
+    <compactLayouts>
+        <fullName>test_alfredo2</fullName>
+        <fields>BusinessHoursId</fields>
+        <fields>Type</fields>
+        <fields>SuppliedCompany</fields>
+        <label>test alfredo2</label>
+    </compactLayouts>
     <enableFeeds>true</enableFeeds>
     <fields>
         <fullName>AccountId</fullName>
@@ -363,6 +399,20 @@
         </filters>
         <label>My Open Cases</label>
     </listViews>
+    <recordTypes>
+        <fullName>AlfredoPG</fullName>
+        <active>true</active>
+        <businessProcess>Alfredo1</businessProcess>
+        <compactLayoutAssignment>test_alfredo2</compactLayoutAssignment>
+        <label>AlfredoPG</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>AlfredoRT</fullName>
+        <active>true</active>
+        <businessProcess>Alfredo1</businessProcess>
+        <compactLayoutAssignment>test_alfredo</compactLayoutAssignment>
+        <label>AlfredoRT</label>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
         <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
