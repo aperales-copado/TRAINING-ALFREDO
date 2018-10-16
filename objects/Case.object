@@ -413,7 +413,7 @@
         <fullName>AlfredoRT</fullName>
         <active>true</active>
         <businessProcess>Alfredo1</businessProcess>
-        <compactLayoutAssignment>test_alfredo</compactLayoutAssignment>
+        <compactLayoutAssignment>test_alfredo2</compactLayoutAssignment>
         <label>AlfredoRT</label>
     </recordTypes>
     <searchLayouts>
