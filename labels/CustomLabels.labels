@@ -1,3 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata"/>
-
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AP_potential</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AP potential</shortDescription>
+        <value>Potential conflict</value>
+    </labels>
+    <labels>
+        <fullName>ColourBlue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ColourBlue</shortDescription>
+        <value>Blue</value>
+    </labels>
+    <labels>
+        <fullName>ColourRed</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ColourRed</shortDescription>
+        <value>Red</value>
+    </labels>
+    <labels>
+        <fullName>ColourWhite</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ColourWhite</shortDescription>
+        <value>White</value>
+    </labels>
+    <labels>
+        <fullName>Pablo_Rodrigo</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pablo Rodrigo</shortDescription>
+        <value>Gemelos</value>
+    </labels>
+    <labels>
+        <fullName>Troubleshooting_10506</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Troubleshooting  10506</shortDescription>
+        <value>Troubleshooting  10506</value>
+    </labels>
+</CustomLabels>
