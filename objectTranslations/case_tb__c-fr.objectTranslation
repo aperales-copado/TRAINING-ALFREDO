@@ -8,6 +8,10 @@
         <plural>true</plural>
         <value><!-- case tb --></value>
     </caseValues>
+    <fields>
+        <label>Prueba</label>
+        <name>Text_file__c</name>
+    </fields>
     <gender><!-- Masculine --></gender>
     <nameFieldLabel><!-- case tb Name --></nameFieldLabel>
     <startsWith><!-- Consonant --></startsWith>

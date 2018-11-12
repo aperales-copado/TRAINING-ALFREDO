@@ -8,5 +8,9 @@
         <plural>true</plural>
         <value>cases tb</value>
     </caseValues>
+    <fields>
+        <label><!-- Text file --></label>
+        <name>Text_file__c</name>
+    </fields>
     <gender>Masculine</gender>
 </CustomObjectTranslation>

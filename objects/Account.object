@@ -104,15 +104,6 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
-        <fullName>Argumentos__c</fullName>
-        <externalId>false</externalId>
-        <label>Argumentos</label>
-        <length>32768</length>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>LongTextArea</type>
-        <visibleLines>4</visibleLines>
-    </fields>
-    <fields>
         <fullName>BillingAddress</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
