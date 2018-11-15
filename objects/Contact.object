@@ -302,4 +302,10 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>copado_phone</fullName>
+        <active>true</active>
+        <errorConditionFormula>LEFT(Phone, 1) &lt;&gt; &quot;+&quot;</errorConditionFormula>
+        <errorMessage>Phone number must begin with + (country code).</errorMessage>
+    </validationRules>
 </CustomObject>
