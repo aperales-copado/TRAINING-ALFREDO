@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"
+      xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
     <actionOverrides>
         <actionName>AddCampaign</actionName>
         <type>Default</type>
@@ -93,6 +94,7 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <description n1:nil="true" />
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
     <fields>
@@ -279,6 +281,7 @@
         </filters>
         <label>New This Week</label>
     </listViews>
+    <nameField n1:nil="true" />
     <searchLayouts>
         <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
@@ -304,6 +307,12 @@
     <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
         <fullName>Alfredo_Phone</fullName>
+        <active>true</active>
+        <errorConditionFormula>LEFT(Phone, 1) &lt;&gt; &quot;+&quot;</errorConditionFormula>
+        <errorMessage>Phone number must begin with + (country code).</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>copado_phone</fullName>
         <active>true</active>
         <errorConditionFormula>LEFT(Phone, 1) &lt;&gt; &quot;+&quot;</errorConditionFormula>
         <errorMessage>Phone number must begin with + (country code).</errorMessage>
