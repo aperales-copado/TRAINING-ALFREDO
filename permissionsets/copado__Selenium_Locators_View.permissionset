@@ -113,4 +113,8 @@
         <object>copado__Selenium_Test_Case__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <tabSettings>
+        <tab>copado__Copado_Notification__c</tab>
+        <visibility>Available</visibility>
+    </tabSettings>
 </PermissionSet>

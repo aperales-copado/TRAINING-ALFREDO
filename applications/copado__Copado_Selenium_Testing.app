@@ -16,4 +16,5 @@
     <tabs>copado__Account_Summary</tabs>
     <tabs>copado__Scheduled_Job__c</tabs>
     <tabs>copado__Selenium_Locator__c</tabs>
+    <tabs>Copado_Integration_Setting__c</tabs>
 </CustomApplication>

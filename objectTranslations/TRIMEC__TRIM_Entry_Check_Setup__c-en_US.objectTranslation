@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Search method for Custom Search (CF1), Examples: Site LIKE &apos;%cf1%&apos;  or SAP_No__c = &apos;cf1&apos; --></help>
+        <label><!-- Account Custom Search 1 --></label>
+        <name>TRIMEC__Account_CF1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Search method for Custom Search (CF2), Examples: VRN__c LIKE &apos;%cf2%&apos; or Customer_No__c = &apos;cf2&apos; --></help>
+        <label><!-- Account Custom Search 2 --></label>
+        <name>TRIMEC__Account_CF2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Search method for Custom Search (CF3), Examples: VRN__c LIKE &apos;%cf3%&apos; or Customer_No__c = &apos;cf3&apos; --></help>
+        <label><!-- Account Custom Search 3 --></label>
+        <name>TRIMEC__Account_CF3__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of fields to query for Accounts --></help>
+        <label><!-- Account Field List --></label>
+        <name>TRIMEC__Account_Field_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Label Text to be displayed for Matched Records from the Account Table. --></help>
+        <label><!-- Account Label (Singular) --></label>
+        <name>TRIMEC__Account_Label_Singular__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Label (Plural) --></label>
+        <name>TRIMEC__Account_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- Disable/enable the use of the Match Key Field on Account. Default: Enabled --></help>
+        <label><!-- Account No MatchKey --></label>
+        <name>TRIMEC__Account_NoMatchKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limit the Entry Check to a subset of records. Example: RecordType.Name = &apos;qsa&apos; or PlantType__c like &apos;%qsa%&apos; --></help>
+        <label><!-- Account Query Scope Filter (Dynamic) --></label>
+        <name>TRIMEC__Account_QScopeDynFilter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limit the Entry Check to a subset of records. Example: RecordType.Name = &apos;Doctor&apos; or RecordType.Name != &apos;Doctor&apos; or RecordType.Name LIKE &apos;Doctor&apos; --></help>
+        <label><!-- Account Query Scope Filter --></label>
+        <name>TRIMEC__Account_QScopeFilter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Score Threshold --></label>
+        <name>TRIMEC__Account_Score_Threshold__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate the VF Landing page for the action link when a user request permissions to get access to a record outside his/her sharing permissions --></help>
+        <label><!-- Action Page (Share) --></label>
+        <name>TRIMEC__Action_Page_Share_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate the VF Landing page for the action link when a user request permissions to get access to a record outside his/her sharing permissions --></help>
+        <label><!-- Action Page (Share) --></label>
+        <name>TRIMEC__Action_Page_Share_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate the VF Landing page for the action link when a user request permissions to get access to a record outside his/her sharing permissions --></help>
+        <label><!-- Action Page (Share) --></label>
+        <name>TRIMEC__Action_Page_Share_Lead__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate the VF Landing page for the action link when a user request permissions to get access to a record outside his/her sharing permissions --></help>
+        <label><!-- Action Page (Share) --></label>
+        <name>TRIMEC__Action_Page_Share_Person__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable/Disable Beta Features --></help>
+        <label><!-- Beta ON --></label>
+        <name>TRIMEC__BetaON__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Accounts --></label>
+        <name>TRIMEC__Check_Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Contacts --></label>
+        <name>TRIMEC__Check_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Leads --></label>
+        <name>TRIMEC__Check_Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Person Accounts --></label>
+        <name>TRIMEC__Check_PersonAccounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lightning Experience Theme --></label>
+        <name>TRIMEC__Classic_Theme__c</name>
+    </fields>
+    <fields>
+        <label><!-- Classify Match Result --></label>
+        <name>TRIMEC__Classify_Match_Result__c</name>
+    </fields>
+    <fields>
+        <help><!-- Search method for Custom Search (CF1), Examples: VRN__c LIKE &apos;%cf1%&apos;  or Customer_No__c = &apos;cf1&apos; --></help>
+        <label><!-- Contact Custom Search 1 --></label>
+        <name>TRIMEC__Contact_CF1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Search method for Custom Search (CF2), Examples: VRN__c LIKE &apos;%cf2%&apos; or Customer_No__c = &apos;cf2&apos; --></help>
+        <label><!-- Contact Custom Search 2 --></label>
+        <name>TRIMEC__Contact_CF2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Search method for Custom Search (CF3), Examples: VRN__c LIKE &apos;%cf3%&apos; or Customer_No__c = &apos;cf3&apos; --></help>
+        <label><!-- Contact Custom Search 3 --></label>
+        <name>TRIMEC__Contact_CF3__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of fields to query for Contacts (and Person Accounts) --></help>
+        <label><!-- Contact Field List --></label>
+        <name>TRIMEC__Contact_Field_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Label Text to be displayed for Matched Records from the Contact Table. --></help>
+        <label><!-- Contact Label (Singular) --></label>
+        <name>TRIMEC__Contact_Label_Singular__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Label (Plural) --></label>
+        <name>TRIMEC__Contact_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- Disable/enable the use of the Match Key Field on Contact. Default: Enabled --></help>
+        <label><!-- Contact No MatchKey --></label>
+        <name>TRIMEC__Contact_NoMatchKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limit the Entry Check to a subset of records. Example: RecordType.Name = &apos;qsc&apos; or Function__c like &apos;%qsc%&apos; --></help>
+        <label><!-- Contact Query Scope Filter (Dynamic) --></label>
+        <name>TRIMEC__Contact_QScopeDynFilter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limit the Entry Check to a subset of records. Example: RecordType.Name = &apos;Doctor&apos; or RecordType.Name != &apos;Doctor&apos; or RecordType.Name LIKE &apos;%Doctor%&apos; --></help>
+        <label><!-- Contact Query Scope Filter --></label>
+        <name>TRIMEC__Contact_QScopeFilter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Score Threshold --></label>
+        <name>TRIMEC__Contact_Score_Threshold__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable to activate of Duplicate Account Detector (DAD) Trigger --></help>
+        <label><!-- Active (DAD) --></label>
+        <name>TRIMEC__DADActive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the different Type of Matches to apply to the Dupe Account Detector (DAD) --></help>
+        <label><!-- Match Types --></label>
+        <name>TRIMEC__DADMatchTypes__c</name>
+        <picklistValues>
+            <masterLabel>Account Name</masterLabel>
+            <translation><!-- Account Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Name (Fuzzy)</masterLabel>
+            <translation><!-- Account Name (Fuzzy) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Provide API name of account field which will be used to update with Dupe Status during the Dupe Account Detection (default: TRIMEC__EC_Status__c) --></help>
+        <label><!-- Dupe Status Field (Account) --></label>
+        <name>TRIMEC__DAD_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable to activate of Duplicate Contact Detector (DCD) Trigger --></help>
+        <label><!-- Active (DCD) --></label>
+        <name>TRIMEC__DCDActive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the different Type of Matches to apply to the Dupe Contact Detector (DCD) --></help>
+        <label><!-- Match Types --></label>
+        <name>TRIMEC__DCDMatchTypes__c</name>
+        <picklistValues>
+            <masterLabel>Company + First Name + Last Name</masterLabel>
+            <translation><!-- Company + First Name + Last Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email + First Name + Last Name</masterLabel>
+            <translation><!-- Email + First Name + Last Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email + Last Name</masterLabel>
+            <translation><!-- Email + Last Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Only</masterLabel>
+            <translation><!-- Email Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Provide API name of account field which will be used to update with Dupe Status during the Dupe Contact Detection (default: TRIMEC__EC_Status__c) --></help>
+        <label><!-- Dupe Status Field (Contact) --></label>
+        <name>TRIMEC__DCD_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable to activate of Duplicate Lead Detector (DLD) Trigger --></help>
+        <label><!-- Active (DLD) --></label>
+        <name>TRIMEC__DLDActive__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of Lead sources for where the duplicates identified by the Match rules will be blocked --></help>
+        <label><!-- Lead Sources for Blocking --></label>
+        <name>TRIMEC__DLDBlockSource__c</name>
+        <picklistValues>
+            <masterLabel>...add your own values...</masterLabel>
+            <translation><!-- ...add your own values... --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;None&gt;</masterLabel>
+            <translation><!-- &lt;None&gt; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Referral</masterLabel>
+            <translation><!-- Partner Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Inquiry</masterLabel>
+            <translation><!-- Phone Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased List</masterLabel>
+            <translation><!-- Purchased List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a Status Value to be set when an Account is detected as a dupe of another Account. If left BLANK, default value is: New - Dupe Account! --></help>
+        <label><!-- Dupe Status (Account) --></label>
+        <name>TRIMEC__DLDDupeStatusAccount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a Lead Status to be set when a lead is detected as a dupe of a contact. If left BLANK, default value is: New - Dupe Contact! --></help>
+        <label><!-- Dupe Status (Contact) --></label>
+        <name>TRIMEC__DLDDupeStatusContact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a Lead Status to be set when a lead is detected as a dupe of another Lead. If left BLANK, default value is: New - Dupe Lead! --></help>
+        <label><!-- Dupe Status (Lead) --></label>
+        <name>TRIMEC__DLDDupeStatusLead__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the different Type of Matches to apply to the Dupe Lead Detector (DLD) --></help>
+        <label><!-- Match Types --></label>
+        <name>TRIMEC__DLDMatchTypes__c</name>
+        <picklistValues>
+            <masterLabel>Company + First Name + Last Name</masterLabel>
+            <translation><!-- Company + First Name + Last Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email + First Name + Last Name</masterLabel>
+            <translation><!-- Email + First Name + Last Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email + Last Name</masterLabel>
+            <translation><!-- Email + Last Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Only</masterLabel>
+            <translation><!-- Email Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Name + Last Name</masterLabel>
+            <translation><!-- First Name + Last Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Name + Last Name + Phone</masterLabel>
+            <translation><!-- First Name + Last Name + Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- List of Lead sources for where the duplicates identified by the Match rules will be have the Status set to Dupe --></help>
+        <label><!-- Lead sources for Status Change --></label>
+        <name>TRIMEC__DLDStatusSource__c</name>
+        <picklistValues>
+            <masterLabel>...add your own...</masterLabel>
+            <translation><!-- ...add your own... --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;None&gt;</masterLabel>
+            <translation><!-- &lt;None&gt; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Referral</masterLabel>
+            <translation><!-- Partner Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Inquiry</masterLabel>
+            <translation><!-- Phone Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased List</masterLabel>
+            <translation><!-- Purchased List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Debug ON --></label>
+        <name>TRIMEC__DebugON__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Company Name --></label>
+        <name>TRIMEC__Default_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Email --></label>
+        <name>TRIMEC__Default_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default First Name --></label>
+        <name>TRIMEC__Default_FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Last Name --></label>
+        <name>TRIMEC__Default_LastName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable/Disable to Include/Exclude Leads which are duplicates of the Account (Lead-Accounts) --></help>
+        <label><!-- Account Dupe Status: Include Leads --></label>
+        <name>TRIMEC__Enhanced_Display_DupeStatusAccount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable/Disable to Include/Exclude Leads which are duplicates of the Contact (Lead-Contact) --></help>
+        <label><!-- Contact Dupe Status: Include Leads --></label>
+        <name>TRIMEC__Enhanced_Display_DupeStatusContact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable/Disable to Include/Exclude Accounts which are duplicates of the Lead (Lead-Accounts) --></help>
+        <label><!-- Lead Dupe Status: Include Accounts --></label>
+        <name>TRIMEC__Enhanced_Display_DupeStatusLead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entry Check VF Page --></label>
+        <name>TRIMEC__Entry_Check_VF_Page__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of words to exclude in searches, common words in company names like: Consulting etc. --></help>
+        <label><!-- Exclusion List --></label>
+        <name>TRIMEC__Exclusion_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide City Field for data entry --></help>
+        <label><!-- Hide City --></label>
+        <name>TRIMEC__Hide_City__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide Company Field for data entry --></help>
+        <label><!-- Hide Company --></label>
+        <name>TRIMEC__Hide_Company__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hide Convert Button on View All page. --></help>
+        <label><!-- Hide Convert Button --></label>
+        <name>TRIMEC__Hide_Convert_Button__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide Country Field for data entry --></help>
+        <label><!-- Hide Country --></label>
+        <name>TRIMEC__Hide_Country__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide Email Field for data entry --></help>
+        <label><!-- Hide Email --></label>
+        <name>TRIMEC__Hide_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide Fax Field for data entry --></help>
+        <label><!-- Hide Fax --></label>
+        <name>TRIMEC__Hide_Fax__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide First Name Field for data entry --></help>
+        <label><!-- Hide First Name --></label>
+        <name>TRIMEC__Hide_First_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide Last Name Field for data entry --></help>
+        <label><!-- Hide Last Name --></label>
+        <name>TRIMEC__Hide_Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hide merge button on Main page. the Merge button allows you to launch the merge wizard on 2 or 3 records returned from a search result --></help>
+        <label><!-- Hide Merge Button --></label>
+        <name>TRIMEC__Hide_Merge_Button__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide Mobile Field for data entry --></help>
+        <label><!-- Hide Mobile --></label>
+        <name>TRIMEC__Hide_Mobile__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide Phone Field for data entry --></help>
+        <label><!-- Hide Phone --></label>
+        <name>TRIMEC__Hide_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide Postal Code Field for data entry --></help>
+        <label><!-- Hide Postal Code --></label>
+        <name>TRIMEC__Hide_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide State Field for data entry --></help>
+        <label><!-- Hide State --></label>
+        <name>TRIMEC__Hide_State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide Street Field for data entry --></help>
+        <label><!-- Hide Street --></label>
+        <name>TRIMEC__Hide_Street__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide Website Field for data entry --></help>
+        <label><!-- Hide Website --></label>
+        <name>TRIMEC__Hide_Website__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Account Url --></label>
+        <name>TRIMEC__InvokeNewAccountUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Contact Url --></label>
+        <name>TRIMEC__InvokeNewContactUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Lead Url --></label>
+        <name>TRIMEC__InvokeNewLeadUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Person Url --></label>
+        <name>TRIMEC__InvokeNewPersonUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- Search method for Custom Search (CF1), Examples: VRN__c LIKE &apos;%cf1%&apos;  or Customer_No__c = &apos;cf1&apos; --></help>
+        <label><!-- Lead Custom Search 1 --></label>
+        <name>TRIMEC__Lead_CF1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Search method for Custom Search (CF2), Examples: VRN__c LIKE &apos;%cf2%&apos; or Customer_No__c = &apos;cf2&apos; --></help>
+        <label><!-- Lead Custom Search 2 --></label>
+        <name>TRIMEC__Lead_CF2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Search method for Custom Search (CF3), Examples: VRN__c LIKE &apos;%cf3%&apos; or Customer_No__c = &apos;cf3&apos; --></help>
+        <label><!-- Lead Custom Search 3 --></label>
+        <name>TRIMEC__Lead_CF3__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of fields to query for Leads --></help>
+        <label><!-- Lead Field List --></label>
+        <name>TRIMEC__Lead_Field_List__c</name>
+    </fields>
+    <fields>
+        <help><!-- Label Text to be displayed for Matched Records from the Lead Table. --></help>
+        <label><!-- Lead Label (Singular) --></label>
+        <name>TRIMEC__Lead_Label_Singular__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Label (Plural) --></label>
+        <name>TRIMEC__Lead_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- Disable/enable the use of the Match Key Field on Lead. Default: Enabled --></help>
+        <label><!-- Lead No MatchKey --></label>
+        <name>TRIMEC__Lead_NoMatchKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limit the Entry Check to a subset of records. Example: RecordType.Name = &apos;lsa&apos; or PlantType__c like &apos;%lsa%&apos; --></help>
+        <label><!-- Lead Query Scope Filter (Dynamic) --></label>
+        <name>TRIMEC__Lead_QScopeDynFilter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limit the Entry Check to a subset of records. Example: RecordType.Name = &apos;Doctor&apos; or RecordType.Name != &apos;Doctor&apos; or RecordType.Name LIKE &apos;Doctor&apos; --></help>
+        <label><!-- Lead Query Scope Filter --></label>
+        <name>TRIMEC__Lead_QScopeFilter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Score Threshold --></label>
+        <name>TRIMEC__Lead_Score_Threshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Account Label (Singular) --></label>
+        <name>TRIMEC__PersonAccount_Label_Singular__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Account Label (Plural) --></label>
+        <name>TRIMEC__PersonAccount_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Limit --></label>
+        <name>TRIMEC__Query_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type ID for Person Accounts --></label>
+        <name>TRIMEC__RecordTypeID_for_PersonAccounts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show/Hide Labels for the Input fields on the Entry Check Main Page. Default is Hide --></help>
+        <label><!-- Show Labels --></label>
+        <name>TRIMEC__ShowLabels__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will disable sharing rules for Entry Check, allowing Entry Check to search in the entire database regardless of the users permission settings --></help>
+        <label><!-- Without Sharing --></label>
+        <name>TRIMEC__Without_Sharing_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will disable sharing rules for Entry Check, allowing Entry Check to search in the entire database regardless of the users permission settings --></help>
+        <label><!-- Without Sharing --></label>
+        <name>TRIMEC__Without_Sharing_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will disable sharing rules for Entry Check, allowing Entry Check to search in the entire database regardless of the users permission settings --></help>
+        <label><!-- Without Sharing --></label>
+        <name>TRIMEC__Without_Sharing_Lead__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will disable sharing rules for Entry Check, allowing Entry Check to search in the entire database regardless of the users permission settings --></help>
+        <label><!-- Without Sharing --></label>
+        <name>TRIMEC__Without_Sharing_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Record Types for Accounts --></label>
+        <name>TRIMEC__useRT4Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Record Types for Contacts --></label>
+        <name>TRIMEC__useRT4Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Record Types for Leads --></label>
+        <name>TRIMEC__useRT4Leads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Record Types for Person Accounts --></label>
+        <name>TRIMEC__useRT4PersonAccounts__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- When activating the Dupe Account Detector, you must select at least one Match Type --></errorMessage>
+        <name>TRIMEC__Activation_of_DAD_Need_Match_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When activating the Dupe Contact Detector, you must select at least one Match Type --></errorMessage>
+        <name>TRIMEC__Activation_of_DCD_Need_Match_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When activating the Dupe Lead Detector, you must select at least one Lead Source for which the action apply. --></errorMessage>
+        <name>TRIMEC__Activation_of_DLD_Need_Action</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When activating the Dupe Lead Detector, you must select at least one Match Type --></errorMessage>
+        <name>TRIMEC__Activation_of_DLD_Need_Match_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The maximum Query Limit cannot not be higher than 100 (default is 50) --></errorMessage>
+        <name>TRIMEC__Max_Query_Limit</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Reset --></label>
+        <name>TRIMEC__Reset</name>
+    </webLinks>
+</CustomObjectTranslation>

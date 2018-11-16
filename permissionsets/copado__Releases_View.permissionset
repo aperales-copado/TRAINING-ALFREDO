@@ -85,4 +85,8 @@
         <object>copado__Release__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <tabSettings>
+        <tab>copado__Copado_Notification__c</tab>
+        <visibility>Available</visibility>
+    </tabSettings>
 </PermissionSet>

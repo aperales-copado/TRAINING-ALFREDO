@@ -1,0 +1,105 @@
+<apex:page id="QECPage" doctype="HTML-5.0" >
+
+
+<body style="margin:0;{!IF($User.UIThemeDisplayed != 'Theme4d','background-color:#cfeef8;','')}" >
+     <!-- Classic /> -->
+    <apex:outputPanel rendered="{!$User.UIThemeDisplayed != 'Theme4d'}">
+     <form id='EntryCheck' action='/apex/TRIMEC__DataTrim_EntryCheck' method='get' target="_top">
+      <table style='background-color:#cfeef8; padding: 0px; width: 180px; height: 140px; border-spacing: 0pt;'  border="0"> 
+       <tbody > 
+            <tr> <td style='width: 68px; height: 18px;'>First Name:</td> <td style='height: 18px;'><input title='Your Google Toolbar can fill this in for you. Select AutoFill' style='width: 100px; height: 16px; background-color: rgb(255, 255, 160);' size='14' name='firstname' /></td></tr>
+            <tr> <td style='width: 68px; height: 18px;'>Last Name:</td> <td style='height: 18px;'><input title='Your Google Toolbar can fill this in for you. Select AutoFill' style='width: 100px; height: 16px; background-color: rgb(255, 255, 160);' size='14' name='lastname' /></td></tr>
+            <tr> <td style='width: 68px; height: 18px;'>Company:</td> <td style='height: 18px;'><input title='Your Google Toolbar can fill this in for you. Select AutoFill' style='width: 100px; height: 16px; background-color: rgb(255, 255, 160);' size='14' name='company' /></td></tr>
+            <tr> <td style='width: 68px; height: 18px;'>Email:</td> <td style='height: 18px;'><input title='Your Google Toolbar can fill this in for you. Select AutoFill' style='width: 100px; height: 16px; background-color: rgb(255, 255, 160);' size='14' name='email' /></td></tr>
+            <tr> <td style='width: 68px; height: 18px;'>Phone:</td> <td style='height: 18px;'><input title='Your Google Toolbar can fill this in for you. Select AutoFill' style='width: 100px; height: 16px; background-color: rgb(255, 255, 160);' size='14' name='phone' /></td></tr> 
+            <tr> <td style='width: 68px; height: 18px;'>Website:</td> <td style='height: 18px;'><input title='Your Google Toolbar can fill this in for you. Select AutoFill' style='width: 100px; height: 16px; background-color: rgb(255, 255, 160);' size='14' name='website' /></td></tr>
+            <!-- <tr> <td style='width: 68px; height: 18px;'><br /></td> <td style='height: 24px;width: 98px;' align='right'><input id="Submit" style="width: 80px; height: 24px;" onclick="document.getElementById('EntryCheck').submit()" size="14" value="Check" type="submit" /><br /></td></tr> -->
+            <tr> <td style='padding: 0px 4px 0px 0px; width: 180px; height: 24px;' colspan='2' align='right' valign='top'><input id="Submit1" style="width: 80px; height: 24px;" onclick="document.getElementById('EntryCheck').submit()" size="14" value="Check" type="submit" /></td></tr>
+            <tr> <td style='padding: 0px 4px 0px 0px; width: 180px; height: 16px;' colspan='2' align='right' valign='top'><font color='#000099' size='1'>Powered by DataTrim</font></td></tr>
+        </tbody>
+    </table>
+   </form>
+   </apex:outputPanel>
+    
+    <!--Lightning-->
+    <apex:outputPanel rendered="{!$User.UIThemeDisplayed = 'Theme4d'}">
+ 		<apex:slds />
+          <div class="slds-grid  slds-wrap" >
+             <div class="slds-col--padded slds-size--1-of-2" >
+                <div class="slds-form-element"  >
+                    <!--<label class="slds-form-element__label" for="srcFirstName">{!$Label.trimec__first_name}:</label>-->
+                    <div class="slds-form-element__control">
+                        <input id="srcFirstName" title="{!$Label.trimec__first_name}" placeholder="{!$Label.trimec__first_name}" onkeypress="handleKeyPress(event);" class="slds-input" />
+                    </div>
+                 </div>
+                <div class="slds-form-element"  style="margin-top:0.5rem;" >
+                    <!--<label class="slds-form-element__label" for="srcLastName">{!$Label.trimec__last_name}:</label>-->
+                    <div class="slds-form-element__control">
+                        <input id="srcLastName"  title="{!$Label.trimec__last_name}" placeholder="{!$Label.trimec__last_name}" onkeypress="handleKeyPress(event);" class="slds-input" />
+                    </div>
+                 </div>
+                 <div class="slds-form-element"  style="margin-top:0.5rem;" >
+                    <!--<label class="slds-form-element__label" for="srcEmail">{!$Label.trimec__email}:</label>-->
+                      <div class="slds-form-element__control">
+                        <input id="srcEmail"  title="{!$Label.trimec__email}" placeholder="{!$Label.trimec__email}" onkeypress="handleKeyPress(event);" class="slds-input" />
+                      </div>
+                 </div>                 
+             </div>
+             <div class="slds-col--padded slds-size--1-of-2" >
+                 <div class="slds-form-element"  >
+                    <!--<label class="slds-form-element__label" for="srcCompany">{!$ObjectType.Account.Fields.Name.Label}:</label>-->
+                    <div class="slds-form-element__control">
+                        <input id="srcCompany" title="{!$ObjectType.Account.Fields.Name.Label}" placeholder="{!$ObjectType.Account.Fields.Name.Label}" onkeypress="handleKeyPress(event);" class="slds-input" />
+                    </div>
+                 </div>
+                 <div class="slds-form-element"  style="margin-top:0.5rem;">
+                    <!--<label class="slds-form-element__label" for="srcPhone">{!$Label.trimec__phone}:</label>-->
+                    <div class="slds-form-element__control">
+                        <input id="srcPhone" title="{!$Label.trimec__phone}"  placeholder="{!$Label.trimec__phone}" onkeypress="handleKeyPress(event);" class="slds-input" />
+                    </div>
+                 </div>
+                 <div class="slds-form-element"  style="margin-top:0.5rem;" >
+                    <!--<label class="slds-form-element__label" for="srcWebsite">{!$Label.trimec__website}:</label>-->
+                      <div class="slds-form-element__control">
+                        <input id="srcWebsite" title="{!$Label.trimec__website}" placeholder="{!$Label.trimec__website}" onkeypress="handleKeyPress(event);" class="slds-input" />
+                      </div>
+                 </div>
+             </div>
+             <div class="slds-col--padded slds-size--1-of-1" style="margin-top:0.5rem;" >
+                 <button id="btnSearch" class="slds-button slds-button--neutral " onclick="go2EntryCheck();">Search/Check</button><br/>
+             </div>
+             <div class="slds-col--padded slds-size--1-of-1" style="margin-top:0.5rem;text-align:right;font-size: 8px;color:#000099;" >
+                 Powered by DataTrim
+             </div>
+        </div>
+        <script type="text/javascript">
+           function go2EntryCheck(){
+               var URL = "/apex/TRIMEC__DataTrim_EntryCheck";
+               var search = "";
+               var srcFirstName = 'firstname=' + document.getElementById("srcFirstName").value;
+               var srcLastName = 'lastname=' + document.getElementById("srcLastName").value;
+               var srcEmail = 'email=' + document.getElementById("srcEmail").value;
+               var srcCompany = 'company=' + document.getElementById("srcCompany").value;
+               var srcPhone = 'phone=' + document.getElementById("srcPhone").value;
+               var srcWebsite = 'website=' + document.getElementById("srcWebsite").value;
+               //alert('/apex/TRIMEC__DataTrim_EntryCheck?'+srcFirstName+'&'+srcLastName+'&'+srcEmail+'&'+srcCompany+'&'+srcPhone+'&'+srcWebsite);
+               sforce.one.navigateToURL('/apex/TRIMEC__DataTrim_EntryCheck?'+srcFirstName+'&'+srcLastName+'&'+srcEmail+'&'+srcCompany+'&'+srcPhone+'&'+srcWebsite)
+           }	
+        
+           function handleKeyPress(e){
+           var key= 0;
+           if(window.event){
+             key= e.keyCode;    //IE
+           }else if(e.which){
+            key= e.which;       //Firefox
+           }
+           if(key==13){
+                var sbutton = document.getElementById("btnSearch");
+                sbutton.click();
+           }
+         }
+        </script>
+    </apex:outputPanel>    
+</body>
+
+</apex:page>

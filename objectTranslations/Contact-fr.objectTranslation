@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- EC Field Set --></label>
+        <name>EC_Field_Set</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Languages --></label>
+        <name>Languages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary</masterLabel>
+            <translation><!-- Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tertiary</masterLabel>
+            <translation><!-- Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Entry Check Status --></label>
+        <name>TRIMEC__EC_DupeStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entry Check Status (DO NOT USE) --></label>
+        <name>TRIMEC__EC_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- MatchKey --></label>
+        <name>TRIMEC__MatchKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Level --></label>
+        <name>TRIMEC__MatchLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- MatchScore --></label>
+        <name>TRIMEC__MatchScore__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Merge --></label>
+        <name>TRIMEC__Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Contact --></label>
+        <name>TRIMEC__New_Contact</name>
+    </webLinks>
+</CustomObjectTranslation>

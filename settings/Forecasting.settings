@@ -232,6 +232,14 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaSqI</field>
+            <label>Custom phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaU71</field>
+            <label>Custom phone home</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000004xYde</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -282,6 +290,8 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N1t000004xYdd</field>
+            <field>00N1t00000BaSqI</field>
+            <field>00N1t00000BaU71</field>
             <field>00N1t000004xYde</field>
             <field>00N1t000004xYdf</field>
             <field>00N1t000004xYdg</field>
@@ -446,6 +456,14 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaSqI</field>
+            <label>Custom phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaU71</field>
+            <label>Custom phone home</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000004xYde</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -496,6 +514,8 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N1t000004xYdd</field>
+            <field>00N1t00000BaSqI</field>
+            <field>00N1t00000BaU71</field>
             <field>00N1t000004xYde</field>
             <field>00N1t000004xYdf</field>
             <field>00N1t000004xYdg</field>
@@ -664,6 +684,14 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaSqI</field>
+            <label>Custom phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaU71</field>
+            <label>Custom phone home</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000004xYde</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -715,6 +743,8 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N1t000004xYdd</field>
+            <field>00N1t00000BaSqI</field>
+            <field>00N1t00000BaU71</field>
             <field>00N1t000004xYde</field>
             <field>00N1t000004xYdf</field>
             <field>00N1t000004xYdg</field>
@@ -879,6 +909,14 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaSqI</field>
+            <label>Custom phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaU71</field>
+            <label>Custom phone home</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000004xYde</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -929,6 +967,8 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N1t000004xYdd</field>
+            <field>00N1t00000BaSqI</field>
+            <field>00N1t00000BaU71</field>
             <field>00N1t000004xYde</field>
             <field>00N1t000004xYdf</field>
             <field>00N1t000004xYdg</field>
@@ -1097,6 +1137,14 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaSqI</field>
+            <label>Custom phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaU71</field>
+            <label>Custom phone home</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000004xYde</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -1148,6 +1196,8 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N1t000004xYdd</field>
+            <field>00N1t00000BaSqI</field>
+            <field>00N1t00000BaU71</field>
             <field>00N1t000004xYde</field>
             <field>00N1t000004xYdf</field>
             <field>00N1t000004xYdg</field>
@@ -1312,6 +1362,14 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaSqI</field>
+            <label>Custom phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaU71</field>
+            <label>Custom phone home</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000004xYde</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -1362,6 +1420,8 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N1t000004xYdd</field>
+            <field>00N1t00000BaSqI</field>
+            <field>00N1t00000BaU71</field>
             <field>00N1t000004xYde</field>
             <field>00N1t000004xYdf</field>
             <field>00N1t000004xYdg</field>
@@ -1526,6 +1586,14 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaSqI</field>
+            <label>Custom phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaU71</field>
+            <label>Custom phone home</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000004xYde</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -1576,6 +1644,8 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N1t000004xYdd</field>
+            <field>00N1t00000BaSqI</field>
+            <field>00N1t00000BaU71</field>
             <field>00N1t000004xYde</field>
             <field>00N1t000004xYdf</field>
             <field>00N1t000004xYdg</field>
@@ -1740,6 +1810,14 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaSqI</field>
+            <label>Custom phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaU71</field>
+            <label>Custom phone home</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000004xYde</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -1790,6 +1868,8 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N1t000004xYdd</field>
+            <field>00N1t00000BaSqI</field>
+            <field>00N1t00000BaU71</field>
             <field>00N1t000004xYde</field>
             <field>00N1t000004xYdf</field>
             <field>00N1t000004xYdg</field>
@@ -1958,6 +2038,14 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaSqI</field>
+            <label>Custom phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaU71</field>
+            <label>Custom phone home</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000004xYde</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -2009,6 +2097,8 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N1t000004xYdd</field>
+            <field>00N1t00000BaSqI</field>
+            <field>00N1t00000BaU71</field>
             <field>00N1t000004xYde</field>
             <field>00N1t000004xYdf</field>
             <field>00N1t000004xYdg</field>
@@ -2173,6 +2263,14 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaSqI</field>
+            <label>Custom phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaU71</field>
+            <label>Custom phone home</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000004xYde</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -2223,6 +2321,8 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N1t000004xYdd</field>
+            <field>00N1t00000BaSqI</field>
+            <field>00N1t00000BaU71</field>
             <field>00N1t000004xYde</field>
             <field>00N1t000004xYdf</field>
             <field>00N1t000004xYdg</field>
@@ -2387,6 +2487,14 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaSqI</field>
+            <label>Custom phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaU71</field>
+            <label>Custom phone home</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000004xYde</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -2437,6 +2545,8 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N1t000004xYdd</field>
+            <field>00N1t00000BaSqI</field>
+            <field>00N1t00000BaU71</field>
             <field>00N1t000004xYde</field>
             <field>00N1t000004xYdf</field>
             <field>00N1t000004xYdg</field>
@@ -2601,6 +2711,14 @@
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaSqI</field>
+            <label>Custom phone</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000BaU71</field>
+            <label>Custom phone home</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000004xYde</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
@@ -2651,6 +2769,8 @@
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N1t000004xYdd</field>
+            <field>00N1t00000BaSqI</field>
+            <field>00N1t00000BaU71</field>
             <field>00N1t000004xYde</field>
             <field>00N1t000004xYdf</field>
             <field>00N1t000004xYdg</field>

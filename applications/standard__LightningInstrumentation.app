@@ -6,5 +6,6 @@
     <label>LightningInstrumentation</label>
     <navType>Standard</navType>
     <tabs>standard-LightningInstrumentation</tabs>
+    <tabs>Copado_Integration_Setting__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

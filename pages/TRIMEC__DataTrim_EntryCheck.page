@@ -1,0 +1,1126 @@
+<apex:page id="ECPage" doctype="HTML-5.0"  controller="TRIMEC.EC_Controller"  tabStyle="TRIMEC__DataTrim_Entry_Check__tab" action="{!invokeServiceAuto}" >
+<!-- For a Custom Entry Check Page use this: <apex:page id="ECPage" doctype="HTML-5.0"  controller="TRIMEC.EC_Controller" action="{!invokeServiceAuto}" > -->
+<apex:sectionHeader title="{!$Label.trimec__company_name}" subtitle="{!$Label.trimec__entry_check}" ></apex:sectionHeader>
+
+<apex:includescript value="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></apex:includescript>
+    
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'DataTrim_EntryCheck.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/styles/salesforce-lightning-design-system-ltng.css')}"/> 
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/DataTrim_EntryCheck_ltng.css')}"/>
+
+
+<style>
+    /*.dt_classic{display:initial;}*/
+    .dt_ltng{display:none;}
+    
+    .lbl_section{
+        color:black;
+        font-weight:bold;}
+    
+    .lbl_classic{
+        color:black;
+        font-weight:bold;}
+    .lbl_ltng{color:white;
+        font-weight:normal;}
+        
+    Body .btn {
+    }
+    body input.btn, body input.btnDisabled, body input.btnCancel {
+        padding-left:1rem;
+        padding-right:1rem;
+        }
+        
+    .slds .slds-button--brand{
+     line-height:1.5rem;
+     /*
+     background-color:orange;
+     border-color:grey;
+     */
+    }
+    
+    .dt_btn_disabled{
+        border-color:transparent;
+        background-color:#e0e5ee;
+        color:white;
+        cursor:default;
+        }
+    
+</style>
+
+
+<apex:form >    
+    <apex:input type="text" value="{!UI_mode}" id="UI_mode" size="15" style="display:none;"/>
+    <script type="text/javascript">
+        function isLightningExperienceOrSalesforce1() {
+            return((typeof sforce != 'undefined') && sforce && (!!sforce.one));
+        }
+        
+        function setmode(){
+            if(isLightningExperienceOrSalesforce1() ) {
+                jQuery('[id$=UI_mode]').val("ltngView"); 
+            }else {
+                jQuery('[id$=UI_mode]').val("classicView"); 
+            }
+            passModeToController();
+        }
+    </script>
+    <br />
+    <apex:actionFunction name="passModeToController" action="{!detect_UI_Mode}" rerender="UI_mode"/>
+    <script>window.setTimeout(setmode,20)</script>  
+</apex:form>
+        
+
+ <apex:form rendered="{!Not Initialized}"> 
+<!-- INITIALIZATION -->
+<div class="slds">
+<div class="slds-grid slds-wrap">
+    <div class="slds-col">
+        <div style="font-size:1.5rem;font-weight:bold;">Application Initialization</div>
+        <strong>Thank you for Installing DataTrim Entry Check</strong><br />
+        <div style="font-size:12px;">
+            You are almost ready to start using the application...<br />
+            Initialize the application using the button below.
+            <br />
+            <apex:commandButton action="{!InitializeMe}" value="Intialize Entry Check Setttings" id="btnInitialize"  styleClass="slds-button slds-button--brand" />
+            <br /><br />
+            <div style="font-size:100%;">The initialization will set all the search/check settings<br /> to their default values.</div> 
+        </div>
+    </div>
+    <div class="slds-col">
+        <img class="dt_ltng" src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/ec_init.png')}" style="height:200px" />
+    </div>
+    <div class="slds-col">
+        <div style="font-size:1.5rem;font-weight:bold;">To Learn More...</div>
+        <div style="font-size:12px;">
+            <table style="width:500px;font-size:12px;" >
+                <tr>
+                <td style="width:40%;vertical-align:bottom;"><strong>Setup:</strong><br />Modify default settings </td>
+                <td style="vertical-align:bottom;text-align:right;"><a href="/apex/TRIMEC__DataTrim_EntryCheckSetup" target="_new"><img src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/setup2.png')}" width="32px" height="32px" alt="Setup" title="Setup" /></a></td>
+                <td style="vertical-align:bottom;text-align:left;"><a href="http://www.datatrim.com/downloads/DatatrimEntryCheck_SetupGuide.pdf#zoom=80" target="_new"><img src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/userguide.png')}" width="32px" height="32px" alt="User Guide" title="Check the User Guide for details." /></a></td>
+                <td style="width:40%;vertical-align:bottom;"><strong>User Guide:</strong><br />Installation and Setup instructions</td>
+                </tr>
+                <tr>
+                <td style="width:40%;vertical-align:bottom;"><b>Tutorials:</b><br />Learn more from our introductory video playlist.</td>
+                <td style="vertical-align:top;text-align:right;"><a href="http://www.datatrim.com/d2b.php?mode=EntryCheck#demo" target="_new"><img src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/tutorials.png')}" width="32px" height="32px" alt="Tutorials" title="Learn more from these videos" /></a></td>
+                <td style="vertical-align:top;text-align:left;"><a href="mailto:support@datatrim.com" target="_new"><img src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/support.png')}" width="32px" height="32px" alt="Support" title="Support" /></a></td>
+                <td style="width:40%;vertical-align:top;"><strong>Support:</strong><br />Contact us with ANY questions and/or ideas</td>
+                </tr>
+            </table>
+            <br />
+            <b>Follow product updates and news on our Blog, and Twitter:</b> 
+            <a href="http://www.datatrim.com/blog" target="_new"><apex:image url="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'wordpress_32.png')}" width="24px" height="24px" alt="DataTrim Blog" title="Follow product updates and news on our Blog" /></a>
+            <a href="http://www.twitter.com/datatrim" target="_new"><apex:image url="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'twitter_32.png')}" width="24px" height="24px" alt="DataTrim on Twitter" title="Follow DataTrim on Twitter" /></a>
+            
+        </div>
+    </div>
+</div>
+</div>
+</apex:form>
+
+
+<!-- INPUT -->
+<apex:outputPanel id="main" rendered="{!Initialized}">
+<apex:form id="mainform"> 
+  <apex:pageBlock id="mainpageBlock">
+    <table style="width:100%;cellpadding:0;cellspacing:0">
+        <tr >
+            <td width='33%' ><strong>{!$Label.TRIMEC__Enter}:</strong></td>
+            <td width='33%' ></td>
+            <td width='33%' align='right'>
+            <apex:outputPanel rendered="{!Settings.isUserAdmin}">
+                <a href="/apex/TRIMEC__DataTrim_EntryCheckSetup" ><apex:image url="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'img/setup.png')}" height="32px" title="Setup" /> </a>
+            </apex:outputPanel>
+            </td>
+        </tr>
+    </table>
+    
+    <div class="slds">  
+      <!-- 1ST ROW -->  
+      <div class="slds-grid slds-wrap" >
+          <!-- COL 1 -->
+          <div class="slds-col--padded slds-size--1-of-5" >
+             <apex:outputPanel rendered="{!NOT Settings.Hide_FirstName}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcFirstName">{!$Label.trimec__first_name}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcFirstName" value="{!FirstName}" title="{!$Label.trimec__first_name}" html-placeholder="{!$Label.trimec__first_name}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          <!-- COL 2 -->
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <apex:outputPanel rendered="{!NOT Settings.Hide_LastName}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcLastName">{!$Label.trimec__last_name}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcLastName" value="{!LastName}" title="{!$Label.trimec__last_name}" html-placeholder="{!$Label.trimec__last_name}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          <!-- COL 3 -->
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <apex:outputPanel rendered="{!NOT Settings.Hide_Email}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcEmail">{!$Label.trimec__email}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcEmail" value="{!Email}" title="{!$Label.trimec__email}" html-placeholder="{!$Label.trimec__email}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          <!-- COL 4 -->
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <apex:outputPanel rendered="{!NOT Settings.Hide_Company}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcCompany">{!Settings.labelAccount}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcCompany" value="{!Company}" title="{!Settings.labelAccount}" html-placeholder="{!Settings.labelAccount}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          <!-- COL 5 -->
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <apex:outputPanel id="Dummy15" >
+                  &nbsp;
+               </apex:outputPanel>
+          </div>
+          
+      </div>
+      
+      <!-- 2ND ROW -->
+      <div class="slds-grid slds-wrap" >
+          <!-- COL 1 -->
+          
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <apex:outputPanel rendered="{!NOT Settings.Hide_Street}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcStreet">{!$Label.trimec__street}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcStreet" value="{!Street}" title="{!$Label.trimec__street}" html-placeholder="{!$Label.trimec__street}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          
+          <!-- COL 2 -->
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <apex:outputPanel rendered="{!NOT Settings.Hide_PostalCode}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcPostalCode">{!$Label.trimec__postal_code}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcPostalCode" value="{!PostCode}" title="{!$Label.trimec__postal_code}" html-placeholder="{!$Label.trimec__postal_code}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          
+          
+          <!-- COL 3 -->
+          
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <apex:outputPanel rendered="{!NOT Settings.Hide_City}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcCity">{!$Label.trimec__city}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcCity" value="{!City}" title="{!$Label.trimec__city}" html-placeholder="{!$Label.trimec__city}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          <!-- COL 4 -->
+          
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <apex:outputPanel rendered="{!NOT Settings.Hide_State}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcState">{!$Label.trimec__state}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcState" value="{!State}" title="{!$Label.trimec__state}" html-placeholder="{!$Label.trimec__state}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          <!-- COL 5 -->
+          <div class="slds-col--padded slds-size--1-of-5" >
+            <apex:outputPanel rendered="{!NOT Settings.Hide_Country}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcCountry">{!$Label.trimec__country}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcCountry" value="{!Country}" title="{!$Label.trimec__country}" html-placeholder="{!$Label.trimec__country}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          
+      </div>
+      
+      <!-- 3RD ROW -->
+      <div class="slds-grid  slds-wrap" >
+          <!-- COL 1 -->
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <apex:outputPanel rendered="{!NOT Settings.Hide_Phone}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcPhone">{!$Label.trimec__phone}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcPhone" value="{!Phone}" title="{!$Label.trimec__phone}"  html-placeholder="{!$Label.trimec__phone}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          <!-- COL 2 -->
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <apex:outputPanel rendered="{!NOT Settings.Hide_Fax}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcFax">{!$Label.trimec__fax}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcFax" value="{!Fax}" title="{!$Label.trimec__fax}" html-placeholder="{!$Label.trimec__fax}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          <!-- COL 3 -->
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <apex:outputPanel rendered="{!NOT Settings.Hide_Mobile}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcMobile">{!$Label.trimec__mobilephone}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcCMobile" value="{!Mobile}" title="{!$Label.trimec__mobilephone}" html-placeholder="{!$Label.trimec__mobilephone}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          <!-- COL 4 -->
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <apex:outputPanel rendered="{!NOT Settings.Hide_Website}">
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcWebsite">{!$Label.trimec__website}:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcWebsite" value="{!Website}" title="{!$Label.trimec__website}" html-placeholder="{!$Label.trimec__website}" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+              </apex:outputPanel>
+          </div>
+          <!-- COL 5 -->
+          <div class="slds-col--padded slds-size--1-of-5" >
+                  <apex:outputPanel id="Dummy35">
+                      &nbsp;
+                   </apex:outputPanel>
+          </div>
+      </div>
+      
+      <!-- 4th ROW -->
+      <!-- To use custom fields: 
+        1) Modify the Custom Search parameters in the setup
+        2) Make sure that the involved fields aer included in the dynamic Field sets
+        3) Edit and Enable the secions below
+      -->
+      <!-- 
+      <div class="slds-grid  slds-wrap" >
+          <div class="slds-col--padded slds-size--1-of-5" > 
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcCustomField1">Vehicle No.:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcCustomField1" value="{!cf1}" title="Vehicle No." html-placeholder="Vehicle No" onkeypress="handleKeyPress(event);" styleclass="slds-input" />
+                  </div>
+              </div>
+          </div>
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcCustomField2">Account No.:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcCustomField2" value="{!cf2}" title="Account No." html-placeholder="Account No." onkeypress="handleKeyPress(event);" styleclass="slds-input"/>
+                  </div>
+              </div>
+          </div>
+          <div class="slds-col--padded slds-size--1-of-5" >
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcQueryScopeField1">Site:</label>
+                  <div class="slds-form-element__control">
+                    <apex:inputText id="srcQueryScopeField1" value="{!qsa}" title="Site" html-placeholder="Site" onkeypress="handleKeyPress(event);" styleclass="slds-input"/>
+                  </div>
+              </div>
+          </div>
+          <div class="slds-col--padded slds-size--2-of-5" >
+              <div class="slds-form-element"  >
+                  <label class="slds-form-element__label" for="srcCustomField4">Hot Buttons:</label>
+                  <div class="slds-form-element__control">
+                      <input id="srcCustomField4a"  title="Hot Buttons" placeholder="Hot Buttons" onchange="setCustomField4b();" onkeypress="handleKeyPress(event);" class="slds-input"/>
+                      <apex:inputText id="srcCustomField4b" value="{!upt_l}" title="Hot Buttons" html-placeholder="Hot Buttons"  style="display:none;" styleclass="slds-input"/>
+                  </div>
+              </div>
+               <script type="text/javascript" >
+                   function setCustomField4b(){
+                    var myinput  = document.getElementById("srcCustomField4a");
+                    var inputText  = document.getElementById("{!$Component.srcCustomField4b}");
+                    inputText.value =  'lea17=' + myinput.value;
+                 }
+                </script>
+          </div>
+      </div>
+      -->
+      
+    </div>
+    
+    <!-- Hide / Show Labes based on user settings. -->
+    <script type="text/javascript">
+            var myElements = document.querySelectorAll(".slds .slds-form-element__label");
+
+            for (var i = 0; i < myElements.length; i++) {
+                if({!Settings.Show_Labels} == true ) {
+                    myElements[i].style.display = "initial";
+                }else{
+                    myElements[i].style.display = "none";
+                }
+            }
+    </script>
+    
+  
+        
+        <!-- Section to be used in Custom Entry Check page, for disabling searches on specific objects -->
+        <apex:inputText id="srcsearchleads" value="{!searchleads}" style="display:none" />
+        <apex:inputText id="srcsearchaccounts" value="{!searchaccounts}" style="display:none" />
+        <apex:inputText id="srcsearchcontacts" value="{!searchcontacts}" style="display:none" />
+        <apex:inputText id="srcsearchpersons" value="{!searchpersons}" style="display:none" />
+        <apex:inputText style="display:none" />
+
+      <div class="slds" >   
+      <div class="slds-col--padded slds-size--2-of-5" >
+            <apex:commandButton action="{!invokeService}" value="{!$Label.trimec__search_check}" id="btnSearch" rerender="newData" styleClass="slds-button slds-button--neutral dt_ltng" style="font-weight: normal;" status="actionStatus" ></apex:commandButton>
+            <apex:commandButton action="{!invokeService}" value="{!$Label.trimec__search_check}" id="btnSearchclassic" rerender="newData" styleClass="slds-button slds-button--brand dt_classic" style="font-weight: normal;" status="actionStatus" ></apex:commandButton>
+      
+      <!-- 
+      <apex:panelGrid columns="2" columnClasses="pbLabel,pdData" border="1" cellpadding="0 0 10 0" cellspacing="0" width="50%">
+            <apex:commandButton action="{!invokeService}" value="{!$Label.trimec__search_check}" id="btnSearch" rerender="newData" styleClass="slds-button slds-button--neutral dt_ltgn" style="font-weight: normal;" status="actionStatus" ></apex:commandButton>
+            <apex:commandButton action="{!invokeService}" value="{!$Label.trimec__search_check}" id="btnSearchclassic" rerender="newData" styleClass="slds-button slds-button--brand dt_classic" style="font-weight: normal;" status="actionStatus" ></apex:commandButton>
+      </apex:panelGrid>
+       -->
+      </div>
+      </div>
+          
+         <script type="text/javascript">
+           function handleKeyPress(e){
+           var key= 0;
+           if(window.event){
+             key= e.keyCode;    //IE
+           }else if(e.which){
+            key= e.which;       //Firefox
+           }
+           if(key==13){
+                var sbutton = document.getElementById("{!$Component.btnSearch}");
+                sbutton.click();
+           }
+         }
+        </script>
+     </apex:pageBlock>
+ </apex:form>
+
+ <apex:actionStatus Id="actionStatus" >
+        <apex:facet name="start" >
+            <div style="font-weight: normal;">{!$Label.TRIMEC__Status_Message}</div>
+            <div class="meter2 orange2 nostripes ">
+                <span style="width: 100%;"></span>
+            </div>
+         </apex:facet>
+   </apex:actionStatus>
+ 
+  <apex:outputPanel id="newData" >
+
+    <apex:pageMessages />
+    
+    <!-- LEAD OUTPUT -->
+    <apex:form id="theLeadForm">
+    <div class="slds">
+    <apex:pageBlock id="theLeadpageBlock" title="{!CheckResult4Leads}"  tabStyle="Lead" rendered="{!Settings.CheckLeads}" > 
+         <!-- Lightning -->
+         <apex:facet name="header" >
+
+             <apex:panelGrid id="headerleads" styleclass="ltngView"  columns="2" style="padding-top:0px;padding-bottom:0px;">
+                 <apex:panelGroup id="theGroup">
+                     Title
+                 </apex:panelGroup>
+                 <apex:panelGroup id="theGroup">
+                     Buttons
+                 </apex:panelGroup>
+             </apex:panelGrid>
+             
+             <apex:panelGrid id="headerlead" styleclass="ltngView"  columns="3" style="padding-top:0px;padding-bottom:0px;">
+                <apex:panelGrid id="headerlead2" columns="2" style="padding-top:0px;padding-bottom:0px">
+                    <img class="dt_ltng" src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/icons/standard/lead_60.png')}" style="height:32px" />
+                    <img class="dt_classic" src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/leads32.png')}" style="height:32px" />
+                    <span style="padding-top:0px;padding-bottom:0px;width:250px;" class="lbl_section">
+                            &nbsp;{!CheckResult4Leads}&nbsp;<img id="theLeadFlagImage" src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/Alert_red.png')}" width="24" height="24" title="{!$Label.TRIMEC__YellowFlagText}" style="{!IF(MatchResult.LeadNote != null, '', 'display:none;')}"  />   
+                    </span>
+                </apex:panelGrid>
+                <apex:panelGroup style="text-align:right;">
+                    <!-- Lightning / Mobile -->
+                    <!-- OLD 
+                     <apex:commandButton value="{!$Label.trimec__create_new_lead}" id="btnNewLead" action="{!invokeNewLead}" onclick="sForce1Create('Lead')"  disabled="{!not MatchResult.Checked}" styleClass="slds-button slds-button--neutral dt_ltng" style="font-weight: normal;" />
+                    -->
+                     <!-- NEW-->
+                    <apex:outputPanel rendered="{!Not MatchResult.Checked}" styleClass="dt_ltng_new">
+                        <button class="slds-button slds-button--neutral" disabled="true">{!$Label.trimec__create_new_lead}</button>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!Lrts.size = 0 &&  MatchResult.Checked}" styleClass="dt_ltng_new">
+                        <a href="javascript:sforce.one.createRecord('Lead', null,{
+                                                                    'Company':'{!Company}', 
+                                                                    'FirstName':'{!FirstName}',
+                                                                    'LastName' : '{!LastName}',
+                                                                    'Email' : '{!Email}',
+                                                                    'Street' : '{!Street}',
+                                                                    'City' : '{!City}',
+                                                                    'PostalCode' : '{!PostCode}',
+                                                                    'State' : '{!State}',
+                                                                    'Country' : '{!Country}',
+                                                                    'Phone' : '{!Phone}',
+                                                                    'Fax' : '{!Fax}',
+                                                                    'MobilePhone' : '{!Mobile}',
+                                                                    'Website' : '{!Website}'
+                                                                    });" class="slds-button slds-button--neutral ">{!$Label.trimec__create_new_lead}</a>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!Lrts.size = 1 &&  MatchResult.Checked}" styleClass="dt_ltng_new">
+                        <a href="javascript:sforce.one.createRecord('Lead','{!Lrts[0].id}',{
+                                                                    'Company':'{!Company}', 
+                                                                    'FirstName':'{!FirstName}',
+                                                                    'LastName' : '{!LastName}',
+                                                                    'Email' : '{!Email}',
+                                                                    'Street' : '{!Street}',
+                                                                    'City' : '{!City}',
+                                                                    'PostalCode' : '{!PostCode}',
+                                                                    'State' : '{!State}',
+                                                                    'Country' : '{!Country}',
+                                                                    'Phone' : '{!Phone}',
+                                                                    'Fax' : '{!Fax}',
+                                                                    'MobilePhone' : '{!Mobile}',
+                                                                    'Website' : '{!Website}'
+                                                                    });" class="slds-button slds-button--neutral ">{!$Label.trimec__create_new_lead}  ({!Lrts[0].Name})</a>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!Lrts.size > 1 &&  MatchResult.Checked}" styleClass="dt_ltng_new">
+                         <div class="slds-dropdown-trigger slds-button--last">
+                            <div class="slds-button slds-button--neutral" style="font-weight:normal;">
+                                 Create Lead(by Type)
+                                <span class="slds-assistive-text">Select</span>
+                            </div>
+                            <div class="slds-dropdown slds-dropdown--right slds-dropdown--menu" style="text-align:left">
+                                <ul class="slds-dropdown__list" role="menu">
+                                    <apex:repeat value="{!Lrts}" var="rt">
+                                        <li class="slds-dropdown__item" style="margin-left:0.25rem;"><a href="javascript:sforce.one.createRecord('Lead','{!rt.id}',{
+                                                                    'Company':'{!Company}', 
+                                                                    'FirstName':'{!FirstName}',
+                                                                    'LastName' : '{!LastName}',
+                                                                    'Email' : '{!Email}',
+                                                                    'Street' : '{!Street}',
+                                                                    'City' : '{!City}',
+                                                                    'PostalCode' : '{!PostCode}',
+                                                                    'State' : '{!State}',
+                                                                    'Country' : '{!Country}',
+                                                                    'Phone' : '{!Phone}',
+                                                                    'Fax' : '{!Fax}',
+                                                                    'MobilePhone' : '{!Mobile}',
+                                                                    'Website' : '{!Website}'
+                                                                    });" class="slds-button slds-button--neutral" style="padding:0;text-align:inherit;" >{!$Label.trimec__create_new_lead}  ({!rt.Name})</a></li>  
+                                    </apex:repeat>
+                                </ul>
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                    <apex:commandButton value="{!$Label.trimec__merge}" id="btnMergeLeads" action="{!invokeMergeLeads}" title="{!$Label.trimec__merge}" styleClass="slds-button slds-button--neutral dt_ltng dt_browser" style="font-weight: normal;" rendered="{!NOT Settings.Hide_MergeButton}" disabled="{!NoOfLeads <2}" />
+                    
+                    <!-- CLASSIC -->
+                    <apex:outputPanel styleclass="dt_classic_new">
+                        <!-- Lightning style -->
+                        <!--Old <apex:commandButton value="{!$Label.trimec__create_new_lead}" id="btnNewLead" action="{!invokeNewLead}" disabled="{!not MatchResult.Checked}" styleClass="slds-button slds-button--neutral dt_ltng" style="font-weight: normal;" />-->
+                        
+                        <apex:outputPanel rendered="{!Settings.ClassicTheme = false}">
+                            <apex:outputLink id="btnNewLead_classic_ltntstyle" value="{!NewLeadUrl}" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!MatchResult.Checked}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_lead}</apex:outputLink>
+                        </apex:outputPanel>
+                         
+                        <apex:outputPanel rendered="{!Settings.ClassicTheme = true && MatchResult.Checked}">
+                             <!--Use recordtypes ala lightning incl.: picklist ==> Not use RT selector-->
+                            <apex:outputPanel rendered="{!Lrts.size = 0}" styleclass="dt_classic_new">
+                                <apex:outputLink id="btnNewLead_classic_ltgnstyle1" value="{!NewLeadUrl}" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!MatchResult.Checked}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_lead}</apex:outputLink>
+                            </apex:outputPanel>    
+                            <apex:outputPanel rendered="{!Lrts.size = 1}" styleclass="dt_classic_new">
+                                <apex:outputLink id="btnNewLead_classic_ltgnstyle2" value="{!NewLeadUrl}" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!MatchResult.Checked}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_lead} ({!Lrts[0].Name})</apex:outputLink>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!Lrts.size > 1}" styleclass="dt_classic_new">
+                                <div id="btnNewLead_classic_ltgnstyle3" class="slds-dropdown-trigger slds-button--last">
+                                    <div class="slds-button slds-button--neutral" style="font-weight:normal;">
+                                         Create Lead (by Type)
+                                         <span class="slds-assistive-text">Select</span>
+                                    </div>
+                                    <div class="slds-dropdown slds-dropdown--right slds-dropdown--menu" style="text-align:left">
+                                        <ul class="slds-dropdown__list" role="menu">
+                                            <apex:repeat value="{!Lrts}" var="rt">
+                                                <li class="slds-dropdown__item" style="margin-left:0.25rem;"><a href="{!NewLeadUrl}&RecordType={!rt.id}" class="slds-button slds-button--neutral" style="padding:0;text-align:inherit;" >{!$Label.trimec__create_new_lead}  ({!rt.Name})</a></li>  
+                                            </apex:repeat>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </apex:outputPanel>
+                        </apex:outputPanel>
+                        
+                        <apex:outputLink id="btnNewLeaddisabled_ltngstyle" value="#" styleClass="slds-button slds-button--brand dt_ltng" rendered="{!not MatchResult.Checked}" style="font-weight: normal;padding: 0.5rem;border-color:white;background-color:white;color:#d8dde6;cursor:default;" >{!$Label.trimec__create_new_lead}</apex:outputLink>
+                        <apex:commandButton value="Merge" id="btnOpenMergeLeads" action="{!invokeMergeLeads}" rendered="{!NOT Settings.Hide_MergeButton}" disabled="{!NoOfLeads < 2}" styleClass="slds-button slds-button--neutral dt_ltng" style="font-weight: normal;" />
+                        
+                        <!-- Classic style -->
+                        <apex:outputLink id="btnNewLead1" value="{!NewLeadUrl}" styleClass="slds-button slds-button--brand dt_classic" rendered="{!MatchResult.Checked}">{!$Label.trimec__create_new_lead}</apex:outputLink>
+                        <apex:outputLink id="btnNewLeaddisabled" value="#" styleClass="slds-button slds-button--brand dt_classic" rendered="{!not MatchResult.Checked}" style="border-color:transparent;background-color:#e0e5ee;color:white;cursor:default;">{!$Label.trimec__create_new_lead}</apex:outputLink>
+                        <!-- <apex:commandButton value="{!$Label.trimec__create_new_lead}" id="btnNewLead1" action="{!invokeNewLead}" disabled="{!not MatchResult.Checked}" styleClass="slds-button slds-button--brand " style="font-weight: normal;" /> -->
+                        <apex:commandButton value="Merge" id="btnOpenMergeLeads1" action="{!invokeMergeLeads}" rendered="{!NOT Settings.Hide_MergeButton}" disabled="{!NoOfLeads < 2}" styleClass="slds-button slds-button--brand dt_classic" style="font-weight: normal;" />
+                    </apex:outputPanel>
+                </apex:panelGroup>
+             </apex:panelGrid>
+          </apex:facet>
+          
+          <!-- old 
+          <apex:facet name="header" >
+            <apex:panelGrid id="header-lead" columns="2"  styleclass="" style="border:1px;padding-top:0px;padding-bottom:0px">
+                <div style="padding-top:0px;padding-bottom:0px;">
+                        <img  src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/leads32.png')}" style="height:32px" />
+                        <h3 class="mainTitle">&nbsp;{!CheckResult4Leads}</h3>&nbsp;
+                        <img id="theLeadFlagImage" src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/Alert_red.png')}" width="24" height="24" title="{!$Label.TRIMEC__YellowFlagText}" style="{!IF(MatchResult.LeadNote != null, '', 'display:none;')}"  />   
+                </div>
+                <apex:panelGroup styleClass="pbButton" style="text-align:right;">
+                    <apex:commandButton value="{!$Label.trimec__create_new_lead}" id="btnNewLead" action="{!invokeNewLead}" disabled="{!not MatchResult.Checked}" styleClass="slds-button slds-button--neutral" style="font-weight: normal;" />
+                    <apex:commandButton value="Merge" id="btnOpenMergeLeads" action="{!invokeMergeLeads}" rendered="{!NOT Settings.Hide_MergeButton}" disabled="{!NoOfLeads < 2}" styleClass="slds-button slds-button--neutral" style="font-weight: normal;" />
+                </apex:panelGroup>
+              </apex:panelGrid>
+          </apex:facet>
+          -->
+          
+          <apex:outputPanel rendered="{!MatchResult.Checked}">
+                 <apex:outputPanel id="resultPanelLeads" layout="block" rendered="{!showLeads}">
+                 <!-- Lead Table --> 
+                    <apex:dataTable id="LeadList" styleClass="slds-table slds-table--bordered" value="{!MatchResult.MatchedLeads}" var="l" >
+                        <!-- test 2017-0306 see also line 808
+                        <apex:column  styleclass="testcol">
+                            <apex:facet name="header" >Test</apex:facet>
+                            TEst
+                        </apex:column>
+                        -->
+                    <apex:column rendered="{!NOT Settings.Hide_MergeButton}" >
+                        <apex:facet name="header" >{!$Label.trimec__select}</apex:facet>
+                        <apex:inputCheckbox title="{!$Label.trimec__err_max3lead}" value="{!l.selected}" onchange="checkLeads(l)" id="checkedoneLead" />
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header" >{!$Label.trimec__action}</apex:facet>
+                        <!-- <apex:outputLink value="/{!l.id}/e" >{!$Label.trimec__edit}</apex:outputLink> -->
+                        <apex:outputLink rendered="{!l.HasEditAccess}" value="/{!l.id}/e" >{!$Label.trimec__edit}</apex:outputLink>
+                        <apex:outputLink rendered="{!Not l.HasEditAccess}" value="{!Settings.Action_Page_Share_Lead}&id={!l.id}&owner={!l.OwnerId}" >{!$Label.trimec__request_share_permissions}</apex:outputLink>
+                    </apex:column>
+                    <apex:column rendered="{!Settings.ClassifyDupes}">
+                        <apex:facet name="header" >{!$Label.trimec__match_level}</apex:facet>
+                        <apex:image title="({!l.MatchScore}{!IF(Settings.debugOn = true,l.Scores,'')})" value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck,l.ClassImage)}" width="90px" />
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header" >{!$ObjectType.lead.fields.name.label}</apex:facet>
+                        <apex:outputLink value="/{!l.lead.id}" >{!l.lead.name}</apex:outputLink>
+                    </apex:column>
+
+                       <apex:repeat value="{!$ObjectType.Lead.FieldSets.TRIMEC__EC_Field_Set}" var="f">
+                            <apex:column rendered="{!f.fieldpath != 'OwnerId'}" style="{!if(f.Type == 'currency', 'text-align:right;','') }">
+                                    <apex:facet name="header" >{!f.Label}&nbsp;</apex:facet> 
+                                    <apex:outputField value="{!l.lead[f]}"/>
+                            </apex:column>
+                            
+                            <apex:column rendered="{!f.fieldpath == 'OwnerId'}">
+                                <apex:facet name="header" >{!$Label.TRIMEC__Owner}&nbsp;</apex:facet> 
+                                <apex:outputLink value="/{!l.id}?retURL={!l.lead.OwnerId}" title="View {!l.lead.OwnerId}" target="_blank" > {!l.lead.Owner.Name}</apex:outputLink>
+                            </apex:column>
+                       </apex:repeat>
+                </apex:dataTable>   
+                 </apex:outputPanel>
+           </apex:outputPanel>
+          
+     </apex:pageBlock> 
+     </div>
+     </apex:form>
+     
+     <!-- CONTACT OUTPUT -->
+    <apex:form id="theContactForm">
+    <div class="slds">
+      <apex:pageBlock id="theContactpageBlock" title="{!CheckResult4Contacts}"  tabStyle="Contact" rendered="{!OR(Settings.CheckContacts,Settings.CheckPersonAccounts)}">
+          <apex:facet name="header" >
+            <apex:panelGrid id="headercontact" columns="2"   style="border:1px;padding-top:0px;padding-bottom:0px">
+                <apex:panelGrid id="header-contact2" columns="2" style="border:1px;padding-top:0px;padding-bottom:0px">
+                    <img class="dt_ltng" src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/icons/standard/contact_60.png')}" style="height:32px" /> 
+                    <img class="dt_classic" src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/contacts32.png')}" style="height:32px" />
+                    <span style="padding-top:0px;padding-bottom:0px;width:250px;" class="lbl_section">
+                        &nbsp;{!CheckResult4Contacts}&nbsp;
+                        <img id="theContactFlagImage" src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/Alert_red.png')}" width="24" height="24" title="{!$Label.TRIMEC__YellowFlagText}" style="{!IF(MatchResult.ContactNote != null, '', 'display:none;')}" />
+                    </span> 
+                </apex:panelGrid>
+                <apex:panelGroup style="text-align:right;">
+                    <!-- Lightning / Mobile -->
+                    <!-- OLD 
+                     <apex:commandButton value="{!$Label.trimec__create_new_contact}" id="btnNewContact" action="{!invokeNewContact}" onclick="sForce1Create('Contact')"  disabled="{!not MatchResult.Checked}" styleClass="slds-button slds-button--neutral dt_ltng" style="font-weight: normal;" />
+                    -->
+                     <!-- NEW-->
+                    <apex:outputPanel rendered="{!Not MatchResult.Checked}" styleClass="dt_ltng_new">
+                        <button class="slds-button slds-button--neutral" disabled="true">{!$Label.trimec__create_new_contact}</button>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!Crts.size = 0 && MatchResult.Checked}" styleClass="dt_ltng_new">
+                        <a href="javascript:sforce.one.createRecord('Contact', null, {
+                                                                    'Account':'{!Company}', 
+                                                                    'FirstName':'{!FirstName}',
+                                                                    'LastName' : '{!LastName}',
+                                                                    'Email' : '{!Email}',
+                                                                    'MailingStreet' : '{!Street}',
+                                                                    'MailingCity' : '{!City}',
+                                                                    'MailingPostalCode' : '{!PostCode}',
+                                                                    'MailingState' : '{!State}',
+                                                                    'MailingCountry' : '{!Country}',
+                                                                    'Phone' : '{!Phone}',
+                                                                    'Fax' : '{!Fax}',
+                                                                    'MobilePhone' : '{!Mobile}'
+                                                                    });" class="slds-button slds-button--neutral ">{!$Label.trimec__create_new_contact}</a>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!Crts.size = 1 && MatchResult.Checked}" styleClass="dt_ltng_new">
+                        <a href="javascript:sforce.one.createRecord('Contact','{!Crts[0].id}',{
+                                                                    'Account':'{!Company}', 
+                                                                    'FirstName':'{!FirstName}',
+                                                                    'LastName' : '{!LastName}',
+                                                                    'Email' : '{!Email}',
+                                                                    'MailingStreet' : '{!Street}',
+                                                                    'MailingCity' : '{!City}',
+                                                                    'MailingPostalCode' : '{!PostCode}',
+                                                                    'MailingState' : '{!State}',
+                                                                    'MailingCountry' : '{!Country}',
+                                                                    'Phone' : '{!Phone}',
+                                                                    'Fax' : '{!Fax}',
+                                                                    'MobilePhone' : '{!Mobile}'
+                                                                    });" class="slds-button slds-button--neutral ">{!$Label.trimec__create_new_Contact}  ({!Crts[0].Name})</a>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!Crts.size > 1 && MatchResult.Checked}" styleClass="dt_ltng_new">
+                         <div class="slds-dropdown-trigger slds-button--last">
+                            <div class="slds-button slds-button--neutral" style="font-weight:normal;">
+                                 Create Contact(by Type)
+                                <span class="slds-assistive-text">Select</span>
+                            </div>
+                            <div class="slds-dropdown slds-dropdown--right slds-dropdown--menu" style="text-align:left">
+                                <ul class="slds-dropdown__list" role="menu">
+                                    <apex:repeat value="{!Crts}" var="rt">
+                                        <li class="slds-dropdown__item" style="margin-left:0.25rem;"><a href="javascript:sforce.one.createRecord('Contact','{!rt.id}',{
+                                                                    'Account':'{!Company}', 
+                                                                    'FirstName':'{!FirstName}',
+                                                                    'LastName' : '{!LastName}',
+                                                                    'Email' : '{!Email}',
+                                                                    'MailingStreet' : '{!Street}',
+                                                                    'MailingCity' : '{!City}',
+                                                                    'MailingPostalCode' : '{!PostCode}',
+                                                                    'MailingState' : '{!State}',
+                                                                    'MailingCountry' : '{!Country}',
+                                                                    'Phone' : '{!Phone}',
+                                                                    'Fax' : '{!Fax}',
+                                                                    'MobilePhone' : '{!Mobile}'
+                                                                    });" class="slds-button slds-button--neutral" style="padding:0;text-align:inherit;" >{!$Label.trimec__create_new_contact}  ({!rt.Name})</a></li>  
+                                    </apex:repeat>
+                                </ul>
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                    <apex:commandButton value="{!$Label.trimec__create_new_person}" id="btnNewPersonAccount_ltng" action="{!invokeNewPersonAccount}" rendered="{!Settings.CheckPersonAccounts}" disabled="{!not AND(MatchResult.Checked,Settings.CheckPersonAccounts)}" styleClass="slds-button slds-button--neutral  dt_ltng" style="font-weight: normal;" />
+                    <apex:commandButton value="{!$Label.trimec__merge}" id="btnMergeContacts2" action="{!invokeMergeContacts}" title="{!$Label.trimec__merge}" styleClass="slds-button slds-button--neutral dt_ltng dt_browser" style="font-weight: normal;" rendered="{!NOT Settings.Hide_MergeButton}" disabled="{!NoOfContacts <2}" />
+
+                    <!-- CLASSIC -->
+                     <apex:outputPanel styleClass="dt_classic_new" style="text-align:right;">
+                         <!-- Lightning style -->
+                         <apex:outputPanel rendered="{!Settings.ClassicTheme = false}">
+                            <apex:outputLink id="btnNewContact_classic_ltngstyle" value="{!NewContactUrl}" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!MatchResult.Checked}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_contact}</apex:outputLink>
+                            <apex:outputLink id="btnNewPersonAccount_classic_ltngstyle" value="{!NewPesonUrl}" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!AND(MatchResult.Checked,Settings.CheckPersonAccounts)}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_person}</apex:outputLink>
+                        </apex:outputPanel>
+                         
+                        <apex:outputPanel rendered="{!Settings.ClassicTheme = true && MatchResult.Checked}">
+                             <!--Use recordtypes ala lightning incl.: picklist ==> Do not use RT selector-->
+                            <apex:outputPanel rendered="{!Crts.size = 0}" styleclass="dt_classic_new">
+                                <apex:outputLink id="btnNewContact_classic_ltngstyle1" value="{!NewContactUrl}" StyleClass="slds-button slds-button--neutral dt_ltng" rendered="{!MatchResult.Checked}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_contact}</apex:outputLink>
+                                <apex:outputLink id="btnNewPersonAccount_classic_ltngstyle1" value="{!NewPesonUrl}" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!AND(MatchResult.Checked,Settings.CheckPersonAccounts)}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_person}</apex:outputLink>
+                            </apex:outputPanel>    
+                            <apex:outputPanel rendered="{!Crts.size = 1}" styleclass="dt_classic_new">
+                                <apex:outputLink id="btnNewContact_classic_ltngstyle2" value="{!NewContactUrl}" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!MatchResult.Checked}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_contact} ({!Crts[0].Name})</apex:outputLink>
+                                <apex:outputLink id="btnNewPersonAccount_classic_ltngstyle2" value="{!NewPesonUrl}" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!AND(MatchResult.Checked,Settings.CheckPersonAccounts)}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_person} ({!Crts[0].Name})</apex:outputLink>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!Crts.size > 1}" styleclass="dt_classic_new">
+                                <div id="btnNewContact_classic_ltgnstyle3" class="slds-dropdown-trigger slds-button--last">
+                                    <div class="slds-button slds-button--neutral" style="font-weight:normal;">
+                                         Create Contact (by Type)
+                                         <span class="slds-assistive-text">Select</span>
+                                    </div>
+                                    <div class="slds-dropdown slds-dropdown--right slds-dropdown--menu" style="text-align:left">
+                                        <ul class="slds-dropdown__list" role="menu">
+                                            <apex:repeat value="{!Crts}" var="rt">
+                                                <li class="slds-dropdown__item" style="margin-left:0.25rem;"><a href="{!NewContactUrl}&RecordType={!rt.id}" class="slds-button slds-button--neutral" style="padding:0;text-align:inherit;" >{!$Label.trimec__create_new_contact}  ({!rt.Name})</a></li>  
+                                            </apex:repeat>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- No Dropdown for Person accounts-->
+                                <apex:outputLink id="btnNewPersonAccount_classic_ltngstyle3" value="{!NewPesonUrl}" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!AND(MatchResult.Checked,Settings.CheckPersonAccounts)}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_person}</apex:outputLink>
+                            </apex:outputPanel>
+                        </apex:outputPanel>
+                        
+                         <!-- OLD
+                         <apex:outputLink id="btnNewContact1" value="{!NewContactUrl}" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!AND(MatchResult.Checked,Settings.CheckContacts)}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_contact}</apex:outputLink>
+                         <apex:outputLink id="btnNewPersonAccount1" value="{!NewPesonUrl}" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!AND(MatchResult.Checked,Settings.CheckPersonAccounts)}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_person}</apex:outputLink>
+                         -->
+                         <apex:outputLink id="btnNewContact1disabled1" value="#" styleClass="slds-button slds-button--neutral dt_btn_disabled dt_ltng" rendered="{!AND(not MatchResult.Checked,Settings.CheckContacts)}" style="font-weight: normal;padding: 0.5rem;background-color:white;color:#d8dde6;cursor:default;" >{!$Label.trimec__create_new_contact}</apex:outputLink>
+                         <apex:outputLink id="btnNewPersonAccount1disabled1" value="#" styleClass="slds-button slds-button--neutral dt_btn_disabled dt_ltng" rendered="{!AND(Not MatchResult.Checked,Settings.CheckPersonAccounts)}" style="font-weight: normal;padding: 0.5rem;background-color:white;color:#d8dde6;cursor:default;">{!$Label.trimec__create_new_person}</apex:outputLink>
+                         <apex:commandButton value="{!$Label.trimec__merge}" id="btnMergeContacts1" action="{!invokeMergeContacts}" title="{!$Label.trimec__merge}" styleClass="slds-button slds-button--neutral dt_ltng" style="font-weight: normal;" rendered="{!NOT Settings.Hide_MergeButton}"  disabled="{!NoOfContacts < 2}" />
+                         
+                         <!-- Classic style -->
+                         <apex:outputLink id="btnNewContact" value="{!NewContactUrl}" styleClass="slds-button slds-button--brand dt_classic" rendered="{!AND(MatchResult.Checked,Settings.CheckContacts)}">{!$Label.trimec__create_new_contact}</apex:outputLink>
+                         <apex:outputLink id="btnNewContact1disabled" value="#" styleClass="slds-button slds-button--brand dt_btn_disabled dt_classic" rendered="{!AND(not MatchResult.Checked,Settings.CheckContacts)}" style="border-color:transparent;background-color:#e0e5ee;color:white;cursor:default;">{!$Label.trimec__create_new_contact}</apex:outputLink>
+                         <apex:outputLink id="btnNewPersonAccount" value="{!NewPesonUrl}" styleClass="slds-button slds-button--brand dt_classic" rendered="{!AND(MatchResult.Checked,Settings.CheckPersonAccounts)}">{!$Label.trimec__create_new_person}</apex:outputLink>
+                         <apex:outputLink id="btnNewPersonAccount1disabled" value="#" styleClass="slds-button slds-button--brand dt_btn_disabled dt_classic" rendered="{!AND(Not MatchResult.Checked,Settings.CheckPersonAccounts)}" style="border-color:transparent;background-color:#e0e5ee;color:white;cursor:default;">{!$Label.trimec__create_new_person}</apex:outputLink>
+                         <apex:commandButton value="{!$Label.trimec__merge}" id="btnMergeContacts" action="{!invokeMergeContacts}" title="{!$Label.trimec__merge}" styleClass="slds-button slds-button--brand dt_classic" style="font-weight: normal;" rendered="{!NOT Settings.Hide_MergeButton}"  disabled="{!NoOfContacts < 2}" />
+                    </apex:outputPanel>
+                    <!-- pre 2017-03-02
+                    <apex:panelGroup styleClass="pbButton " style="text-align:right;">
+                            <apex:commandButton value="{!$Label.trimec__create_new_contact}" id="btnNewContact" action="{!invokeNewContact}" rendered="{!Settings.CheckContacts}" disabled="{!not AND(MatchResult.Checked,Settings.CheckContacts)}" styleClass="slds-button slds-button--neutral dt_ltng" style="font-weight: normal;" />
+                            <apex:commandButton value="{!$Label.trimec__create_new_person}" id="btnNewPersonAccount" action="{!invokeNewPersonAccount}" rendered="{!Settings.CheckPersonAccounts}" disabled="{!not AND(MatchResult.Checked,Settings.CheckPersonAccounts)}" styleClass="slds-button slds-button--neutral  dt_ltng" style="font-weight: normal;" />
+                            <apex:commandButton value="{!$Label.trimec__merge}" id="btnMergeContacts" action="{!invokeMergeContacts}" title="{!$Label.trimec__merge}" styleClass="slds-button slds-button--neutral  dt_ltng" style="font-weight: normal;" rendered="{!NOT Settings.Hide_MergeButton}"  disabled="{!NoOfContacts < 2}" />
+    
+                            <apex:outputLink id="btnNewContact1" value="{!NewContactUrl}" styleClass="slds-button slds-button--brand dt_classic" rendered="{!AND(MatchResult.Checked,Settings.CheckContacts)}">{!$Label.trimec__create_new_contact}</apex:outputLink>
+                            <apex:outputLink id="btnNewContact1disabled" value="#" styleClass="slds-button slds-button--brand dt_btn_disabled dt_classic" rendered="{!AND(not MatchResult.Checked,Settings.CheckContacts)}" style="border-color:transparent;background-color:#e0e5ee;color:white;cursor:default;">{!$Label.trimec__create_new_contact}</apex:outputLink>
+                            <apex:outputLink id="btnNewPersonAccount1" value="{!NewPesonUrl}" styleClass="slds-button slds-button--brand dt_classic" rendered="{!AND(MatchResult.Checked,Settings.CheckPersonAccounts)}">{!$Label.trimec__create_new_person}</apex:outputLink>
+                            <apex:outputLink id="btnNewPersonAccount1disabled" value="#" styleClass="slds-button slds-button--brand dt_btn_disabled dt_classic" rendered="{!AND(Not MatchResult.Checked,Settings.CheckPersonAccounts)}" style="border-color:transparent;background-color:#e0e5ee;color:white;cursor:default;">{!$Label.trimec__create_new_person}</apex:outputLink>
+                            <apex:commandButton value="{!$Label.trimec__merge}" id="btnMergeContacts1" action="{!invokeMergeContacts}" title="{!$Label.trimec__merge}" styleClass="slds-button slds-button--brand dt_classic" style="font-weight: normal;" rendered="{!NOT Settings.Hide_MergeButton}"  disabled="{!NoOfContacts < 2}" />
+                    </apex:panelGroup>
+                    -->
+              </apex:panelGroup>
+              </apex:panelGrid>
+          </apex:facet>
+
+          <apex:outputPanel rendered="{!MatchResult.Checked}">
+             <apex:outputPanel id="resultPanelContact" layout="block" rendered="{!showContacts}">
+              <!-- Contact Table-->
+               <apex:dataTable id="ContactList" styleClass="slds-table slds-table--bordered" value="{!MatchResult.MatchedContacts}" var="c" >
+                    <apex:column rendered="{!NOT Settings.Hide_MergeButton}" width="1">
+                        <apex:facet name="header">{!$Label.trimec__select}</apex:facet>
+                        <apex:inputCheckbox title="{!$Label.trimec__err_max3con}" value="{!c.selected}" id="checkedoneContact" />
+                    </apex:column>
+                    <apex:column width="1">
+                        <apex:facet name="header" >{!$Label.trimec__action}</apex:facet>
+                        <apex:outputLink rendered="{!c.HasEditAccess}" value="/{!c.id}/e" >{!$Label.trimec__edit}</apex:outputLink>
+                        <apex:outputLink rendered="{!Not c.HasEditAccess}" value="{!Settings.Action_Page_Share_Contact}&id={!c.id}&owner={!c.OwnerId}" >{!$Label.trimec__request_share_permissions}</apex:outputLink>
+                    </apex:column>
+                    <apex:column rendered="{!Settings.ClassifyDupes}">
+                        <apex:facet name="header" >{!$Label.trimec__match_level}</apex:facet>
+                        <apex:image title="({!c.MatchScore}{!IF(Settings.debugOn = true,c.Scores,'')})" value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck,c.ClassImage)}" /> 
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header" >{!$ObjectType.contact.fields.name.label}</apex:facet>
+                        <apex:outputLink rendered="{!c.HasReadAccess}" value="/{!c.id}" >{!c.contact.name}</apex:outputLink>
+                        <apex:outputText rendered="{!Not c.HasReadAccess}">{!c.contact.name}</apex:outputText>
+                    </apex:column>
+                    
+                        <apex:repeat value="{!$ObjectType.Contact.FieldSets.TRIMEC__EC_Field_Set}" var="f">
+                            <apex:column rendered="{!f.fieldpath != 'AccountId' && f.fieldpath != 'OwnerId' && f.Type != 'date'}" style="{!if(f.Type == 'currency', 'text-align:right;','') }">
+                                    <apex:facet name="header" >{!f.Label}&nbsp;</apex:facet> 
+                                    <!--{!c.contact[f]}-->
+                                <apex:outputField value="{!c.contact[f]}"/>
+                            </apex:column>
+                            
+                           <apex:column rendered="{!f.Type == 'date'}">
+                                <apex:facet name="header" >{!f.Label}&nbsp;</apex:facet>  
+                               <apex:outputField value="{!c.contact[f]}"/>
+                            </apex:column>
+                            
+                            <apex:column rendered="{!f.fieldpath == 'AccountId'}">
+                                <apex:facet name="header" >{!$ObjectType.account.fields.Name.label}&nbsp;</apex:facet> 
+                                <apex:outputLink value="/{!c.id}?retURL={!c.contact.AccountId}" title="View {!c.contact.AccountId}" target="_blank" > {!c.contact.Account.Name}</apex:outputLink>
+                            </apex:column>
+        
+                            <apex:column rendered="{!f.fieldpath == 'OwnerId'}">
+                                <apex:facet name="header" >{!$Label.TRIMEC__Owner}&nbsp;</apex:facet> 
+                                <apex:outputLink value="/{!c.id}?retURL={!c.contact.OwnerId}" title="View {!c.contact.OwnerId}" target="_blank" > {!c.contact.Owner.Name}</apex:outputLink>
+                            </apex:column>
+                       </apex:repeat>
+                </apex:dataTable>    
+             </apex:outputPanel>
+           </apex:outputPanel>
+     </apex:pageBlock>
+     </div>
+     </apex:form>
+     
+     <!-- ACCOUNT OUTPUT -->
+    <apex:outputPanel id="resultPanelaccountAll" layout="block" rendered="{!AND(DisplayAccResults,Settings.CheckAccounts)}">
+    <apex:form id="theAccountForm">
+    <div class="slds">
+      <apex:pageBlock id="theAccountpageBlock" title="{!CheckResult4Accounts}"  tabStyle="Account">
+          <apex:facet name="header" >
+            <apex:panelGrid id="headeraccount" columns="2"   style="border:1px;padding-top:0px;padding-bottom:0px">
+                <apex:panelGrid id="headeraccount2" columns="2"   style="border:1px;padding-top:0px;padding-bottom:0px">
+                    <img class="dt_ltng" src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/icons/standard/account_60.png')}" style="height:32px" /> 
+                    <img class="dt_classic" src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/accounts32.png')}" style="height:32px" />
+                    <span style="padding-top:0px;padding-bottom:0px;width:250px;" class="lbl_section">
+                        &nbsp;{!CheckResult4Accounts}&nbsp;
+                        <img id="theAccountFlagImage" src="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/img/Alert_red.png')}" width="24" height="24" title="{!$Label.TRIMEC__YellowFlagText}" style="{!IF(MatchResult.AccountNote != null, '', 'display:none;')}"  /> 
+                    </span>
+                </apex:panelGrid>
+                <apex:panelGroup style="text-align:right;">
+                    <!-- Lightning / Mobile -->
+                    <!-- OLD 
+                     <apex:commandButton value="{!$Label.trimec__create_new_account}" id="btnNewAccount" action="{!invokeNewAccount}" onclick="sForce1Create('Account')"  disabled="{!not MatchResult.Checked}" styleClass="slds-button slds-button--neutral dt_ltng" style="font-weight: normal;" />
+                    -->
+                     <!-- NEW-->
+                    <apex:outputPanel rendered="{!Arts.size = 0}" styleclass="dt_ltng_new">
+                     <a href="javascript:sforce.one.createRecord('Account', null, {
+                                                                    'Name':'{!Company}', 
+                                                                    'BillingStreet' : '{!Street}',
+                                                                    'BillingCity' : '{!City}',
+                                                                    'BillingPostalCode' : '{!PostCode}',
+                                                                    'BillingState' : '{!State}',
+                                                                    'BillingCountry' : '{!Country}',
+                                                                    'Phone' : '{!Phone}',
+                                                                    'Fax' : '{!Fax}',
+                                                                    'Website' : '{!Website}'
+                                                                    });" class="slds-button slds-button--neutral ">{!$Label.trimec__create_new_account})</a>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!Arts.size = 1}" styleclass="dt_ltng_new">
+                        <a onclick="javascript:sforce.one.createRecord('Account','{!Arts[0].id}',{
+                                                                    'Name':'{!Company}', 
+                                                                    'BillingStreet' : '{!Street}',
+                                                                    'BillingCity' : '{!City}',
+                                                                    'BillingPostalCode' : '{!PostCode}',
+                                                                    'BillingState' : '{!State}',
+                                                                    'BillingCountry' : '{!Country}',
+                                                                    'Phone' : '{!Phone}',
+                                                                    'Fax' : '{!Fax}',
+                                                                    'Website' : '{!Website}'
+                                                                    });" class="slds-button slds-button--neutral ">{!$Label.trimec__create_new_account}  ({!Arts[0].Name})</a>
+                    </apex:outputPanel>
+                    <apex:outputPanel rendered="{!Arts.size > 1}" styleclass="dt_ltng_new">
+                         <div class="slds-dropdown-trigger slds-button--last">
+                            <div class="slds-button slds-button--neutral" style="font-weight:normal;">
+                                 Create Account (by Type)
+                                 <span class="slds-assistive-text">Select</span>
+                            </div>
+                            <div class="slds-dropdown slds-dropdown--right slds-dropdown--menu" style="text-align:left">
+                                <ul class="slds-dropdown__list" role="menu">
+                                    <apex:repeat value="{!Arts}" var="rt">
+                                        <li class="slds-dropdown__item" style="margin-left:0.25rem;"><a href="javascript:sforce.one.createRecord('Account','{!rt.id}',{
+                                                                    'Name':'{!Company}', 
+                                                                    'BillingStreet' : '{!Street}',
+                                                                    'BillingCity' : '{!City}',
+                                                                    'BillingPostalCode' : '{!PostCode}',
+                                                                    'BillingState' : '{!State}',
+                                                                    'BillingCountry' : '{!Country}',
+                                                                    'Phone' : '{!Phone}',
+                                                                    'Fax' : '{!Fax}',
+                                                                    'Website' : '{!Website}'
+                                                                    });" class="slds-button slds-button--neutral" style="padding:0;text-align:inherit;" >{!$Label.trimec__create_new_account}  ({!rt.Name})</a></li>  
+                                    </apex:repeat>
+                                </ul>
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                    <apex:commandButton value="{!$Label.trimec__merge}" id="btnMergeAccounts2" action="{!invokeMergeAccounts}" title="{!$Label.trimec__merge}" styleClass="slds-button slds-button--neutral dt_ltng dt_browser" style="font-weight: normal;" rendered="{!NOT Settings.Hide_MergeButton}" disabled="{!NoOfAccounts <2}" />
+
+                    <!-- CLASSIC -->
+                    <apex:outputPanel styleclass="dt_classic_new">
+                        <!-- Lightning style -->
+                        <apex:outputPanel rendered="{!Settings.ClassicTheme = false}">
+                            <apex:outputLink id="btnNewAccount_classic_ltgnstyle" value="{!NewAccountUrl}" onclick="sForce1Create('Account')" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!MatchResult.Checked}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_account}</apex:outputLink>
+                        </apex:outputPanel>
+                        
+                        <apex:outputPanel rendered="{!Settings.ClassicTheme = true}">
+                             <!--Use recordtypes ala lightning incl.: picklist ==> Do not use salesforce RT Selector-->
+                            <apex:outputPanel rendered="{!Arts.size = 0}" styleclass="dt_classic_new">
+                                <apex:outputLink id="btnNewAccount_classic_ltgnstyle1" value="{!NewAccountUrl}" onclick="sForce1Create('Account')" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!MatchResult.Checked}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_account}</apex:outputLink>
+                            </apex:outputPanel>    
+                            <apex:outputPanel rendered="{!Arts.size = 1}" styleclass="dt_classic_new">
+                                <apex:outputLink id="btnNewAccount_classic_ltgnstyle2" value="{!NewAccountUrl}" onclick="sForce1Create('Account')" styleClass="slds-button slds-button--neutral dt_ltng" rendered="{!MatchResult.Checked}" style="font-weight: normal;padding: 0.5rem;">{!$Label.trimec__create_new_account} ({!Arts[0].Name})</apex:outputLink>
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!Arts.size > 1}" styleclass="dt_classic_new">
+                                <div id="btnNewAccount_classic_ltgnstyle3" class="slds-dropdown-trigger slds-button--last">
+                                    <div class="slds-button slds-button--neutral" style="font-weight:normal;">
+                                         Create Account (by Type)
+                                         <span class="slds-assistive-text">Select</span>
+                                    </div>
+                                    <div class="slds-dropdown slds-dropdown--right slds-dropdown--menu" style="text-align:left">
+                                        <ul class="slds-dropdown__list" role="menu">
+                                            <apex:repeat value="{!Arts}" var="rt">
+                                                <li class="slds-dropdown__item" style="margin-left:0.25rem;"><a href="{!NewAccountUrl}&RecordType={!rt.id}" class="slds-button slds-button--neutral" style="padding:0;text-align:inherit;" >{!$Label.trimec__create_new_account}  ({!rt.Name})</a></li>  
+                                            </apex:repeat>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </apex:outputPanel>
+                        </apex:outputPanel>
+                        
+                         <apex:outputLink id="btnNewAccount1disabled1" value="#" onclick="sForce1Navigate('#')" styleClass="slds-button slds-button--neutral dt_btn_disabled dt_ltng" rendered="{!not MatchResult.Checked}" style="font-weight: normal;padding: 0.5rem;background-color:white;color:#d8dde6;cursor:default;">{!$Label.trimec__create_new_account}</apex:outputLink>
+                         <apex:commandButton value="{!$Label.trimec__merge}" id="btnMergeAccounts1" action="{!invokeMergeAccounts}" title="{!$Label.trimec__merge}" styleClass="slds-button slds-button--neutral dt_browser dt_ltng" style="font-weight: normal;" rendered="{!NOT Settings.Hide_MergeButton}" disabled="{!NoOfAccounts <2}" />
+
+                         <!-- Classic style -->
+                         <apex:outputLink id="btnNewAccount" value="{!NewAccountUrl}" onclick="sForce1Create('Account')" styleClass="slds-button slds-button--brand dt_classic" rendered="{!MatchResult.Checked}">{!$Label.trimec__create_new_account}</apex:outputLink>
+                         <apex:outputLink id="btnNewAccount1disabled" value="#" onclick="sForce1Navigate('#')" styleClass="slds-button slds-button--brand dt_btn_disabled dt_classic" rendered="{!not MatchResult.Checked}" style="border-color:transparent;background-color:#e0e5ee;color:white;cursor:default;">{!$Label.trimec__create_new_account}</apex:outputLink>
+                         <!--<apex:commandButton value="{!$Label.trimec__create_new_account}" id="btnNewAccount1" action="{!invokeNewAccount}" disabled="{!not MatchResult.Checked}" styleClass="slds-button slds-button--brand " style="font-weight: normal;" />-->
+                         <apex:commandButton value="{!$Label.trimec__merge}" id="btnMergeAccounts" action="{!invokeMergeAccounts}" title="{!$Label.trimec__merge}" styleClass="slds-button slds-button--brand  dt_browser dt_classic" style="font-weight: normal;" rendered="{!NOT Settings.Hide_MergeButton}" disabled="{!NoOfAccounts <2}" />
+                    </apex:outputPanel>
+                </apex:panelGroup>
+              </apex:panelGrid>
+          </apex:facet>
+
+          <apex:outputPanel rendered="{!MatchResult.Checked}">
+             <apex:outputPanel id="resultPanelAccount" layout="block" rendered="{!showAccounts}">
+              <!-- Account Table --> 
+                <apex:dataTable id="AccountList" styleClass="slds-table slds-table--bordered" value="{!MatchResult.MatchedAccounts}" var="a" >
+                        <apex:column rendered="{!NOT Settings.Hide_MergeButton}" width="1">
+                            <apex:facet name="header">{!$Label.trimec__select}</apex:facet>
+                            <apex:inputCheckbox title="{!$Label.trimec__err_max3acc}" value="{!a.selected}" id="checkedoneAccount" />
+                        </apex:column>
+                        <apex:column width="1">
+                            <apex:facet name="header" >{!$Label.trimec__action}</apex:facet>
+                            <!-- <apex:outputLink value="/{!a.id}/e" >{!$Label.trimec__edit}</apex:outputLink> -->
+                            <apex:outputLink rendered="{!a.HasEditAccess}" value="/{!a.id}/e" >{!$Label.trimec__edit}</apex:outputLink>
+                            <apex:outputLink rendered="{!Not a.HasEditAccess}" value="{!Settings.Action_Page_Share_Account}&id={!a.id}&owner={!a.OwnerId}" >{!$Label.trimec__request_share_permissions}</apex:outputLink>
+                       </apex:column>
+                       <apex:column width="1">
+                            <apex:facet name="header" ></apex:facet>
+                           	<!-- LIGHTNING -->
+                           <a href="javascript:sforce.one.createRecord('Contact', null, {
+                                                                    'AccountId':'{!a.id}', 
+                                                                    'FirstName':'{!FirstName}',
+                                                                    'LastName' : '{!LastName}',
+                                                                    'Email' : '{!Email}',
+                                                                    'MailingStreet' : '{!Street}',
+                                                                    'MailingCity' : '{!City}',
+                                                                    'MailingPostalCode' : '{!PostCode}',
+                                                                    'MailingState' : '{!State}',
+                                                                    'MailingCountry' : '{!Country}',
+                                                                    'Phone' : '{!Phone}',
+                                                                    'Fax' : '{!Fax}',
+                                                                    'MobilePhone' : '{!Mobile}'
+                                                                    });" style="{!If($User.UIThemeDisplayed =='Theme4d', '','display:none')}">{!$Label.trimec__create_new_contact}</a>
+                            <!-- CLASSIC-->
+                            <apex:outputLink id="lnkNewContact" value="{!NewContactUrl}&accid={!a.id}" style="{!If($User.UIThemeDisplayed !='Theme4d', '','display:none')}" >{!$Label.trimec__create_new_contact}</apex:outputLink>
+                            <!-- <apex:commandLink action="{!invokeNewContact}" value="{!$Label.trimec__create_new_contact}" id="lnkNewContact" ><apex:param name="accid2" value="{!a.id}" /></apex:commandLink> -->
+                       </apex:column>                      
+                       <apex:column rendered="{!Settings.ClassifyDupes}">
+                           <apex:facet name="header" >{!$Label.trimec__match_level}</apex:facet>
+                           <apex:image title="({!a.MatchScore}{!IF(Settings.debugOn = true,a.Scores,'')})" value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck,a.ClassImage)}" /> 
+                       </apex:column>
+                       <apex:column >
+                           <apex:facet name="header" >{!$ObjectType.account.fields.name.label}</apex:facet>
+                           <apex:outputLink value="/{!a.id}" >{!a.account.name}</apex:outputLink>
+                       </apex:column>
+                       
+                       <apex:repeat value="{!$ObjectType.Account.FieldSets.TRIMEC__EC_Field_Set}" var="f">
+                            <apex:column rendered="{!f.fieldpath != 'ParentId' && f.fieldpath != 'OwnerId' }" style="{!if(f.Type == 'currency', 'text-align:right;','') }">
+                                    <apex:facet name="header" >{!f.Label}&nbsp;</apex:facet> 
+                                   
+                                <apex:outputField value="{!a.account[f]}"/>
+                            </apex:column>
+                           
+                            <apex:column rendered="{!f.fieldpath == 'ParentId'}">
+                                <apex:facet name="header" >{!$ObjectType.account.fields.ParentId.label}&nbsp;</apex:facet> 
+                                <apex:outputLink value="/{!a.id}?retURL={!a.account.ParentId}" title="View {!a.account.ParentId}" target="_blank" > {!a.account.Parent.Name}</apex:outputLink>
+                            </apex:column>
+        
+                            <apex:column rendered="{!f.fieldpath == 'OwnerId'}">
+                                <apex:facet name="header" >{!$Label.TRIMEC__Owner}&nbsp;</apex:facet> 
+                                <apex:outputLink value="/{!a.id}?retURL={!a.account.OwnerId}" title="View {!a.account.OwnerId}" target="_blank" > {!a.account.Owner.Name}</apex:outputLink>
+                            </apex:column>
+                       </apex:repeat>
+                       
+                   </apex:dataTable>   
+             </apex:outputPanel>
+           </apex:outputPanel>
+     </apex:pageBlock>
+     </div>
+     </apex:form>
+     </apex:outputPanel>
+<br />
+
+    <!-- November 2015, default is Classic, setting = true => Lighting -->
+    <script type="text/javascript">
+    
+        function isLightningExperienceOrSalesforce1() {
+            return((typeof sforce != 'undefined') && sforce && (!!sforce.one));
+        }
+    
+        var myE_classic = document.querySelectorAll(".dt_classic");
+        var myE_ltng = document.querySelectorAll(".dt_ltng");
+        var myE_classic_new = document.querySelectorAll(".dt_classic_new");
+        var myE_ltng_new = document.querySelectorAll(".dt_ltng_new");
+        var myE_lbl = document.querySelectorAll(".lbl_section");
+      
+        var myL_testCol = document.querySelectorAll(".testcol");
+      //    let select = document.querySelector('.testcol');
+      //let myL_testColHeader = select.querySelectorAll('th');
+      
+
+        if(isLightningExperienceOrSalesforce1() == true) {
+            /* lightning Experience */
+            for (var i = 0; i < myE_classic.length; i++) {myE_classic[i].style.display = "none";}
+            for (var i = 0; i < myE_ltng.length; i++) {myE_ltng[i].style.display = "initial";}
+            for (var i = 0; i < myE_classic_new.length; i++) {myE_classic_new[i].style.display = "none";}
+            for (var i = 0; i < myE_ltng_new.length; i++) {myE_ltng_new[i].style.display = "initial";}
+            
+            for (var i = 0; i < myE_lbl.length; i++) {myE_lbl[i].style.fontWeight= "normal";}
+            for (var i = 0; i < myE_lbl.length; i++) {myE_lbl[i].style.color= "white";}
+            document.getElementById('{!$Component.ECPage.theLeadForm.theLeadpageBlock.headerlead}').className = "slds-icon-standard-lead";
+            document.getElementById('{!$Component.ECPage.theContactForm.theContactpageBlock.headercontact}').className = "slds-icon-standard-contact";
+            document.getElementById('{!$Component.ECPage.theAccountForm.theAccountpageBlock.headeraccount}').className = "slds-icon-standard-account";
+            document.getElementById('{!$Component.ECPage.mainform.mainpageBlock.btnSearch}').style.display = "initial";
+            document.getElementById('{!$Component.ECPage.mainform.mainpageBlock.btnSearchclassic}').style.display = "none";
+            
+            //for (var i = 0; i < myL_testCol.length; i++) {myL_testCol[i].style.display = "none";}
+            //for (var i = 0; i < myL_testColHeader.length; i++) {myL_testColHeader[i].style.display = "none";}
+        }else if({!Settings.ClassicTheme} == true) {
+            /* Classic view with Lithtning Theme */
+            /* same as above but with classic NEW buttons */
+            for (var i = 0; i < myE_classic.length; i++) {myE_classic[i].style.display = "none";}
+            for (var i = 0; i < myE_ltng.length; i++) {myE_ltng[i].style.display = "initial";}
+            for (var i = 0; i < myE_classic_new.length; i++) {myE_classic_new[i].style.display = "initial";}    //Opposite from above
+            for (var i = 0; i < myE_ltng_new.length; i++) {myE_ltng_new[i].style.display = "none";}             //Opposite from above
+            
+            for (var i = 0; i < myE_lbl.length; i++) {myE_lbl[i].style.fontWeight= "normal";}
+            for (var i = 0; i < myE_lbl.length; i++) {myE_lbl[i].style.color= "white";}
+            document.getElementById('{!$Component.ECPage.theLeadForm.theLeadpageBlock.headerlead}').className = "slds-icon-standard-lead";
+            document.getElementById('{!$Component.ECPage.theContactForm.theContactpageBlock.headercontact}').className = "slds-icon-standard-contact";
+            document.getElementById('{!$Component.ECPage.theAccountForm.theAccountpageBlock.headeraccount}').className = "slds-icon-standard-account";
+            document.getElementById('{!$Component.ECPage.mainform.mainpageBlock.btnSearch}').style.display = "initial";
+            document.getElementById('{!$Component.ECPage.mainform.mainpageBlock.btnSearchclassic}').style.display = "none";
+            
+        }else{
+            /* Classic View */
+            for (var i = 0; i < myE_classic.length; i++) {myE_classic[i].style.display = "";}
+            for (var i = 0; i < myE_ltng.length; i++) {myE_ltng[i].style.display = "none";}
+            for (var i = 0; i < myE_classic_new.length; i++) {myE_classic_new[i].style.display = "";}
+            for (var i = 0; i < myE_ltng_new.length; i++) {myE_ltng_new[i].style.display = "none";}
+            document.getElementById('{!$Component.ECPage.mainform.mainpageBlock.btnSearch}').style.display = "none";
+            document.getElementById('{!$Component.ECPage.mainform.mainpageBlock.btnSearchclassic}').style.display = "initial";
+            
+        }
+
+    </script>
+     
+     
+     <!-- DEBUG OUTPUT -->
+    <apex:outputPanel id="resultPanelDebug" layout="block" rendered="{!showLog}">
+    <div class="slds">
+      <div class="slds-notify slds-notify--alert slds-theme--alert-texture slds-theme--warning" style="text-align:left;padding-left:5px;font-size:90%;">
+           <h2>DEBUG LOG:</h2><br />
+           {!NewLeadUrl}<br />
+           {!NewContactUrl}<br />
+           {!NewAccountUrl}<br />
+           <apex:repeat value="{!LogMessages}" var="LogMessage" id="theRepeat" rendered="{!showLog}">
+               <apex:outputText value="{!LogMessage}" id="theValue"/><br/>
+           </apex:repeat>
+        </div>
+     </div>
+     </apex:outputPanel>
+ 
+ 
+ </apex:outputPanel>
+ </apex:outputPanel>
+
+
+<!-- COPYRIGHT -->
+<div style="text-align:center;font-size:xx-small;font-family:Arial;margin-top:2rem;">Copyright © 2007-<script>document.write(new Date().getFullYear())</script> DataTrim Entry Check by d2b International ApS, All rights reserved. </div>
+
+ </apex:page>

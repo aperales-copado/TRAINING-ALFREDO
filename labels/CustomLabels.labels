@@ -8,32 +8,18 @@
         <value>Potential conflict</value>
     </labels>
     <labels>
-        <fullName>ColourBlue</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>ColourBlue</shortDescription>
-        <value>Blue</value>
-    </labels>
-    <labels>
-        <fullName>ColourRed</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>ColourRed</shortDescription>
-        <value>Red</value>
-    </labels>
-    <labels>
-        <fullName>ColourWhite</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>ColourWhite</shortDescription>
-        <value>White</value>
-    </labels>
-    <labels>
         <fullName>Pablo_Rodrigo</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Pablo Rodrigo</shortDescription>
         <value>Gemelos</value>
+    </labels>
+    <labels>
+        <fullName>Test_Selenium</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Test Selenium</shortDescription>
+        <value>Selenium</value>
     </labels>
     <labels>
         <fullName>Troubleshooting_10506</fullName>

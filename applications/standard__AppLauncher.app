@@ -5,4 +5,5 @@
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <tabs>standard-AppLauncher</tabs>
+    <tabs>Copado_Integration_Setting__c</tabs>
 </CustomApplication>

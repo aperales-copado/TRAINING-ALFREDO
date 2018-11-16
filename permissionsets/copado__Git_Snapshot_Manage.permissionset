@@ -142,6 +142,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <tabSettings>
+        <tab>copado__Copado_Notification__c</tab>
+        <visibility>Available</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>copado__Git_Backup__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>

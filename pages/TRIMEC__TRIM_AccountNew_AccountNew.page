@@ -1,0 +1,7 @@
+<apex:page standardController="Account" extensions="TRIMEC.TRIM_NavigatorAllUsers" action="{!GoToEntryCheck}">
+    <apex:form >
+        <apex:pageBlock title="GoToEntryCheck">
+              <apex:commandButton action="{!GoToEntryCheck}" value="GoToEntryCheck"/>
+        </apex:pageBlock>
+    </apex:form>
+ </apex:page>
