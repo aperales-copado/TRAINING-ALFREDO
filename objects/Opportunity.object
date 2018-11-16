@@ -66,6 +66,19 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Computer__c</fullName>
+        <externalId>false</externalId>
+        <label>Computer</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>PersonalComputer</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>ContractId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>

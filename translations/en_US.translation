@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Translations xmlns="http://soap.sforce.com/2006/04/metadata">
     <customLabels>
-        <label><!-- Blue --></label>
+        <label></label>
         <name>Blue</name>
     </customLabels>
     <customLabels>
-        <label><!-- Green --></label>
+        <label></label>
         <name>Green</name>
     </customLabels>
     <customLabels>
-        <label><!-- White --></label>
+        <label></label>
         <name>White</name>
     </customLabels>
 </Translations>
