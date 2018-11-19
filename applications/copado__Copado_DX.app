@@ -14,4 +14,5 @@
     <tabs>copado__Artifact__c</tabs>
     <tabs>copado__Scratch_Org_Definition__c</tabs>
     <tabs>copado__Scratch_Org_Project_Template__c</tabs>
+    <tabs>Copado_Integration_Setting__c</tabs>
 </CustomApplication>

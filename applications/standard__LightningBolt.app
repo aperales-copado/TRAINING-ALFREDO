@@ -6,5 +6,6 @@
     <label>LightningBolt</label>
     <navType>Standard</navType>
     <tabs>standard-LightningBoltHome</tabs>
+    <tabs>Copado_Integration_Setting__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

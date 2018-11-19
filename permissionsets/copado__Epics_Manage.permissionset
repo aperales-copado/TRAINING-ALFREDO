@@ -80,4 +80,8 @@
         <object>copado__Epic__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <tabSettings>
+        <tab>copado__Copado_Notification__c</tab>
+        <visibility>Available</visibility>
+    </tabSettings>
 </PermissionSet>

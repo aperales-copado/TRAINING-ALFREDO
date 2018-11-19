@@ -5333,6 +5333,10 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
+        <tab>copado__Copado_Notification__c</tab>
+        <visibility>Available</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>copado__Deployment_Flow__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>

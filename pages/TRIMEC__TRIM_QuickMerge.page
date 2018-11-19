@@ -1,0 +1,229 @@
+<apex:page Controller="TRIMEC.TRIM_QuickMerge_Controller" sidebar="false"  >
+<apex:includeScript value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/js/jquery-2.1.1.min.js')}"/>   
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'DataTrim_EntryCheck.css')}"/>
+
+<title>Quick Merge</title>
+<style>.bRelatedList{overflow-x:auto;}</style>
+<style>
+    .dt_pbs{
+        border-radius: 0.25rem 0.25rem 0 0;
+    }
+    
+    .mergecontainer{
+        background-color: rgba(155, 177, 217, 0.33);
+    }
+    .convertcontainer{
+        background-color: rgba(242, 207, 91, 0.33);
+    }
+</style>
+
+<script>
+    function navigateBack(Theme, inline, isSuccess){
+        //alert(Theme);
+        //alert(inline);
+        //alert(isSuccess);
+        //var isSuccess = '{!success}';
+        if (inline == '0' && isSuccess == 'true'){
+            if (Theme == 'Theme4d'){
+                sforce.one.back(true);
+        	}else{
+                window.history.back();
+            }
+        }
+  }  
+</script>    
+<apex:slds />    
+<div class="slds">
+   
+<apex:form id="All" >
+    
+    
+<!--HEADER - NOT INLINE -->
+    <apex:outputPanel rendered="{!inlineQM == '0'}" >
+        <div class="slds-col slds-size--1-of-1  " style="margin:0.5rem;">
+            <div class="slds-col slds-has-flexi-truncate">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <img src="{!URLFOR($Resource.DataTrim_EntryCheck, 'MatchedRecords48x40_NL.png')}" style="height:2.5rem;" title="DataTrim Matched Records" />
+                    </div>
+                    <div class="slds-media__body">
+                        <p class="slds-text-heading--label" >DataTrim</p>
+                        <div class="slds-grid">
+                            <h1 class="slds-text-heading--medium slds-m-right--small slds-truncate slds-align-middle" title="Quick Merge"><strong>Quick Merge</strong></h1>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </apex:outputPanel>
+    <!--
+    reviewQC:{!reviewQC}<br />
+    inlineQC:{!inlineQC} 
+	-->
+    
+<!-- HEADER INLINE -->     
+    <div class="slds-grid slds-wrap"> 
+        <div class="slds-col slds-size--1-of-1 " style="font-size:0.8rem;">
+              <apex:pageBlock id="QuickMerge" title="Merge" >
+                <apex:facet name="header" >
+                    <apex:panelGroup rendered="{!inlineQM != '0'}">
+                        <div class="slds-grid pbSubheader first tertiaryPalette dt_pbs" style="border:1px;padding:0.5rem;padding-left:0.8rem;font-size:1.3rem;text-align:left;">
+                                 &nbsp;Quick Merge&nbsp;
+                        </div>
+                      </apex:panelGroup>
+                </apex:facet>  
+                  
+ <!--SUCCESS--> 
+                <apex:outputPanel id="SuccessSection"  rendered="{!success == true}">                        
+                    
+                    <div style="margin-bottom:0.5rem;">
+                          <div class="slds-grid slds-wrap"> 
+                              <div class="slds-col slds-size--1-of-1 " style="font-size:0.8rem;text-align:center;">
+                                   <apex:panelGroup id="thankyou" >
+                                        <div class=""  style="margin-top:0.5rem;background-color:rgba(155, 177, 217, 0.33);">
+                                            <div class="slds-grid slds-wrap" style="padding:0.5rem;"> 
+                                                <div class="slds-col slds-size--1-of-1 "  style="font-size:1.2rem;text-align:center;vertical-align:middle;" >
+                                                    {!Message}
+                                                </div>    
+                                                <div class="slds-col slds-size--1-of-1 " style="font-size:1rem;text-align:center;vertical-align:middle;">
+                                                    Thank you for your help keeping our data clean! &nbsp;
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </apex:panelGroup>
+                              </div>
+                               
+                              <!-- Actions -->
+                              <div class="slds-col slds-size--1-of-1 " style="font-size:0.8rem;text-align:center;margin-top:0.5rem;">
+                                  <div class="slds-button-group" role="group">
+                                  	<a href="/{!SurvivorId}" class="slds-button slds-button--neutral slds-button--smal">Go to Survivor</a>
+                                    
+                                    <a href="#" onclick="navigateBack('{!$User.UIThemeDisplayed}','{!inlineQM}', '{!success}');" style="{!If(AND(inlineQM = '0',retURL == null),'','display:none')}" class="slds-button slds-button--neutral slds-button--smal">Go Back</a>    
+                                    <a href="{!retURL}" style="{!If(AND(inlineQM = '0',$User.UIThemeDisplayed !='Theme4d', retURL != null),'','display:none')}" class="slds-button slds-button--neutral slds-button--small">Go Back</a>
+                                    <a onclick="javascript:sforce.one.navigateToURL('/{!retURL}')" style="{!If(AND(inlineQM = '0',$User.UIThemeDisplayed =='Theme4d', retURL != null),'','display:none')}" class="slds-button slds-button--neutral slds-button--small">Okay</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                </apex:outputPanel>    
+  
+ <!--ACTION--> 
+                  <apex:outputPanel id="ActionSection"  rendered="{!AND(OK2Merge == true, success == false)}">                        
+                      <div style="margin-bottom:0.5rem;">
+                          <div class="slds-grid slds-wrap"> 
+                              <div class="slds-col slds-size--1-of-12 " style="font-size:0.8rem;text-align:center;">
+                                  &nbsp;
+                              </div>
+                              <div class="slds-col slds-size--4-of-12 " style="font-size:0.8rem;text-align:center;">
+                                  <!--<a href="#" class="slds-button slds-button--brand slds-button--smal">Merge Keep Survivor</a>-->
+                                  <apex:commandButton action="{!QuickMerge2Survivor}" value="Merge (Keep Survivor)"  disabled="{!NOT OK2Merge}"  rerender="QMMessages, All, SuccessSection"  status="ProgressStatus" title="Merge the 2, keeping the record labelled: Survivor - using the default Merge settings" styleclass="slds-button slds-button--brand slds-button--small" />
+                                  <apex:commandButton action="{!SetSurvivorAsParent}" value="Set as Parent (Survivor)" disabled="{!NOT OK2Merge}" rerender="QMMessages, All, SuccessSection"  rendered="{!ObjectType == 'Account'}" status="ProgressStatus" title="Set the Account on the Left as parent of the Account on the Right"  styleclass="slds-button slds-button--brand slds-button--small"  />
+                              </div>
+                              <div class="slds-col slds-size--2-of-12 " style="font-size:0.8rem;text-align:center;">
+                              </div>
+                              <div class="slds-col slds-size--4-of-12 " style="font-size:0.8rem;text-align:center;">
+                                  <!-- <a href="#" class="slds-button slds-button--brand slds-button--smal">Merge Keep Dupe</a>-->
+                                  <apex:commandButton action="{!QuickMerge2Dupe}" value="Merge (Keep Dupe)"  disabled="{!NOT OK2Merge}"   rerender="QMMessages, All, SuccessSection"  status="ProgressStatus" title="Merge the 2, keeping the record labelled: Dupe - using the default Merge settings" styleclass="slds-button slds-button--brand slds-button--small" />
+                                  <apex:commandButton action="{!SetDupeAsParent}" value="Set as Parent (Dupe)" disabled="{!NOT OK2Merge}" rerender="QMMessages, All, SuccessSection"   rendered="{!ObjectType  == 'Account'}" status="ProgressStatus" title="Set the Account on the Right as parent of the Account on the Left" styleclass="slds-button slds-button--brand slds-button--small" />
+                              </div>
+                              <div class="slds-col slds-size--1-of-12 " style="font-size:0.8rem;text-align:center;">&nbsp;
+                                  <!--<a href="#" class="slds-button slds-button--brand slds-button--small" rendered="{!displaymode != 'inline'}">Cancel</a>-->
+                                  <!--<apex:commandButton action="{!retURL}" styleclass="slds-button slds-button--brand slds-button--small" value="Cancel" rendered="{!AND(inlineQM = '0',$User.UIThemeDisplayed !='Theme4d')}"/>-->
+                                  <a class="slds-button slds-button--brand slds-button--small"  href="{!retURL}" style="{!If(AND(inlineQM = '0',$User.UIThemeDisplayed !='Theme4d', retURL !=null),'','display:none')}" >Cancel</a>
+                                  <button class="slds-button slds-button_neutral"  onclick="javascript:sforce.one.back(true);" style="{!If(AND(inlineQM == '0',$User.UIThemeDisplayed == 'Theme4d'),'','display:none')}">Okay</button>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </apex:outputPanel>
+                  
+<!-- MESSAGES-->                   
+                  <apex:panelGroup id="QMMessages" >
+                   <div  class="slds-col slds-size--1-of-1 " style="font-size:0.8rem">
+                        <!--{!success}-->
+                    	<apex:pageMessages rendered="{!success != true}"/>
+                   </div>
+                   </apex:panelGroup>     
+                  
+           
+                     
+<!-- DETAILS-->   
+              <apex:panelGroup id="detail" rendered="{!AND(OK2Merge == true, success == false)}">   
+                  
+                  <div class="slds-grid slds-wrap"> 
+                      <div class="slds-col slds-size--1-of-2 " style="font-size:95%;" >
+                          <apex:pageBlock >
+                              <div style="font-size:1.1rem;margin-bottom:-1rem;">
+                                  Label: Survivor
+                              </div>
+                              <!--SurvivorID: {!SurvivorID}-->
+                              <apex:detail id="theSurvivor" subject="{!SurvivorID}" inlineEdit="true" title="false" relatedList="true" relatedListHover="false" rendered="{!SurvivorID != null}"/>
+                              
+                          </apex:pageBlock>
+                      </div>
+                      <div class="slds-col slds-size--1-of-2 " style="font-size:95%;">
+                          <apex:pageBlock >
+                               <div style="font-size:1.1rem;margin-bottom:-1rem;">
+                                  Label: Dupe
+                              </div>
+                              <!--DupeID: {!DupeID}-->
+                               <apex:detail id="theDupe" subject="{!DupeID}" inlineEdit="true" title="false" relatedList="true" relatedListHover="false"  rendered="{!DupeID != null}"/>
+                          </apex:pageBlock>
+                      </div>
+                  </div>
+
+                  <script style="text/javascript">
+                       jQuery(function(){
+                           
+                           jQuery("#mainTable").css("width", jQuery(window).width()-60);
+                           jQuery(".bRelatedList").css("width", (jQuery(window).width()-80)/2);
+                           jQuery(".bRelatedList").css("overflow-x",'auto');
+                           //jQuery(".pbButton").css("visibility", "hidden");
+                           //jQuery(".pbButton").css("height", "0rem");
+                           jQuery(".pbButtonb").css("visibility", "hidden");
+                           jQuery(".pbButtonb").css("height", "0rem");
+                           //jQuery(".listHoverLinks").css("visibility", "hidden");
+                           //jQuery(".listHoverLinks").css("height", "0rem");
+                           //jQuery(".listHoverLinks").css("margin", "0rem");
+                           jQuery(".bRelatedList .bPageBlock .pbButton").css("visibility", "hidden");
+                           //jQuery(".labelred").css("visibility", "hidden");
+                       });
+                  	   //Hide DupeStatus - Cnnot access element within the iframe
+                  
+                     </script>
+            </apex:panelGroup>
+            </apex:pageBlock>
+        </div>
+
+    </div>
+
+    
+<!--COPYRIGHT-->
+<apex:panelGroup rendered="{!inlineQM == '0'}">   
+<div class="slds" id="copyright">
+   <div class="slds-grid slds-wrap">	
+       <div class="slds-col slds-size--1-of-1" >
+           <div style="text-align:center;font-size:xx-small;font-family:Arial;margin-top:2rem;">Copyright © 2007-<span id="year">201X</span> DataTrim Entry Check by d2b International ApS, All rights reserved.
+           </div>
+       </div>
+    </div>
+    <script>
+    	var elem = document.getElementById('year');
+    	//alert(new Date().getFullYear());
+    	elem.innerText = new Date().getFullYear();
+    </script>
+</div>
+</apex:panelGroup>
+        
+       
+    <apex:actionStatus id="ProgressStatus">
+        <apex:facet name="start">
+            <c:TRIM_ProgressBar BackColor="#efefef" BorderColor="#6965b0" borderSize="2" height="75px" width="170px" ImageUrl="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'DataTrimProgressBar.gif')}"  Message="Merging..." messageStyle="color:#5090ea;font-size:11pt;font-weight:bold;"/>
+        </apex:facet>
+    </apex:actionStatus>
+    
+
+    
+</apex:form>
+</div>
+ </apex:page>

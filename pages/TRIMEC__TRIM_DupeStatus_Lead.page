@@ -1,0 +1,176 @@
+<apex:page standardController="Lead" extensions="TRIMEC.TRIM_DupeStatus_Lead_Small" >
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'DataTrim_EntryCheck.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/styles/salesforce-lightning-design-system-ltng.css')}"/> 
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/DataTrim_EntryCheck_ltng.css')}"/>
+
+<style>
+    html body.sfdcBody { 
+        margin: 0px;
+        padding: 0px; 
+    } 
+    div.datePicker{
+    	display:none;
+    }
+    
+</style>
+<body style="background-color:transparent;">
+    
+<apex:form >
+    <apex:actionFunction name="FindDuplicates" action="{!FindDuplicates}" reRender="DupeStatus" >
+    <!-- first Parameter is not transferred in FireFox!!!! Thus the double lines -->
+    <!-- 
+    <apex:param name="ContactThreshold"  assignTo="{!ContactThreshold}" value="96" /> 
+    <apex:param name="ContactThreshold"  assignTo="{!ContactThreshold}" value="96" /> 
+    <apex:param name="LeadThreshold" assignTo="{!LeadThreshold}" value="95" />
+     -->
+    </apex:actionFunction>
+</apex:form>
+<script>window.setTimeout(FindDuplicates,20)</script>
+
+<apex:pageMessages /> 
+
+<apex:form id="DupeStatus" > 
+        <apex:variable var="BestMatch" value="{!MatchResult.BestMatch}" />
+        
+        <!-- LIGTHNING VIEW -->
+        <!-- Requires height set to 32 -->
+        <div id="ltngView">
+            <apex:panelGroup rendered="{!MatchResult.anyMatch}" >
+            <div class="slds" >
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size--2-of-6" >
+                        <div class="labelCol" style="text-align:left;">
+                            <span class="osOutputLabel" style="color:red;font-weight:bold;font-size:80%;height:14px;" >{!$Label.trimec__dupe_status} [{!NoOfFoundDupes}]&nbsp;</span>
+                        </div>
+                        <div class="datacol">     
+                          <span class="osOutputLabel" style="" >    
+                                <apex:image value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck,BestMatch.ClassImage)}" title="({!BestMatch.MatchScore})" width="90px" height="16px" />
+                          </span>
+                        </div>
+                   </div>
+                  <div class="slds-col slds-size--2-of-6" style="">
+                      <div class="labelCol" style="text-align:left;">
+                            <span class="osOutputLabel" style="font-size:80%;height:14px;" >
+                            <a href="javascript:sforce.one.navigateToSObject('{!BestMatch.Id}');" title="{!$Label.trimec__view}: {!BestMatch.DisplayName}">{!BestMatch.DisplayName}</a>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="slds-col slds-size--2-of-6" style="">
+                      <div class="labelCol" style="text-align:right;padding-right:0.1rem;">
+                            <span class="osOutputLabel" style="font-size:80%;height:14px;" >
+                                <a href="javascript:sforce.one.navigateToURL('/apex/trimec/TRIMEC__TRIM_QuickMerge?o=lead&id1={!Id}&id2={!BestMatch.Id}')" style="{!IF(AND(BestMatch.ObjName == 'Lead',$User.UIThemeDisplayed =='Theme4d'),'display:initial','display:none')}">{!$Label.trimec__merge}</a>
+                                <a href="javascript:sforce.one.navigateToURL('/lead/leadmergewizard.jsp?id={!Id}&cid={!Id}&cid={!BestMatch.Id}&goNext=Next&retUrl=/{!Id}');" style="{!IF(AND(BestMatch.ObjName == 'Lead',$User.UIThemeDisplayed !='Theme4d'),'display:initial','display:none')}">{!$Label.trimec__merge}</a>
+                                
+                                <a href="javascript:sforce.one.navigateToURL('/apex/trimec/TRIMEC__TRIM_QuickConvert?id={!Id}&cid={!BestConId}&aid={!BestAccId}');" style="{!IF(AND(BestMatch.ObjName != 'Lead', $User.UIThemeDisplayed =='Theme4d'),'display:initial','display:none')}">{!$Label.trimec__convert}</a>
+                                <a href="javascript:sforce.one.navigateToURL('/lead/leadconvert.jsp?id={!Id}&accid={!BestAccId}&nooppti=1&retUrl=/{!Id}');" style="{!IF(AND(BestMatch.ObjName != 'Lead',$User.UIThemeDisplayed !='Theme4d'),'display:initial','display:none')}">{!$Label.trimec__convert}</a>
+                                
+                                <apex:outputText style="" title="{!$Label.trimec__dupe_status_title}" value=" | " rendered="{!NoOfFoundDupes > 1}" />
+                                    <a title="{!$Label.trimec__view_dupes}" href="javascript:sforce.one.navigateToURL('/apex/trimec/TRIMEC__TRIM_DupeStatus_Lead_ViewAll?id={!Id}');" style="{!IF(NoOfFoundDupes > 1,'display:initial','display:none')}" >{!$Label.trimec__view}</a>
+                                <!-- 
+                                <apex:outputLink style="" value="/lead/leadmergewizard.jsp?id={!Id}&retURL={!Id}&cid={!Id}&cid={!BestMatch.Id}&goNext=Next" title="{!$Label.trimec__merge}" target="_top" rendered="{!BestMatch.ObjName == 'Lead'}" >{!$Label.trimec__merge}</apex:outputLink> 
+                                <apex:outputLink style="" value="/lead/leadconvert.jsp?id={!Id}&retURL={!Id}&accid={!BestAccId}&nooppti=1" title="{!$Label.trimec__convert}" target="_top" rendered="{!BestMatch.ObjName != 'Lead'}" >{!$Label.trimec__convert}</apex:outputLink> 
+                                <apex:outputText style="" title="{!$Label.trimec__dupe_status_title}" value=" | " rendered="{!NoOfFoundDupes > 1}" />
+                                <apex:outputLink style="" value="/apex/trimec/TRIMEC__TRIM_DupeStatus_Lead_ViewAll?id={!Id}" title="{!$Label.trimec__view_dupes}" target="_top" rendered="{!NoOfFoundDupes > 1}" >{!$Label.trimec__view}</apex:outputLink>
+                                 -->
+                            </span> 
+                     </div>
+                  </div>
+                </div>
+            </div>
+            </apex:panelGroup>
+            
+            <apex:panelGroup rendered="{!AND(NOT MatchResult.anyMatch, Status != $Label.trimec__dupe_status_searching)}">
+                <div class="slds" >
+                <div class="slds-grid slds-wrap">
+                        <div class="labelCol" style="text-align:left;">
+                            <span class="osOutputLabel" style="font-size:90%;">{!$Label.trimec__dupe_status}:&nbsp;</span>
+                        </div>
+                        <div class="datacol">
+                            <span class="osOutputLabel" style="font-size:90%;"><apex:image value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck,'/img/NoDupes.png')}" title="{!$Label.trimec__dupe_status_title}" style="height:14px;" />&nbsp;{!Status}</span>
+                        </div>
+                </div>
+                </div>
+            </apex:panelGroup>
+            
+            <apex:panelGrid columns="1" id="myprogressbar"  style="detail" width="100%" rendered="{!Status == $Label.trimec__dupe_status_searching}"> 
+               <div class="meter3 blue1 nostripes ">
+                    <span id=""></span>
+                </div>
+            </apex:panelGrid>
+        </div>
+        
+        
+        <!-- CLASSIC VIEW -->
+        <div id="classicView">
+            <apex:panelGroup rendered="{!MatchResult.anyMatch}">
+                    <table style="width:100%" >
+                    <tr><td class="label" >
+                        <div >
+                        <apex:outputText style="vertical-align:top;color:red;" title="{!$Label.trimec__dupe_status_title}" value="{!$Label.trimec__dupe_status} [{!NoOfFoundDupes}]"/>&nbsp;
+                        <apex:image value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck,BestMatch.ClassImage)}" title="({!BestMatch.MatchScore})" width="80px" height="14px" />
+                        </div>
+                    </td><td class="data" style="vertical-align:top;padding:0px;">
+                        <table style="width:100%;margin-top:-4px;">
+                            <tr><td  style="text-align:left;">
+                                <apex:outputLink value="/{!BestMatch.Id}" title="{!$Label.trimec__view}: {!BestMatch.DisplayName}" target="_top">{!BestMatch.DisplayName}</apex:outputLink>
+                            </td><td class="action" style="text-align:right;padding:0px;width:inherit;">
+                                <span>
+                                <!--  To disable the merge/convert/viewall function, use the alternative nop actions below  --> 
+                                <!-- does not work in Firefox <apex:commandLink action="{!invokeMergeWizard}" rendered="{!BestMatchType == 'Lead-Lead'}" title="Open Merge Wizard" value="Merge" id="lnkMergeWizard" target="_top"><apex:param name="Wizard" value="Lead" /><apex:param name="Id2" value="{!BestId}" /></apex:commandLink> -->
+                                <apex:outputLink value="/lead/leadmergewizard.jsp?id={!Id}&retURL={!Id}&cid={!Id}&cid={!BestMatch.Id}&goNext=Next" title="{!$Label.trimec__merge}" target="_top" rendered="{!BestMatch.ObjName == 'Lead'}" >{!$Label.trimec__merge}</apex:outputLink> 
+                    
+                                <!-- does not work in Firefox <apex:commandLink action="{!invokeConvertWizard}" rendered="{!BestMatchType != 'Lead-Lead'}" title="Open Convert Wizard" value="Convert" id="lnkConvertWizard" target="_top"></apex:commandLink>-->
+                                <apex:outputLink value="/lead/leadconvert.jsp?id={!Id}&retURL={!Id}&accid={!BestAccId}&nooppti=1" title="{!$Label.trimec__convert}" target="_top" rendered="{!BestMatch.ObjName != 'Lead'}" >{!$Label.trimec__convert}</apex:outputLink> 
+                    
+                                <apex:outputText title="{!$Label.trimec__dupe_status_title}" value=" | " rendered="{!NoOfFoundDupes > 1}" />
+                                <apex:outputLink style="height:14px;" value="/apex/TRIM/TRIM_DupeStatus_Lead_ViewAll?id={!Id}" title="{!$Label.trimec__view_dupes}" target="_top" rendered="{!NoOfFoundDupes > 1}" >{!$Label.trimec__view}</apex:outputLink> 
+                                
+                                <!--  Alternative nop actions
+                                <apex:commandLink action="{!invokeMergeWizard}" rendered="{!BestMatchType == 'Lead-Lead'}" title="Open Merge Wizard" value="" id="lnkMergeWizard" target="_top"><apex:param name="Wizard" value="Lead" /><apex:param name="Id2" value="{!BestId}" /></apex:commandLink>
+                                <apex:commandLink action="{!invokeConvertWizard}"  rendered="{!BestMatchType != 'Lead-Lead'}" title="Open Convert Wizard" value="" id="lnkConvertWizard" target="_top"></apex:commandLink>  
+                                -->
+                                </span>
+                            </td></tr>
+                        </table>
+                    </td></tr>
+                    </table>
+            </apex:panelGroup>
+            
+            <apex:panelGroup rendered="{!NOT MatchResult.anyMatch}">
+                <table style="width:100%;" >
+                <tr><td class="label" style="vertical-align:middle;">
+                     <apex:outputText title="{!$Label.trimec__dupe_status_title}" value="{!$Label.trimec__dupe_status}" />
+                </td><td class="data" style="vertical-align:top;padding:0px;">
+                    <div><apex:image value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck,'/img/NoDupes.png')}" title="{!$Label.trimec__dupe_status_title}" style="height:12px;" rendered="{!Status != $Label.trimec__dupe_status_searching}" />&nbsp;{!Status}</div>
+                </td></tr>
+                </table>
+            </apex:panelGroup>
+        </div>
+        
+         <script type="text/javascript">
+            function isLightningExperienceOrSalesforce1() {
+                return((typeof sforce != 'undefined') && sforce && (!!sforce.one));
+            }
+        </script>
+        
+        <script type="text/javascript">
+                if(isLightningExperienceOrSalesforce1() ) {
+                    // Do something for Lightning Experience
+                    //document.getElementById("ltngView").innerHTML = "Lightning";
+                    document.getElementById("ltngView").style.display = "initial";
+                    document.getElementById("classicView").style.display = "none"; 
+                }else {
+                    // Use classic Visualforce
+                    //document.getElementById("sfdcmodeclassic").innerHTML = "Classic";
+                    document.getElementById("classicView").style.display = "initial";
+                    document.getElementById("ltngView").style.display = "none"; 
+                }
+        </script>
+        
+        
+
+</apex:form>
+
+</body>
+
+</apex:page>

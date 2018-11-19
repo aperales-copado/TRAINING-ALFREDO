@@ -1,0 +1,58 @@
+<apex:page controller="TRIMEC.TRIM_ActionInsufPriviliges_Controller"  tabStyle="DataTrim_Entry_Check__tab"  >
+<!-- /apex/TRIMEC__TRIM_ActionInsufficientPriviliges?source=con&id=00380000012o4ER&owner=00580000001hTby&appr=support@datatrim.com -->
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'DataTrim_EntryCheck.css')}"/>
+<apex:sectionHeader title="{!$Label.trimec__entry_check}" subtitle=" You do not have sufficient priviliges to access the selected {!ObjectName}!" ></apex:sectionHeader>
+<apex:pageBlock title="Submit a request to change your permissions" id="newData" >
+<center>
+<table border='0' width='700px' style="font-size:small;font-family:Arial;background-color:#CFEEF8;" class="style1" >
+    <tr><td colspan='3' align='left'>
+        <!-- INSERT HEADER TEXT HERE-->
+        Below you can submit a request to be added to the sales team for this record or in other ways provide you with permissions to access the record.
+    </td></tr>
+    <tr><td width='20px'></td><td align='left'>
+        <!-- INSERT BODY TEXT HERE-->
+        <apex:form rendered="{!SubmitResult == ''}" > 
+            <table border='0' width='100%'>
+            <tr><td width='80px'>To (Email):</td><td ><apex:inputTextarea id="srctoEmail" value="{!toEmail}" rows="1" cols="80" onkeypress="handleKeyPress(event);" /></td></tr>
+            <tr><td width='80px'>From (Email):</td><td>{!fromEmail}</td></tr>
+            <tr><td width='80px'>Subject:</td><td><strong>Request for access to {!ObjectName}: {!RecordName}</strong></td></tr>
+            <tr><td width='80px'>Body:</td><td >I would like to get access to the {!ObjectName} ({!RecordName})<br /> Owned by: {!RecordOwnerName}<br /><strong>Reason for this request:</strong><br /><apex:inputTextarea id="srcMessageBody" value="{!MessageBody}" rows="10" cols="80" onkeypress="handleKeyPress(event);" /></td></tr>
+            <tr><td width='80px'></td><td align='right'><apex:commandButton action="{!SubmitRequest}" value="Submit" id="btnSubmit" rerender="newData" styleClass="btnSharing"  ></apex:commandButton></td></tr>
+            </table>
+        </apex:form> 
+        <apex:form rendered="{!SubmitResult != ''}" > 
+            <table border='0' width='100%'>
+            <tr><td width='80px'>To (Email):</td><td ><apex:inputTextarea id="srctoEmail" value="{!toEmail}" rows="1" cols="80" disabled="true" /></td></tr>
+            <tr><td width='80px'>From (Email):</td><td>{!fromEmail}</td></tr>
+            <tr><td width='80px'>Subject:</td><td><strong>Request for access to {!ObjectName}: {!RecordName}</strong></td></tr>
+            <tr><td width='80px'>Body:</td><td >I would like to get access to the {!ObjectName} ({!RecordName})<br /> Owned by: {!RecordOwnerName}<br /><strong>Reason for this request:</strong><br /><apex:inputTextarea id="srcMessageBody" value="{!MessageBody}" rows="10" cols="80" disabled="true" /></td></tr>
+            <tr><td width='80px'></td><td align='center'><h4>{!SubmitResult}</h4></td></tr>
+            </table>
+        </apex:form> 
+    </td><td width='20px'></td></tr>
+    <tr><td></td><td>
+        <!-- INSERT FOOTER TEXT HERE-->
+        Note that due to internal sharing rules and company policies submitting this request doesn't automatically grant you access to this {!ObjectName}<br />
+        We will get back to you as soon as possible!
+    </td><td></td></tr>
+</table>
+ <script type="text/javascript">
+   function handleKeyPress(e){
+   var key= 0;
+   if(window.event){
+     key= e.keyCode;    //IE
+   }else if(e.which){
+    key= e.which;       //Firefox
+   }
+   if(key==13){
+        var sbutton = document.getElementById("{!$Component.btnSearch}");
+        sbutton.click();
+   }
+ }
+</script>
+<div style="text-align: center;font-size:xx-small;font-family:Arial;">
+    Copyright © 2007-2013 DataTrim Entry Check by d2b International ApS, All rights reserved.
+</div>
+ </center>
+ </apex:pageBlock>
+</apex:page>

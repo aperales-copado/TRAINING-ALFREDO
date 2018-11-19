@@ -1,0 +1,263 @@
+<apex:page Controller="TRIMEC.TRIM_QuickConvert_Controller" sidebar="false" docType="html-5.0" >
+<apex:includeScript value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/js/jquery-2.1.1.min.js')}"/>   
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'DataTrim_EntryCheck.css')}"/>
+
+<title>Quick Convert</title>
+<style>.bRelatedList{overflow-x:auto;}</style>
+<style>
+    .dt_pbs{
+        border-radius: 0.25rem 0.25rem 0 0;
+    }
+    
+    .mergecontainer{
+        background-color: rgba(155, 177, 217, 0.33);
+    }
+    .convertcontainer{
+        background-color: rgba(242, 207, 91, 0.33);
+    }
+</style>
+
+<script>
+    function navigateBack(Theme, inline, isSuccess){
+        if (inline == '0' && isSuccess == 'true'){
+            if (Theme == 'Theme4d'){
+                sforce.one.back(true);
+        	}else{
+                window.history.back();
+            }
+        }
+  }  
+</script>    
+<apex:slds />  
+<div class="slds">
+<apex:form id="All" >
+    
+<!--HEADER - NOT INLINE -->
+    <apex:outputPanel rendered="{!inlineQC == '0'}" >
+        <div class="slds-col slds-size--1-of-1  " style="margin:0.5rem;">
+            <div class="slds-col slds-has-flexi-truncate">
+                <div class="slds-media">
+                    <div class="slds-media__figure">
+                        <img src="{!URLFOR($Resource.DataTrim_EntryCheck, 'MatchedRecords48x40_NL.png')}" style="height:2.5rem;" title="DataTrim Matched Records" />
+                    </div>
+                    <div class="slds-media__body">
+                        <p class="slds-text-heading--label" >DataTrim</p>
+                        <div class="slds-grid">
+                            <h1 class="slds-text-heading--medium slds-m-right--small slds-truncate slds-align-middle" title="Quick Convert"><strong>Quick Convert</strong></h1>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </apex:outputPanel>    
+    
+<!-- HEADER INLINE -->     
+    <div class="slds-grid slds-wrap"> 
+        <div class="slds-col slds-size--1-of-1 " style="font-size:0.8rem;">
+              <apex:pageBlock id="QuickConvert" title="Convert"  tabStyle="Lead">
+                <apex:facet name="header" >
+                    <apex:panelGroup rendered="{!inlineQC != '0'}">
+                        <div class="slds-grid pbSubheader first tertiaryPalette dt_pbs" style="border:1px;padding:0.5rem;padding-left:0.8rem;font-size:1.3rem;text-align:left;">
+                                 &nbsp;Quick Convert&nbsp;
+                        </div>
+                      </apex:panelGroup>
+                </apex:facet>  
+<!--SUCCESS--> 
+                <apex:outputPanel id="SuccessSection"  rendered="{!success == true}">                        
+                    
+                    <div style="margin-bottom:0.5rem;">
+                          <div class="slds-grid slds-wrap"> 
+                              <div class="slds-col slds-size--1-of-1 " style="font-size:0.8rem;text-align:center;">
+                                   <apex:panelGroup id="thankyou" >
+                                        <div class=""  style="margin-top:0.5rem;background-color:rgba(155, 177, 217, 0.33);">
+                                            <div class="slds-grid slds-wrap" style="padding:0.5rem;"> 
+                                                <div class="slds-col slds-size--1-of-1 "  style="font-size:1.2rem;text-align:center;vertical-align:middle;" >
+                                                    {!Message}
+                                                </div>    
+                                            </div>
+                                        </div>
+                                    </apex:panelGroup>
+                              </div>
+                               
+                              <!-- Actions -->
+                              <div class="slds-col slds-size--1-of-1 " style="font-size:0.8rem;text-align:center;margin-top:0.5rem;">
+                                  <div class="slds-button-group" role="group">
+                                  	<!--<a href="/{!SurvivorId}" class="slds-button slds-button--neutral slds-button--smal">Go to Survivor</a>-->
+                                    
+                                    <a href="#" onclick="navigateBack('{!$User.UIThemeDisplayed}','{!inlineQC}', '{!success}');" style="{!If(AND(inlineQC = '0',retURL == null),'','display:none')}" class="slds-button slds-button--neutral slds-button--smal">Go Back</a>    
+                                    <a href="{!retURL}" style="{!If(AND(inlineQC = '0',$User.UIThemeDisplayed !='Theme4d', retURL != null),'','display:none')}" class="slds-button slds-button--neutral slds-button--small">Go Back</a>
+                                    <a onclick="javascript:sforce.one.navigateToURL('/{!retURL}')" style="{!If(AND(inlineQC = '0',$User.UIThemeDisplayed =='Theme4d', retURL != null),'','display:none')}" class="slds-button slds-button--neutral slds-button--small">Okay</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    
+                    
+                </apex:outputPanel>    
+                  
+<!--ACTION--> 
+                <apex:panelGroup id="ActionSection" rendered="{!AND(OK2Convert == true, success == false)}">
+                <div class="slds-container--large" style="margin-bottom:0.5rem;">
+                    <table > 
+                        <tr>
+                        <td class="" style="padding-left:0.5rem;width:50%">
+                            <div style="padding-left:20%;padding-right:10%;"> 
+                                 <div class="requiredInput" style="padding-left:0.5rem;padding-right:0.5rem;">
+                                     <apex:outputPanel layout="block" styleClass="requiredBlock "/>
+                                     <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="ConvertStatus">Converted Status:</label>
+                                          <div class="slds-form-element__control">
+                                              <div class="slds-select_container ">
+                                                 <apex:selectList id="ConvertStatus" value="{!ConvertStatus}" size="1" required="true" styleclass="slds-select" >
+                                                      <apex:selectOptions value="{!LeadConvertedStatuses}"></apex:selectOptions>
+                                                 </apex:selectList>
+                                              </div>
+                                         </div>
+                                     </div>
+                                </div>
+                                <div class="slds-form-element">
+                                   <div class="slds-form-element__control" style="padding-left:0.5rem;padding-top:0.25rem;">
+                                        <apex:inputCheckbox id="checkbox-OLS"  value="{!overwriteLeadSource}"/>
+                                        <span class="slds-form-element__label">Overwrite Lead Source</span>
+                                   </div>
+                                   <div class="slds-form-element__control" style="padding-left:0.5rem;padding-top:0.25rem;">  
+                                        <apex:inputCheckbox id="checkbox-SETO" value="{!sendNoti}" />
+                                        <span class="slds-form-element__label">Send Email to Owner</span>
+                                   </div>
+                                </div>   
+                                <div class="requiredInput" style="padding-left:0.5rem;padding-right:0.5rem;">
+                                	<apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                                     <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="RecordOwner">Owner</label>
+                                      <div class="slds-form-element__control">
+                                         <apex:input value="{!RecordOwner}" styleclass="slds-input" id="RecordOwner"/>
+                                      </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </td> 
+                        
+                        <td style="padding-left:0.5rem;width:50%;vertical-align:bottom;">
+                            <div style="padding-left:20%;padding-right:10%;"> 
+                                <div class="requiredInput" style="padding-left:0.5rem;padding-right:0.5rem;">
+                                	<apex:outputPanel layout="block" styleClass="requiredBlock"/>
+                                     <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="OpportunityName">Opportunity Name</label>
+                                      <div class="slds-form-element__control">
+                                         <apex:input value="{!OpportunityName}" styleclass="slds-input" id="OpportunityName"/>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:0.8rem;text-align:center;padding-top:0.5rem;width:50%;vertical-align:bottom;">
+                                <apex:commandButton action="{!QuickConvertWooppty}" disabled="{! Not OK2Convert}" value="Convert"   title="Convert Lead" status="ProgressStatus" reRender="QMMessages, All, SuccessSection" id="ConvertButton" styleclass="slds-button slds-button--brand slds-button--small"/>
+                            </td>
+                            <td style="font-size:0.8rem;text-align:center;padding-top:0.5rem;width:50%;vertical-align:bottom;">
+                               <apex:commandButton action="{!QuickConvertWoppty}" disabled="{! Not OK2Convert}" value="Convert Lead with Opportunity"  title="Convert Lead with Opportunity" status="ProgressStatus" reRender="QMMessages, All, SuccessSection" id="ConvertWOpptyButton" styleclass="slds-button slds-button--brand slds-button--small"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+               </apex:panelGroup>    
+
+               
+                  
+                  
+<!-- MESSAGES-->                   
+        <apex:panelGroup id="QMMessages" >
+            <div  class="slds-col slds-size--1-of-1 " style="font-size:0.8rem">
+                <!--{!success}-->
+                <apex:pageMessages rendered="{!success != true}"/>
+            </div>
+        </apex:panelGroup>    
+    
+<!-- DETAILS-->   
+              <apex:panelGroup id="detail" rendered="{!AND(OK2Convert == true, success == false)}">   
+                  
+                  <div class="slds-grid slds-wrap"> 
+                      <div class="slds-col slds-size--1-of-2 " style="font-size:95%;" >
+                          <apex:pageBlock tabStyle="Lead" >
+                              <div style="font-size:1.1rem;margin-bottom:-1rem;">
+                                  Lead
+                              </div>
+                              <!--Lead: {!LeadID}-->
+                              <apex:detail id="theLead" subject="{!LeadID}" inlineEdit="true" title="false" relatedList="true" relatedListHover="false" />
+                              
+                          </apex:pageBlock>
+                      </div>
+                      <div class="slds-col slds-size--1-of-2 " style="font-size:95%;">
+                          <apex:pageBlock rendered="{!ContactID != null}" >
+                               <div style="font-size:1.1rem;margin-bottom:-1rem;">
+                                  Contact
+                              </div>
+                              <!--Contact: {!ContactID}-->
+                               <apex:detail id="theContact" subject="{!ContactID}" inlineEdit="true" title="false" relatedList="true" relatedListHover="false"  />
+                          </apex:pageBlock>
+                          <apex:pageBlock rendered="{!AND(AccountID != null,ContactID == null)}" >
+                               <div style="font-size:1.1rem;margin-bottom:-1rem;">
+                                  {!$Label.trimec__account}
+                              </div>
+                              <!--Account: {!AccountID}-->
+                              <apex:detail id="theAccoount" subject="{!AccountID}" inlineEdit="true" title="false" relatedList="true" relatedListHover="false"  />
+                          </apex:pageBlock>
+                      </div>
+                  </div>
+
+                  <script style="text/javascript">
+                       jQuery(function(){
+                           
+                           jQuery("#mainTable").css("width", jQuery(window).width()-60);
+                           jQuery(".bRelatedList").css("width", (jQuery(window).width()-80)/2);
+                           jQuery(".bRelatedList").css("overflow-x",'auto');
+                           //jQuery(".pbButton").css("visibility", "hidden");
+                           //jQuery(".pbButton").css("height", "0rem");
+                           jQuery(".pbButtonb").css("visibility", "hidden");
+                           jQuery(".pbButtonb").css("height", "0rem");
+                           //jQuery(".listHoverLinks").css("visibility", "hidden");
+                           //jQuery(".listHoverLinks").css("height", "0rem");
+                           //jQuery(".listHoverLinks").css("margin", "0rem");
+                           jQuery(".bRelatedList .bPageBlock .pbButton").css("visibility", "hidden");
+                           //jQuery(".labelred").css("visibility", "hidden");
+                       });
+                  	   //Hide DupeStatus - Cnnot access element within the iframe
+                  
+                     </script>
+            </apex:panelGroup>
+            </apex:pageBlock>
+        </div>
+
+    </div>    
+    
+<!--COPYRIGHT-->
+<apex:panelGroup rendered="{!inlineQC == '0'}">   
+<div class="slds" id="copyright">
+   <div class="slds-grid slds-wrap">	
+       <div class="slds-col slds-size--1-of-1" >
+           <div style="text-align:center;font-size:xx-small;font-family:Arial;margin-top:2rem;">Copyright © 2007-<span id="year">201X</span> DataTrim Entry Check by d2b International ApS, All rights reserved.
+           </div>
+       </div>
+    </div>
+    <script>
+    	var elem = document.getElementById('year');
+    	//alert(new Date().getFullYear());
+    	elem.innerText = new Date().getFullYear();
+    </script>
+</div>
+</apex:panelGroup>
+        
+<!-- PROGRESS STATUS-->       
+<apex:actionStatus id="ProgressStatus">
+     <apex:facet name="start">
+         <c:TRIM_ProgressBar BackColor="#efefef" BorderColor="#6965b0" borderSize="2" height="75px" width="170px" ImageUrl="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'DataTrimProgressBar.gif')}"  Message="Converting..." messageStyle="color:#5090ea;font-size:11pt;font-weight:bold;"/>
+     </apex:facet>
+ </apex:actionStatus>    
+
+
+</apex:form>
+</div>
+    
+</apex:page>

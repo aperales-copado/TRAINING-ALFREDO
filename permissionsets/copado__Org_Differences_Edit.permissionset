@@ -103,4 +103,8 @@
         <apexPage>copado__ViewOrgDiff</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
+    <tabSettings>
+        <tab>copado__Copado_Notification__c</tab>
+        <visibility>Available</visibility>
+    </tabSettings>
 </PermissionSet>

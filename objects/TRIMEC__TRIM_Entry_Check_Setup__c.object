@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Object to contain all setup options for Entry Check</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>TRIMEC__Account_CF1__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Search method for Custom Search (CF1), Examples: Site LIKE &apos;%cf1%&apos;  or SAP_No__c = &apos;cf1&apos;</inlineHelpText>
+        <label>Account Custom Search 1</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Account_CF2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Support for custom search for accounts using Custom key 2
+Example: VRN__c like &apos;%cf2%&apos;
+cf2 will be replaced with the value entered by the user in the cf2 input field, e.g. X123 so that the search becomes: VRN__c like &apos;%X123%&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Search method for Custom Search (CF2), Examples: VRN__c LIKE &apos;%cf2%&apos; or Customer_No__c = &apos;cf2&apos;</inlineHelpText>
+        <label>Account Custom Search 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Account_CF3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Support for custom search for accounts using Custom key 3
+Example: VRN__c like &apos;%cf3%&apos;
+cf3 will be replaced with the value entered by the user in the cf3 input field, e.g. X123 so that the search becomes: VRN__c like &apos;%X123%&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Search method for Custom Search (CF3), Examples: VRN__c LIKE &apos;%cf3%&apos; or Customer_No__c = &apos;cf3&apos;</inlineHelpText>
+        <label>Account Custom Search 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Account_Field_List__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of field used when querying the Account Object.
+Default is: id, parentid, name, site, billingcity, billingpostalcode, billingstate, billingcountry, website, phone, fax, type, Owner.Name, lastmodifieddate, MatchKey__c</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List of fields to query for Accounts</inlineHelpText>
+        <label>Account Field List</label>
+        <length>2048</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Account_Label_Singular__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label Text to be displayed for Matched Records from the Account Table.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Label Text to be displayed for Matched Records from the Account Table.</inlineHelpText>
+        <label>Account Label (Singular)</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Account_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label Text to be displayed for Matched Records from the Account Table.</description>
+        <externalId>false</externalId>
+        <label>Account Label (Plural)</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Account_NoMatchKey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Disable/enable the use of the Match Key Field on Account. Default: Enabled</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Disable/enable the use of the Match Key Field on Account. Default: Enabled</inlineHelpText>
+        <label>Account No MatchKey</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Account_QScopeDynFilter__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Allows you to dynamically scope the search on Accounts
+Example: PlantType__c like &apos;%qsa%&apos;
+qsa will be replaced with the value entered by the user in the qsa input field, e.g. Production so that the search becomes:  PlantType__c like &apos;%Production%&apos;
+This will let Entry Check limit the search to account records with the Plant Type containg the word &apos;Production&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Limit the Entry Check to a subset of records. Example: RecordType.Name = &apos;qsa&apos; or PlantType__c like &apos;%qsa%&apos;</inlineHelpText>
+        <label>Account Query Scope Filter (Dynamic)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Account_QScopeFilter__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify Accounts to include in the search. e.g. RecordType.Name = &apos;Customers&apos;
+Will let Entry Check only search the records with the Record Type of Customer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Limit the Entry Check to a subset of records. Example: RecordType.Name = &apos;Doctor&apos; or RecordType.Name != &apos;Doctor&apos; or RecordType.Name LIKE &apos;Doctor&apos;</inlineHelpText>
+        <label>Account Query Scope Filter</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Account_Score_Threshold__c</fullName>
+        <defaultValue>95</defaultValue>
+        <deprecated>false</deprecated>
+        <description>A value between 0 and 100 to indicate which records that should be displayed.
+Only Matched records with a score higher than or equal to this value will be listed.</description>
+        <externalId>false</externalId>
+        <label>Account Score Threshold</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Action_Page_Share_Account__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicate the VF Landing page for the action link when a user request permissions to get access to a record outside his/her sharing permissions</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate the VF Landing page for the action link when a user request permissions to get access to a record outside his/her sharing permissions</inlineHelpText>
+        <label>Action Page (Share)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Action_Page_Share_Contact__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicate the VF Landing page for the action link when a user request permissions to get access to a record outside his/her sharing permissions</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate the VF Landing page for the action link when a user request permissions to get access to a record outside his/her sharing permissions</inlineHelpText>
+        <label>Action Page (Share)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Action_Page_Share_Lead__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicate the VF Landing page for the action link when a user request permissions to get access to a record outside his/her sharing permissions</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate the VF Landing page for the action link when a user request permissions to get access to a record outside his/her sharing permissions</inlineHelpText>
+        <label>Action Page (Share)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Action_Page_Share_Person__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicate the VF Landing page for the action link when a user request permissions to get access to a record outside his/her sharing permissions</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicate the VF Landing page for the action link when a user request permissions to get access to a record outside his/her sharing permissions</inlineHelpText>
+        <label>Action Page (Share)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__BetaON__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable/Disable Beta Features</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable/Disable Beta Features</inlineHelpText>
+        <label>Beta ON</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Check_Accounts__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Check Accounts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Check_Contacts__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Check Contacts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Check_Leads__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Check Leads</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Check_PersonAccounts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Enable to be able to create Person Accounts</description>
+        <externalId>false</externalId>
+        <label>Check Person Accounts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Classic_Theme__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Select layout for Entry Check Main Page, Classic or Lightning Experience, Default: False = Classic</description>
+        <externalId>false</externalId>
+        <label>Lightning Experience Theme</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Classify_Match_Result__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>When checked, entry Check will classify the matched records on a scale from 0 to 5 to indicate how well the Match result fits your data</description>
+        <externalId>false</externalId>
+        <label>Classify Match Result</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Contact_CF1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Support for custom search for contacts using Custom key 1
+Example: VRN__c like &apos;%cf1%&apos;
+cf1 will be replaced with the value entered by the user in the cf1 input field, e.g. X123 so that the search becomes: VRN__c like &apos;%X123%&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Search method for Custom Search (CF1), Examples: VRN__c LIKE &apos;%cf1%&apos;  or Customer_No__c = &apos;cf1&apos;</inlineHelpText>
+        <label>Contact Custom Search 1</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Contact_CF2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Support for custom search for contacts using Custom key 2
+Example: VRN__c like &apos;%cf2%&apos;
+cf2 will be replaced with the value entered by the user in the cf2 input field, e.g. X123 so that the search becomes: VRN__c like &apos;%X123%&apos;
+Help Text	Search method for Custom Search (CF2), Examples: VRN__c LIKE \&apos;%cf2%\&apos; or Customer_No__c = \&apos;cf2\&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Search method for Custom Search (CF2), Examples: VRN__c LIKE &apos;%cf2%&apos; or Customer_No__c = &apos;cf2&apos;</inlineHelpText>
+        <label>Contact Custom Search 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Contact_CF3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Support for custom search for contacts using Custom key 3
+Example: VRN__c like &apos;%cf3%&apos;
+cf3 will be replaced with the value entered by the user in the cf1 input field, e.g. X123 so that the search becomes: VRN__c like &apos;%X123%&apos;
+Help Text	Search method for Custom Search (CF1), Examples: VRN__c LIKE \&apos;%cf3%\&apos; or Customer_No__c = \&apos;cf3\&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Search method for Custom Search (CF3), Examples: VRN__c LIKE &apos;%cf3%&apos; or Customer_No__c = &apos;cf3&apos;</inlineHelpText>
+        <label>Contact Custom Search 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Contact_Field_List__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Field list for querying Contacts (and Person Accounts)
+Default is: Id, Name, FirstName, LastName, Email, Phone, Fax, MobilePhone, Account.Name, Owner.Name,  MatchKey__c</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List of fields to query for Contacts (and Person Accounts)</inlineHelpText>
+        <label>Contact Field List</label>
+        <length>2048</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Contact_Label_Singular__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label Text to be displayed for Matched Records from the Contact Table.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Label Text to be displayed for Matched Records from the Contact Table.</inlineHelpText>
+        <label>Contact Label (Singular)</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Contact_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label Text to be displayed for Matched Records from the Contact Table.</description>
+        <externalId>false</externalId>
+        <label>Contact Label (Plural)</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Contact_NoMatchKey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Disable/enable the use of the Match Key Field on Contact. Default: Enabled</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Disable/enable the use of the Match Key Field on Contact. Default: Enabled</inlineHelpText>
+        <label>Contact No MatchKey</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Contact_QScopeDynFilter__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Allows you to dynamically scope the search on Contacts
+Example: Function__c like &apos;%qsc%&apos;
+qsc will be replaced with the value entered by the user in the qsc input field, e.g. VP so that the search becomes:  Function__c like &apos;%VP%&apos;
+This will let Entry Check limit the search to account records with the Plant Type containg the word &apos;Production&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Limit the Entry Check to a subset of records. Example: RecordType.Name = &apos;qsc&apos; or Function__c like &apos;%qsc%&apos;</inlineHelpText>
+        <label>Contact Query Scope Filter (Dynamic)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Contact_QScopeFilter__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify contacts to include in the search. e.g. RecordType.Name = &apos;Doctor&apos;
+Will let Entry Check only search the records with the Record Type of Doctor.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Limit the Entry Check to a subset of records. Example: RecordType.Name = &apos;Doctor&apos; or RecordType.Name != &apos;Doctor&apos; or RecordType.Name LIKE &apos;%Doctor%&apos;</inlineHelpText>
+        <label>Contact Query Scope Filter</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Contact_Score_Threshold__c</fullName>
+        <defaultValue>95</defaultValue>
+        <deprecated>false</deprecated>
+        <description>A value between 0 and 100 to indicate which records that should be displayed.
+Only Matched records with a score higher than or equal to this value will be listed.</description>
+        <externalId>false</externalId>
+        <label>Contact Score Threshold</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DADActive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Activation/Deactivation of Duplicate Account Detector (DAD). A trigger based dupe detector to identify duplicates upon creation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable to activate of Duplicate Account Detector (DAD) Trigger</inlineHelpText>
+        <label>Active (DAD)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DADMatchTypes__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Select the different Type of Matches to apply to the Dupe Account Detector (DAD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the different Type of Matches to apply to the Dupe Account Detector (DAD)</inlineHelpText>
+        <label>Match Types</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account Name</fullName>
+                    <default>false</default>
+                    <label>Account Name</label>
+                </value>
+                <value>
+                    <fullName>Website</fullName>
+                    <default>false</default>
+                    <label>Website</label>
+                </value>
+                <value>
+                    <fullName>Account Name (Fuzzy)</fullName>
+                    <default>false</default>
+                    <label>Account Name (Fuzzy)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DAD_Field__c</fullName>
+        <defaultValue>&apos;TRIMEC__EC_Status__c&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Provide API name of account field which will be used to update with Dupe Status during the Dupe Account Detection</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide API name of account field which will be used to update with Dupe Status during the Dupe Account Detection (default: TRIMEC__EC_Status__c)</inlineHelpText>
+        <label>Dupe Status Field (Account)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DCDActive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Activation/Deactivation of Duplicate Contact Detector (DCD). A trigger based dupe detector to identify duplicates upon creation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable to activate of Duplicate Contact Detector (DCD) Trigger</inlineHelpText>
+        <label>Active (DCD)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DCDMatchTypes__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Select the different Type of Matches to apply to the Dupe Contact Detector (DCD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the different Type of Matches to apply to the Dupe Contact Detector (DCD)</inlineHelpText>
+        <label>Match Types</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email Only</fullName>
+                    <default>false</default>
+                    <label>Email Only</label>
+                </value>
+                <value>
+                    <fullName>Email + First Name + Last Name</fullName>
+                    <default>false</default>
+                    <label>Email + First Name + Last Name</label>
+                </value>
+                <value>
+                    <fullName>Email + Last Name</fullName>
+                    <default>false</default>
+                    <label>Email + Last Name</label>
+                </value>
+                <value>
+                    <fullName>Company + First Name + Last Name</fullName>
+                    <default>false</default>
+                    <label>Company + First Name + Last Name</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DCD_Field__c</fullName>
+        <defaultValue>&apos;TRIMEC__EC_Status__c&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Provide API name of account field which will be used to update with Dupe Status during the Dupe Contact Detection</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide API name of account field which will be used to update with Dupe Status during the Dupe Contact Detection (default: TRIMEC__EC_Status__c)</inlineHelpText>
+        <label>Dupe Status Field (Contact)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DLDActive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Activation/Deactivation of Duplicate Lead Detector (DLD). A trigger based dupe detector to identify duplicates upon insertion (web-to-lead, import etc.)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable to activate of Duplicate Lead Detector (DLD) Trigger</inlineHelpText>
+        <label>Active (DLD)</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DLDBlockSource__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of Lead sources for where the duplicates identified by the Match rules will be blocked</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List of Lead sources for where the duplicates identified by the Match rules will be blocked</inlineHelpText>
+        <label>Lead Sources for Blocking</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All</fullName>
+                    <default>false</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>Web</fullName>
+                    <default>false</default>
+                    <label>Web</label>
+                </value>
+                <value>
+                    <fullName>Phone Inquiry</fullName>
+                    <default>false</default>
+                    <label>Phone Inquiry</label>
+                </value>
+                <value>
+                    <fullName>Partner Referral</fullName>
+                    <default>false</default>
+                    <label>Partner Referral</label>
+                </value>
+                <value>
+                    <fullName>Purchased List</fullName>
+                    <default>false</default>
+                    <label>Purchased List</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>&lt;None&gt;</fullName>
+                    <default>false</default>
+                    <label>&lt;None&gt;</label>
+                </value>
+                <value>
+                    <fullName>...add your own values...</fullName>
+                    <default>false</default>
+                    <label>...add your own values...</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DLDDupeStatusAccount__c</fullName>
+        <defaultValue>&apos;New - Dupe Account!&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Entry Check Status to be set when an Account is detected as a dupe of another Account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a Status Value to be set when an Account is detected as a dupe of another Account. If left BLANK, default value is: New - Dupe Account!</inlineHelpText>
+        <label>Dupe Status (Account)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DLDDupeStatusContact__c</fullName>
+        <defaultValue>&apos;New - Dupe Contact!&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Lead Status to be set when a lead is detected as a dupe of a contact.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a Lead Status to be set when a lead is detected as a dupe of a contact. If left BLANK, default value is: New - Dupe Contact!</inlineHelpText>
+        <label>Dupe Status (Contact)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DLDDupeStatusLead__c</fullName>
+        <defaultValue>&apos;New - Dupe Lead!&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Lead Status to be set when a lead is detected as a dupe of another Lead.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter a Lead Status to be set when a lead is detected as a dupe of another Lead. If left BLANK, default value is: New - Dupe Lead!</inlineHelpText>
+        <label>Dupe Status (Lead)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DLDMatchTypes__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Select the different Type of Matches to apply to the Dupe Lead Detector (DLD)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the different Type of Matches to apply to the Dupe Lead Detector (DLD)</inlineHelpText>
+        <label>Match Types</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Email Only</fullName>
+                    <default>false</default>
+                    <label>Email Only</label>
+                </value>
+                <value>
+                    <fullName>Email + First Name + Last Name</fullName>
+                    <default>false</default>
+                    <label>Email + First Name + Last Name</label>
+                </value>
+                <value>
+                    <fullName>Email + Last Name</fullName>
+                    <default>false</default>
+                    <label>Email + Last Name</label>
+                </value>
+                <value>
+                    <fullName>Company + First Name + Last Name</fullName>
+                    <default>false</default>
+                    <label>Company + First Name + Last Name</label>
+                </value>
+                <value>
+                    <fullName>First Name + Last Name</fullName>
+                    <default>false</default>
+                    <label>First Name + Last Name</label>
+                </value>
+                <value>
+                    <fullName>First Name + Last Name + Phone</fullName>
+                    <default>false</default>
+                    <label>First Name + Last Name + Phone</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DLDStatusSource__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of Lead sources for where the duplicates identified by the Match rules will be have the Status set to Dupe</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List of Lead sources for where the duplicates identified by the Match rules will be have the Status set to Dupe</inlineHelpText>
+        <label>Lead sources for Status Change</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All</fullName>
+                    <default>false</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>Web</fullName>
+                    <default>false</default>
+                    <label>Web</label>
+                </value>
+                <value>
+                    <fullName>Phone Inquiry</fullName>
+                    <default>false</default>
+                    <label>Phone Inquiry</label>
+                </value>
+                <value>
+                    <fullName>Partner Referral</fullName>
+                    <default>false</default>
+                    <label>Partner Referral</label>
+                </value>
+                <value>
+                    <fullName>Purchased List</fullName>
+                    <default>false</default>
+                    <label>Purchased List</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>&lt;None&gt;</fullName>
+                    <default>false</default>
+                    <label>&lt;None&gt;</label>
+                </value>
+                <value>
+                    <fullName>...add your own...</fullName>
+                    <default>false</default>
+                    <label>...add your own...</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__DebugON__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debug ON</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Default_Company__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The value of this field will be use to auto-populate the company field, when a user decides to create a new Lead/Contact, but did not provide a company name on the Entry Check Screen</description>
+        <externalId>false</externalId>
+        <label>Default Company Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Default_Email__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The value of this field will be use to auto-populate the email field, when a user decides to create a new Lead/Contact, but did not provide a email on the Entry Check Screen</description>
+        <externalId>false</externalId>
+        <label>Default Email</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Default_FirstName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The value of this field will be use to auto-populate the First Name field, when a user decides to create a new Lead/Contact, but did not provide a first name on the Entry Check Screen</description>
+        <externalId>false</externalId>
+        <label>Default First Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Default_LastName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The value of this field will be use to auto-populate the last name field, when a user decides to create a new Lead/Contact, but did not provide a last name on the Entry Check Screen</description>
+        <externalId>false</externalId>
+        <label>Default Last Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Enhanced_Display_DupeStatusAccount__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Control which Dupes to include in list.
+Enable/Disable to Include/Exclude Leads which are duplicates of the Account (Lead-Accounts)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable/Disable to Include/Exclude Leads which are duplicates of the Account (Lead-Accounts)</inlineHelpText>
+        <label>Account Dupe Status: Include Leads</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Enhanced_Display_DupeStatusContact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Control which Dupes to include in list.
+Enable/Disable to Include/Exclude Leads which are duplicates of the Contact (Lead-Contact)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable/Disable to Include/Exclude Leads which are duplicates of the Contact (Lead-Contact)</inlineHelpText>
+        <label>Contact Dupe Status: Include Leads</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Enhanced_Display_DupeStatusLead__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Control which Dupes to include in list.
+Enable/Disable to Include/Exclude Accounts which are duplicates of the Lead (Lead-Accounts)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enable/Disable to Include/Exclude Accounts which are duplicates of the Lead (Lead-Accounts)</inlineHelpText>
+        <label>Lead Dupe Status: Include Accounts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Entry_Check_VF_Page__c</fullName>
+        <defaultValue>&quot;/apex/TRIMEC__DataTrim_EntryCheck&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>URL reference for the Entry Check VF Page. Use this parameter to navigate to a custom Entry Check page:</description>
+        <externalId>false</externalId>
+        <label>Entry Check VF Page</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Exclusion_List__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of words to exclude in searches, common words in company names like: Consulting etc.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List of words to exclude in searches, common words in company names like: Consulting etc.</inlineHelpText>
+        <label>Exclusion List</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_City__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide City Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide City Field for data entry</inlineHelpText>
+        <label>Hide City</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_Company__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide Company Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide Company Field for data entry</inlineHelpText>
+        <label>Hide Company</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_Convert_Button__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Hide Convert Button on View All page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hide Convert Button on View All page.</inlineHelpText>
+        <label>Hide Convert Button</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_Country__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide Country Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide Country Field for data entry</inlineHelpText>
+        <label>Hide Country</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide Email Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide Email Field for data entry</inlineHelpText>
+        <label>Hide Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_Fax__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide Fax Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide Fax Field for data entry</inlineHelpText>
+        <label>Hide Fax</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_First_Name__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide First Name Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide First Name Field for data entry</inlineHelpText>
+        <label>Hide First Name</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_Last_Name__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide Last Name Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide Last Name Field for data entry</inlineHelpText>
+        <label>Hide Last Name</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_Merge_Button__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Hide merge button on Main page. the Merge button allows you to launch the merge wizard on 2 or 3 records returned from a search result</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hide merge button on Main page. the Merge button allows you to launch the merge wizard on 2 or 3 records returned from a search result</inlineHelpText>
+        <label>Hide Merge Button</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_Mobile__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide Mobile Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide Mobile Field for data entry</inlineHelpText>
+        <label>Hide Mobile</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_Phone__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide Phone Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide Phone Field for data entry</inlineHelpText>
+        <label>Hide Phone</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_Postal_Code__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide Postal Code Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide Postal Code Field for data entry</inlineHelpText>
+        <label>Hide Postal Code</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_State__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide State Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide State Field for data entry</inlineHelpText>
+        <label>Hide State</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_Street__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide Street Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide Street Field for data entry</inlineHelpText>
+        <label>Hide Street</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Hide_Website__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide Website Field for data entry</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide Website Field for data entry</inlineHelpText>
+        <label>Hide Website</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__InvokeNewAccountUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>New Account Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__InvokeNewContactUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>New Contact Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__InvokeNewLeadUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>New Lead Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__InvokeNewPersonUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>New Person Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Lead_CF1__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Support for custom search for contacts using Custom key 1
+Example: VRN__c like &apos;%cf1%&apos;
+cf1 will be replaced with the value entered by the user in the cf1 input field, e.g. X123 so that the search becomes: VRN__c like &apos;%X123%&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Search method for Custom Search (CF1), Examples: VRN__c LIKE &apos;%cf1%&apos;  or Customer_No__c = &apos;cf1&apos;</inlineHelpText>
+        <label>Lead Custom Search 1</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Lead_CF2__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Support for custom search for leads using Custom key 1
+Example: VRN__c like &apos;%cf2%&apos;
+cf2 will be replaced with the value entered by the user in the cf2 input field, e.g. X123 so that the search becomes: VRN__c like &apos;%X123%&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Search method for Custom Search (CF2), Examples: VRN__c LIKE &apos;%cf2%&apos; or Customer_No__c = &apos;cf2&apos;</inlineHelpText>
+        <label>Lead Custom Search 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Lead_CF3__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Support for custom search for leads using Custom key 3
+Example: VRN__c like &apos;%cf3%&apos;
+cf3 will be replaced with the value entered by the user in the cf3 input field, e.g. X123 so that the search becomes: VRN__c like &apos;%X123%&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Search method for Custom Search (CF3), Examples: VRN__c LIKE &apos;%cf3%&apos; or Customer_No__c = &apos;cf3&apos;</inlineHelpText>
+        <label>Lead Custom Search 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Lead_Field_List__c</fullName>
+        <deprecated>false</deprecated>
+        <description>List of field used when querying the Lead Object.
+Default is: Id, Name, FirstName, LastName, Company, Website, Phone, Fax, MobilePhone, Email, Status, LeadSource, Owner.Name&apos;;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List of fields to query for Leads</inlineHelpText>
+        <label>Lead Field List</label>
+        <length>2048</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Lead_Label_Singular__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label Text to be displayed for Matched Records from the Lead Table.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Label Text to be displayed for Matched Records from the Lead Table.</inlineHelpText>
+        <label>Lead Label (Singular)</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Lead_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label Text to be displayed for Matched Records from the Lead Table.</description>
+        <externalId>false</externalId>
+        <label>Lead Label (Plural)</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Lead_NoMatchKey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Disable/enable the use of the Match Key Field on Lead. Default: Enabled</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Disable/enable the use of the Match Key Field on Lead. Default: Enabled</inlineHelpText>
+        <label>Lead No MatchKey</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Lead_QScopeDynFilter__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Allows you to dynamically scope the search on Leads
+Example: PlantType__c like &apos;%qsl%&apos;
+qsl will be replaced with the value entered by the user in the qsl input field, e.g. Production so that the search becomes:  PlantType__c like &apos;%Production%&apos;
+This will let Entry Check limit the search to Lead records with the Plant Type containing the word &apos;Production&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Limit the Entry Check to a subset of records. Example: RecordType.Name = &apos;lsa&apos; or PlantType__c like &apos;%lsa%&apos;</inlineHelpText>
+        <label>Lead Query Scope Filter (Dynamic)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Lead_QScopeFilter__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Specify Leads to include in the search. e.g. RecordType.Name = &apos;Customers&apos;
+Will let Entry Check only search the records with the Record Type of Customer.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Limit the Entry Check to a subset of records. Example: RecordType.Name = &apos;Doctor&apos; or RecordType.Name != &apos;Doctor&apos; or RecordType.Name LIKE &apos;Doctor&apos;</inlineHelpText>
+        <label>Lead Query Scope Filter</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Lead_Score_Threshold__c</fullName>
+        <defaultValue>95</defaultValue>
+        <deprecated>false</deprecated>
+        <description>A value between 0 and 100 to indicate which records that should be displayed.
+Only Matched records with a score higher than or equal to this value will be listed.</description>
+        <externalId>false</externalId>
+        <label>Lead Score Threshold</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__PersonAccount_Label_Singular__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label Text to be displayed for Matched Records from the Person Accounts</description>
+        <externalId>false</externalId>
+        <label>Person Account Label (Singular)</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__PersonAccount_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label Text to be displayed for Matched Records from Person Accounts</description>
+        <externalId>false</externalId>
+        <label>Person Account Label (Plural)</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Query_Limit__c</fullName>
+        <defaultValue>50</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Limits to number of records which re returned for each check performed towards the database.
+This Limit may need to be adjusted to meet salesforce&apos;s Data governor rules</description>
+        <externalId>false</externalId>
+        <label>Query Limit</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__RecordTypeID_for_PersonAccounts__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Record Type ID for Person Accounts</description>
+        <externalId>false</externalId>
+        <label>Record Type ID for Person Accounts</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__ShowLabels__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Show/Hide Labels for the Input fields on the Entry Check Main Page. Default is Hide</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Show/Hide Labels for the Input fields on the Entry Check Main Page. Default is Hide</inlineHelpText>
+        <label>Show Labels</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Without_Sharing_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Will disable sharing rules for Entry Check, allowing Entry Check to search in the entire database regardless of the users permission settings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Will disable sharing rules for Entry Check, allowing Entry Check to search in the entire database regardless of the users permission settings</inlineHelpText>
+        <label>Without Sharing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Without_Sharing_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Will disable sharing rules for Entry Check, allowing Entry Check to search in the entire database regardless of the users permission settings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Will disable sharing rules for Entry Check, allowing Entry Check to search in the entire database regardless of the users permission settings</inlineHelpText>
+        <label>Without Sharing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Without_Sharing_Lead__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Will disable sharing rules for Entry Check, allowing Entry Check to search in the entire database regardless of the users permission settings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Will disable sharing rules for Entry Check, allowing Entry Check to search in the entire database regardless of the users permission settings</inlineHelpText>
+        <label>Without Sharing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__Without_Sharing_Person__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Will disable sharing rules for Entry Check, allowing Entry Check to search in the entire database regardless of the users permission settings</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Will disable sharing rules for Entry Check, allowing Entry Check to search in the entire database regardless of the users permission settings</inlineHelpText>
+        <label>Without Sharing</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__useRT4Accounts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Use Record Types for Accounts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__useRT4Contacts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Use Record Types for Contacts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__useRT4Leads__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Use Record Types for Leads</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TRIMEC__useRT4PersonAccounts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Use Record Types for Person Accounts</description>
+        <externalId>false</externalId>
+        <label>Use Record Types for Person Accounts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Entry Check Setup</label>
+    <nameField>
+        <label>Entry Check Setup Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Entry Check Setup</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>TRIMEC__Activation_of_DAD_Need_Match_Type</fullName>
+        <active>true</active>
+        <description>If the Dupe Account Detector (DAD) is activated, a minimum of additional parameters must be set.</description>
+        <errorConditionFormula>AND( TRIMEC__DADActive__c = true , ISBLANK(TRIMEC__DADMatchTypes__c) )</errorConditionFormula>
+        <errorDisplayField>TRIMEC__DADMatchTypes__c</errorDisplayField>
+        <errorMessage>When activating the Dupe Account Detector, you must select at least one Match Type</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TRIMEC__Activation_of_DCD_Need_Match_Type</fullName>
+        <active>true</active>
+        <description>If the Dupe Contact Detector (DCD) is activated, a minimum of additional parameters must be set.</description>
+        <errorConditionFormula>AND( TRIMEC__DCDActive__c = true , ISBLANK(TRIMEC__DCDMatchTypes__c) )</errorConditionFormula>
+        <errorDisplayField>TRIMEC__DCDMatchTypes__c</errorDisplayField>
+        <errorMessage>When activating the Dupe Contact Detector, you must select at least one Match Type</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TRIMEC__Activation_of_DLD_Need_Action</fullName>
+        <active>true</active>
+        <description>If the dupe Lead Detector is activates, a minimum of additional parameters must be set.</description>
+        <errorConditionFormula>AND( TRIMEC__DLDActive__c = true ,  ISBLANK( TRIMEC__DLDStatusSource__c ),  ISBLANK(  TRIMEC__DLDBlockSource__c  )  )</errorConditionFormula>
+        <errorDisplayField>TRIMEC__DLDStatusSource__c</errorDisplayField>
+        <errorMessage>When activating the Dupe Lead Detector, you must select at least one Lead Source for which the action apply.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TRIMEC__Activation_of_DLD_Need_Match_Type</fullName>
+        <active>true</active>
+        <description>If the dupe Lead Detector is activated, a minimum of additional parameters must be set.</description>
+        <errorConditionFormula>AND( TRIMEC__DLDActive__c = true ,  ISBLANK(TRIMEC__DLDMatchTypes__c) )</errorConditionFormula>
+        <errorDisplayField>TRIMEC__DLDMatchTypes__c</errorDisplayField>
+        <errorMessage>When activating the Dupe Lead Detector, you must select at least one Match Type</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TRIMEC__Max_Query_Limit</fullName>
+        <active>true</active>
+        <errorConditionFormula>TRIMEC__Query_Limit__c &gt; 100</errorConditionFormula>
+        <errorDisplayField>TRIMEC__Query_Limit__c</errorDisplayField>
+        <errorMessage>The maximum Query Limit cannot not be higher than 100 (default is 50)</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>TRIMEC__Reset</fullName>
+        <availability>online</availability>
+        <description>Reset all values to their Default Values</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Reset</masterLabel>
+        <openType>sidebar</openType>
+        <page>TRIMEC__TRIM_ResetSettings</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

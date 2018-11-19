@@ -11,4 +11,5 @@
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>Copado_Integration_Setting__c</tabs>
 </CustomApplication>

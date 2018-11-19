@@ -1,0 +1,2 @@
+<apex:page standardController="TRIMEC__TRIM_Entry_Check_Setup__c" extensions="TRIMEC.EC_Settings_Controller" action="{!reset}">
+ </apex:page>

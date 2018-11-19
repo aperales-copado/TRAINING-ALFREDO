@@ -1,0 +1,58 @@
+<apex:page controller="TRIMEC.TRIM_DataGrapper"  tabStyle="DataTrim_Entry_Check__tab" >
+
+<apex:sectionHeader title="DataTrim" subtitle="Data Grabber" ></apex:sectionHeader>
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'DataTrim_EntryCheck.css')}"/>
+
+    <apex:form >
+	<apex:pageBlock title="Data from ClipBoard">
+	<apex:inputTextArea rows="6" cols="80" id="srcBlob" value="{!myBlob}" onkeypress="handleKeyPress(event);" />
+      <apex:panelGrid columns="2" columnClasses="pbLabel,pdData" border="0" cellpadding="0 0 10 0" cellspacing="0" width="50%">
+      	<apex:commandButton action="{!ParseBlob}" value="Parse" id="btnParse" styleClass="btnSharing" rerender="Result"/>
+      </apex:panelGrid>
+          
+         <script type="text/javascript">
+           function handleKeyPress(e){
+           var key= 0;
+           if(window.event){
+             key= e.keyCode;    //IE
+           }else if(e.which){
+            key= e.which;       //Firefox
+           }
+           if(key==13){
+                var sbutton = document.getElementById("{!$Component.btnSearch}");
+                sbutton.click();
+           }
+         }
+        </script>
+	</apex:pageBlock>
+	</apex:form>
+<apex:form id="Result">
+  <apex:pageBlock title="Result">
+      <apex:inputText style="display:none" />
+      <apex:panelGrid columns="6" columnClasses="pbLabelb,pdData,pbLabelb,pdData,pbLabelb,pdData" border="0" cellpadding="0" cellspacing="0" width="900px">
+          First Name: <apex:inputText id="srcFirstName" value="{!FirstName}" onkeypress="handleKeyPress(event);" />
+          Last Name: <apex:inputText id="srcLastName" value="{!LastName}" onkeypress="handleKeyPress(event);"/> 
+          Email: <apex:inputText id="srcEmail" value="{!Email}" onkeypress="handleKeyPress(event);"/>
+      </apex:panelGrid>
+      <apex:panelGrid columns="4" columnClasses="pbLabelb,pdData,pbLabel,pdData" border="0" cellpadding="0" cellspacing="0" width="600px">
+          Company: <apex:inputText id="srcCompany" value="{!Company}" onkeypress="handleKeyPress(event);"/>
+          Website: <apex:inputText id="srcWebSite" value="{!Website}" onkeypress="handleKeyPress(event);"/>
+      </apex:panelGrid>
+      <apex:panelGrid columns="6" columnClasses="pbLabel,pdData,pbLabel,pdData,pbLabel,pdData" border="0" cellpadding="0" cellspacing="0" width="900px">
+          Street: <apex:inputText id="srcStreet" value="{!Street}" onkeypress="handleKeyPress(event);"/>
+          Postal Code: <apex:inputText id="srcPostcode" value="{!PostCode}" onkeypress="handleKeyPress(event);"/>
+          City: <apex:inputText id="srcCity" value="{!City}" onkeypress="handleKeyPress(event);"/>
+      </apex:panelGrid>
+      <apex:panelGrid columns="4" columnClasses="pbLabel,pdData,pbLabel,pdData" border="0" cellpadding="0" cellspacing="0" width="600px">
+          State: <apex:inputText id="srcState" value="{!State}" onkeypress="handleKeyPress(event);"/>
+          Country: <apex:inputText id="srcCountry" value="{!Country}" onkeypress="handleKeyPress(event);"/>
+      </apex:panelGrid>
+      <apex:panelGrid columns="6" columnClasses="pbLabelb,pdData,pbLabelb,pdData,pbLabelb,pdData" border="0" cellpadding="0" cellspacing="0" width="900px">
+          Phone: <apex:inputText id="srcPhone" value="{!Phone}" onkeypress="handleKeyPress(event);"/>
+          Fax: <apex:inputText id="srcFax" value="{!Fax}" onkeypress="handleKeyPress(event);"/>
+          Mobile: <apex:inputText id="srcMobile" value="{!Mobile}" onkeypress="handleKeyPress(event);"/>
+      </apex:panelGrid>
+
+  </apex:pageBlock>
+</apex:form>
+</apex:page>

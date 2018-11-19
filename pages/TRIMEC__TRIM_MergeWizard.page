@@ -1,0 +1,70 @@
+<apex:page doctype="HTML-5.0" Controller="TRIMEC.TRIM_MergeWizard_Controller" action="{!getmyUrl}"  tabStyle="DataTrim_Entry_Check__tab" >
+<!-- <apex:page Controller="TRIM_MergeWizard_Controller" action="{!GoMerge}"> -->
+<apex:includescript value="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></apex:includescript>
+	
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'DataTrim_EntryCheck.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/styles/salesforce-lightning-design-system-ltng.css')}"/> 
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/DataTrim_EntryCheck_ltng.css')}"/>
+
+<style>
+	.bPageBlock{
+		border-color:#fff;
+	}
+</style>
+
+<script>
+	function tryRedirectClassic(){
+	    // Go back to the Account detail page
+	    if( !((typeof sforce != 'undefined') && sforce && (!!sforce.one)) ) {
+	        var url = location.href;  // entire url including querystring - also: window.location.href;
+	        var baseURL = url.substring(0, url.indexOf('/', 14));
+	        // Set the window's URL using a Visualforce expression
+	        //window.location = baseURL + '/' + aId;
+	        window.location = baseURL + '/' + '{!Url}';
+	    }
+	}
+	function tryRedirectLtng(){
+	    // Go back to the Account detail page
+	    if( (typeof sforce != 'undefined') && sforce && (!!sforce.one) ) {
+	        // Salesforce1 navigation
+	        sforce.one.navigateToURL('{!URL}');
+	        //sforce.one.navigateToSObject(aId);
+	    }
+	}
+
+	</script>
+	<script>window.setTimeout(tryRedirectClassic,20)</script>	<!-- If in Lightning Mode, we will stay on this page and the user will click to continue-->
+
+	<div style="margin:1rem;">
+	<apex:sectionHeader title="Entry Check" subtitle="Merge/Convert Selected Records" ></apex:sectionHeader>
+     <apex:form >
+     	<div class="slds">
+        <apex:pageBlock title="This will take you out of Lightning mode, click Continue to proceed." > <!-- oType -->
+        	<apex:pageMessages /> 
+        	<apex:facet name="header" >
+	     	<apex:panelGrid id="headergrid"  columns="2" styleclass="{!IF(otype =='lead','slds-icon-standard-lead', if(otype == 'account', 'slds-icon-standard-account', 'slds-icon-standard-contact'))}" style="padding-top:0px;padding-bottom:0px;">
+	     		<apex:panelGrid id="headergrid2" columns="2" style="padding-top:0px;padding-bottom:0px">
+	     		<img src="{!URLFOR($Resource.DataTrim_EntryCheck, '/css/icons/standard/lead_60.png')}" style="height:2rem;{!if(otype == 'lead','display:initial;', 'display:none;')}" />
+	     		<img src="{!URLFOR($Resource.DataTrim_EntryCheck, '/css/icons/standard/contact_60.png')}" style="height:2rem;{!if(or(otype == 'contact',otype=='person'),'display:initial;', 'display:none;')}" />
+	     		<img src="{!URLFOR($Resource.DataTrim_EntryCheck, '/css/icons/standard/account_60.png')}" style="height:2rem;{!if(otype == 'account','display:initial;', 'display:none;')}" />
+		     	<span style="padding-top:0px;padding-bottom:0px;width:250px;color:white;" class="lbl_section">
+	            		&nbsp;This will take you out of Lightning mode, click Continue to proceed.&nbsp;   
+		        </span>
+		        </apex:panelGrid>
+		        <apex:panelGroup >
+				 	<input type="button" value="Continue" onclick="tryRedirectLtng(); return false;" class="slds-button slds-button--neutral" />
+				 	<input type="button" value="Cancel" onclick="javascript:sforce.one.navigateToURL('{!returUrl}');" class="slds-button slds-button--neutral" />
+
+					<!-- 
+		     		<apex:commandButton value="{!$Label.Create_New_Lead}" id="btnNewLead" action="{!invokeNewLead}" disabled="{!not MatchResult.Checked}" styleClass="slds-button slds-button--neutral dt_ltng" style="font-weight: normal;" />
+		     		<apex:commandButton value="Merge" id="btnOpenMergeLeads" action="{!invokeMergeLeads}" rendered="{!NOT Settings.Hide_MergeButton}" disabled="{!NoOfLeads < 2}" styleClass="slds-button slds-button--neutral dt_ltng" style="font-weight: normal;" />
+		     		 -->
+		     	</apex:panelGroup>
+		      </apex:panelGrid>
+		  </apex:facet>
+		  <apex:input type="text" value="{!URL}" id="url" size="150" style="display:none;" /><br />
+        </apex:pageBlock>
+        </div>
+       </apex:form>
+      </div>    
+</apex:page>
