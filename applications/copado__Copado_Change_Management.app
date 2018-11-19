@@ -25,4 +25,5 @@
     <tabs>copado__User_Story_Metadata__c</tabs>
     <tabs>copado__Kanban_Board__c</tabs>
     <tabs>copado__Copado_DX_Panel</tabs>
+    <tabs>Copado_Integration_Setting__c</tabs>
 </CustomApplication>

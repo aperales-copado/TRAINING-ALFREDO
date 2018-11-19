@@ -1,0 +1,373 @@
+<apex:page controller="TRIMEC.EC_Setup_Controller"  tabStyle="DataTrim_Entry_Check__tab">
+<apex:sectionHeader title="DataTrim" subtitle="Entry Check" ></apex:sectionHeader>
+<apex:includescript value="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></apex:includescript>
+	
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'DataTrim_EntryCheck.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/styles/salesforce-lightning-design-system-ltng.css')}"/> 
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/DataTrim_EntryCheck_ltng.css')}"/>
+
+<style type="text/css">
+ .back{
+        background-image:url('http://www.datatrim.com/entrycheck/images/Washer7.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        background-position:top;
+        }
+.DL{    color: #3366FF;
+        font-size: 28px;
+         font-weight: bold;
+        }
+ .DA{	 color: #3366FF; 
+         font-weight: bold;
+         font-size: 42px;
+        }
+        
+</style>
+
+
+<apex:form rendered="{!Not Initialized}">
+<!-- <apex:pageBlock title="Application Initialization"> -->
+<div class="slds">
+<div class="slds-grid slds-wrap">
+	<div class="slds-col">
+		<div style="font-size:1.5rem;font-weight:bold;">Application Initialization</div>
+		<strong>Thank you for Installing DataTrim Entry Check</strong><br />
+		<div style="font-size:12px;">
+			You are almost ready to start using the application...<br />
+			Initialize the application using the button below.
+			<br />
+			<apex:commandButton action="{!InitializeMe}" value="Intialize Entry Check Setttings" id="btnInitializeltng"  styleClass="slds-button slds-button--brand" />
+			<br /><br />
+			<div style="font-size:100%;">The initialization will set all the search/check settings<br /> to their default values.</div> 
+		</div>
+	</div>
+	<div class="slds-col">
+		<img class="dt_ltng" src="{!URLFOR($Resource.DataTrim_EntryCheck, '/img/ec_init.png')}" style="height:200px" />
+	</div>
+</div>
+</div>
+
+<!-- OLD
+<strong>Thank you for Installing DataTrim Entry Check</strong>
+<br />You are almost ready to start using the application, but before you can start using it you will have to initialize the application using the button below.
+<br />The initialization will set all the search/check settings to their default values. 
+<br />Once this is done you can change these settings using the setup link which will appear in the top-right corner of the Entry Check Page.<br />
+<br />
+<apex:commandButton action="{!InitializeMe}" value="Intialize Entry Check Setttings" id="btnInitialize"  styleClass="btnSharing" />
+<br />
+</apex:pageBlock>
+<apex:pageBlock title="To Learn More...">
+<br /><b>Setting up DataTrim Entry Check:</b>&nbsp; Check the <a href="http://www.datatrim.com/downloads/DatatrimEntryCheck_SetupGuide.pdf#zoom=80" title="Datatrim Entry Check User Guide" target="_blank">User Guide</a> for details.<br /> 
+<br />
+<b>Tutorials:</b>&nbsp;To get the most out of our application we recommend you to spend a few minutes watching this <a href="http://www.datatrim.com/d2b.php?mode=EntryCheck#demo" title="Datatrim Entry Check Introduction Demo" target="_blank">introduction Demo</a><br /> 
+<br />
+
+<b>Support:</b>&nbsp;Contact us at <a  href="mailto:support@datatrim.com" target="_blank">support@datatrim.com</a> with any question or ideas <br />-We appreciate all the feedback we can get.<br />
+
+<b>Follow product updates and news on our Blog, and Twitter:</b> 
+<a href="http://www.datatrim.com/blog" target="_new"><apex:image url="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'wordpress_32.png')}" width="24px" height="24px" alt="DataTrim Blog" title="Follow product updates and news on our Blog" /></a>
+<a href="http://www.twitter.com/datatrim" target="_new"><apex:image url="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'twitter_32.png')}" width="24px" height="24px" alt="DataTrim on Twitter" title="Follow DataTrim on Twitter" /></a>
+<br />  
+ -->
+
+<!-- </apex:pageBlock> -->
+</apex:form>
+
+<apex:pageBlock title="Entry Check Setup" rendered="{!Initialized}" >
+<apex:PageMessages />
+<apex:form >
+<table border="0"  style="width:100%">
+    <tr>
+        <td width="180px" id="menu">
+            <table border="0" style="width:100%;"  >
+            <tr><td><apex:outputLink styleClass="DTaction" value="http://www.datatrim.com/downloads/DatatrimEntryCheck_SetupGuide.pdf#zoom=80" target="Blank" title="DataTrim Entry Check Setup and User Guide" ><strong>Setup and User Guide</strong></apex:outputLink></td></tr>
+			<tr><td><apex:outputLink styleClass="DTNews"  value="http://blog.datatrim.com/?cat=6" target="_blank" title="Latest News Regarding DataTrim Entry Check" ><strong>News</strong></apex:outputLink></td></tr>
+
+            <tr height="10px"><td></td></tr>
+            <tr><td style="color:#3366FF; font-weight: bold;" >Search and Check</td></tr>
+            <tr><td><apex:commandLink styleClass="DTaction" action="{!displayBasic}" value="Basic Settings" rerender="main" title="Select which objects to search, use of records types etc." /></td></tr>
+            <tr><td><apex:commandLink styleClass="DTaction" action="{!displayAdvanced}" value="Advanced Settings" rerender="main" title="Change behavior of algorithms" /></td></tr>
+            <tr><td><apex:commandLink styleClass="DTaction" action="{!displayPageLayout}" value="User Interface" rerender="main" title="Modify the Page Lyour for the Entry Check Page" /></td></tr>
+            <!--  <tr><td><apex:commandLink styleClass="DTaction" action="{!displayDefaultValues}" value="Default Values" rerender="main" title="Set Default value for new record creation" /></td></tr> -->
+
+            <tr height="10px"><td></td></tr>
+            <tr><td style="color:#3366FF; font-weight: bold;" >Dupe Detection<br /><span style="font-size:80%">(Trigger Based - Upon Entry)</span></td></tr>
+            <tr><td><apex:commandLink styleClass="DTaction" action="{!displayDLD}" value="Dupe Lead Detection" rerender="main" title="Activate, and define how Leads are being identified as duplicates" /></td></tr>
+            <tr><td><apex:commandLink styleClass="DTaction" action="{!displayDCD}" value="Dupe Contact Detection" rerender="main" title="Activate, and define how Contacts are being identified as duplicates" /></td></tr>
+            <tr><td><apex:commandLink styleClass="DTaction" action="{!displayDAD}" value="Dupe Account Detection" rerender="main" title="Activate, and define how Accounts are being identified as duplicates" /></td></tr>
+            
+            <tr height="10px"><td></td></tr>
+            <tr><td style="color:#3366FF; font-weight: bold;">Other</td></tr>
+            <!-- <tr><td><apex:commandLink styleClass="DTaction" action="{!displayxxx}" value="All" rerender="main" title="Activate, and define how leads are being identified as duplicates" /></td></tr> -->
+            <tr><td><apex:outputLink styleClass="DTaction" value="/{!setupId}" title="Show all settings using the standard page layout" >All </apex:outputLink></td></tr>
+            
+
+            </table>
+        </td>
+        <td id="tablebody"> 
+        <apex:outputPanel id="main" >
+                <!-- SPLASH --> 
+                 <apex:outputPanel id="splash"  rendered="{!showSplash}">
+                 	<table border="0" width="100%" class="back">
+					<tr style="height:2rem"><td></td><td width="700px" ></td><td></td></tr>
+					<tr><td ></td><td width="700px" style="text-align:left;" >
+						<div class="slds">
+							<div class="slds-grid slds-wrap">
+								<div class="slds-col">
+								<div style="font-size:1.5rem;font-weight:bold;" class="DA">To Learn More...</div>
+									<div style="font-size:12px;">
+										<table style="width:400px;font-size:12px;" >
+											<tr>
+											<td style="width:40%;vertical-align:bottom;"><strong>Setup:</strong><br />Modify default settings </td>
+											<td style="vertical-align:bottom;text-align:right;"><a href="/apex/TRIMEC__DataTrim_EntryCheckSetup" target="_new"><img src="{!URLFOR($Resource.DataTrim_EntryCheck, '/img/setup2.png')}" width="32px" height="32px" alt="Setup" title="Setup" /></a></td>
+											<td style="vertical-align:bottom;text-align:left;"><a href="http://www.datatrim.com/downloads/DatatrimEntryCheck_SetupGuide.pdf#zoom=80" target="_new"><img src="{!URLFOR($Resource.DataTrim_EntryCheck, '/img/userguide.png')}" width="32px" height="32px" alt="User Guide" title="Check the User Guide for details." /></a></td>
+											<td style="width:40%;vertical-align:bottom;"><strong>User Guide:</strong><br />Installation and Setup instructions</td>
+											</tr>
+											<tr>
+											<td style="width:40%;vertical-align:bottom;"><b>Tutorials:</b><br />Learn more from our introductory video playlist.</td>
+											<td style="vertical-align:top;text-align:right;"><a href="http://www.datatrim.com/d2b.php?mode=EntryCheck#demo" target="_new"><img src="{!URLFOR($Resource.DataTrim_EntryCheck, '/img/tutorials.png')}" width="32px" height="32px" alt="Tutorials" title="Learn more from these videos" /></a></td>
+											<td style="vertical-align:top;text-align:left;"><a href="mailto:support@datatrim.com" target="_new"><img src="{!URLFOR($Resource.DataTrim_EntryCheck, '/img/support.png')}" width="32px" height="32px" alt="Support" title="Support" /></a></td>
+											<td style="width:40%;vertical-align:top;"><strong>Support:</strong><br />Contact us with ANY questions and/or ideas</td>
+											</tr>
+										</table>
+										<br />
+										<b>Follow product updates and news on our Blog, and Twitter:</b> 
+										<a href="http://www.datatrim.com/blog" target="_new"><apex:image url="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'wordpress_32.png')}" width="24px" height="24px" alt="DataTrim Blog" title="Follow product updates and news on our Blog" /></a>
+										<a href="http://www.twitter.com/datatrim" target="_new"><apex:image url="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'twitter_32.png')}" width="24px" height="24px" alt="DataTrim on Twitter" title="Follow DataTrim on Twitter" /></a>
+									</div>
+								</div>
+								<div class="slds-col">
+									<img class="dt_ltng" src="{!URLFOR($Resource.DataTrim_EntryCheck, '/img/ec_init.png')}" style="height:200px" />
+								</div>
+								
+							</div>
+						</div>
+					
+						<!-- OLD 
+						<table border="2"  style="background:#ffffff; border-color: #3366FF; filter:Alpha(opacity=70); -moz-opacity:0.70; opacity:0.70; -khtml-opacity:0.70;">
+						<tr><td valign="top" align="left" style="padding: 10px" >
+						
+						<h2>Thank you for using DataTrim Entry Check</h2><br /><br />
+						<b>Tutorials:</b>&nbsp;To get the most out of our application we recommend you to spend a few minutes watching our <a href="http://www.datatrim.com/d2b.php?mode=EntryCheck#demo" title="Datatrim Entry Check tutorials" target="_blank">Tutorials</a><br /> 
+						<br />
+						<b>Getting Started - Setting up and Running Alerts:</b>&nbsp; Check the <a href="http://www.datatrim.com/downloads/DatatrimEntryCheck_SetupGuide.pdf#zoom=80" title="Datatrim Entry Check Guide" target="_blank">User Guide</a> for details.<br /> 
+						<br />
+						
+						<b>Support:</b>&nbsp;Contact us at <a  href="mailto:support@datatrim.com" target="_blank">support@datatrim.com</a> with any question or ideas <br />-We appreciate all the feedback we can get.<br />
+						<b>Follow product updates and news on our Blog, Facebook and Twitter:</b> 
+						<a href="http://blog.datatrim.com" target="_new"><img alt="DataTrim Blog" title="Follow product updates and news on our Blog" border="0" src="http://www.datatrim.com/images/wordpress_32.png" width="24px" height="24px" /></a>
+						<a href="http://www.facebook.com/pages/DataTrim/112264318808785" target="_new"><img alt="DataTrim on Facebook" title="Follow DataTrim on Facebook" border="0" src="http://www.datatrim.com/images/facebook_32.png" width="24px" height="24px" /></a>
+						<a href="http://www.twitter.com/datatrim" target="_new"><img alt="DataTrim on Twitter" title="Follow DataTrim on Twitter" border="0" src="http://www.datatrim.com/images/twitter_32.png" width="24px" height="24px" /></a>
+						</td></tr>
+						</table>
+						-->
+					
+					</td><td class="style2"></td></tr>
+					<tr ><td></td><td width="700px" style="text-align:right;"><span class="DL">-From Your Data Laundry</span></td><td></td></tr>
+					<tr height="50px" ><td></td><td width="300px"></td><td></td></tr>
+					</table>
+                    <!-- <apex:iframe height="500" src="http://www.datatrim.com/entrycheck/TRIMEC_SplashPage_12.htm" scrolling="true" id="thesplashpage"  /> -->
+                 </apex:outputPanel>
+                 
+                <!-- BASIC --> 
+                <apex:pageBlock title="Basic Settings" rendered="{!showBasic}" >
+                    <p>This page allows you to enable/disable the search for the default objects. E.g. in case you do not use the Leads, disable this feature and Entry Check will skip this search. </p>
+                    <p>The Score Threshold is a way to limit the number of results being presented. The higher this score is the more accurate must the correspondence between the entered data and the presented records be, in order to be included on the display list.</p>
+                    <br />
+                        <apex:pageBlockSection id="secL" title="Enable Lead Checking" columns="2" > 
+                            <apex:inputField value="{!P.TRIMEC__Check_Leads__c}"  />
+                            <apex:inputField value="{!P.TRIMEC__Lead_Score_Threshold__c}"  />
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection id="secA" title="Enable Account Checking" columns="2" > 
+                            <apex:inputField value="{!P.TRIMEC__Check_Accounts__c}"  />
+                            <apex:inputField value="{!P.TRIMEC__Account_Score_Threshold__c}"  />
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection id="secC" title="Enable Contact Checking" columns="2" > 
+                            <apex:inputField value="{!P.TRIMEC__Check_Contacts__c}"  />
+                            <apex:inputField value="{!P.TRIMEC__Contact_Score_Threshold__c}"  />
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection id="secP" title="Enable Person Account Checking" columns="2" > 
+                            <apex:inputField value="{!P.TRIMEC__Check_PersonAccounts__c}"  />
+                        </apex:pageBlockSection>
+                    	 <apex:commandButton action="{!saveParameters}" value="Save" rerender="main" status="actionStatus" />&nbsp;{!saveResult} 
+                </apex:pageBlock>   
+                
+                
+                <!-- ADVANCED --> 
+                <apex:pageBlock title="Advanced Settings" rendered="{!showAdvanced}" >
+                    <p>This page allows you to customize DataTrim Entry Check and activate a number of advanced features. . </p><br />
+                    <apex:pageBlock title="Using Record Types"  >
+                        <p>DataTrim Entry Check supports the use of Record Types when creating new records, but the functionality is different in Classic and in Lighting (even if you are in Classic and enable the Lightning Experience Theme in the User interface settings).<br />
+                        If you are in Classic and you use Record Types, then activate the features below accordingly. <br />
+                        If you are in Lightning or have enabled the Lightning Experience Theme, then UNTICK all the below, to let the app provide you with the Record Type selection automatically.</p><br />
+                        <apex:pageBlockSection id="secRT" title="Using Record Types" columns="2" > 
+                            <apex:inputField value="{!P.TRIMEC__useRT4Leads__c}"  /><br />
+                            <apex:inputField value="{!P.TRIMEC__useRT4Accounts__c}"  /><br />
+                            <apex:inputField value="{!P.TRIMEC__useRT4Contacts__c}"  /><br />
+                            <apex:inputField value="{!P.TRIMEC__useRT4PersonAccounts__c}"  />
+                            <apex:inputField value="{!P.TRIMEC__RecordTypeID_for_PersonAccounts__c}"  />
+                        </apex:pageBlockSection>                                                
+                    </apex:pageBlock>
+                    <apex:pageBlock title="Disable Sharing Rules"  >
+                        <p>If you have Role hierarchies implemented in your salesforce org. Entry Check respect your sharing rules, and a user will only be allowed to search/check within the set of records for which he/she has permissions. <br />
+                        By disabling the sharing rules and letting Entry Check perform it’s searched without sharing, will present match results also outside the permissions for the user.<br />
+                        The Action page, is the landing page the user will go to when he request a sharing of the found record. Customize this to implement your own preferences.</p><br />
+                        
+                        <apex:pageBlockSection id="secLS" title="Leads" columns="2" > 
+                            <apex:inputField value="{!P.TRIMEC__Without_Sharing_Lead__c}"  />
+                            <apex:inputField value="{!P.TRIMEC__Action_Page_Share_Lead__c}"  />
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection id="secAS" title="Accounts" columns="2" > 
+                            <apex:inputField value="{!P.TRIMEC__Without_Sharing_Account__c}"  />
+                            <apex:inputField value="{!P.TRIMEC__Action_Page_Share_Account__c}"  />
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection id="secCS" title="Contacts" columns="2" > 
+                            <apex:inputField value="{!P.TRIMEC__Without_Sharing_Contact__c}"  />
+                            <apex:inputField value="{!P.TRIMEC__Action_Page_Share_Contact__c}"  />
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection id="secPS" title="PersonAccounts" columns="2" > 
+                            <apex:inputField value="{!P.TRIMEC__Without_Sharing_Person__c}"  />
+                            <apex:inputField value="{!P.TRIMEC__Action_Page_Share_Person__c}"  />
+                        </apex:pageBlockSection>                                                
+                    </apex:pageBlock>
+                    <apex:pageBlock title="Other"  >
+                        <p>When a new record (lead, account or contact) is created, you can pre-populate a number of fields with a default value. </p>
+                        <p>The exclusion list, is a way for you to create a list of common words (sparated by comma) which will be removed from the fields when searching and comparing. <br />
+                        Use this to eliminate workds like: Construction, Hospital, [Not Provided], etc. if these occur frequently in your database, and improve your search results. </p>
+                        <p>If you have developed a Custom Entry Check page in order to e.g. have a custom look and feel, change the navigation below to navigate to your custom page<br />(Default value:  /apex/TRIMEC__DataTrim_EntryCheck) </p><br />
+                        <apex:pageBlockSection id="secRT" title="Default values for creating new records" columns="2" > 
+                            <apex:inputField value="{!P.TRIMEC__Default_Company__c}"  />
+                            <apex:inputField value="{!P.TRIMEC__Default_Email__c}"  />
+                            <apex:inputField value="{!P.TRIMEC__Default_FirstName__c}"  />
+                            <apex:inputField value="{!P.TRIMEC__Default_LastName__c}"  />
+                        </apex:pageBlockSection>
+                         <apex:pageBlockSection id="secEL" title="Exclusion List" columns="1" > 
+                            <apex:inputField value="{!P.TRIMEC__Exclusion_List__c}"  />
+                        </apex:pageBlockSection>
+                        <apex:pageBlockSection id="secCL" title="Other Advanced Settings" columns="2" > 
+                            <apex:inputField value="{!P.TRIMEC__Entry_Check_VF_Page__c}"  />
+                            <apex:inputField value="{!P.TRIMEC__Query_Limit__c}"  />
+                        </apex:pageBlockSection>
+                    </apex:pageBlock>
+                     <apex:commandButton action="{!saveParameters}" value="Save" rerender="main" status="actionStatus" />&nbsp;{!saveResult} 
+                </apex:pageBlock>                                   
+
+                <!-- PAGELAYOUT --> 
+                <apex:pageBlock title="User Interface Settings" rendered="{!showPageLayout}" >
+                    <p>This page allows you to customize the visual elements of DataTrim Entry Check. </p>
+                    <p>The Dupe Status (on the page layout of Account, Contact and Lead), can be modified to include references to potential matching leads/accounts. </p>
+                    <p>The classification (0-5 stars can be disabled), and you can hide input fields on the Main Entry Check Page</p>
+                    <p>You can hide/show the search fields in the input section (for adding custom fields see the User Guide for more details)<br />
+                    The button to merge/convert can be hidden in case you do not allow your endusers to merge/covert<br /></p>
+                    <p>With the Lightning experience there are no labels displayed for the input fields, you can force these labels to be shown, and enable the Classic theme.</p>
+                    <br />
+                    <apex:pageBlockSection id="secDS" title="Dupe Status Display Options" columns="1" > 
+                        <apex:inputField value="{!P.TRIMEC__Enhanced_Display_DupeStatusAccount__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__Enhanced_Display_DupeStatusContact__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__Enhanced_Display_DupeStatusLead__c}"  />
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection id="secCL" title="Classify Match Results" columns="2" > 
+                        <apex:inputField value="{!P.TRIMEC__Classify_Match_Result__c}"  />
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection id="secRT" title="Hide input fields" columns="2" > 
+                        <apex:inputField value="{!P.TRIMEC__Hide_First_Name__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__Hide_Last_Name__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__Hide_Email__c}"  /><br />
+                        <apex:inputField value="{!P.TRIMEC__Hide_Company__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__Hide_Website__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__Hide_Street__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__Hide_City__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__Hide_Postal_Code__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__Hide_State__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__Hide_Country__c}"  /><br />
+                        <apex:inputField value="{!P.TRIMEC__Hide_Phone__c}"  /><br />
+                        <apex:inputField value="{!P.TRIMEC__Hide_Fax__c}"  /><br />
+                        <apex:inputField value="{!P.TRIMEC__Hide_Mobile__c}"  /><br />
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection id="secBT" title="Hide/Show Buttons" columns="2" > 
+                        <apex:inputField value="{!P.TRIMEC__Hide_Merge_Button__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__Hide_Convert_Button__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__ShowLabels__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__Classic_Theme__c}"  />
+                        
+                    </apex:pageBlockSection>
+                     <apex:commandButton action="{!saveParameters}" value="Save" rerender="main" status="actionStatus" />&nbsp;{!saveResult} 
+                 </apex:pageBlock>                                   
+
+                <!-- DLD Settings --> 
+                <apex:pageBlock title="Dupe Lead Detection Settings" rendered="{!showDLD}" >
+                    <p>This page allows you to activate and setup the Dupe Lead Detection (DLD) feature.<br />See the user guide for more details</p><br />
+                    <apex:pageBlockSection id="secDLD1" title="Activate" columns="1" > 
+                        <apex:inputField value="{!P.TRIMEC__DLDActive__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__DLDMatchTypes__c}"  />
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection id="secDLD2" title="Lead Source Selection" columns="2" > 
+                        <apex:inputField value="{!P.TRIMEC__DLDStatusSource__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__DLDBlockSource__c}"  />
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection id="secDLD3" title="Status Value" columns="1" > 
+                        <apex:inputField value="{!P.TRIMEC__DLDDupeStatusLead__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__DLDDupeStatusContact__c}"  />
+                    </apex:pageBlockSection>
+                     <apex:commandButton action="{!saveParameters}" value="Save" rerender="main" status="actionStatus" />&nbsp;{!saveResult} 
+                </apex:pageBlock>   
+                
+                
+                <!-- DCD Settings --> 
+                <apex:pageBlock title="Dupe Contact Detection Settings" rendered="{!showDCD}" >
+                    <p>This page allows you to activate and setup the Dupe Contact Detection (DCD) feature.<br />See the user guide for more details</p><br />
+                    <apex:pageBlockSection id="secDCD1" title="Activate" columns="1" > 
+                        <apex:inputField value="{!P.TRIMEC__DCDActive__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__DCDMatchTypes__c}"  />
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection id="secDCD3" title="Status Value" columns="1" > 
+                        <apex:inputField value="{!P.TRIMEC__DLDDupeStatusContact__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__DCD_Field__c}"  />
+                    </apex:pageBlockSection>
+                     <apex:commandButton action="{!saveParameters}" value="Save" rerender="main" status="actionStatus" />&nbsp;{!saveResult} 
+                </apex:pageBlock>  
+                
+                
+                <!-- DAD Settings --> 
+                <apex:pageBlock title="Dupe Account Detection Settings" rendered="{!showDAD}" >
+                    <p>This page allows you to activate and setup the Dupe Account Detection (DAD) feature.<br />See the user guide for more details</p><br />
+                    <apex:pageBlockSection id="secDAD1" title="Activate" columns="1" > 
+                        <apex:inputField value="{!P.TRIMEC__DADActive__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__DADMatchTypes__c}"  />
+                    </apex:pageBlockSection>
+                    <apex:pageBlockSection id="secDAD3" title="Status Value" columns="1" > 
+                        <apex:inputField value="{!P.TRIMEC__DLDDupeStatusAccount__c}"  />
+                        <apex:inputField value="{!P.TRIMEC__DAD_Field__c}"  />
+                    </apex:pageBlockSection>
+                     <apex:commandButton action="{!saveParameters}" value="Save" rerender="main" status="actionStatus" />&nbsp;{!saveResult} 
+                </apex:pageBlock> 
+                
+                <apex:actionStatus Id="actionStatus" >
+			 		<apex:facet name="start" >
+					    <div style="font-weight: normal;">Wait, saving...</div>
+					 </apex:facet>
+			   </apex:actionStatus>
+                
+        </apex:outputPanel> 
+        </td>
+    </tr>
+</table>
+</apex:form>
+</apex:pageBlock>
+
+
+
+<!-- COPYRIGHT -->
+<div style="text-align:center;font-size:xx-small;font-family:Arial;margin-top:2rem;">Copyright © 2007-2015 DataTrim Entry Check by d2b International ApS, All rights reserved. </div>
+
+
+<!-- 
+<apex:form rendered="{!Initialized}">
+<apex:actionFunction name="ShowECSetup" action="{!Settings.gotoSetup}" rerender="out" status="myStatus"/>
+<apex:actionStatus startText="Retrieving data..." id="myStatus">
+</apex:actionStatus>
+<script>window.setTimeout(ShowECSetup,2000)</script>
+</apex:form>
+ -->
+
+</apex:page>

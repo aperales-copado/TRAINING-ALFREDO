@@ -1,0 +1,322 @@
+<apex:page id="contactViewAll" standardController="Contact" extensions="TRIMEC.TRIM_DupeStatus_Contact_Small" action="{!FindDuplicates}">
+<apex:sectionHeader title="{!$Label.trimec__company_name}" subtitle="{!$Label.trimec__view_dupes}" ></apex:sectionHeader>
+<apex:includescript value="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></apex:includescript>
+	
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/styles/salesforce-lightning-design-system-ltng.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, 'DataTrim_EntryCheck.css')}"/>
+<apex:stylesheet value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck, '/css/DataTrim_EntryCheck_ltng.css')}"/>
+
+<style>
+	.dt_classic{display:initial;}
+	.dt_ltng{display:none;}
+	
+	.lbl_section{
+		color:black;
+		font-weight:bold;}
+	
+	.lbl_classic{
+		color:black;
+		font-weight:bold;}
+	.lbl_ltng{color:white;
+		font-weight:normal;}
+		
+	Body .btn {
+	}
+	body input.btn, body input.btnDisabled, body input.btnCancel {
+		padding-left:1rem;
+		padding-right:1rem;
+		}
+		
+	.slds .slds-button--brand{
+	 line-height:1.5rem;
+	 /*
+	 background-color:orange;
+	 border-color:grey;
+	 */
+	}
+	
+</style>
+
+<apex:outputPanel id="newData">
+	<!-- CURRENT RECORD -->
+    <apex:form id="theTopForm" >
+    	<div class="slds">
+        <apex:pageBlock id="mainPageBlock" title="{!Settings.LabelContact} ({!$Label.trimec__current})" tabStyle="Contact" >
+        	<!-- Lightning -->
+		     <apex:facet name="header" >
+		    	 <apex:panelGrid id="headercontact" columns="2" styleclass="ltngView" style="border:1px;padding-top:0px;padding-bottom:0px">
+	     			<img class="dt_ltng" src="{!URLFOR($Resource.DataTrim_EntryCheck, '/css/icons/standard/contact_60.png')}" style="height:32px" />
+	     			<img class="dt_classic" src="{!URLFOR($Resource.DataTrim_EntryCheck, '/img/contacts32.png')}" style="height:32px" />
+		     		<span style="padding-top:0px;padding-bottom:0px;width:250px;" class="lbl_section">
+		            	&nbsp;{!Settings.LabelContact} ({!$Label.trimec__current})
+		            </span> 
+		        </apex:panelGrid>
+		        <!-- 
+		     	<apex:panelGrid id="header-contact" columns="2" styleclass="slds-icon-standard-contact" style="padding-top:0px;padding-bottom:0px">
+			     	<div style="padding-top:0px;padding-bottom:0px;color:white;width:250px;" >
+		            		<img  src="{!URLFOR($Resource.DataTrim_EntryCheck, '/img/contacts32.png')}" style="height:32px" /><h3 class="">&nbsp;{!Settings.LabelContact} ({!$Label.trimec__current})</h3>   
+			        </div>
+			      </apex:panelGrid>
+			       -->
+		 	  </apex:facet>
+		 	  
+            <apex:outputPanel id="OriginatingContact" layout="block" />      
+            <apex:dataTable id="OrgList" value="{!OriginalContact}" var="c1" styleClass="slds-table slds-table--bordered" >
+                <apex:column >
+                    <apex:facet name="header" >{!$Label.trimec__current}</apex:facet>
+                    <apex:inputCheckbox title="Current Contact" value="{!MatchResult.anyMatch}" id="checkmyContact" disabled="{!MatchResult.anyMatch}" />
+                </apex:column>
+                <apex:column >
+                <apex:facet name="header" >{!$ObjectType.contact.fields.name.label}</apex:facet>
+                    <apex:outputLink value="/{!c1.id}" >
+                    {!c1.name}
+                </apex:outputLink>
+                </apex:column>
+                <apex:repeat value="{!$ObjectType.Contact.FieldSets.TRIMEC__EC_Field_Set}" var="f">
+					    <apex:column rendered="{!f.fieldpath != 'AccountId' && f.fieldpath != 'OwnerId' }" style="{!if(f.Type == 'currency', 'text-align:right;','') }">
+					            <apex:facet name="header" >{!f.Label}&nbsp;</apex:facet> 
+					            <span class="dt_fade" >{!c1[f]}</span>
+						</apex:column>
+	 					
+			      		<apex:column rendered="{!f.fieldpath == 'AccountId'}">
+				            <apex:facet name="header" >{!$ObjectType.account.fields.Name.label}&nbsp;</apex:facet> 
+				            <apex:outputLink value="/{!c1.id}?retURL={!c1.AccountId}" title="View {!c1.AccountId}" target="_blank"  styleclass="dt_fade"> {!c1.Account.Name}</apex:outputLink>
+				        </apex:column>
+	
+			      		<apex:column rendered="{!f.fieldpath == 'OwnerId'}">
+				            <apex:facet name="header" >{!$Label.Owner}&nbsp;</apex:facet> 
+				            <apex:outputLink value="/{!c1.id}?retURL={!c1.OwnerId}" title="View {!c1.OwnerId}" target="_blank"  styleclass="dt_fade"> {!c1.Owner.Name}</apex:outputLink>
+				        </apex:column>
+			       </apex:repeat>
+            </apex:dataTable>
+       </apex:pageBlock>
+       <apex:pageMessages /> 
+       </div>
+    </apex:form>
+
+	<!-- CONTACTS -->
+     <apex:form id="theContactForm" >
+     	<div class="slds">
+         <apex:pageBlock id="theContactpageBlock" title="{!Settings.LabelContacts} [{!MatchResult.NoOfFoundContactDupes}]" rendered="{! NOT ISNULL(MatchResult.MatchedContacts)}" tabStyle="Contact">
+         <!-- Lightning -->
+		    <apex:facet name="header" >
+		    <apex:panelGrid id="headercontacts" columns="2" styleclass="ltngView" style="padding-top:0px;padding-bottom:0px">
+	    		<apex:panelGrid id="headercontacts1" columns="2"  style="border:1px;padding-top:0px;padding-bottom:0px">
+	 				<img class="dt_ltng" src="{!URLFOR($Resource.DataTrim_EntryCheck, '/css/icons/standard/contact_60.png')}" style="height:32px" />
+	     			<img class="dt_classic" src="{!URLFOR($Resource.DataTrim_EntryCheck, '/img/contacts32.png')}" style="height:32px" />
+		     		<span style="padding-top:0px;padding-bottom:0px;width:250px;"  class="lbl_section">
+		            	&nbsp;{!Settings.LabelContacts} [{!MatchResult.NoOfFoundContactDupes}]
+		            </span> 
+		        </apex:panelGrid>
+		        <apex:panelGroup styleClass="pbButton" style="text-align:right;">
+		         	<apex:commandButton value="{!$Label.trimec__merge}" id="btnMergeContacts" action="{!invokeMerge}" title="{!$Label.trimec__viewall_mergecontacts}" disabled="{!MatchResult.NoOfFoundContactDupes = 0}" styleClass="slds-button slds-button--neutral dt_ltng" style="font-weight: normal;" />
+		          	<apex:commandButton value="{!$Label.trimec__merge}" id="btnMergeContacts1" action="{!invokeMerge}" title="{!$Label.trimec__viewall_mergecontacts}" disabled="{!MatchResult.NoOfFoundContactDupes = 0}" styleClass="slds-button slds-button--brand dt_classic" style="font-weight: normal;" />
+                    
+                    <apex:actionFunction action="{!invokeMergeQuick_keepcurrent}" name="invokemergekeepcurrent" />
+                    <apex:actionFunction action="{!invokeMergeQuick_keepselected}" name="invokemergekeepselected" />
+                    <apex:outputPanel rendered="{! AND(MatchResult.NoOfFoundContactDupes > 0, Settings.BetaOn)}" >
+                         <div class="slds-dropdown-trigger slds-button--last">
+                             <div class="slds-button slds-button--brand dt_classic" style="font-weight:normal;">
+                                 1-Click Merge 
+ 								<span class="slds-assistive-text">Select</span>
+                            </div>
+                             <div class="slds-button slds-button--neutral dt_ltng" style="font-weight:normal;">
+                                 1-Click Merge 
+ 								<span class="slds-assistive-text">Select</span>
+                            </div>
+                            <div class="slds-dropdown slds-dropdown--right slds-dropdown--menu" style="text-align:left;">
+                                <ul class="slds-dropdown__list" role="menu">
+                                        <li class="slds-dropdown__item" style="margin-left:0.25rem;"><a onclick="invokemergekeepcurrent()" class="slds-button slds-button--neutral" style="padding-top:0;padding-bottom:0;text-align:inherit;" >&nbsp;Keep Current</a></li>  
+                                        <li class="slds-dropdown__item" style="margin-left:0.25rem;"><a onclick="invokemergekeepselected()" class="slds-button slds-button--neutral" style="padding-top:0;padding-bottom:0;text-align:inherit;" >&nbsp;Keep Selected</a></li>  
+                                </ul>
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+			    </apex:panelGroup>
+		    </apex:panelGrid>
+
+			    <!-- 
+	     	<apex:panelGrid id="header-contact" columns="2"  styleclass="slds-icon-standard-contact" style="border:1px;padding-top:0px;padding-bottom:0px">
+		     	<div style="padding-top:0px;padding-bottom:0px;color:white;width:250px;">
+	            	<img src="{!URLFOR($Resource.DataTrim_EntryCheck, '/css/icons/standard/contact_60.png')}" style="height:32px" />
+	            	<h3 class="mainTitle">&nbsp;{!Settings.LabelContacts} [{!MatchResult.NoOfFoundContactDupes}]</h3>&nbsp;
+		        </div>
+		        <apex:panelGroup styleClass="pbButton" style="text-align:right;">
+		            <apex:commandButton value="{!$Label.trimec__merge}" id="btnMergeContacts" action="{!invokeMerge}" title="{!$Label.trimec__viewall_mergecontacts}" disabled="{!MatchResult.NoOfFoundContactDupes = 0}" styleClass="slds-button slds-button--neutral" style="font-weight: normal;" />
+			    </apex:panelGroup>
+			  </apex:panelGrid>
+			   -->
+	 	  </apex:facet>
+	 	  
+            <apex:outputPanel id="resultPanelContacts" layout="block" />
+            <apex:dataTable id="ContactList" value="{!MatchResult.MatchedContacts}" var="c" styleClass="slds-table slds-table--bordered">
+                 <apex:column >
+                    <apex:facet name="header">
+                        <apex:inputCheckbox title="{!$Label.trimec__err_max2con}">
+                            <apex:actionSupport event="onclick" action="{!getSelectedC}" onsubmit="checkAllContacts(this)" />
+                        </apex:inputCheckbox>
+                    </apex:facet>
+                    <apex:inputCheckbox rendered="{!c.HasEditAccess}" title="{!$Label.trimec__err_max2con}" value="{!c.selected}" id="checkedoneContact"></apex:inputCheckbox>
+                    <apex:outputLink rendered="{!Not c.HasEditAccess}" value="{!Settings.Action_Page_Share_Contact}&id={!c.id}&owner={!c.ownerId}" >{!$Label.trimec__request_share_permissions}</apex:outputLink>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header" >{!$Label.trimec__match_level}</apex:facet>
+                    <apex:image value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck,c.ClassImage)}" title="{!c.MatchScore}"/>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header" >{!$ObjectType.contact.fields.name.label}</apex:facet>
+                    <apex:outputLink rendered="{!c.HasReadAccess}" value="/{!c.contact.id}" >{!c.contact.name}</apex:outputLink>
+                    <apex:outputText rendered="{!Not c.HasReadAccess}">{!c.contact.name}</apex:outputText>
+                </apex:column>
+                <apex:repeat value="{!$ObjectType.Contact.FieldSets.TRIMEC__EC_Field_Set}" var="f">
+					    <apex:column rendered="{!f.fieldpath != 'AccountId' && f.fieldpath != 'OwnerId' }" style="{!if(f.Type == 'currency', 'text-align:right;','') }">
+					            <apex:facet name="header" >{!f.Label}&nbsp;</apex:facet> 
+					            {!c.contact[f]}
+						</apex:column>
+	 					
+			      		<apex:column rendered="{!f.fieldpath == 'AccountId'}">
+				            <apex:facet name="header" >{!$ObjectType.account.fields.Name.label}&nbsp;</apex:facet> 
+			                    <apex:outputLink rendered="{!c.HasReadAccess}" value="/{!c.contact.AccountId}" >{!c.contact.Account.Name}</apex:outputLink>
+			                    <apex:outputText rendered="{!Not c.HasReadAccess}">{!c.contact.Account.Name}</apex:outputText>
+				        </apex:column>
+	
+			      		<apex:column rendered="{!f.fieldpath == 'OwnerId'}">
+				            <apex:facet name="header" >{!$Label.Owner}&nbsp;</apex:facet> 
+				            <apex:outputLink value="/{!c.id}?retURL={!c.contact.OwnerId}" title="View {!c.contact.OwnerId}" target="_blank" > {!c.contact.Owner.Name}</apex:outputLink>
+				        </apex:column>
+			       </apex:repeat>
+           </apex:dataTable>
+        </apex:pageBlock>
+        </div>
+     </apex:form>
+
+	<!-- LEADS -->
+    <apex:form id="theLeadForm" >
+        <!-- <apex:pageBlock title="Leads [{!MatchResult.NoOfFoundLeadDupes}]" rendered="{! NOT ISNULL(MatchResult.MatchedLeads)}" tabStyle="Lead">Replaced 2012-11-01-->
+        <div class="slds">
+        <apex:pageBlock id="theLeadpageBlock" title="{!Settings.LabelLeads} [{!MatchResult.NoOfFoundLeadDupes}]" rendered="{!Settings.CheckLeads}" tabStyle="Lead">
+        	<!-- Lightning -->
+	    	<apex:facet name="header" >
+	    		<apex:panelGrid id="headerleads" columns="2" styleclass="ltngView" style="padding-top:0px;padding-bottom:0px">
+		    		<apex:panelGrid id="headerleads1" columns="2"  style="border:1px;padding-top:0px;padding-bottom:0px">
+		 				<img class="dt_ltng" src="{!URLFOR($Resource.DataTrim_EntryCheck, '/css/icons/standard/lead_60.png')}" style="height:32px" />
+		     			<img class="dt_classic" src="{!URLFOR($Resource.DataTrim_EntryCheck, '/img/leads32.png')}" style="height:32px" />
+			     		<span style="padding-top:0px;padding-bottom:0px;width:250px;"  class="lbl_section">
+			            	&nbsp;{!Settings.LabelLeads} [{!MatchResult.NoOfFoundLeadDupes}]
+			            </span> 
+			        </apex:panelGrid>
+		        <apex:panelGroup styleClass="pbButton" style="text-align:right;">
+			        	 <apex:commandButton value="{!$Label.trimec__convert}" id="btnConvertLead" action="{!invokeConvert}" rendered="{!NOT Settings.Hide_ConvertButton}" disabled="{!MatchResult.NoOfFoundLeadDupes = 0}" styleClass="slds-button slds-button--neutral dt_ltng" style="font-weight: normal;"/>
+			        	  <apex:commandButton value="{!$Label.trimec__convert}" id="btnConvertLead1" action="{!invokeConvert}" rendered="{!NOT Settings.Hide_ConvertButton}" disabled="{!MatchResult.NoOfFoundLeadDupes = 0}" styleClass="slds-button slds-button--brand dt_classic" style="font-weight: normal;"/>
+                    
+                        <apex:actionFunction action="{!invokeConvertnooppti}" name="invokeConvertWizard_l" />
+                        <apex:actionFunction action="{!invokeConvertQuick}" name="invokeConvertQuick_l" />
+                        <apex:outputPanel rendered="{! AND(NOT Settings.Hide_ConvertButton, MatchResult.NoOfFoundLeadDupes > 0, Settings.BetaOn)}">
+                             <div class="slds-dropdown-trigger slds-button--last">
+                                 <div class="slds-button slds-button--brand dt_classic" style="font-weight:normal;">
+                                     {!$Label.trimec__convertnooppti} 
+                                    <span class="slds-assistive-text">Select</span>
+                                </div>
+                                 <div class="slds-button slds-button--neutral dt_ltng" style="font-weight:normal;">
+                                     {!$Label.trimec__convertnooppti} 
+                                    <span class="slds-assistive-text">Select</span>
+                                </div>
+                                <div class="slds-dropdown slds-dropdown--right slds-dropdown--menu" style="text-align:left;width:80%;">
+                                    <ul class="slds-dropdown__list" role="menu">
+                                            <li class="slds-dropdown__item" style="margin-left:0.25rem;"><a onclick="invokeConvertWizard_l()" class="slds-button slds-button--neutral" style="padding:0;text-align:inherit;width: 97%;" >&nbsp;Use Wizard</a></li>  
+                                            <li class="slds-dropdown__item" style="margin-left:0.25rem;"><a onclick="invokeConvertQuick_l()" class="slds-button slds-button--neutral" style="padding:0;text-align:inherit;width: 97%;" >&nbsp;1-Click</a></li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </apex:outputPanel>
+				    </apex:panelGroup>
+			    </apex:panelGrid>
+			<!-- 
+	     	<apex:panelGrid id="header-leads" columns="2" styleclass="slds-icon-standard-lead" style="padding-top:0px;padding-bottom:0px">
+		     	<div style="padding-top:0px;padding-bottom:0px;color:white;width:250px;" >
+	            		<img  src="{!URLFOR($Resource.DataTrim_EntryCheck, '/css/icons/standard/lead_60.png')}" style="height:32px" /><h3 class="">&nbsp;{!Settings.LabelLeads} [{!MatchResult.NoOfFoundLeadDupes}]</h3>   
+		        </div>
+		        <apex:panelGroup >
+		            <apex:commandButton value="{!$Label.trimec__convert}" id="btnConvertLead" action="{!invokeConvert}" rendered="{!NOT Settings.Hide_ConvertButton}" disabled="{!MatchResult.NoOfFoundLeadDupes = 0}" styleClass="slds-button slds-button--neutral" style="font-weight: normal;"/>
+		     	</apex:panelGroup>
+		      </apex:panelGrid>
+		       -->
+	 	  </apex:facet>
+            <apex:dataTable id="LeadList" value="{!MatchResult.MatchedLeads}" var="l" styleClass="slds-table slds-table--bordered" >
+                 <apex:column >
+                     <apex:facet name="header" >{!$Label.trimec__select}</apex:facet>
+                    <apex:inputCheckbox rendered="{!l.HasEditAccess}" title="{!$Label.trimec__err_max1lead}" value="{!l.selected}" id="checkedoneLead"></apex:inputCheckbox>
+                    <apex:outputLink rendered="{!Not l.HasEditAccess}" value="{!Settings.Action_Page_Share_Lead}&id={!l.id}&owner={!l.ownerId}" >{!$Label.trimec__request_share_permissions}</apex:outputLink>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header" >{!$Label.trimec__match_level}</apex:facet>
+                    <apex:image value="{!URLFOR($Resource.TRIMEC__DataTrim_EntryCheck,l.ClassImage)}" title="{!l.MatchScore}" rendered="{! NOT (l.lead.id=Id)}" />
+                    <apex:outputText title="Your Selection" value="Your Lead:" rendered="{! l.lead.id=Id}" />
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header" >{!$ObjectType.lead.fields.name.label}</apex:facet>
+                    <apex:outputLink rendered="{!l.HasReadAccess}" value="/{!l.lead.id}" >{!l.lead.name}</apex:outputLink>
+                    <apex:outputText rendered="{!Not l.HasReadAccess}">{!l.lead.name}</apex:outputText>
+                </apex:column>
+                <apex:repeat value="{!$ObjectType.Lead.FieldSets.TRIMEC__EC_Field_Set}" var="f">
+				    <apex:column rendered="{!f.fieldpath != 'OwnerId'}" style="{!if(f.Type == 'currency', 'text-align:right;','') }">
+				            <apex:facet name="header" >{!f.Label}&nbsp;</apex:facet> 
+				            {!l.lead[f]}
+					</apex:column>
+		      		<apex:column rendered="{!f.fieldpath == 'OwnerId'}">
+			            <apex:facet name="header" >{!$Label.Owner}&nbsp;</apex:facet> 
+			            <apex:outputLink value="/{!l.id}?retURL={!l.OwnerId}" title="View {!l.lead.OwnerId}" target="_blank" > {!l.lead.Owner.Name}</apex:outputLink>
+			        </apex:column>
+		       </apex:repeat>
+            </apex:dataTable>
+        </apex:pageBlock>
+        </div>
+     </apex:form>
+</apex:outputPanel>
+
+	<!-- November 2015, default is Classic, setting = true => Lighting -->
+	<script type="text/javascript">
+	
+		function isLightningExperienceOrSalesforce1() {
+		    return((typeof sforce != 'undefined') && sforce && (!!sforce.one));
+		}
+
+		var myE_classic = document.querySelectorAll(".dt_classic");
+		var myE_ltng = document.querySelectorAll(".dt_ltng");
+		var myE_lbl = document.querySelectorAll(".lbl_section");
+
+		if({!Settings.ClassicTheme} == true || isLightningExperienceOrSalesforce1() == true) {
+			/* lightning Experience */
+			for (var i = 0; i < myE_classic.length; i++) {myE_classic[i].style.display = "none";}
+			for (var i = 0; i < myE_ltng.length; i++) {myE_ltng[i].style.display = "";}
+			for (var i = 0; i < myE_lbl.length; i++) {myE_lbl[i].style.fontWeight= "normal";}
+			for (var i = 0; i < myE_lbl.length; i++) {myE_lbl[i].style.color= "white";}
+			document.getElementById('{!$Component.contactViewAll.theTopForm.mainPageBlock.headercontact}').className = "slds-icon-standard-contact";
+			document.getElementById('{!$Component.contactViewAll.theLeadForm.theLeadpageBlock.headerleads}').className = "slds-icon-standard-lead";
+			document.getElementById('{!$Component.contactViewAll.theContactForm.theContactpageBlock.headercontacts}').className = "slds-icon-standard-contact";
+	
+		}else{
+			/* Classic View */
+			for (var i = 0; i < myE_classic.length; i++) {myE_classic[i].style.display = "";}
+			for (var i = 0; i < myE_ltng.length; i++) {myE_ltng[i].style.display = "none";}
+			
+		}
+
+	</script>
+
+<!-- COPYRIGHT -->
+<div style="text-align:center;font-size:xx-small;font-family:Arial;margin-top:2rem;">Copyright © 2007-<script>document.write(new Date().getFullYear())</script> DataTrim Entry Check by d2b International ApS, All rights reserved. </div>
+
+<script>
+function checkAllContacts(cb)
+{
+var inputElem = document.getElementsByTagName("input");
+for(var i=0; i<inputElem.length; i++)
+{
+if(inputElem[i].id.indexOf("checkedoneContact")!=-1)
+inputElem[i].checked = cb.checked;
+}
+}    
+</script>
+
+</apex:page>
