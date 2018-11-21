@@ -28,4 +28,11 @@
         <shortDescription>Troubleshooting  10506</shortDescription>
         <value>Troubleshooting  10506</value>
     </labels>
+    <labels>
+        <fullName>Validate_commit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Validate commit</shortDescription>
+        <value>Validate commit</value>
+    </labels>
 </CustomLabels>
