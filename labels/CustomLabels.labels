@@ -15,6 +15,13 @@
         <value>Gemelos</value>
     </labels>
     <labels>
+        <fullName>Telus</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Telus</shortDescription>
+        <value>Telus</value>
+    </labels>
+    <labels>
         <fullName>Test_Selenium</fullName>
         <language>en_US</language>
         <protected>true</protected>
