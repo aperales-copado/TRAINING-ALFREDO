@@ -57,6 +57,13 @@
         <value>Saved Label 3</value>
     </labels>
     <labels>
+        <fullName>Telus</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Telus</shortDescription>
+        <value>Telus</value>
+    </labels>
+    <labels>
         <fullName>Troubleshooting_10506</fullName>
         <language>en_US</language>
         <protected>true</protected>
