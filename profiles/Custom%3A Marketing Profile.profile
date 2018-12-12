@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom%3A Marketing Profile</fullName>
     <applicationVisibilities>
         <application>standard__AppLauncher</application>
         <default>false</default>
@@ -5303,6 +5304,15 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>Asset</object>
         <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>C__c</object>
+        <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
