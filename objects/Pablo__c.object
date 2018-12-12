@@ -54,6 +54,27 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>PB__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Pablo</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>123</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Pablo__c</referenceTo>
+        <relationshipLabel>Pablos</relationshipLabel>
+        <relationshipName>Pablos</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
     <gender>Masculine</gender>
     <label>Pablo</label>
     <nameField>
