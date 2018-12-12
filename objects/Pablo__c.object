@@ -99,9 +99,9 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Motorola</fullName>
+                    <fullName>Sony</fullName>
                     <default>true</default>
-                    <label>Motorola</label>
+                    <label>Sony</label>
                 </value>
                 <value>
                     <fullName>Nokia</fullName>
@@ -109,9 +109,14 @@
                     <label>Nokia</label>
                 </value>
                 <value>
-                    <fullName>Sony</fullName>
+                    <fullName>Huawei</fullName>
                     <default>false</default>
-                    <label>Sony</label>
+                    <label>Huawei</label>
+                </value>
+                <value>
+                    <fullName>Motorola</fullName>
+                    <default>false</default>
+                    <label>Motorola</label>
                 </value>
                 <value>
                     <fullName>Apple</fullName>
@@ -119,14 +124,9 @@
                     <label>Apple</label>
                 </value>
                 <value>
-                    <fullName>Samsung</fullName>
+                    <fullName>Pocophone</fullName>
                     <default>false</default>
-                    <label>Samsung</label>
-                </value>
-                <value>
-                    <fullName>Huawei</fullName>
-                    <default>false</default>
-                    <label>Huawei</label>
+                    <label>Pocophone</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
