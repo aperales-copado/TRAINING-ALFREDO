@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>PB__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Pablo</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <errorMessage>Esto no funciona</errorMessage>
+            <filterItems>
+                <field>$Source.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>456</value>
+            </filterItems>
+            <filterItems>
+                <field>$User.City</field>
+                <operation>equals</operation>
+                <value>Madrid</value>
+            </filterItems>
+            <filterItems>
+                <field>$Source.CreatedDate</field>
+                <operation>notEqual</operation>
+                <valueField>$Profile.CreatedDate</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Pablo__c</referenceTo>
+        <relationshipLabel>Pablos</relationshipLabel>
+        <relationshipName>Pablos</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+</CustomObject>
