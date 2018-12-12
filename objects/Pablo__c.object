@@ -87,6 +87,51 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
+    <fields>
+        <fullName>PB_multipicklist__c</fullName>
+        <externalId>false</externalId>
+        <label>PB multipicklist</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Motorola</fullName>
+                    <default>true</default>
+                    <label>Motorola</label>
+                </value>
+                <value>
+                    <fullName>Nokia</fullName>
+                    <default>false</default>
+                    <label>Nokia</label>
+                </value>
+                <value>
+                    <fullName>Sony</fullName>
+                    <default>false</default>
+                    <label>Sony</label>
+                </value>
+                <value>
+                    <fullName>Apple</fullName>
+                    <default>false</default>
+                    <label>Apple</label>
+                </value>
+                <value>
+                    <fullName>Samsung</fullName>
+                    <default>false</default>
+                    <label>Samsung</label>
+                </value>
+                <value>
+                    <fullName>Huawei</fullName>
+                    <default>false</default>
+                    <label>Huawei</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
     <gender>Masculine</gender>
     <label>Pablo</label>
     <nameField>
