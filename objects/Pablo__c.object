@@ -53,6 +53,40 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
+        <fullName>Alfredo_picklist__c</fullName>
+        <externalId>false</externalId>
+        <label>Alfredo picklist</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Head</fullName>
+                    <default>true</default>
+                    <label>Head</label>
+                </value>
+                <value>
+                    <fullName>Shoulder</fullName>
+                    <default>false</default>
+                    <label>Shoulder</label>
+                </value>
+                <value>
+                    <fullName>Knees</fullName>
+                    <default>false</default>
+                    <label>Knees</label>
+                </value>
+                <value>
+                    <fullName>Toes</fullName>
+                    <default>false</default>
+                    <label>Toes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>PB__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
