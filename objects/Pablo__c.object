@@ -71,7 +71,7 @@
             <filterItems>
                 <field>$User.City</field>
                 <operation>equals</operation>
-                <value>Madrid</value>
+                <value>San Francisco USA</value>
             </filterItems>
             <filterItems>
                 <field>$Source.CreatedDate</field>
