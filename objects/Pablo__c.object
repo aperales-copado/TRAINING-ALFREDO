@@ -59,10 +59,22 @@
         <label>Pablo</label>
         <lookupFilter>
             <active>true</active>
+            <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+            <errorMessage>Esto no funciona</errorMessage>
             <filterItems>
                 <field>$Source.OwnerId</field>
                 <operation>notEqual</operation>
-                <value>123</value>
+                <value>456</value>
+            </filterItems>
+            <filterItems>
+                <field>$User.City</field>
+                <operation>equals</operation>
+                <value>San Francisco USA</value>
+            </filterItems>
+            <filterItems>
+                <field>$Source.CreatedDate</field>
+                <operation>notEqual</operation>
+                <valueField>$Profile.CreatedDate</valueField>
             </filterItems>
             <isOptional>false</isOptional>
         </lookupFilter>
