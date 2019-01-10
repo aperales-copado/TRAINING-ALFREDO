@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Change done</fullName>
+        <default>false</default>
+        <label>Change done</label>
+    </customValue>
+    <customValue>
+        <fullName>OK</fullName>
+        <default>false</default>
+        <label>OK</label>
+    </customValue>
+    <customValue>
+        <fullName>Fail</fullName>
+        <default>false</default>
+        <label>Fail</label>
+    </customValue>
+    <customValue>
+        <fullName>Change in progress</fullName>
+        <default>false</default>
+        <label>Change in progress</label>
+    </customValue>
+    <customValue>
+        <fullName>No changes</fullName>
+        <default>false</default>
+        <label>No changes</label>
+    </customValue>
+    <masterLabel>Test Andrew Raymond</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
