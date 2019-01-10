@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Alfredo - case 11</fullName>
+        <default>false</default>
+        <label>Alfredo - case 11</label>
+    </customValue>
+    <customValue>
+        <fullName>Alfredo - phone &amp; support</fullName>
+        <default>false</default>
+        <label>Alfredo - phone &amp; support</label>
+    </customValue>
+    <customValue>
+        <fullName>Alfredo - case &amp; number</fullName>
+        <default>false</default>
+        <label>Alfredo - case &amp; number</label>
+    </customValue>
+    <customValue>
+        <fullName>Alfredo - case 22</fullName>
+        <default>false</default>
+        <label>Alfredo - case 22</label>
+    </customValue>
+    <masterLabel>Test Andrew Raymond 2</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
