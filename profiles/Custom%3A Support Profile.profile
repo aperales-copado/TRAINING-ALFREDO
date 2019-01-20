@@ -6166,6 +6166,11 @@
     </pageAccesses>
     <recordTypeVisibilities>
         <default>false</default>
+        <recordType>Case.AlfredoPG</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
