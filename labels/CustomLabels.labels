@@ -57,6 +57,13 @@
         <value>Gemelos</value>
     </labels>
     <labels>
+        <fullName>Test_to_delete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Test to delete</shortDescription>
+        <value>OK</value>
+    </labels>
+    <labels>
         <fullName>Troubleshooting_10506</fullName>
         <language>en_US</language>
         <protected>true</protected>
