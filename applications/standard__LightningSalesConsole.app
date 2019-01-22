@@ -7,18 +7,18 @@
     <navType>Console</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
+        <content>Test_Copado_Siemens</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Pricebook2</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Custom: Marketing Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
         <content>Alfredo</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Case</pageOrSobjectType>
         <recordType>Case.AlfredoPG</recordType>
-        <type>Flexipage</type>
-        <profile>Custom: Support Profile</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Test_Copado_Siemens</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Pricebook2</pageOrSobjectType>
         <type>Flexipage</type>
         <profile>Custom: Support Profile</profile>
     </profileActionOverrides>
