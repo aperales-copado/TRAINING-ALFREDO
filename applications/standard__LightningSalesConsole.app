@@ -5,6 +5,31 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Sales Console</label>
     <navType>Console</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Test_Copado_Siemens</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Pricebook2</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Custom: Marketing Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Alfredo</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.AlfredoPG</recordType>
+        <type>Flexipage</type>
+        <profile>Custom: Support Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Alfredo1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Custom: Sales Profile</profile>
+    </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>standard-Lead</tabs>
     <tabs>standard-Account</tabs>
@@ -18,12 +43,20 @@
     <tabs>standard-Feed</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
-    <tabs>Copado_Integration_Setting__c</tabs>
+    <tabs>Pablo__c</tabs>
+    <tabs>A__c</tabs>
+    <tabs>B__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
-            <tab>Copado_Integration_Setting__c</tab>
+            <tab>A__c</tab>
+        </mappings>
+        <mappings>
+            <tab>B__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Pablo__c</tab>
         </mappings>
         <mappings>
             <tab>standard-Account</tab>
