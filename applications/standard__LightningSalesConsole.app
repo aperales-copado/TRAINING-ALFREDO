@@ -14,6 +14,22 @@
         <type>Flexipage</type>
         <profile>Custom: Support Profile</profile>
     </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Test_Copado_Siemens</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Pricebook2</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Custom: Support Profile</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Alfredo1</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Custom: Sales Profile</profile>
+    </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>standard-Lead</tabs>
     <tabs>standard-Account</tabs>
