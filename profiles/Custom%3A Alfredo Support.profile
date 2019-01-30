@@ -82,10 +82,6 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>dupe_eliminator__MergeRecord</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>dupe_eliminator__MergeRecordTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
