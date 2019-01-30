@@ -82,10 +82,6 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>EmailManager</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>dupe_eliminator__DynamicSObject</apexClass>
         <enabled>true</enabled>
     </classAccesses>
