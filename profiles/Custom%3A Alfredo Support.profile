@@ -2469,10 +2469,6 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
-        <tab>B__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Pablo__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
