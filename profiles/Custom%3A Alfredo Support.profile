@@ -2387,10 +2387,6 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
-        <apexPage>dupe_eliminator__MergeRecord</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>dupe_eliminator__SearchMerge</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
