@@ -1397,9 +1397,6 @@
         <layout>Account-Account %28Support%29 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Alfredo_Admin36__c-Alfredo Admin36 Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Alfredo_Admin__c-Alfredo Admin Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
