@@ -1457,10 +1457,6 @@
         <layout>CampaignMember-Campaign Member Page Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Case-Case %28Marketing%29 Layout</layout>
-        <recordType>Case.AlfredoRT</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Case-Case %28Support%29 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2481,11 +2477,6 @@
         <apexPage>dupe_eliminator__SearchMerge</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.AlfredoRT</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
