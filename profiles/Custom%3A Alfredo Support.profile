@@ -1458,10 +1458,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Case-Case %28Marketing%29 Layout</layout>
-        <recordType>Case.AlfredoPG</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case %28Marketing%29 Layout</layout>
         <recordType>Case.AlfredoRT</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -2485,11 +2481,6 @@
         <apexPage>dupe_eliminator__SearchMerge</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Case.AlfredoPG</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Case.AlfredoRT</recordType>
