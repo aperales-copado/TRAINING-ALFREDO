@@ -82,10 +82,6 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
-        <apexClass>dupe_eliminator__SearchMergeTest</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>miles</apexClass>
         <enabled>false</enabled>
     </classAccesses>
