@@ -61,6 +61,17 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Encriptado__c</fullName>
+        <externalId>false</externalId>
+        <label>Encriptado</label>
+        <length>100</length>
+        <maskChar>asterisk</maskChar>
+        <maskType>all</maskType>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>EncryptedText</type>
+    </fields>
+    <fields>
         <fullName>Mozilla__c</fullName>
         <externalId>false</externalId>
         <label>Mozilla</label>
