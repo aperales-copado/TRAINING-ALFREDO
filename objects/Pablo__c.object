@@ -114,6 +114,14 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
+    <fields>
+        <fullName>Telefono__c</fullName>
+        <externalId>false</externalId>
+        <label>Telefono</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
     <gender>Masculine</gender>
     <label>Pablo</label>
     <nameField>
