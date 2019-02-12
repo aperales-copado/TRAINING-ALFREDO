@@ -225,6 +225,26 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Test_back_promotion_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Test back promotion 3</label>
+        <length>90</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Test_back_promotion_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Test back promotion 4</label>
+        <length>90</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Test_back_promotion__c</fullName>
         <externalId>false</externalId>
         <label>Test back promotion</label>
