@@ -207,7 +207,7 @@
         <fullName>Test_back_promotion_2__c</fullName>
         <externalId>false</externalId>
         <label>Test back promotion 2</label>
-        <length>80</length>
+        <length>150</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -217,7 +217,7 @@
         <fullName>Test_back_promotion__c</fullName>
         <externalId>false</externalId>
         <label>Test back promotion</label>
-        <precision>18</precision>
+        <precision>15</precision>
         <required>false</required>
         <scale>0</scale>
         <trackTrending>false</trackTrending>
