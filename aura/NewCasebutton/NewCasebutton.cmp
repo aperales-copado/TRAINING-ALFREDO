@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride" access="global" >
+<lightning:input aura:id="Status" name="Status" label="Status" required="true" />
+<lightning:input aura:id="Origin" name="Origin" label="Case Origin" required="true" />
+</aura:component>
