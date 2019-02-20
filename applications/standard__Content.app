@@ -8,5 +8,4 @@
     <tabs>standard-Workspace</tabs>
     <tabs>standard-ContentSearch</tabs>
     <tabs>standard-ContentSubscriptions</tabs>
-    <tabs>Copado_Integration_Setting__c</tabs>
 </CustomApplication>
