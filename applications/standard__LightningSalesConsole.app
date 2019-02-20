@@ -18,13 +18,9 @@
     <tabs>standard-Feed</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
-    <tabs>Copado_Integration_Setting__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
-        <mappings>
-            <tab>Copado_Integration_Setting__c</tab>
-        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

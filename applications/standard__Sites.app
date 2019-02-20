@@ -4,5 +4,4 @@
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <tabs>standard-Chatter</tabs>
-    <tabs>Copado_Integration_Setting__c</tabs>
 </CustomApplication>
