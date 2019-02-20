@@ -25,10 +25,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Preview</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>SaveEdit</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -43,17 +39,18 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <fields>
-        <fullName>Category</fullName>
+        <fullName>ConsumptionScheduleId</fullName>
+        <inlineHelpText>Este índice es una parte de esta programación.</inlineHelpText>
         <trackHistory>false</trackHistory>
-        <type>Picklist</type>
+        <type>MasterDetail</type>
     </fields>
     <fields>
-        <fullName>Channel</fullName>
+        <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
-        <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>Message</fullName>
+        <fullName>LowerBound</fullName>
+        <inlineHelpText>La cantidad más baja de uso para este índice de consumo.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -61,23 +58,24 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>OwnerId</fullName>
+        <fullName>Price</fullName>
+        <inlineHelpText>El precio para el uso que entra dentro de los límites de este índice de consumo.</inlineHelpText>
         <trackHistory>false</trackHistory>
-        <type>Lookup</type>
     </fields>
-    <searchLayouts>
-        <customTabListAdditionalFields>Message</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Category</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Channel</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>Message</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Category</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Channel</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Message</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Category</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Channel</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>Message</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Category</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Channel</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <fields>
+        <fullName>PricingMethod</fullName>
+        <inlineHelpText>Seleccione si se asigna un precio al uso por unidad o cantidad o como una tarifa plana.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ProcessingOrder</fullName>
+        <inlineHelpText>El orden para el procesamiento del índice de uso entre múltiples índices. Los índices de consumo se evalúan comenzando con el orden de procesamiento más bajo.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>UpperBound</fullName>
+        <inlineHelpText>La cantidad más alta de uso para este índice de consumo.</inlineHelpText>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>
