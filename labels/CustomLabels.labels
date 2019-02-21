@@ -29,6 +29,13 @@
         <value>Colour</value>
     </labels>
     <labels>
+        <fullName>New_button</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New button</shortDescription>
+        <value>New button for test case in Aurabundle component</value>
+    </labels>
+    <labels>
         <fullName>Platini</fullName>
         <language>en_US</language>
         <protected>true</protected>
