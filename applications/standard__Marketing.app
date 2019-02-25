@@ -11,4 +11,7 @@
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>Pablo__c</tabs>
+    <tabs>A__c</tabs>
+    <tabs>B__c</tabs>
 </CustomApplication>

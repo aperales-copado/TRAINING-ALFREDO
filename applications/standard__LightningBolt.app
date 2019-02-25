@@ -6,5 +6,8 @@
     <label>LightningBolt</label>
     <navType>Standard</navType>
     <tabs>standard-LightningBoltHome</tabs>
+    <tabs>Pablo__c</tabs>
+    <tabs>A__c</tabs>
+    <tabs>B__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

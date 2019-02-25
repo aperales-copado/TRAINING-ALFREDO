@@ -179,7 +179,19 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
+    <tabs>Pablo__c</tabs>
+    <tabs>A__c</tabs>
+    <tabs>B__c</tabs>
     <workspaceConfig>
+        <mappings>
+            <tab>A__c</tab>
+        </mappings>
+        <mappings>
+            <tab>B__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Pablo__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

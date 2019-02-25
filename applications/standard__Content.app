@@ -8,4 +8,7 @@
     <tabs>standard-Workspace</tabs>
     <tabs>standard-ContentSearch</tabs>
     <tabs>standard-ContentSubscriptions</tabs>
+    <tabs>Pablo__c</tabs>
+    <tabs>A__c</tabs>
+    <tabs>B__c</tabs>
 </CustomApplication>

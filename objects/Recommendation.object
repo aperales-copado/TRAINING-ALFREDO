@@ -49,7 +49,7 @@
     </fields>
     <fields>
         <fullName>ImageId</fullName>
-        <inlineHelpText>Para obtener los mejores resultados, utilice una imagen de 1000 px x 380 px a 72 dpi o una con una relación similar.</inlineHelpText>
+        <inlineHelpText>For best results, use a 1000 px x 380 px image at 72 dpi or one with a similar ratio.</inlineHelpText>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -61,11 +61,6 @@
     <fields>
         <fullName>RejectionLabel</fullName>
     </fields>
-    <listViews>
-        <fullName>All_Recommendations</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Recommendations</label>
-    </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>Description</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>Description</lookupDialogsAdditionalFields>

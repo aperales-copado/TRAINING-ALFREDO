@@ -228,6 +228,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSNd</field>
+            <label>Computer</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQM</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -246,6 +250,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQQ</field>
             <label>Tracking Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSC6</field>
+            <label>TRPCategory</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -281,11 +289,13 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N1t00000DsSNd</field>
             <field>00N1t000006YoQM</field>
             <field>00N1t000006YoQN</field>
             <field>00N1t000006YoQO</field>
             <field>00N1t000006YoQP</field>
             <field>00N1t000006YoQQ</field>
+            <field>00N1t00000DsSC6</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -442,6 +452,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSNd</field>
+            <label>Computer</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQM</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -460,6 +474,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQQ</field>
             <label>Tracking Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSC6</field>
+            <label>TRPCategory</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -495,11 +513,13 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N1t00000DsSNd</field>
             <field>00N1t000006YoQM</field>
             <field>00N1t000006YoQN</field>
             <field>00N1t000006YoQO</field>
             <field>00N1t000006YoQP</field>
             <field>00N1t000006YoQQ</field>
+            <field>00N1t00000DsSC6</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -660,6 +680,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSNd</field>
+            <label>Computer</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQM</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -678,6 +702,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQQ</field>
             <label>Tracking Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSC6</field>
+            <label>TRPCategory</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -714,11 +742,13 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N1t00000DsSNd</field>
             <field>00N1t000006YoQM</field>
             <field>00N1t000006YoQN</field>
             <field>00N1t000006YoQO</field>
             <field>00N1t000006YoQP</field>
             <field>00N1t000006YoQQ</field>
+            <field>00N1t00000DsSC6</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -875,6 +905,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSNd</field>
+            <label>Computer</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQM</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -893,6 +927,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQQ</field>
             <label>Tracking Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSC6</field>
+            <label>TRPCategory</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -928,11 +966,13 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N1t00000DsSNd</field>
             <field>00N1t000006YoQM</field>
             <field>00N1t000006YoQN</field>
             <field>00N1t000006YoQO</field>
             <field>00N1t000006YoQP</field>
             <field>00N1t000006YoQQ</field>
+            <field>00N1t00000DsSC6</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1093,6 +1133,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSNd</field>
+            <label>Computer</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQM</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -1111,6 +1155,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQQ</field>
             <label>Tracking Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSC6</field>
+            <label>TRPCategory</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -1147,11 +1195,13 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N1t00000DsSNd</field>
             <field>00N1t000006YoQM</field>
             <field>00N1t000006YoQN</field>
             <field>00N1t000006YoQO</field>
             <field>00N1t000006YoQP</field>
             <field>00N1t000006YoQQ</field>
+            <field>00N1t00000DsSC6</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1308,6 +1358,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSNd</field>
+            <label>Computer</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQM</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -1326,6 +1380,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQQ</field>
             <label>Tracking Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSC6</field>
+            <label>TRPCategory</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -1361,11 +1419,13 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N1t00000DsSNd</field>
             <field>00N1t000006YoQM</field>
             <field>00N1t000006YoQN</field>
             <field>00N1t000006YoQO</field>
             <field>00N1t000006YoQP</field>
             <field>00N1t000006YoQQ</field>
+            <field>00N1t00000DsSC6</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1522,6 +1582,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSNd</field>
+            <label>Computer</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQM</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -1540,6 +1604,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQQ</field>
             <label>Tracking Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSC6</field>
+            <label>TRPCategory</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -1575,11 +1643,13 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N1t00000DsSNd</field>
             <field>00N1t000006YoQM</field>
             <field>00N1t000006YoQN</field>
             <field>00N1t000006YoQO</field>
             <field>00N1t000006YoQP</field>
             <field>00N1t000006YoQQ</field>
+            <field>00N1t00000DsSC6</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1736,6 +1806,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSNd</field>
+            <label>Computer</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQM</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -1754,6 +1828,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQQ</field>
             <label>Tracking Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSC6</field>
+            <label>TRPCategory</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -1789,11 +1867,13 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N1t00000DsSNd</field>
             <field>00N1t000006YoQM</field>
             <field>00N1t000006YoQN</field>
             <field>00N1t000006YoQO</field>
             <field>00N1t000006YoQP</field>
             <field>00N1t000006YoQQ</field>
+            <field>00N1t00000DsSC6</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1954,6 +2034,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSNd</field>
+            <label>Computer</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQM</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -1972,6 +2056,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQQ</field>
             <label>Tracking Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSC6</field>
+            <label>TRPCategory</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -2008,11 +2096,13 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N1t00000DsSNd</field>
             <field>00N1t000006YoQM</field>
             <field>00N1t000006YoQN</field>
             <field>00N1t000006YoQO</field>
             <field>00N1t000006YoQP</field>
             <field>00N1t000006YoQQ</field>
+            <field>00N1t00000DsSC6</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -2169,6 +2259,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSNd</field>
+            <label>Computer</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQM</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -2187,6 +2281,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQQ</field>
             <label>Tracking Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSC6</field>
+            <label>TRPCategory</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -2222,11 +2320,13 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N1t00000DsSNd</field>
             <field>00N1t000006YoQM</field>
             <field>00N1t000006YoQN</field>
             <field>00N1t000006YoQO</field>
             <field>00N1t000006YoQP</field>
             <field>00N1t000006YoQQ</field>
+            <field>00N1t00000DsSC6</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -2383,6 +2483,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSNd</field>
+            <label>Computer</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQM</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -2401,6 +2505,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQQ</field>
             <label>Tracking Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSC6</field>
+            <label>TRPCategory</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -2436,11 +2544,13 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N1t00000DsSNd</field>
             <field>00N1t000006YoQM</field>
             <field>00N1t000006YoQN</field>
             <field>00N1t000006YoQO</field>
             <field>00N1t000006YoQP</field>
             <field>00N1t000006YoQQ</field>
+            <field>00N1t00000DsSC6</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -2597,6 +2707,10 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSNd</field>
+            <label>Computer</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQM</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -2615,6 +2729,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N1t000006YoQQ</field>
             <label>Tracking Number</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N1t00000DsSC6</field>
+            <label>TRPCategory</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -2650,11 +2768,13 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
+            <field>00N1t00000DsSNd</field>
             <field>00N1t000006YoQM</field>
             <field>00N1t000006YoQN</field>
             <field>00N1t000006YoQO</field>
             <field>00N1t000006YoQP</field>
             <field>00N1t000006YoQQ</field>
+            <field>00N1t00000DsSC6</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>

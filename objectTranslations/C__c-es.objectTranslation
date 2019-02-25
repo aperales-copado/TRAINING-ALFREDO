@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>C</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>C</value>
+    </caseValues>
+    <fields>
+        <label><!-- ChildofA --></label>
+        <name>ChildofA__c</name>
+        <relationshipLabel><!-- C --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ChildofB --></label>
+        <name>ChildofB__c</name>
+        <relationshipLabel><!-- C --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+</CustomObjectTranslation>

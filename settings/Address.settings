@@ -3,6 +3,31 @@
     <countriesAndStates>
         <countries>
             <active>true</active>
+            <integrationValue>Catalonia Happy Flower</integrationValue>
+            <isoCode>666666666</isoCode>
+            <label>Catalonia Happy Flower</label>
+            <orgDefault>true</orgDefault>
+            <standard>false</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>Barcelona world capital</integrationValue>
+                <isoCode>489748</isoCode>
+                <label>Barcelona world capital</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>Girona butifarra</integrationValue>
+                <isoCode>56746816</isoCode>
+                <label>Girona butifarra</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <visible>true</visible>
+        </countries>
+        <countries>
+            <active>true</active>
             <integrationValue>Andorra</integrationValue>
             <isoCode>AD</isoCode>
             <label>Andorra</label>
