@@ -283,6 +283,15 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>main_email__c</fullName>
+        <externalId>false</externalId>
+        <label>main email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>recommit2__c</fullName>
         <externalId>false</externalId>
         <label>recommit2</label>
