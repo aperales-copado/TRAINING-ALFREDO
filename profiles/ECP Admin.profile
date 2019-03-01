@@ -2434,10 +2434,6 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Broker__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>Data_Import</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
