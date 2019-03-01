@@ -1506,9 +1506,6 @@
         <layout>B__c-B Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Broker__c-Broker Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>C__c-C Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
