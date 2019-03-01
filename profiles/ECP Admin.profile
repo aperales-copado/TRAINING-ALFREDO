@@ -2,11 +2,6 @@
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ECP Admin</fullName>
     <applicationVisibilities>
-        <application>PG_Sales_Lightning</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
         <application>dupe_eliminator__Dupe_Eliminator</application>
         <default>false</default>
         <visible>true</visible>
