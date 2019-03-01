@@ -98,10 +98,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>DreamhouseProspects</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>DreamhouseTests</apexClass>
         <enabled>true</enabled>
     </classAccesses>
