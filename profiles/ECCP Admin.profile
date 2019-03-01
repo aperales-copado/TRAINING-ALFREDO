@@ -1839,10 +1839,6 @@
         <layout>Opportunity-Opportunity %28Support%29 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Opportunity-Opportunity %28Support%29 Layout</layout>
-        <recordType>Opportunity.Support</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>OpportunityLineItem-Opportunity Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -2686,11 +2682,6 @@
     <recordTypeVisibilities>
         <default>true</default>
         <recordType>Metric.Progress</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>Opportunity.Support</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <tabVisibilities>
