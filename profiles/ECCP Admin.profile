@@ -2318,10 +2318,6 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
-        <apexPage>Similar_Properties</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>dupe_eliminator__MergeRecord</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
