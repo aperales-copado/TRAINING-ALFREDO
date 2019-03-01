@@ -3184,10 +3184,6 @@
     </userPermissions>
     <userPermissions>
         <enabled>false</enabled>
-        <name>InstallMultiforce</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>false</enabled>
         <name>PublishMultiforce</name>
     </userPermissions>
     <userPermissions>
