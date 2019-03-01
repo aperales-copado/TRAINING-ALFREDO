@@ -2,11 +2,6 @@
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ECCP Admin</fullName>
     <applicationVisibilities>
-        <application>PG_Sales</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
         <application>PG_Sales_Lightning</application>
         <default>false</default>
         <visible>true</visible>
