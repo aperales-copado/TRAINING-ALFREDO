@@ -1497,9 +1497,6 @@
         <layout>Account-Account %28Support%29 Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Alfredo_Admin__c-Alfredo Admin Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Alfredo_Mo__mdt-Alfredo mohawkind Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
