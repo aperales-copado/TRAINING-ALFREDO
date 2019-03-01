@@ -2326,10 +2326,6 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
-        <apexPage>DataImport</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>DreamhouseLeads</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
