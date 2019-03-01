@@ -2322,10 +2322,6 @@
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <pageAccesses>
-        <apexPage>DreamhouseLeads</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>Similar_Properties</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
