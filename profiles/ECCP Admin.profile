@@ -98,10 +98,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>EmailManager</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>GetPropertiesApexController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
