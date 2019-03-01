@@ -98,10 +98,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>dupe_eliminator__SearchMergeController</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>dupe_eliminator__SearchMergeTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
