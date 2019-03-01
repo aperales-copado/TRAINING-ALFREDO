@@ -1553,9 +1553,6 @@
         <layout>Event-Event Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Favorite__c-Favorite Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Global-Global Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
