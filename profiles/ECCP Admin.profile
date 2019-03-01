@@ -1427,11 +1427,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Pablo__c.alfredotest2__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Pablo__c.aniversario__c</field>
         <readable>true</readable>
     </fieldPermissions>
