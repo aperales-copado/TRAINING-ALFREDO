@@ -2438,10 +2438,6 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
-        <tab>Property__c</tab>
-        <visibility>DefaultOn</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
         <tab>dupe_eliminator__AccChild__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
