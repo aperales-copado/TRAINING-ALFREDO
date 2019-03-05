@@ -5,7 +5,7 @@
         <name>Profile</name>
     </types>
     <types>
-        <members>PersonAccount.Customer1</members>
+        <members>PersonAccount.Person_Account</members>
         <name>RecordType</name>
     </types>
     <version>44.0</version>
