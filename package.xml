@@ -5,8 +5,7 @@
         <name>Profile</name>
     </types>
     <types>
-        <members>PersonAccount.PersonAccount</members>
-        <members>PersonAccount.Person_Account</members>
+        <members>PersonAccount.Customer1</members>
         <name>RecordType</name>
     </types>
     <version>44.0</version>
