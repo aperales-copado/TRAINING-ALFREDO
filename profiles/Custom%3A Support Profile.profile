@@ -6260,6 +6260,7 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>PersonAccount.Lyreco</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
