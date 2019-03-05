@@ -6253,7 +6253,7 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
         <personAccountDefault>true</personAccountDefault>
         <recordType>PersonAccount.Customer1</recordType>
         <visible>true</visible>
