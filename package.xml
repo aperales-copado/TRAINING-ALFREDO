@@ -6,7 +6,6 @@
     </types>
     <types>
         <members>PersonAccount.Lyreco</members>
-        <members>PersonAccount.White_Paper</members>
         <name>RecordType</name>
     </types>
     <version>44.0</version>
