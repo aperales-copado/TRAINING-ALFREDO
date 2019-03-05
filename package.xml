@@ -5,7 +5,8 @@
         <name>Profile</name>
     </types>
     <types>
-        <members>PersonAccount.Person_Account</members>
+        <members>PersonAccount.Lyreco</members>
+        <members>PersonAccount.White_Paper</members>
         <name>RecordType</name>
     </types>
     <version>44.0</version>

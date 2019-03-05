@@ -673,6 +673,11 @@
         </picklistValues>
     </recordTypes>
     <recordTypes>
+        <fullName>Lyreco</fullName>
+        <active>true</active>
+        <label>Lyreco</label>
+    </recordTypes>
+    <recordTypes>
         <fullName>PersonAccount</fullName>
         <active>true</active>
         <label>Cuenta personal</label>
@@ -1119,6 +1124,11 @@
                 <default>false</default>
             </values>
         </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>White_Paper</fullName>
+        <active>true</active>
+        <label>White Paper</label>
     </recordTypes>
     <recordTypes>
         <fullName>caso_a2</fullName>
