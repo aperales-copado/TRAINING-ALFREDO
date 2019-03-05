@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>PersonAccount-Formato de cuenta personal</members>
-        <name>Layout</name>
-    </types>
-    <types>
         <members>Custom%3A Support Profile</members>
         <name>Profile</name>
     </types>
     <types>
         <members>PersonAccount.PersonAccount</members>
+        <members>PersonAccount.Person_Account</members>
         <name>RecordType</name>
     </types>
     <version>44.0</version>
