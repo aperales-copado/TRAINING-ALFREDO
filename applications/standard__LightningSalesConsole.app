@@ -64,6 +64,15 @@
         <pageOrSobjectType>Case</pageOrSobjectType>
         <recordType>Case.AlfredoPG</recordType>
         <type>Flexipage</type>
+        <profile>Analytics Cloud Security User</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Pablo</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Case</pageOrSobjectType>
+        <recordType>Case.AlfredoPG</recordType>
+        <type>Flexipage</type>
         <profile>Custom: Support Profile</profile>
     </profileActionOverrides>
     <profileActionOverrides>
