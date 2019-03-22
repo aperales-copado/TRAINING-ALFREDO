@@ -1132,6 +1132,12 @@
         </picklistValues>
     </recordTypes>
     <recordTypes>
+        <fullName>Super_Mario_Account</fullName>
+        <active>true</active>
+        <description>Level up</description>
+        <label>Super Mario Account</label>
+    </recordTypes>
+    <recordTypes>
         <fullName>White_Paper</fullName>
         <active>true</active>
         <label>White Paper</label>

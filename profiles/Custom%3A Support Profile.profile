@@ -6284,6 +6284,12 @@
     <recordTypeVisibilities>
         <default>true</default>
         <personAccountDefault>true</personAccountDefault>
+        <recordType>PersonAccount.Super_Mario_Account</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
         <recordType>PersonAccount.White_Paper</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
