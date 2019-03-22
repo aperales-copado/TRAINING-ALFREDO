@@ -673,6 +673,12 @@
         </picklistValues>
     </recordTypes>
     <recordTypes>
+        <fullName>Luigi_Account</fullName>
+        <active>true</active>
+        <description>For Volvo situation</description>
+        <label>Luigi Account</label>
+    </recordTypes>
+    <recordTypes>
         <fullName>Lyreco</fullName>
         <active>true</active>
         <label>Lyreco</label>
