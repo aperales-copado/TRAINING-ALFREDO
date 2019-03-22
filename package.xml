@@ -5,7 +5,7 @@
         <name>Profile</name>
     </types>
     <types>
-        <members>PersonAccount.Super_Mario_Account</members>
+        <members>PersonAccount.Luigi_Account</members>
         <name>RecordType</name>
     </types>
     <version>44.0</version>
