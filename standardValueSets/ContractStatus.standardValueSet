@@ -16,4 +16,9 @@
         <default>false</default>
         <label>Draft</label>
     </standardValue>
+    <standardValue>
+        <fullName>Awaiting order</fullName>
+        <default>false</default>
+        <label>Awaiting order</label>
+    </standardValue>
 </StandardValueSet>
