@@ -267,6 +267,27 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <listViews>
+        <fullName>Alfredo_test</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>LEAD.COMPANY</columns>
+        <columns>LEAD.STATE</columns>
+        <columns>LEAD.EMAIL</columns>
+        <columns>LEAD.STATUS</columns>
+        <columns>LEAD.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>LEAD.UNREAD</columns>
+        <columns>LEAD.PHONE</columns>
+        <columns>LEAD.CITY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LEAD.TITLE</field>
+            <operation>notContain</operation>
+            <value>Pepito</value>
+        </filters>
+        <label>Alfredo test</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
         <fullName>AllOpenLeads</fullName>
         <filterScope>Everything</filterScope>
         <filters>
