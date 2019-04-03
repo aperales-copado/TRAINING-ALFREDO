@@ -22,6 +22,13 @@
         <value>True Colour</value>
     </labels>
     <labels>
+        <fullName>Diventium</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Diventium</shortDescription>
+        <value>Guarderia</value>
+    </labels>
+    <labels>
         <fullName>Green</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -36,32 +43,32 @@
         <value>Gemelos</value>
     </labels>
     <labels>
-        <fullName>White</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Brown</shortDescription>
-        <value>Real colour</value>
-    </labels>
-    <labels>
-        <fullName>test</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>test</shortDescription>
-        <value>testeo</value>
-    </labels>
-    <labels>
-        <fullName>Diventium</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Diventium</shortDescription>
-        <value>Guarderia</value>
-    </labels>
-    <labels>
         <fullName>Pablo_Rodrigo</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Pablo Rodrigo</shortDescription>
         <value>Gemelos</value>
+    </labels>
+    <labels>
+        <fullName>Seguro_avion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Seguro avion</shortDescription>
+        <value>What??</value>
+    </labels>
+    <labels>
+        <fullName>Seguro_coche</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Seguro coche</shortDescription>
+        <value>Mutua</value>
+    </labels>
+    <labels>
+        <fullName>Seguro_moto</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Seguro moto</shortDescription>
+        <value>Mutua</value>
     </labels>
     <labels>
         <fullName>Test_to_delete</fullName>
@@ -76,6 +83,20 @@
         <protected>true</protected>
         <shortDescription>Troubleshooting  10506</shortDescription>
         <value>Troubleshooting  10506</value>
+    </labels>
+    <labels>
+        <fullName>White</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Brown</shortDescription>
+        <value>Real colour</value>
+    </labels>
+    <labels>
+        <fullName>test</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>test</shortDescription>
+        <value>testeo</value>
     </labels>
     <labels>
         <fullName>test</fullName>
