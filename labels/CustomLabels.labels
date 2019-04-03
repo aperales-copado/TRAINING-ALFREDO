@@ -64,6 +64,27 @@
         <value>Saved Label 3</value>
     </labels>
     <labels>
+        <fullName>Seguro_avion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Seguro avion</shortDescription>
+        <value>What??</value>
+    </labels>
+    <labels>
+        <fullName>Seguro_coche</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Seguro coche</shortDescription>
+        <value>Mutua</value>
+    </labels>
+    <labels>
+        <fullName>Seguro_moto</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Seguro moto</shortDescription>
+        <value>Mutua</value>
+    </labels>
+    <labels>
         <fullName>Telus</fullName>
         <language>en_US</language>
         <protected>true</protected>
