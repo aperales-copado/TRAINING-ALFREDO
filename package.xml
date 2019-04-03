@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Contract.Status</members>
-        <name>CustomField</name>
-    </types>
-    <types>
-        <members>ContractStatus</members>
-        <name>StandardValueSet</name>
+        <members>Seguro_avion</members>
+        <members>Seguro_coche</members>
+        <members>Seguro_moto</members>
+        <name>CustomLabel</name>
     </types>
     <version>44.0</version>
 </Package>
