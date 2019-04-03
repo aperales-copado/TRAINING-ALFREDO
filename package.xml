@@ -4,9 +4,5 @@
         <members>Contract.Status</members>
         <name>CustomField</name>
     </types>
-    <types>
-        <members>ContractStatus</members>
-        <name>StandardValueSet</name>
-    </types>
     <version>44.0</version>
 </Package>
