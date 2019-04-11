@@ -89,7 +89,7 @@
         <fullName>Birthday__c</fullName>
         <externalId>false</externalId>
         <label>Birthday</label>
-        <required>false</required>
+        <required>true</required>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
