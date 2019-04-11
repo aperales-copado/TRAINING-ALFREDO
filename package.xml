@@ -4,9 +4,5 @@
         <members>Pablo__c.Birthday__c</members>
         <name>CustomField</name>
     </types>
-    <types>
-        <members>Pablo__c</members>
-        <name>CustomObject</name>
-    </types>
     <version>44.0</version>
 </Package>
