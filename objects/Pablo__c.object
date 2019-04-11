@@ -286,6 +286,7 @@
     <label>Pablo</label>
     <nameField>
         <label>Pablo Name</label>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Pablos</pluralLabel>
