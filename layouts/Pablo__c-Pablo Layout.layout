@@ -65,15 +65,7 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Test_back_promotion_4__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>alfredotest2__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>aniversario__c</field>
-            </layoutItems>
+            </layoutItems>             
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>main_email__c</field>
