@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
+        <fullName>Green</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Green</shortDescription>
+        <value>Colour</value>
+    </labels>
+    <labels>
         <fullName>Platini</fullName>
         <language>en_US</language>
         <protected>true</protected>
