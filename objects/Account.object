@@ -159,6 +159,7 @@
     <fields>
         <fullName>Industry</fullName>
         <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
     <fields>
