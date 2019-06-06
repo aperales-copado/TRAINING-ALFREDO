@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"
-      xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>CallHighlightAction</actionName>
         <type>Default</type>
@@ -66,7 +65,6 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <description n1:nil="true" />
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <fields>
@@ -126,45 +124,6 @@
         <required>true</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Select one</fullName>
-                    <default>true</default>
-                    <label>Select one</label>
-                </value>
-                <value>
-                    <fullName>White</fullName>
-                    <default>false</default>
-                    <label>White</label>
-                </value>
-                <value>
-                    <fullName>Blue</fullName>
-                    <default>false</default>
-                    <label>Blue</label>
-                </value>
-                <value>
-                    <fullName>Red</fullName>
-                    <default>false</default>
-                    <label>Red</label>
-                </value>
-                <value>
-                    <fullName>Black</fullName>
-                    <default>false</default>
-                    <label>Black</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Color_Target__c</fullName>
-        <externalId>false</externalId>
-        <label>Color Target</label>
-        <required>true</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
         <valueSet>
             <restricted>true</restricted>
@@ -277,7 +236,7 @@
     <fields>
         <fullName>NumberOfEmployees</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>true</trackHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>NumberofLocations__c</fullName>
@@ -489,7 +448,6 @@
         <filterScope>Everything</filterScope>
         <label>Platinum and Gold SLA Customers</label>
     </listViews>
-    <nameField n1:nil="true" />
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>true</recordTypeTrackHistory>
     <recordTypes>

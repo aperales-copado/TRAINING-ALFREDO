@@ -29,12 +29,24 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Bill --></label>
+        <name>Bill__c</name>
+    </fields>
+    <fields>
         <label><!-- Birthday --></label>
         <name>Birthday__c</name>
     </fields>
     <fields>
         <label><!-- Encriptado --></label>
         <name>Encriptado__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kindergarden --></label>
+        <name>Kindergarden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday afternoon --></label>
+        <name>Monday_afternoon__c</name>
     </fields>
     <fields>
         <label><!-- Mozilla --></label>
@@ -93,10 +105,6 @@
         <name>Test_back_promotion_3__c</name>
     </fields>
     <fields>
-        <label><!-- Test back promotion 4 --></label>
-        <name>Test_back_promotion_4__c</name>
-    </fields>
-    <fields>
         <label><!-- Test back promotion --></label>
         <name>Test_back_promotion__c</name>
     </fields>
@@ -109,6 +117,10 @@
         <name>aniversario__c</name>
     </fields>
     <fields>
+        <label><!-- main email --></label>
+        <name>main_email__c</name>
+    </fields>
+    <fields>
         <label><!-- recommit2 --></label>
         <name>recommit2__c</name>
     </fields>
@@ -117,4 +129,20 @@
         <name>recommit__c</name>
     </fields>
     <gender>Masculine</gender>
+    <recordTypes>
+        <label><!-- Business Account --></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Person Account --></label>
+        <name>Person_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Person Account 2 --></label>
+        <name>Person_Account_2</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Person Account Default --></label>
+        <name>Person_Account_Default</name>
+    </recordTypes>
 </CustomObjectTranslation>

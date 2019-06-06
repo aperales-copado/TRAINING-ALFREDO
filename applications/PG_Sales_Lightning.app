@@ -21,15 +21,6 @@
         <type>Flexipage</type>
         <profile>Authenticated Website</profile>
     </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Pablo</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Case</pageOrSobjectType>
-        <recordType>Case.AlfredoPG</recordType>
-        <type>Flexipage</type>
-        <profile>Custom: Support Profile</profile>
-    </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>standard-Case</tabs>
     <uiType>Lightning</uiType>

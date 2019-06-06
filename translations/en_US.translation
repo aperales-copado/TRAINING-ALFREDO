@@ -53,6 +53,18 @@
         <name>Saved_Label_3</name>
     </customLabels>
     <customLabels>
+        <label><!-- Seguro avion --></label>
+        <name>Seguro_avion</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Seguro coche --></label>
+        <name>Seguro_coche</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Seguro moto --></label>
+        <name>Seguro_moto</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Telus --></label>
         <name>Telus</name>
     </customLabels>

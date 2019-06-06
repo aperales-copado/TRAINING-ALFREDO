@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"
-      xmlns:n1="http://www.w3.org/2001/XMLSchema-instance">
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
@@ -44,11 +43,11 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description n1:nil="true" />
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
@@ -58,9 +57,11 @@
         <externalId>false</externalId>
         <label>Alfredo picklist</label>
         <required>true</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>Kindergarden__c</controllingField>
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
@@ -85,6 +86,19 @@
                     <label>Toes</label>
                 </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Head</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <controllingFieldValue>checked</controllingFieldValue>
+                <valueName>Shoulder</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>unchecked</controllingFieldValue>
+                <valueName>Knees</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -113,6 +127,7 @@
         <maskChar>asterisk</maskChar>
         <maskType>all</maskType>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>EncryptedText</type>
     </fields>
@@ -124,6 +139,28 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Monday_afternoon__c</fullName>
+        <externalId>false</externalId>
+        <label>Monday afternoon</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mozilla__c</fullName>
+        <externalId>false</externalId>
+        <label>Mozilla</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>PB__c</fullName>
@@ -155,6 +192,7 @@
         <relationshipLabel>Pablos</relationshipLabel>
         <relationshipName>Pablos</relationshipName>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -163,6 +201,7 @@
         <externalId>false</externalId>
         <label>PB multipicklist</label>
         <required>true</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
         <valueSet>
@@ -208,6 +247,7 @@
         <externalId>false</externalId>
         <label>Telefono</label>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Phone</type>
     </fields>
@@ -219,6 +259,7 @@
         <precision>9</precision>
         <required>false</required>
         <scale>2</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -229,6 +270,7 @@
         <label>Test back promotion 2</label>
         <length>135</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -239,16 +281,7 @@
         <label>Test back promotion 3</label>
         <length>90</length>
         <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Test_back_promotion_4__c</fullName>
-        <externalId>false</externalId>
-        <label>Test back promotion 4</label>
-        <length>90</length>
-        <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -261,6 +294,7 @@
         <precision>9</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -271,6 +305,7 @@
         <label>alfredotest2</label>
         <length>100</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -280,6 +315,7 @@
         <externalId>false</externalId>
         <label>aniversario</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
@@ -288,6 +324,7 @@
         <externalId>false</externalId>
         <label>main email</label>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Email</type>
         <unique>false</unique>
@@ -298,6 +335,7 @@
         <label>recommit2</label>
         <length>80</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -308,6 +346,7 @@
         <label>recommit</label>
         <length>100</length>
         <required>false</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -321,9 +360,215 @@
     </listViews>
     <nameField>
         <label>Pablo Name</label>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Pablos</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Business_Account</fullName>
+        <active>true</active>
+        <label>Business Account</label>
+        <picklistValues>
+            <picklist>Alfredo_picklist__c</picklist>
+            <values>
+                <fullName>Head</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Knees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shoulder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PB_multipicklist__c</picklist>
+            <values>
+                <fullName>Apple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Huawei</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Motorola</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nokia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pocophone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sony</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Person_Account</fullName>
+        <active>true</active>
+        <label>Person Account</label>
+        <picklistValues>
+            <picklist>Alfredo_picklist__c</picklist>
+            <values>
+                <fullName>Head</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Knees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shoulder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PB_multipicklist__c</picklist>
+            <values>
+                <fullName>Apple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Huawei</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Motorola</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nokia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pocophone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sony</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Person_Account_2</fullName>
+        <active>true</active>
+        <label>Person Account 2</label>
+        <picklistValues>
+            <picklist>Alfredo_picklist__c</picklist>
+            <values>
+                <fullName>Head</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Knees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shoulder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PB_multipicklist__c</picklist>
+            <values>
+                <fullName>Apple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Huawei</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Motorola</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nokia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pocophone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sony</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Person_Account_Default</fullName>
+        <active>true</active>
+        <label>Person Account Default</label>
+        <picklistValues>
+            <picklist>Alfredo_picklist__c</picklist>
+            <values>
+                <fullName>Head</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Knees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shoulder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PB_multipicklist__c</picklist>
+            <values>
+                <fullName>Apple</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Huawei</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Motorola</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nokia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pocophone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sony</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

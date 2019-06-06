@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value><!-- Pablo --></value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value><!-- Pablo --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value><!-- Pablo --></value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value><!-- Pablo --></value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value><!-- Pablo --></value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value><!-- Pablo --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Alfredo picklist --></label>
+        <name>Alfredo_picklist__c</name>
+        <picklistValues>
+            <masterLabel>Head</masterLabel>
+            <translation><!-- Head --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knees</masterLabel>
+            <translation><!-- Knees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shoulder</masterLabel>
+            <translation><!-- Shoulder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Toes</masterLabel>
+            <translation><!-- Toes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bill --></label>
+        <name>Bill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Birthday --></label>
+        <name>Birthday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encriptado --></label>
+        <name>Encriptado__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kindergarden --></label>
+        <name>Kindergarden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday afternoon --></label>
+        <name>Monday_afternoon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mozilla --></label>
+        <name>Mozilla__c</name>
+    </fields>
+    <fields>
+        <label>Pablisky</label>
+        <lookupFilter>
+            <errorMessage><!-- Esto no funciona --></errorMessage>
+        </lookupFilter>
+        <name>PB__c</name>
+        <relationshipLabel><!-- Pablos --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PB multipicklist --></label>
+        <name>PB_multipicklist__c</name>
+        <picklistValues>
+            <masterLabel>Apple</masterLabel>
+            <translation><!-- Apple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Huawei</masterLabel>
+            <translation><!-- Huawei --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motorola</masterLabel>
+            <translation><!-- Motorola --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nokia</masterLabel>
+            <translation><!-- Nokia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pocophone</masterLabel>
+            <translation><!-- Pocophone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sony</masterLabel>
+            <translation><!-- Sony --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>currupipi</label>
+        <name>Telefono__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Andrew Raymond 3 --></label>
+        <name>Test_Andrew_Raymond_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test back promotion 2 --></label>
+        <name>Test_back_promotion_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test back promotion 3 --></label>
+        <name>Test_back_promotion_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test back promotion --></label>
+        <name>Test_back_promotion__c</name>
+    </fields>
+    <fields>
+        <label><!-- alfredotest2 --></label>
+        <name>alfredotest2__c</name>
+    </fields>
+    <fields>
+        <label><!-- aniversario --></label>
+        <name>aniversario__c</name>
+    </fields>
+    <fields>
+        <label><!-- main email --></label>
+        <name>main_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- recommit2 --></label>
+        <name>recommit2__c</name>
+    </fields>
+    <fields>
+        <label><!-- recommit --></label>
+        <name>recommit__c</name>
+    </fields>
+    <gender><!-- Neuter --></gender>
+    <nameFieldLabel><!-- Pablo Name --></nameFieldLabel>
+    <recordTypes>
+        <label><!-- Business Account --></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Person Account --></label>
+        <name>Person_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Person Account 2 --></label>
+        <name>Person_Account_2</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Person Account Default --></label>
+        <name>Person_Account_Default</name>
+    </recordTypes>
+</CustomObjectTranslation>
