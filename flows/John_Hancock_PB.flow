@@ -41,17 +41,17 @@
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>Change</label>
+            <label>No Criteria</label>
         </rules>
     </decisions>
-    <description>test</description>
+    <description>Description</description>
     <formulas>
         <name>formula_myRule_1</name>
         <dataType>Boolean</dataType>
         <expression>true</expression>
     </formulas>
-    <interviewLabel>Test_Deactivate_Flow-1_InterviewLabel</interviewLabel>
-    <label>Test Deactivate Flow</label>
+    <interviewLabel>John_Hancock_PB-2_InterviewLabel</interviewLabel>
+    <label>John Hancock PB</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>
@@ -97,7 +97,7 @@
             </value>
         </processMetadataValues>
         <name>myRule_1_A1</name>
-        <label>Update</label>
+        <label>Update External_ID</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <filters>
@@ -117,7 +117,7 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
-                    <stringValue>Picklist</stringValue>
+                    <stringValue>String</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -129,7 +129,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Account Type</stringValue>
+                    <stringValue>External_ID</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -141,18 +141,18 @@
             <processMetadataValues>
                 <name>rightHandSideType</name>
                 <value>
-                    <stringValue>Picklist</stringValue>
+                    <stringValue>String</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Type</field>
+            <field>External_ID__c</field>
             <value>
-                <stringValue>Installation Partner</stringValue>
+                <stringValue>1234</stringValue>
             </value>
         </inputAssignments>
         <object>Account</object>
     </recordUpdates>
     <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
-    <status>Draft</status>
+    <status>Obsolete</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>

@@ -44,14 +44,13 @@
             <label>Change</label>
         </rules>
     </decisions>
-    <description>test</description>
     <formulas>
         <name>formula_myRule_1</name>
         <dataType>Boolean</dataType>
         <expression>true</expression>
     </formulas>
-    <interviewLabel>Test_Deactivate_Flow-1_InterviewLabel</interviewLabel>
-    <label>Test Deactivate Flow</label>
+    <interviewLabel>Pablo_Perales-6_InterviewLabel</interviewLabel>
+    <label>Pablo Perales</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>
@@ -85,6 +84,9 @@
             </value>
         </processMetadataValues>
         <processMetadataValues>
+            <name>extraTypeInfo</name>
+        </processMetadataValues>
+        <processMetadataValues>
             <name>isChildRelationship</name>
             <value>
                 <booleanValue>false</booleanValue>
@@ -95,6 +97,9 @@
             <value>
                 <stringValue>[Account]</stringValue>
             </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>referenceTargetField</name>
         </processMetadataValues>
         <name>myRule_1_A1</name>
         <label>Update</label>
