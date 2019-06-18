@@ -1,5 +1,5 @@
 /**
- * Mock controller for retrieving External User Stories from the Project's button.
+ * Mock controller dojghañljhgñaejgnaerñguorefor retrieving External User Stories from the Project's button.
  *
  * @author Ümit Can Uçkan
  * @version 1.0
