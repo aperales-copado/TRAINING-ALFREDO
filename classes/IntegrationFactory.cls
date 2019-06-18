@@ -7,7 +7,7 @@
  */
 public with sharing class IntegrationFactory {
     /**
-     * Creates and instancejlñdhñlajlklhjkjkjk j based on the type field of related project's Copado Integration Setting record
+     * Creates and instancejlñdhñlajlklhjkjkjk j based on the type fieltestestd of related project's Copado Integration Setting record
      *
      * @param type
      *
