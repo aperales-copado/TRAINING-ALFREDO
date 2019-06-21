@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Translations xmlns="http://soap.sforce.com/2006/04/metadata">
     <customApplications>
-        <label><!-- Dreamhouse Classic --></label>
+        <label></label>
         <name>Dreamhouse_Classic</name>
     </customApplications>
     <customApplications>
-        <label><!-- Dreamhouse Lightning --></label>
+        <label></label>
         <name>Dreamhouse_Lightning</name>
     </customApplications>
     <customApplications>
-        <label><!-- PG_Sales --></label>
+        <label></label>
         <name>PG_Sales</name>
     </customApplications>
     <customApplications>
-        <label><!-- PG_Sales Lightning --></label>
+        <label></label>
         <name>PG_Sales_Lightning</name>
     </customApplications>
     <customLabels>
-        <label><!-- AP potential --></label>
+        <label></label>
         <name>AP_potential</name>
     </customLabels>
     <customLabels>
-        <label><!-- Benzema --></label>
+        <label></label>
         <name>Benzema</name>
     </customLabels>
     <customLabels>
@@ -33,47 +33,47 @@
         <name>Green</name>
     </customLabels>
     <customLabels>
-        <label><!-- New button --></label>
+        <label></label>
         <name>New_button</name>
     </customLabels>
     <customLabels>
-        <label><!-- Platini --></label>
+        <label></label>
         <name>Platini</name>
     </customLabels>
     <customLabels>
-        <label><!-- Saved Label --></label>
+        <label></label>
         <name>Saved_Label</name>
     </customLabels>
     <customLabels>
-        <label><!-- Saved Label 2 --></label>
+        <label></label>
         <name>Saved_Label_2</name>
     </customLabels>
     <customLabels>
-        <label><!-- Saved Label 3 --></label>
+        <label></label>
         <name>Saved_Label_3</name>
     </customLabels>
     <customLabels>
-        <label><!-- Seguro avion --></label>
+        <label></label>
         <name>Seguro_avion</name>
     </customLabels>
     <customLabels>
-        <label><!-- Seguro coche --></label>
+        <label></label>
         <name>Seguro_coche</name>
     </customLabels>
     <customLabels>
-        <label><!-- Seguro moto --></label>
+        <label></label>
         <name>Seguro_moto</name>
     </customLabels>
     <customLabels>
-        <label><!-- Telus --></label>
+        <label></label>
         <name>Telus</name>
     </customLabels>
     <customLabels>
-        <label><!-- Test to delete --></label>
+        <label></label>
         <name>Test_to_delete</name>
     </customLabels>
     <customLabels>
-        <label><!-- Troubleshooting  10506 --></label>
+        <label></label>
         <name>Troubleshooting_10506</name>
     </customLabels>
     <customLabels>
@@ -81,59 +81,59 @@
         <name>White</name>
     </customLabels>
     <customLabels>
-        <label><!-- Zidane --></label>
+        <label></label>
         <name>Zidane</name>
     </customLabels>
     <customTabs>
-        <label><!-- Data Import --></label>
+        <label></label>
         <name>Data_Import</name>
     </customTabs>
     <customTabs>
-        <label><!-- Leads --></label>
+        <label></label>
         <name>Leads</name>
     </customTabs>
     <quickActions>
-        <label><!-- LogACall --></label>
+        <label></label>
         <name>LogACall</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewAccount --></label>
+        <label></label>
         <name>NewAccount</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewCase --></label>
+        <label></label>
         <name>NewCase</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewContact --></label>
+        <label></label>
         <name>NewContact</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewEvent --></label>
+        <label></label>
         <name>NewEvent</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewGroup --></label>
+        <label></label>
         <name>NewGroup</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewLead --></label>
+        <label></label>
         <name>NewLead</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewNote --></label>
+        <label></label>
         <name>NewNote</name>
     </quickActions>
     <quickActions>
-        <label><!-- NewOpportunity --></label>
+        <label></label>
         <name>NewOpportunity</name>
     </quickActions>
     <quickActions>
-        <label><!-- New Task --></label>
+        <label></label>
         <name>NewTask</name>
     </quickActions>
     <quickActions>
-        <label><!-- SendEmail --></label>
+        <label></label>
         <name>SendEmail</name>
     </quickActions>
 </Translations>
