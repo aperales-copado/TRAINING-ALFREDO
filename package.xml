@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Seguro_coche</members>
-        <members>Seguro_moto</members>
-        <name>CustomLabel</name>
+        <members>Pablo__c.Cumple_Alfre__c</members>
+        <members>Pablo__c.Cumple_Esther__c</members>
+        <members>Pablo__c.Cumple_Pablo__c</members>
+        <members>Pablo__c.Cumple_Rodrigo__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Pablo__c-es</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>Pablo__c-Pablo Layout</members>
+        <name>Layout</name>
     </types>
     <version>45.0</version>
 </Package>
