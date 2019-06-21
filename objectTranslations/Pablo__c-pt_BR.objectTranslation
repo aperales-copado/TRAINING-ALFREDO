@@ -8,6 +8,5 @@
         <plural>true</plural>
         <value><!-- Pablo --></value>
     </caseValues>
-    <gender><!-- Feminine --></gender>
     <nameFieldLabel><!-- Pablo Name --></nameFieldLabel>
 </CustomObjectTranslation>
