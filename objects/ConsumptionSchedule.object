@@ -40,12 +40,12 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>BillingTerm</fullName>
-        <inlineHelpText>Número de unidades de facturación a las que se aplica esta programación de consumo. Por ejemplo, si la unidad de plazo de facturación es Mes, introduzca 12 para aplicar las programaciones de consumo para 12 meses. Aplique programaciones de consumo a un máximo de 20 trimestres, 60 meses o 5 años.</inlineHelpText>
+        <inlineHelpText>Number of billing units that this consumption schedule applies to. For example, if the selected Billing Term Unit is Month, enter 12 to apply the consumption schedules for 12 months. Apply consumption schedules to as many as 20 quarters, 60 months, or 5 years.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>BillingTermUnit</fullName>
-        <inlineHelpText>La unidad utilizada con el plazo de facturación para determinar la frecuencia de facturación.</inlineHelpText>
+        <inlineHelpText>The unit used with the billing term to determine the billing frequency.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -58,7 +58,7 @@
     </fields>
     <fields>
         <fullName>MatchingAttribute</fullName>
-        <inlineHelpText>El uso se compara con una programación de consumo si los registros comparten el mismo valor Atributo de coincidencia.</inlineHelpText>
+        <inlineHelpText>Usage is matched with a consumption schedule if the records share the same Matching Attribute value.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -71,29 +71,29 @@
     </fields>
     <fields>
         <fullName>RatingMethod</fullName>
-        <inlineHelpText>Seleccione un caso de uso específico para calificar el uso en esta programación. Ésta es una lista de selección de control para el campo Tipo.</inlineHelpText>
+        <inlineHelpText>Choose a specific use case to rate usage against this schedule. This is a controlling picklist for the Type field.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Type</fullName>
-        <inlineHelpText>Índice: Los precios de programación utilizando únicamente el nivel que se aplica a la cantidad de uso. Bloque: El uso en un límite dado recibe precios iguales al valor de su nivel.</inlineHelpText>
+        <inlineHelpText>Range: The schedule prices only using the tier that applies to the usage quantity. Slab: Usage within a given bound receives pricing equal to its tier&apos;s value.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>UnitOfMeasure</fullName>
-        <inlineHelpText>Las cantidades de uso y los índices se aplican a esta unidad de medición.</inlineHelpText>
+        <inlineHelpText>Usage quantities and rates apply to this unit of measurement.</inlineHelpText>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
     <listViews>
         <fullName>All_ConsumptionSchedules</fullName>
         <filterScope>Everything</filterScope>
-        <label>All Consumption Schedules</label>
+        <label>Todas las programaciones de consumo</label>
     </listViews>
     <listViews>
         <fullName>My_ConsumptionSchedules</fullName>
         <filterScope>Mine</filterScope>
-        <label>My Consumption Schedules</label>
+        <label>Mis programaciones de consumo</label>
     </listViews>
     <searchLayouts/>
     <sharingModel>Read</sharingModel>

@@ -40,7 +40,7 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>ConsumptionScheduleId</fullName>
-        <inlineHelpText>Este índice es una parte de esta programación.</inlineHelpText>
+        <inlineHelpText>This rate is a part of of this schedule.</inlineHelpText>
         <trackHistory>false</trackHistory>
         <type>MasterDetail</type>
     </fields>
@@ -50,7 +50,7 @@
     </fields>
     <fields>
         <fullName>LowerBound</fullName>
-        <inlineHelpText>La cantidad más baja de uso para este índice de consumo.</inlineHelpText>
+        <inlineHelpText>The lowest quantity of usage for this consumption rate.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -59,22 +59,22 @@
     </fields>
     <fields>
         <fullName>Price</fullName>
-        <inlineHelpText>El precio para el uso que entra dentro de los límites de este índice de consumo.</inlineHelpText>
+        <inlineHelpText>The price for usage that falls within this consumption rate&apos;s bounds.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>PricingMethod</fullName>
-        <inlineHelpText>Seleccione si se asigna un precio al uso por unidad o cantidad o como una tarifa plana.</inlineHelpText>
+        <inlineHelpText>Choose whether the usage is priced per unit or quantity or as a flat fee</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>ProcessingOrder</fullName>
-        <inlineHelpText>El orden para el procesamiento del índice de uso entre múltiples índices. Los índices de consumo se evalúan comenzando con el orden de procesamiento más bajo.</inlineHelpText>
+        <inlineHelpText>The order for processing the usage rate across multiple rates. Consumption Rates are evaluated beginning with the lowest processing order.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>UpperBound</fullName>
-        <inlineHelpText>La cantidad más alta de uso para este índice de consumo.</inlineHelpText>
+        <inlineHelpText>The highest quantity of usage for this consumption rate.</inlineHelpText>
         <trackHistory>false</trackHistory>
     </fields>
     <sharingModel>ControlledByParent</sharingModel>

@@ -29,6 +29,10 @@
         <name>Blue</name>
     </customLabels>
     <customLabels>
+        <label><!-- Diventium --></label>
+        <name>Diventium</name>
+    </customLabels>
+    <customLabels>
         <label><!-- Green --></label>
         <name>Green</name>
     </customLabels>
@@ -83,6 +87,10 @@
     <customLabels>
         <label><!-- Zidane --></label>
         <name>Zidane</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- test --></label>
+        <name>test</name>
     </customLabels>
     <customTabs>
         <label><!-- Data Import --></label>

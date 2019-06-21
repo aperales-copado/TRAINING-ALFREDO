@@ -39,6 +39,10 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <fields>
+        <fullName>IsAdditionalSkill</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>RelatedRecordId</fullName>
         <trackHistory>false</trackHistory>
         <type>MasterDetail</type>

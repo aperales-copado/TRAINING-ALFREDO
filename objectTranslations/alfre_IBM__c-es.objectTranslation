@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>alfre IBM</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>alfre IBM</value>
+    </caseValues>
+    <fields>
+        <label><!-- Descripcion --></label>
+        <name>Descripcion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable --></label>
+        <name>Enable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Telefono --></label>
+        <name>Telefono__c</name>
+    </fields>
+    <gender>Neuter</gender>
+</CustomObjectTranslation>

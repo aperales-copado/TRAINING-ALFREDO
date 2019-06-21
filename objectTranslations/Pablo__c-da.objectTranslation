@@ -59,20 +59,28 @@
         <name>Birthday__c</name>
     </fields>
     <fields>
+        <label><!-- Cumple Alfre --></label>
+        <name>Cumple_Alfre__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumple Esther --></label>
+        <name>Cumple_Esther__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumple Pablo --></label>
+        <name>Cumple_Pablo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cumple Rodrigo --></label>
+        <name>Cumple_Rodrigo__c</name>
+    </fields>
+    <fields>
         <label><!-- Encriptado --></label>
         <name>Encriptado__c</name>
     </fields>
     <fields>
         <label><!-- Kindergarden --></label>
         <name>Kindergarden__c</name>
-    </fields>
-    <fields>
-        <label><!-- Monday afternoon --></label>
-        <name>Monday_afternoon__c</name>
-    </fields>
-    <fields>
-        <label><!-- Mozilla --></label>
-        <name>Mozilla__c</name>
     </fields>
     <fields>
         <label>Pablisky</label>
