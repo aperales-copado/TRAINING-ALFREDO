@@ -61,6 +61,42 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Cumple_Alfre__c</fullName>
+        <externalId>false</externalId>
+        <label>Cumple Alfre</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Cumple_Esther__c</fullName>
+        <externalId>false</externalId>
+        <label>Cumple Esther</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Cumple_Pablo__c</fullName>
+        <externalId>false</externalId>
+        <label>Cumple Pablo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Cumple_Rodrigo__c</fullName>
+        <externalId>false</externalId>
+        <label>Cumple Rodrigo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Encriptado__c</fullName>
         <externalId>false</externalId>
         <label>Encriptado</label>
