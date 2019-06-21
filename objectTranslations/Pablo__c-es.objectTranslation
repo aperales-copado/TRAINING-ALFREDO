@@ -9,31 +9,31 @@
         <value>Pablos</value>
     </caseValues>
     <fields>
-        <label><!-- Alfredo picklist --></label>
+        <label></label>
         <name>Alfredo_picklist__c</name>
         <picklistValues>
             <masterLabel>Head</masterLabel>
-            <translation><!-- Head --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Knees</masterLabel>
-            <translation><!-- Knees --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Shoulder</masterLabel>
-            <translation><!-- Shoulder --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Toes</masterLabel>
-            <translation><!-- Toes --></translation>
+            <translation></translation>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Bill --></label>
+        <label></label>
         <name>Bill__c</name>
     </fields>
     <fields>
-        <label><!-- Birthday --></label>
+        <label></label>
         <name>Birthday__c</name>
     </fields>
     <fields>
@@ -53,104 +53,104 @@
         <name>Cumple_Rodrigo__c</name>
     </fields>
     <fields>
-        <label><!-- Encriptado --></label>
+        <label></label>
         <name>Encriptado__c</name>
     </fields>
     <fields>
-        <label><!-- Kindergarden --></label>
+        <label></label>
         <name>Kindergarden__c</name>
     </fields>
     <fields>
-        <label><!-- Pablo --></label>
+        <label></label>
         <lookupFilter>
-            <errorMessage><!-- Esto no funciona --></errorMessage>
+            <errorMessage></errorMessage>
         </lookupFilter>
         <name>PB__c</name>
-        <relationshipLabel><!-- Pablos --></relationshipLabel>
+        <relationshipLabel></relationshipLabel>
     </fields>
     <fields>
-        <label><!-- PB multipicklist --></label>
+        <label></label>
         <name>PB_multipicklist__c</name>
         <picklistValues>
             <masterLabel>Apple</masterLabel>
-            <translation><!-- Apple --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Huawei</masterLabel>
-            <translation><!-- Huawei --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Motorola</masterLabel>
-            <translation><!-- Motorola --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Nokia</masterLabel>
-            <translation><!-- Nokia --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Pocophone</masterLabel>
-            <translation><!-- Pocophone --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Sony</masterLabel>
-            <translation><!-- Sony --></translation>
+            <translation></translation>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Telefono --></label>
+        <label></label>
         <name>Telefono__c</name>
     </fields>
     <fields>
-        <label><!-- Test Andrew Raymond 3 --></label>
+        <label></label>
         <name>Test_Andrew_Raymond_3__c</name>
     </fields>
     <fields>
-        <label><!-- Test back promotion 2 --></label>
+        <label></label>
         <name>Test_back_promotion_2__c</name>
     </fields>
     <fields>
-        <label><!-- Test back promotion 3 --></label>
+        <label></label>
         <name>Test_back_promotion_3__c</name>
     </fields>
     <fields>
-        <label><!-- Test back promotion --></label>
+        <label></label>
         <name>Test_back_promotion__c</name>
     </fields>
     <fields>
-        <label><!-- alfredotest2 --></label>
+        <label></label>
         <name>alfredotest2__c</name>
     </fields>
     <fields>
-        <label><!-- aniversario --></label>
+        <label></label>
         <name>aniversario__c</name>
     </fields>
     <fields>
-        <label><!-- main email --></label>
+        <label></label>
         <name>main_email__c</name>
     </fields>
     <fields>
-        <label><!-- recommit2 --></label>
+        <label></label>
         <name>recommit2__c</name>
     </fields>
     <fields>
-        <label><!-- recommit --></label>
+        <label></label>
         <name>recommit__c</name>
     </fields>
     <gender>Masculine</gender>
     <recordTypes>
-        <label><!-- Business Account --></label>
+        <label></label>
         <name>Business_Account</name>
     </recordTypes>
     <recordTypes>
-        <label><!-- Person Account --></label>
+        <label></label>
         <name>Person_Account</name>
     </recordTypes>
     <recordTypes>
-        <label><!-- Person Account 2 --></label>
+        <label></label>
         <name>Person_Account_2</name>
     </recordTypes>
     <recordTypes>
-        <label><!-- Person Account Default --></label>
+        <label></label>
         <name>Person_Account_Default</name>
     </recordTypes>
 </CustomObjectTranslation>
