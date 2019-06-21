@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Pablo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pablos</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Pablo Layout</layout>
+        <sections>
+            <label><!-- Alfredo --></label>
+            <section>Alfredo</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Esther --></label>
+            <section>Esther</section>
+        </sections>
+        <sections>
+            <label><!-- Pablo --></label>
+            <section>Pablo</section>
+        </sections>
+        <sections>
+            <label><!-- Rodrigo --></label>
+            <section>Rodrigo</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>
