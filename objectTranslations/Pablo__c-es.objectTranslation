@@ -140,7 +140,7 @@
     <layouts>
         <layout>Pablo Layout</layout>
         <sections>
-            <label></label>
+            <label>Papa</label>
             <section>Alfredo</section>
         </sections>
         <sections>
@@ -148,15 +148,15 @@
             <section>Custom Links</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Mama</label>
             <section>Esther</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Hermano Mayor</label>
             <section>Pablo</section>
         </sections>
         <sections>
-            <label></label>
+            <label>Hermano Menor</label>
             <section>Rodrigo</section>
         </sections>
     </layouts>
