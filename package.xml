@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Seguro_coche</members>
-        <members>Seguro_moto</members>
-        <name>CustomLabel</name>
+        <members>Pablo__c.Alfredo_picklist__c</members>
+        <members>Pablo__c.Bill__c</members>
+        <members>Pablo__c.Birthday__c</members>
+        <members>Pablo__c.Cumple_Alfre__c</members>
+        <members>Pablo__c.Cumple_Esther__c</members>
+        <members>Pablo__c.Cumple_Pablo__c</members>
+        <members>Pablo__c.Cumple_Rodrigo__c</members>
+        <members>Pablo__c.Encriptado__c</members>
+        <members>Pablo__c.Kindergarden__c</members>
+        <members>Pablo__c.PB__c</members>
+        <members>Pablo__c.PB_multipicklist__c</members>
+        <members>Pablo__c.Telefono__c</members>
+        <members>Pablo__c.Test_Andrew_Raymond_3__c</members>
+        <members>Pablo__c.Test_back_promotion_2__c</members>
+        <members>Pablo__c.Test_back_promotion_3__c</members>
+        <members>Pablo__c.Test_back_promotion__c</members>
+        <members>Pablo__c.alfredotest2__c</members>
+        <members>Pablo__c.aniversario__c</members>
+        <members>Pablo__c.main_email__c</members>
+        <members>Pablo__c.recommit2__c</members>
+        <members>Pablo__c.recommit__c</members>
+        <name>CustomField</name>
     </types>
     <version>45.0</version>
 </Package>
