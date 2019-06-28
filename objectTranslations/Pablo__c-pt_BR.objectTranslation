@@ -8,7 +8,6 @@
         <plural>true</plural>
         <value><!-- Pablo --></value>
     </caseValues>
-    <gender><!-- Feminine --></gender>
     <layouts>
         <layout>Pablo test 1</layout>
         <sections>
