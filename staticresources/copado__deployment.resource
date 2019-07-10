@@ -975,7 +975,12 @@ var copadoApp = {
             ga('send', 'event', 'Deployment', 'deploy');
             console.log('redirection! > ', window.location.protocol + '//' + window.location.host + '/apex/'+_namespace+'deploymentWizard?_ui=2&gotoStep=deploynow&id=' + copadoApp.data.dep.Id)
                 //change to popup)
-            location.href = window.location.protocol + '//' + window.location.host + '/apex/'+_namespace+'deploymentWizard?_ui=2&gotoStep=deploynow&id=' + copadoApp.data.dep.Id+'&jobsManagerMatchingKey=' + encodeURIComponent(copadoApp.jobsManagerMatchingKey);
+            var url = '/apex/'+_namespace+'deploymentWizard?_ui=2&gotoStep=deploynow&id=' + copadoApp.data.dep.Id+'&jobsManagerMatchingKey=' + encodeURIComponent(copadoApp.jobsManagerMatchingKey);
+            if( (typeof sforce != 'undefined') && sforce && (!!sforce.one) ) {
+                sforce.one.navigateToURL(url, true);
+            } else {
+                window.open(url, '_self');
+            }
         }
 
     },

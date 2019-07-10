@@ -7,6 +7,7 @@
     <customButtons>copado__Manage_Selenium_Tests</customButtons>
     <customButtons>copado__Add_Metadata</customButtons>
     <customButtons>copado__Commit_Files</customButtons>
+    <customButtons>copado__Add_Commits</customButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -66,19 +67,15 @@
                 <behavior>Edit</behavior>
                 <field>RecordTypeId</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Test_view_in_GIT__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>External_Id__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>OwnerId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>JIRA_key__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

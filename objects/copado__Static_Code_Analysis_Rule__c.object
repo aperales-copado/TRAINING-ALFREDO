@@ -46,9 +46,9 @@
     <deprecated>false</deprecated>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
@@ -288,6 +288,56 @@
                     <default>false</default>
                     <label>WhileLoopsMustUseBraces</label>
                 </value>
+                <value>
+                    <fullName>AvoidSoslInLoops</fullName>
+                    <default>false</default>
+                    <label>AvoidSoslInLoops</label>
+                </value>
+                <value>
+                    <fullName>AvoidDirectAccessTriggerMap</fullName>
+                    <default>false</default>
+                    <label>AvoidDirectAccessTriggerMap</label>
+                </value>
+                <value>
+                    <fullName>AvoidHardcodingId</fullName>
+                    <default>false</default>
+                    <label>AvoidHardcodingId</label>
+                </value>
+                <value>
+                    <fullName>EmptyCatchBlock</fullName>
+                    <default>false</default>
+                    <label>EmptyCatchBlock</label>
+                </value>
+                <value>
+                    <fullName>EmptyIfStmt</fullName>
+                    <default>false</default>
+                    <label>EmptyIfStmt</label>
+                </value>
+                <value>
+                    <fullName>EmptyWhileStmt</fullName>
+                    <default>false</default>
+                    <label>EmptyWhileStmt</label>
+                </value>
+                <value>
+                    <fullName>EmptyTryOrFinallyBlock</fullName>
+                    <default>false</default>
+                    <label>EmptyTryOrFinallyBlock</label>
+                </value>
+                <value>
+                    <fullName>EmptyStatementBlock</fullName>
+                    <default>false</default>
+                    <label>EmptyStatementBlock</label>
+                </value>
+                <value>
+                    <fullName>VfUnescapeEl</fullName>
+                    <default>false</default>
+                    <label>VfUnescapeEl</label>
+                </value>
+                <value>
+                    <fullName>VfCsrf</fullName>
+                    <default>false</default>
+                    <label>VfCsrf</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -306,6 +356,11 @@
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <label>Static Code Analysis Rule</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
         <displayFormat>SCAR-{0000}</displayFormat>
         <label>Static Code Analysis Rule Name</label>

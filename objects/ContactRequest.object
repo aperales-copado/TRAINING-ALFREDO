@@ -71,7 +71,7 @@
     <listViews>
         <fullName>My_ContactRequests</fullName>
         <filterScope>Mine</filterScope>
-        <label>My Contact Requests</label>
+        <label>Mis solicitudes de contacto</label>
     </listViews>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
 </CustomObject>

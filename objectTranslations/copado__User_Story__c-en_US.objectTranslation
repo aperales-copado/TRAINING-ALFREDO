@@ -2,47 +2,39 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldSets>
         <label><!-- CBM Fields --></label>
-        <name>CBM_Fields</name>
+        <name>copado__CBM_Fields</name>
     </fieldSets>
     <fieldSets>
         <label><!-- Commit Files Information --></label>
-        <name>Commit_Files_Information</name>
+        <name>copado__Commit_Files_Information</name>
     </fieldSets>
     <fieldSets>
         <label><!-- Copado Header Fields --></label>
-        <name>Copado_Header_Fields</name>
+        <name>copado__Copado_Header_Fields</name>
     </fieldSets>
     <fieldSets>
         <label><!-- Promotion Related List --></label>
-        <name>PromotionRelatedList</name>
+        <name>copado__PromotionRelatedList</name>
     </fieldSets>
     <fieldSets>
         <label><!-- SprintWall_MassUpdate --></label>
-        <name>SprintWall_MassUpdate</name>
+        <name>copado__SprintWall_MassUpdate</name>
     </fieldSets>
     <fieldSets>
         <label><!-- Sprint Wall Columns --></label>
-        <name>Sprint_Wall_Columns</name>
+        <name>copado__Sprint_Wall_Columns</name>
     </fieldSets>
     <fieldSets>
         <label><!-- Work Manager Columns --></label>
-        <name>Work_Manager_Columns</name>
+        <name>copado__Work_Manager_Columns</name>
     </fieldSets>
     <fieldSets>
         <label><!-- Work Manager Relations --></label>
-        <name>Work_Manager_Relations</name>
+        <name>copado__Work_Manager_Relations</name>
     </fieldSets>
     <fields>
-        <label><!-- Enable Logs --></label>
-        <name>Enable_Logs__c</name>
-    </fields>
-    <fields>
-        <label><!-- External Id --></label>
-        <name>External_Id__c</name>
-    </fields>
-    <fields>
-        <label><!-- JIRA key --></label>
-        <name>JIRA_key__c</name>
+        <label><!-- View in GIT --></label>
+        <name>Test_view_in_GIT__c</name>
     </fields>
     <fields>
         <label><!-- Acceptance Criteria Status --></label>
@@ -773,15 +765,15 @@
     </fields>
     <recordTypes>
         <label><!-- Bug --></label>
-        <name>Bug</name>
+        <name>copado__Bug</name>
     </recordTypes>
     <recordTypes>
         <label><!-- Investigation --></label>
-        <name>Investigation</name>
+        <name>copado__Investigation</name>
     </recordTypes>
     <recordTypes>
         <label><!-- User Story --></label>
-        <name>User_Story</name>
+        <name>copado__User_Story</name>
     </recordTypes>
     <validationRules>
         <errorMessage><!-- A cancellation reason must be given. --></errorMessage>

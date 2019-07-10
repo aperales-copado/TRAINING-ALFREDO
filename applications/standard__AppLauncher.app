@@ -5,4 +5,6 @@
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <tabs>standard-AppLauncher</tabs>
+    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
+    <tabs>standard-Quote</tabs>
 </CustomApplication>

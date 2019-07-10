@@ -187,6 +187,28 @@
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
+        <fullName>Monday_afternoon__c</fullName>
+        <externalId>false</externalId>
+        <label>Monday afternoon</label>
+        <length>150</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mozilla__c</fullName>
+        <externalId>false</externalId>
+        <label>Mozilla</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>PB__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>

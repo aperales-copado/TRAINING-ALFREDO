@@ -18,9 +18,13 @@
     <tabs>standard-Feed</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
+    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>copado__Static_Code_Analysis_Rule__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

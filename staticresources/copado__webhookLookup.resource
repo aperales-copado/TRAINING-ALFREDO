@@ -31,8 +31,8 @@ webhookLookup.onSuccessCB = function(){};
 /* WEBHOOK LOOKUP */
 webhookLookup.templateRow = function(i, row){
     var _row = '<tr class="dataRow">'+
-        '<td>'+
-            '<a id="whn-'+i+'" href="javascript:void(0)" onclick="webhookLookup.showLookupField(\''+row.referTo+'\', \''+row.url+'\');">'+row.name+'</a>'+
+        '<td style="text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">'+
+            '<a id="whn-'+i+'"  <title="' + row.name +'" href="javascript:void(0)" onclick="webhookLookup.showLookupField(\''+row.referTo+'\', \''+row.url+'\');">'+row.name+'</a>'+
         '</td>'+
         '<td style="white-space: pre-wrap;"><span id="whd-'+i+'">'+row.description+'</span></td>'+
         '<td><a id="whdl-'+i+'" href="'+row.documentationLink+'" data-ref="webhookNameLink" target="_blank">'+webhookLookup.config.VIEW_DOCUMENTATION+'</a></td>'+

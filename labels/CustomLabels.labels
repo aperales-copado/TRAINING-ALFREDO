@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
-        <fullName>Seguro_avion</fullName>
+        <fullName>AP_potential</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>Seguro avion</shortDescription>
-        <value>What??</value>
+        <shortDescription>AP potential</shortDescription>
+        <value>Potential conflict</value>
+    </labels>
+    <labels>
+        <fullName>Pablo_Rodrigo</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Pablo Rodrigo</shortDescription>
+        <value>Gemelos</value>
     </labels>
     <labels>
         <fullName>Seguro_coche</fullName>
@@ -20,5 +27,26 @@
         <protected>true</protected>
         <shortDescription>Seguro moto</shortDescription>
         <value>Mutua</value>
+    </labels>
+    <labels>
+        <fullName>Test_Selenium</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Test Selenium</shortDescription>
+        <value>Selenium</value>
+    </labels>
+    <labels>
+        <fullName>Troubleshooting_10506</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Troubleshooting  10506</shortDescription>
+        <value>Troubleshooting  10506</value>
+    </labels>
+    <labels>
+        <fullName>Validate_commit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Validate commit</shortDescription>
+        <value>Validate commit</value>
     </labels>
 </CustomLabels>

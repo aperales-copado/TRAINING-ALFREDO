@@ -13,5 +13,5 @@
     <tabs>copado__Environment__c</tabs>
     <tabs>copado__Account_Summary</tabs>
     <tabs>copado__Scheduled_Job__c</tabs>
-    <tabs>Copado_Integration_Setting__c</tabs>
+    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
 </CustomApplication>

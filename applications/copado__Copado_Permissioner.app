@@ -8,5 +8,5 @@
     <logo>copado__Copado/copado__Copado_Logo.png</logo>
     <tabs>copado__Persona__c</tabs>
     <tabs>copado__Permission_Set_Explorer</tabs>
-    <tabs>Copado_Integration_Setting__c</tabs>
+    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
 </CustomApplication>

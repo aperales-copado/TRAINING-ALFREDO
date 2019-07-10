@@ -795,10 +795,13 @@ apexTestResult.init =  function(){
         $copado('#summaryUserStory').show();
     }
     else{
-        if(!isNaN(apexTestResult.userStoryCoverage)){
-            $copado('.jstxt_Coverage').text(Math.floor(apexTestResult.orgCoverage)+'%');
-            $copado('#summaryOrg').show();
-        }
+         if(!isNaN(apexTestResult.orgCoverage)){
+             $copado('.jstxt_Coverage').text(Math.floor(apexTestResult.orgCoverage)+'%');
+             $copado('#summaryOrg').show();
+         } else {
+             $copado('.jstxt_Coverage').text('0%');
+             $copado('#summaryOrg').show();
+         }
     }
     $copado('#loadingDiv').hide();
     $copado('#globalWrapper').fadeIn();

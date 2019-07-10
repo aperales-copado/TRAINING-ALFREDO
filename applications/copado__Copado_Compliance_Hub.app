@@ -17,5 +17,5 @@
     <tabs>copado__Git_Backup__c</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
-    <tabs>Copado_Integration_Setting__c</tabs>
+    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
 </CustomApplication>

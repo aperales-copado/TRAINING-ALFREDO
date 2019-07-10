@@ -2,7 +2,7 @@
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldSets>
         <label><!-- EC Field Set --></label>
-        <name>EC_Field_Set</name>
+        <name>TRIMEC__EC_Field_Set</name>
     </fieldSets>
     <fields>
         <label><!-- Current Generator(s) --></label>
@@ -80,6 +80,14 @@
         <label><!-- Test Date Field --></label>
         <name>TRIMEC__Test_Date_Field__c</name>
     </fields>
+    <recordTypes>
+        <label><!-- Alfredo --></label>
+        <name>Alfredo</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Esther --></label>
+        <name>Esther</name>
+    </recordTypes>
     <webLinks>
         <label><!-- Convert --></label>
         <name>TRIMEC__Convert</name>

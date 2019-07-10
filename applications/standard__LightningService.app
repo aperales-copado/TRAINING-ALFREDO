@@ -12,9 +12,13 @@
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
     <tabs>standard-home</tabs>
+    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>copado__Static_Code_Analysis_Rule__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

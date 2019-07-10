@@ -6,5 +6,6 @@
     <label>LightningInstrumentation</label>
     <navType>Standard</navType>
     <tabs>standard-LightningInstrumentation</tabs>
+    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

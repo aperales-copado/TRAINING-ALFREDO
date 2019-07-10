@@ -49,7 +49,7 @@
         <dataType>Boolean</dataType>
         <expression>true</expression>
     </formulas>
-    <interviewLabel>Alfredo_Perales-4_InterviewLabel</interviewLabel>
+    <interviewLabel>Alfredo_Perales-5_InterviewLabel</interviewLabel>
     <label>Alfredo Perales</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -157,7 +157,7 @@
         <object>Account</object>
     </recordUpdates>
     <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>myVariable_current</name>
         <dataType>SObject</dataType>

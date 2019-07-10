@@ -17,4 +17,6 @@
     <tabs>standard-Product2</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
+    <tabs>standard-Quote</tabs>
 </CustomApplication>

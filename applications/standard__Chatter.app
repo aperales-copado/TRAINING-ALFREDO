@@ -9,4 +9,5 @@
     <tabs>standard-OtherUserProfile</tabs>
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
+    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
 </CustomApplication>

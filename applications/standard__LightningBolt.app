@@ -6,5 +6,6 @@
     <label>LightningBolt</label>
     <navType>Standard</navType>
     <tabs>standard-LightningBoltHome</tabs>
+    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
