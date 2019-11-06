@@ -4,5 +4,4 @@
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <tabs>standard-Chatter</tabs>
-    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
 </CustomApplication>

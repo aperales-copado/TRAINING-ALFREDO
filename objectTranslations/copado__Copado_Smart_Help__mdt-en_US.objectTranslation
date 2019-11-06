@@ -15,6 +15,10 @@
             <masterLabel>GitCommitChanges</masterLabel>
             <translation><!-- GitCommitChanges --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>GitCommitMain</masterLabel>
+            <translation><!-- GitCommitMain --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Help Text --></label>

@@ -13,6 +13,18 @@
         <name>copado__Copado_Header_Fields</name>
     </fieldSets>
     <fieldSets>
+        <label><!-- Git Commit Header --></label>
+        <name>copado__Git_Commit_Header</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Mass Back Promote --></label>
+        <name>copado__Mass_Back_Promote</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Pipeline Manager Pending Approvals --></label>
+        <name>copado__Pipeline_Manager_Pending_Approvals</name>
+    </fieldSets>
+    <fieldSets>
         <label><!-- Promotion Related List --></label>
         <name>copado__PromotionRelatedList</name>
     </fieldSets>
@@ -25,6 +37,10 @@
         <name>copado__Sprint_Wall_Columns</name>
     </fieldSets>
     <fieldSets>
+        <label><!-- User Story Waiting Page --></label>
+        <name>copado__User_Story_Waiting_Page</name>
+    </fieldSets>
+    <fieldSets>
         <label><!-- Work Manager Columns --></label>
         <name>copado__Work_Manager_Columns</name>
     </fieldSets>
@@ -32,10 +48,6 @@
         <label><!-- Work Manager Relations --></label>
         <name>copado__Work_Manager_Relations</name>
     </fieldSets>
-    <fields>
-        <label><!-- View in GIT --></label>
-        <name>Test_view_in_GIT__c</name>
-    </fields>
     <fields>
         <label><!-- Acceptance Criteria Status --></label>
         <name>copado__Acceptance_Criteria_Status__c</name>
@@ -149,6 +161,10 @@
         <name>copado__Documentation_Complete__c</name>
     </fields>
     <fields>
+        <label><!-- Environment Type --></label>
+        <name>copado__Environment_Type__c</name>
+    </fields>
+    <fields>
         <help><!-- Current environment of the User Story. This value is added automatically by Copado based on the selected Org Credential. --></help>
         <label><!-- Environment --></label>
         <name>copado__Environment__c</name>
@@ -196,6 +212,10 @@
         <help><!-- Latest Compliance Scan execution date. --></help>
         <label><!-- Last Compliance Scan Date --></label>
         <name>copado__Last_Compliance_Scan_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Promotion Date --></label>
+        <name>copado__Last_Promotion_Date__c</name>
     </fields>
     <fields>
         <help><!-- Status of the latest validation Deployment for the User Story. --></help>
@@ -800,6 +820,10 @@
         <name>copado__Add_Metadata</name>
     </webLinks>
     <webLinks>
+        <label><!-- Apex_Test --></label>
+        <name>copado__Apex_Test</name>
+    </webLinks>
+    <webLinks>
         <label><!-- Assign_to_Release --></label>
         <name>copado__Assign_to_Release</name>
     </webLinks>
@@ -832,11 +856,23 @@
         <name>copado__Mass_Add_User_Stories_Sprint</name>
     </webLinks>
     <webLinks>
+        <label><!-- Perform_Validation --></label>
+        <name>copado__Perform_Validation</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Pull_Request --></label>
+        <name>copado__Pull_Request</name>
+    </webLinks>
+    <webLinks>
         <label><!-- Run_Compliance_Scan --></label>
         <name>copado__Run_Compliance_Scan</name>
     </webLinks>
     <webLinks>
         <label><!-- Run_Static_Code_Analysis --></label>
         <name>copado__Run_Static_Code_Analysis</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Select_Base_Branch --></label>
+        <name>copado__Select_Base_Branch</name>
     </webLinks>
 </CustomObjectTranslation>

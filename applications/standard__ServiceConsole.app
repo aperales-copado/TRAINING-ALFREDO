@@ -179,11 +179,7 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
-    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
     <workspaceConfig>
-        <mappings>
-            <tab>copado__Static_Code_Analysis_Rule__c</tab>
-        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

@@ -8,5 +8,4 @@
     <tabs>standard-Contact</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
-    <tabs>copado__Static_Code_Analysis_Rule__c</tabs>
 </CustomApplication>

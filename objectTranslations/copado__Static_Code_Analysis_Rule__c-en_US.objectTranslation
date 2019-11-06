@@ -89,20 +89,12 @@
             <translation><!-- AvoidDeeplyNestedIfStmts --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AvoidDirectAccessTriggerMap</masterLabel>
-            <translation><!-- AvoidDirectAccessTriggerMap --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>AvoidDmlStatementsInLoops</masterLabel>
             <translation><!-- AvoidDmlStatementsInLoops --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>AvoidGlobalModifier</masterLabel>
             <translation><!-- AvoidGlobalModifier --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>AvoidHardcodingId</masterLabel>
-            <translation><!-- AvoidHardcodingId --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>AvoidLogicInTrigger</masterLabel>
@@ -113,32 +105,8 @@
             <translation><!-- AvoidSoqlInLoops --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>AvoidSoslInLoops</masterLabel>
-            <translation><!-- AvoidSoslInLoops --></translation>
-        </picklistValues>
-        <picklistValues>
             <masterLabel>ClassNamingConventions</masterLabel>
             <translation><!-- ClassNamingConventions --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EmptyCatchBlock</masterLabel>
-            <translation><!-- EmptyCatchBlock --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EmptyIfStmt</masterLabel>
-            <translation><!-- EmptyIfStmt --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EmptyStatementBlock</masterLabel>
-            <translation><!-- EmptyStatementBlock --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EmptyTryOrFinallyBlock</masterLabel>
-            <translation><!-- EmptyTryOrFinallyBlock --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>EmptyWhileStmt</masterLabel>
-            <translation><!-- EmptyWhileStmt --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>ExcessiveClassLength</masterLabel>
@@ -195,14 +163,6 @@
         <picklistValues>
             <masterLabel>VariableNamingConventions</masterLabel>
             <translation><!-- VariableNamingConventions --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>VfCsrf</masterLabel>
-            <translation><!-- VfCsrf --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>VfUnescapeEl</masterLabel>
-            <translation><!-- VfUnescapeEl --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>WhileLoopsMustUseBraces</masterLabel>

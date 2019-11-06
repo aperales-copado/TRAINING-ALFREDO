@@ -192,10 +192,6 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>SYNCEDQUOTE.NAME</field>
-            <label>Synced Quote</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -232,31 +228,23 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdd</field>
+            <field>00N2p000007ed13</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaSqI</field>
-            <label>Custom phone</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaU71</field>
-            <label>Custom phone home</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYde</field>
+            <field>00N2p000007ed14</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdf</field>
+            <field>00N2p000007ed15</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdg</field>
+            <field>00N2p000007ed16</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed17</field>
             <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
@@ -284,7 +272,6 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
-            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
@@ -294,13 +281,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N1t000004xYdd</field>
-            <field>00N1t00000BaSqI</field>
-            <field>00N1t00000BaU71</field>
-            <field>00N1t000004xYde</field>
-            <field>00N1t000004xYdf</field>
-            <field>00N1t000004xYdg</field>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed13</field>
+            <field>00N2p000007ed14</field>
+            <field>00N2p000007ed15</field>
+            <field>00N2p000007ed16</field>
+            <field>00N2p000007ed17</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -421,10 +406,6 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>SYNCEDQUOTE.NAME</field>
-            <label>Synced Quote</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -461,31 +442,23 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdd</field>
+            <field>00N2p000007ed13</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaSqI</field>
-            <label>Custom phone</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaU71</field>
-            <label>Custom phone home</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYde</field>
+            <field>00N2p000007ed14</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdf</field>
+            <field>00N2p000007ed15</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdg</field>
+            <field>00N2p000007ed16</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed17</field>
             <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
@@ -513,7 +486,6 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
-            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
@@ -523,13 +495,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N1t000004xYdd</field>
-            <field>00N1t00000BaSqI</field>
-            <field>00N1t00000BaU71</field>
-            <field>00N1t000004xYde</field>
-            <field>00N1t000004xYdf</field>
-            <field>00N1t000004xYdg</field>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed13</field>
+            <field>00N2p000007ed14</field>
+            <field>00N2p000007ed15</field>
+            <field>00N2p000007ed16</field>
+            <field>00N2p000007ed17</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -654,10 +624,6 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>SYNCEDQUOTE.NAME</field>
-            <label>Synced Quote</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -694,31 +660,23 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdd</field>
+            <field>00N2p000007ed13</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaSqI</field>
-            <label>Custom phone</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaU71</field>
-            <label>Custom phone home</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYde</field>
+            <field>00N2p000007ed14</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdf</field>
+            <field>00N2p000007ed15</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdg</field>
+            <field>00N2p000007ed16</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed17</field>
             <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
@@ -747,7 +705,6 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
-            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
@@ -757,13 +714,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N1t000004xYdd</field>
-            <field>00N1t00000BaSqI</field>
-            <field>00N1t00000BaU71</field>
-            <field>00N1t000004xYde</field>
-            <field>00N1t000004xYdf</field>
-            <field>00N1t000004xYdg</field>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed13</field>
+            <field>00N2p000007ed14</field>
+            <field>00N2p000007ed15</field>
+            <field>00N2p000007ed16</field>
+            <field>00N2p000007ed17</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -884,10 +839,6 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>SYNCEDQUOTE.NAME</field>
-            <label>Synced Quote</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -924,31 +875,23 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdd</field>
+            <field>00N2p000007ed13</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaSqI</field>
-            <label>Custom phone</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaU71</field>
-            <label>Custom phone home</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYde</field>
+            <field>00N2p000007ed14</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdf</field>
+            <field>00N2p000007ed15</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdg</field>
+            <field>00N2p000007ed16</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed17</field>
             <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
@@ -976,7 +919,6 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
-            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
@@ -986,13 +928,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N1t000004xYdd</field>
-            <field>00N1t00000BaSqI</field>
-            <field>00N1t00000BaU71</field>
-            <field>00N1t000004xYde</field>
-            <field>00N1t000004xYdf</field>
-            <field>00N1t000004xYdg</field>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed13</field>
+            <field>00N2p000007ed14</field>
+            <field>00N2p000007ed15</field>
+            <field>00N2p000007ed16</field>
+            <field>00N2p000007ed17</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1117,10 +1057,6 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>SYNCEDQUOTE.NAME</field>
-            <label>Synced Quote</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -1157,31 +1093,23 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdd</field>
+            <field>00N2p000007ed13</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaSqI</field>
-            <label>Custom phone</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaU71</field>
-            <label>Custom phone home</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYde</field>
+            <field>00N2p000007ed14</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdf</field>
+            <field>00N2p000007ed15</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdg</field>
+            <field>00N2p000007ed16</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed17</field>
             <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
@@ -1210,7 +1138,6 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
-            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
@@ -1220,13 +1147,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N1t000004xYdd</field>
-            <field>00N1t00000BaSqI</field>
-            <field>00N1t00000BaU71</field>
-            <field>00N1t000004xYde</field>
-            <field>00N1t000004xYdf</field>
-            <field>00N1t000004xYdg</field>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed13</field>
+            <field>00N2p000007ed14</field>
+            <field>00N2p000007ed15</field>
+            <field>00N2p000007ed16</field>
+            <field>00N2p000007ed17</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1347,10 +1272,6 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>SYNCEDQUOTE.NAME</field>
-            <label>Synced Quote</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -1387,31 +1308,23 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdd</field>
+            <field>00N2p000007ed13</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaSqI</field>
-            <label>Custom phone</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaU71</field>
-            <label>Custom phone home</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYde</field>
+            <field>00N2p000007ed14</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdf</field>
+            <field>00N2p000007ed15</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdg</field>
+            <field>00N2p000007ed16</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed17</field>
             <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
@@ -1439,7 +1352,6 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
-            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
@@ -1449,471 +1361,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N1t000004xYdd</field>
-            <field>00N1t00000BaSqI</field>
-            <field>00N1t00000BaU71</field>
-            <field>00N1t000004xYde</field>
-            <field>00N1t000004xYdf</field>
-            <field>00N1t000004xYdg</field>
-            <field>00N1t000004xYdh</field>
-        </opportunityListFieldsUnselectedSettings>
-        <quotasSettings>
-            <showQuotas>false</showQuotas>
-        </quotasSettings>
-    </forecastingTypeSettings>
-    <forecastingTypeSettings>
-        <active>false</active>
-        <adjustmentsSettings>
-            <enableAdjustments>false</enableAdjustments>
-            <enableOwnerAdjustments>false</enableOwnerAdjustments>
-        </adjustmentsSettings>
-        <displayedCategoryApiNames>closedonly</displayedCategoryApiNames>
-        <displayedCategoryApiNames>commitonly</displayedCategoryApiNames>
-        <displayedCategoryApiNames>bestcaseonly</displayedCategoryApiNames>
-        <displayedCategoryApiNames>pipelineonly</displayedCategoryApiNames>
-        <forecastRangeSettings>
-            <beginning>0</beginning>
-            <displaying>6</displaying>
-            <periodType>Month</periodType>
-        </forecastRangeSettings>
-        <forecastedCategoryApiNames>commitonly</forecastedCategoryApiNames>
-        <forecastedCategoryApiNames>closedonly</forecastedCategoryApiNames>
-        <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
-        <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
-        <forecastingDateType>ProductDate</forecastingDateType>
-        <hasProductFamily>true</hasProductFamily>
-        <isAmount>true</isAmount>
-        <isAvailable>false</isAvailable>
-        <isQuantity>false</isQuantity>
-        <masterLabel>Line Item Revenue Product Date</masterLabel>
-        <name>LineItemRevenueProductDate</name>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.NAME</field>
-            <label>Opportunity Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>ACCOUNT.NAME</field>
-            <label>Account Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.AMOUNT</field>
-            <label>Amount</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.CLOSE_DATE</field>
-            <label>Close Date</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <label>Stage</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.PROBABILITY</field>
-            <label>Probability (%)</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>FORECAST_CATEGORY</field>
-            <label>Forecast Category</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>FULL_NAME</field>
-            <label>Owner Full Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CONTRACT.CONTRACT_NUMBER</field>
-            <label>Contract Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CONTRACT.NAME</field>
-            <label>Contract Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CORE.USERS.ALIAS</field>
-            <label>Alias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CORE.USERS.FIRST_NAME</field>
-            <label>First Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CORE.USERS.LAST_NAME</field>
-            <label>Last Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>DESCRIPTION</field>
-            <label>Description</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.EXP_AMOUNT</field>
-            <label>Expected Revenue</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.LEAD_SOURCE</field>
-            <label>Lead Source</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.NEXT_STEP</field>
-            <label>Next Step</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.PRIVATE</field>
-            <label>Private</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.QUANTITY</field>
-            <label>Quantity</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.TYPE</field>
-            <label>Type</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>UPDATEDBY_USER.ALIAS</field>
-            <label>Alias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CREATEDBY_USER.ALIAS</field>
-            <label>Alias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>SYNCEDQUOTE.NAME</field>
-            <label>Quote Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.CLOSED</field>
-            <label>Closed</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.WON</field>
-            <label>Won</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>ACCOUNT.SITE</field>
-            <label>Account Site</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.FISCAL_YEAR</field>
-            <label>Fiscal Year</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.FISCAL_QUARTER</field>
-            <label>Fiscal Quarter</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.FISCAL_PERIOD</field>
-            <label>Fiscal Period</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.LAST_ACTIVITY</field>
-            <label>Last Activity</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.CREATED_DATE</field>
-            <label>Created Date</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.LAST_UPDATE</field>
-            <label>Last Modified Date</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdd</field>
-            <label>Current Generator(s)</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaSqI</field>
-            <label>Custom phone</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaU71</field>
-            <label>Custom phone home</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYde</field>
-            <label>Delivery/Installation Status</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdf</field>
-            <label>Main Competitor(s)</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdg</field>
-            <label>Order Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdh</field>
-            <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsSelectedSettings>
-            <field>OPPORTUNITY.NAME</field>
-            <field>ACCOUNT.NAME</field>
-            <field>OPPORTUNITY.AMOUNT</field>
-            <field>OPPORTUNITY.CLOSE_DATE</field>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <field>OPPORTUNITY.PROBABILITY</field>
-            <field>FORECAST_CATEGORY</field>
-            <field>FULL_NAME</field>
-        </opportunityListFieldsSelectedSettings>
-        <opportunityListFieldsUnselectedSettings>
-            <field>CONTRACT.CONTRACT_NUMBER</field>
-            <field>CONTRACT.NAME</field>
-            <field>CORE.USERS.ALIAS</field>
-            <field>CORE.USERS.FIRST_NAME</field>
-            <field>CORE.USERS.LAST_NAME</field>
-            <field>DESCRIPTION</field>
-            <field>OPPORTUNITY.EXP_AMOUNT</field>
-            <field>OPPORTUNITY.LEAD_SOURCE</field>
-            <field>OPPORTUNITY.NEXT_STEP</field>
-            <field>OPPORTUNITY.PRIVATE</field>
-            <field>OPPORTUNITY.QUANTITY</field>
-            <field>OPPORTUNITY.TYPE</field>
-            <field>UPDATEDBY_USER.ALIAS</field>
-            <field>CREATEDBY_USER.ALIAS</field>
-            <field>SYNCEDQUOTE.NAME</field>
-            <field>OPPORTUNITY.CLOSED</field>
-            <field>OPPORTUNITY.WON</field>
-            <field>ACCOUNT.SITE</field>
-            <field>OPPORTUNITY.FISCAL_YEAR</field>
-            <field>OPPORTUNITY.FISCAL_QUARTER</field>
-            <field>OPPORTUNITY.FISCAL_PERIOD</field>
-            <field>OPPORTUNITY.LAST_ACTIVITY</field>
-            <field>OPPORTUNITY.CREATED_DATE</field>
-            <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N1t000004xYdd</field>
-            <field>00N1t00000BaSqI</field>
-            <field>00N1t00000BaU71</field>
-            <field>00N1t000004xYde</field>
-            <field>00N1t000004xYdf</field>
-            <field>00N1t000004xYdg</field>
-            <field>00N1t000004xYdh</field>
-        </opportunityListFieldsUnselectedSettings>
-        <quotasSettings>
-            <showQuotas>false</showQuotas>
-        </quotasSettings>
-    </forecastingTypeSettings>
-    <forecastingTypeSettings>
-        <active>false</active>
-        <adjustmentsSettings>
-            <enableAdjustments>false</enableAdjustments>
-            <enableOwnerAdjustments>false</enableOwnerAdjustments>
-        </adjustmentsSettings>
-        <displayedCategoryApiNames>closedonly</displayedCategoryApiNames>
-        <displayedCategoryApiNames>commitonly</displayedCategoryApiNames>
-        <displayedCategoryApiNames>bestcaseonly</displayedCategoryApiNames>
-        <displayedCategoryApiNames>pipelineonly</displayedCategoryApiNames>
-        <forecastRangeSettings>
-            <beginning>0</beginning>
-            <displaying>6</displaying>
-            <periodType>Month</periodType>
-        </forecastRangeSettings>
-        <forecastedCategoryApiNames>commitonly</forecastedCategoryApiNames>
-        <forecastedCategoryApiNames>closedonly</forecastedCategoryApiNames>
-        <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
-        <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
-        <forecastingDateType>ProductDate</forecastingDateType>
-        <hasProductFamily>true</hasProductFamily>
-        <isAmount>false</isAmount>
-        <isAvailable>false</isAvailable>
-        <isQuantity>true</isQuantity>
-        <masterLabel>Line Item Quantity Product Date</masterLabel>
-        <name>LineItemQuantityProductDate</name>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.NAME</field>
-            <label>Opportunity Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>ACCOUNT.NAME</field>
-            <label>Account Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.AMOUNT</field>
-            <label>Amount</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.CLOSE_DATE</field>
-            <label>Close Date</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <label>Stage</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.PROBABILITY</field>
-            <label>Probability (%)</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>FORECAST_CATEGORY</field>
-            <label>Forecast Category</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>FULL_NAME</field>
-            <label>Owner Full Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CONTRACT.CONTRACT_NUMBER</field>
-            <label>Contract Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CONTRACT.NAME</field>
-            <label>Contract Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CORE.USERS.ALIAS</field>
-            <label>Alias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CORE.USERS.FIRST_NAME</field>
-            <label>First Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CORE.USERS.LAST_NAME</field>
-            <label>Last Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>DESCRIPTION</field>
-            <label>Description</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.EXP_AMOUNT</field>
-            <label>Expected Revenue</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.LEAD_SOURCE</field>
-            <label>Lead Source</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.NEXT_STEP</field>
-            <label>Next Step</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.PRIVATE</field>
-            <label>Private</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.QUANTITY</field>
-            <label>Quantity</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.TYPE</field>
-            <label>Type</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>UPDATEDBY_USER.ALIAS</field>
-            <label>Alias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CREATEDBY_USER.ALIAS</field>
-            <label>Alias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>SYNCEDQUOTE.NAME</field>
-            <label>Quote Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.CLOSED</field>
-            <label>Closed</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.WON</field>
-            <label>Won</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>ACCOUNT.SITE</field>
-            <label>Account Site</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.FISCAL_YEAR</field>
-            <label>Fiscal Year</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.FISCAL_QUARTER</field>
-            <label>Fiscal Quarter</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.FISCAL_PERIOD</field>
-            <label>Fiscal Period</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.LAST_ACTIVITY</field>
-            <label>Last Activity</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.CREATED_DATE</field>
-            <label>Created Date</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.LAST_UPDATE</field>
-            <label>Last Modified Date</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdd</field>
-            <label>Current Generator(s)</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaSqI</field>
-            <label>Custom phone</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaU71</field>
-            <label>Custom phone home</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYde</field>
-            <label>Delivery/Installation Status</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdf</field>
-            <label>Main Competitor(s)</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdg</field>
-            <label>Order Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdh</field>
-            <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsSelectedSettings>
-            <field>OPPORTUNITY.NAME</field>
-            <field>ACCOUNT.NAME</field>
-            <field>OPPORTUNITY.AMOUNT</field>
-            <field>OPPORTUNITY.CLOSE_DATE</field>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <field>OPPORTUNITY.PROBABILITY</field>
-            <field>FORECAST_CATEGORY</field>
-            <field>FULL_NAME</field>
-        </opportunityListFieldsSelectedSettings>
-        <opportunityListFieldsUnselectedSettings>
-            <field>CONTRACT.CONTRACT_NUMBER</field>
-            <field>CONTRACT.NAME</field>
-            <field>CORE.USERS.ALIAS</field>
-            <field>CORE.USERS.FIRST_NAME</field>
-            <field>CORE.USERS.LAST_NAME</field>
-            <field>DESCRIPTION</field>
-            <field>OPPORTUNITY.EXP_AMOUNT</field>
-            <field>OPPORTUNITY.LEAD_SOURCE</field>
-            <field>OPPORTUNITY.NEXT_STEP</field>
-            <field>OPPORTUNITY.PRIVATE</field>
-            <field>OPPORTUNITY.QUANTITY</field>
-            <field>OPPORTUNITY.TYPE</field>
-            <field>UPDATEDBY_USER.ALIAS</field>
-            <field>CREATEDBY_USER.ALIAS</field>
-            <field>SYNCEDQUOTE.NAME</field>
-            <field>OPPORTUNITY.CLOSED</field>
-            <field>OPPORTUNITY.WON</field>
-            <field>ACCOUNT.SITE</field>
-            <field>OPPORTUNITY.FISCAL_YEAR</field>
-            <field>OPPORTUNITY.FISCAL_QUARTER</field>
-            <field>OPPORTUNITY.FISCAL_PERIOD</field>
-            <field>OPPORTUNITY.LAST_ACTIVITY</field>
-            <field>OPPORTUNITY.CREATED_DATE</field>
-            <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N1t000004xYdd</field>
-            <field>00N1t00000BaSqI</field>
-            <field>00N1t00000BaU71</field>
-            <field>00N1t000004xYde</field>
-            <field>00N1t000004xYdf</field>
-            <field>00N1t000004xYdg</field>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed13</field>
+            <field>00N2p000007ed14</field>
+            <field>00N2p000007ed15</field>
+            <field>00N2p000007ed16</field>
+            <field>00N2p000007ed17</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -2038,10 +1490,6 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>SYNCEDQUOTE.NAME</field>
-            <label>Synced Quote</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -2078,31 +1526,23 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdd</field>
+            <field>00N2p000007ed13</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaSqI</field>
-            <label>Custom phone</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaU71</field>
-            <label>Custom phone home</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYde</field>
+            <field>00N2p000007ed14</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdf</field>
+            <field>00N2p000007ed15</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdg</field>
+            <field>00N2p000007ed16</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed17</field>
             <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
@@ -2131,7 +1571,6 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
-            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
@@ -2141,13 +1580,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N1t000004xYdd</field>
-            <field>00N1t00000BaSqI</field>
-            <field>00N1t00000BaU71</field>
-            <field>00N1t000004xYde</field>
-            <field>00N1t000004xYdf</field>
-            <field>00N1t000004xYdg</field>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed13</field>
+            <field>00N2p000007ed14</field>
+            <field>00N2p000007ed15</field>
+            <field>00N2p000007ed16</field>
+            <field>00N2p000007ed17</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -2268,10 +1705,6 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>SYNCEDQUOTE.NAME</field>
-            <label>Synced Quote</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -2308,31 +1741,23 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdd</field>
+            <field>00N2p000007ed13</field>
             <label>Current Generator(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaSqI</field>
-            <label>Custom phone</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaU71</field>
-            <label>Custom phone home</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYde</field>
+            <field>00N2p000007ed14</field>
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdf</field>
+            <field>00N2p000007ed15</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdg</field>
+            <field>00N2p000007ed16</field>
             <label>Order Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed17</field>
             <label>Tracking Number</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
@@ -2360,7 +1785,6 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
-            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
@@ -2370,471 +1794,11 @@
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N1t000004xYdd</field>
-            <field>00N1t00000BaSqI</field>
-            <field>00N1t00000BaU71</field>
-            <field>00N1t000004xYde</field>
-            <field>00N1t000004xYdf</field>
-            <field>00N1t000004xYdg</field>
-            <field>00N1t000004xYdh</field>
-        </opportunityListFieldsUnselectedSettings>
-        <quotasSettings>
-            <showQuotas>false</showQuotas>
-        </quotasSettings>
-    </forecastingTypeSettings>
-    <forecastingTypeSettings>
-        <active>false</active>
-        <adjustmentsSettings>
-            <enableAdjustments>false</enableAdjustments>
-            <enableOwnerAdjustments>false</enableOwnerAdjustments>
-        </adjustmentsSettings>
-        <displayedCategoryApiNames>closedonly</displayedCategoryApiNames>
-        <displayedCategoryApiNames>commitonly</displayedCategoryApiNames>
-        <displayedCategoryApiNames>bestcaseonly</displayedCategoryApiNames>
-        <displayedCategoryApiNames>pipelineonly</displayedCategoryApiNames>
-        <forecastRangeSettings>
-            <beginning>0</beginning>
-            <displaying>6</displaying>
-            <periodType>Month</periodType>
-        </forecastRangeSettings>
-        <forecastedCategoryApiNames>commitonly</forecastedCategoryApiNames>
-        <forecastedCategoryApiNames>closedonly</forecastedCategoryApiNames>
-        <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
-        <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
-        <forecastingDateType>ScheduleDate</forecastingDateType>
-        <hasProductFamily>true</hasProductFamily>
-        <isAmount>true</isAmount>
-        <isAvailable>false</isAvailable>
-        <isQuantity>false</isQuantity>
-        <masterLabel>Line Item Revenue Schedule Date</masterLabel>
-        <name>LineItemRevenueScheduleDate</name>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.NAME</field>
-            <label>Opportunity Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>ACCOUNT.NAME</field>
-            <label>Account Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.AMOUNT</field>
-            <label>Amount</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.CLOSE_DATE</field>
-            <label>Close Date</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <label>Stage</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.PROBABILITY</field>
-            <label>Probability (%)</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>FORECAST_CATEGORY</field>
-            <label>Forecast Category</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>FULL_NAME</field>
-            <label>Owner Full Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CONTRACT.CONTRACT_NUMBER</field>
-            <label>Contract Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CONTRACT.NAME</field>
-            <label>Contract Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CORE.USERS.ALIAS</field>
-            <label>Alias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CORE.USERS.FIRST_NAME</field>
-            <label>First Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CORE.USERS.LAST_NAME</field>
-            <label>Last Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>DESCRIPTION</field>
-            <label>Description</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.EXP_AMOUNT</field>
-            <label>Expected Revenue</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.LEAD_SOURCE</field>
-            <label>Lead Source</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.NEXT_STEP</field>
-            <label>Next Step</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.PRIVATE</field>
-            <label>Private</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.QUANTITY</field>
-            <label>Quantity</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.TYPE</field>
-            <label>Type</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>UPDATEDBY_USER.ALIAS</field>
-            <label>Alias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CREATEDBY_USER.ALIAS</field>
-            <label>Alias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>SYNCEDQUOTE.NAME</field>
-            <label>Quote Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.CLOSED</field>
-            <label>Closed</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.WON</field>
-            <label>Won</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>ACCOUNT.SITE</field>
-            <label>Account Site</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.FISCAL_YEAR</field>
-            <label>Fiscal Year</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.FISCAL_QUARTER</field>
-            <label>Fiscal Quarter</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.FISCAL_PERIOD</field>
-            <label>Fiscal Period</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.LAST_ACTIVITY</field>
-            <label>Last Activity</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.CREATED_DATE</field>
-            <label>Created Date</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.LAST_UPDATE</field>
-            <label>Last Modified Date</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdd</field>
-            <label>Current Generator(s)</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaSqI</field>
-            <label>Custom phone</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaU71</field>
-            <label>Custom phone home</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYde</field>
-            <label>Delivery/Installation Status</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdf</field>
-            <label>Main Competitor(s)</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdg</field>
-            <label>Order Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdh</field>
-            <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsSelectedSettings>
-            <field>OPPORTUNITY.NAME</field>
-            <field>ACCOUNT.NAME</field>
-            <field>OPPORTUNITY.AMOUNT</field>
-            <field>OPPORTUNITY.CLOSE_DATE</field>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <field>OPPORTUNITY.PROBABILITY</field>
-            <field>FORECAST_CATEGORY</field>
-            <field>FULL_NAME</field>
-        </opportunityListFieldsSelectedSettings>
-        <opportunityListFieldsUnselectedSettings>
-            <field>CONTRACT.CONTRACT_NUMBER</field>
-            <field>CONTRACT.NAME</field>
-            <field>CORE.USERS.ALIAS</field>
-            <field>CORE.USERS.FIRST_NAME</field>
-            <field>CORE.USERS.LAST_NAME</field>
-            <field>DESCRIPTION</field>
-            <field>OPPORTUNITY.EXP_AMOUNT</field>
-            <field>OPPORTUNITY.LEAD_SOURCE</field>
-            <field>OPPORTUNITY.NEXT_STEP</field>
-            <field>OPPORTUNITY.PRIVATE</field>
-            <field>OPPORTUNITY.QUANTITY</field>
-            <field>OPPORTUNITY.TYPE</field>
-            <field>UPDATEDBY_USER.ALIAS</field>
-            <field>CREATEDBY_USER.ALIAS</field>
-            <field>SYNCEDQUOTE.NAME</field>
-            <field>OPPORTUNITY.CLOSED</field>
-            <field>OPPORTUNITY.WON</field>
-            <field>ACCOUNT.SITE</field>
-            <field>OPPORTUNITY.FISCAL_YEAR</field>
-            <field>OPPORTUNITY.FISCAL_QUARTER</field>
-            <field>OPPORTUNITY.FISCAL_PERIOD</field>
-            <field>OPPORTUNITY.LAST_ACTIVITY</field>
-            <field>OPPORTUNITY.CREATED_DATE</field>
-            <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N1t000004xYdd</field>
-            <field>00N1t00000BaSqI</field>
-            <field>00N1t00000BaU71</field>
-            <field>00N1t000004xYde</field>
-            <field>00N1t000004xYdf</field>
-            <field>00N1t000004xYdg</field>
-            <field>00N1t000004xYdh</field>
-        </opportunityListFieldsUnselectedSettings>
-        <quotasSettings>
-            <showQuotas>false</showQuotas>
-        </quotasSettings>
-    </forecastingTypeSettings>
-    <forecastingTypeSettings>
-        <active>false</active>
-        <adjustmentsSettings>
-            <enableAdjustments>false</enableAdjustments>
-            <enableOwnerAdjustments>false</enableOwnerAdjustments>
-        </adjustmentsSettings>
-        <displayedCategoryApiNames>closedonly</displayedCategoryApiNames>
-        <displayedCategoryApiNames>commitonly</displayedCategoryApiNames>
-        <displayedCategoryApiNames>bestcaseonly</displayedCategoryApiNames>
-        <displayedCategoryApiNames>pipelineonly</displayedCategoryApiNames>
-        <forecastRangeSettings>
-            <beginning>0</beginning>
-            <displaying>6</displaying>
-            <periodType>Month</periodType>
-        </forecastRangeSettings>
-        <forecastedCategoryApiNames>commitonly</forecastedCategoryApiNames>
-        <forecastedCategoryApiNames>closedonly</forecastedCategoryApiNames>
-        <forecastedCategoryApiNames>pipelineonly</forecastedCategoryApiNames>
-        <forecastedCategoryApiNames>bestcaseonly</forecastedCategoryApiNames>
-        <forecastingDateType>ScheduleDate</forecastingDateType>
-        <hasProductFamily>true</hasProductFamily>
-        <isAmount>false</isAmount>
-        <isAvailable>false</isAvailable>
-        <isQuantity>true</isQuantity>
-        <masterLabel>Line Item Quantity Schedule Date</masterLabel>
-        <name>LineItemQuantityScheduleDate</name>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.NAME</field>
-            <label>Opportunity Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>ACCOUNT.NAME</field>
-            <label>Account Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.AMOUNT</field>
-            <label>Amount</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.CLOSE_DATE</field>
-            <label>Close Date</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <label>Stage</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.PROBABILITY</field>
-            <label>Probability (%)</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>FORECAST_CATEGORY</field>
-            <label>Forecast Category</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>FULL_NAME</field>
-            <label>Owner Full Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CONTRACT.CONTRACT_NUMBER</field>
-            <label>Contract Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CONTRACT.NAME</field>
-            <label>Contract Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CORE.USERS.ALIAS</field>
-            <label>Alias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CORE.USERS.FIRST_NAME</field>
-            <label>First Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CORE.USERS.LAST_NAME</field>
-            <label>Last Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>DESCRIPTION</field>
-            <label>Description</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.EXP_AMOUNT</field>
-            <label>Expected Revenue</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.LEAD_SOURCE</field>
-            <label>Lead Source</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.NEXT_STEP</field>
-            <label>Next Step</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.PRIVATE</field>
-            <label>Private</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.QUANTITY</field>
-            <label>Quantity</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.TYPE</field>
-            <label>Type</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>UPDATEDBY_USER.ALIAS</field>
-            <label>Alias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>CREATEDBY_USER.ALIAS</field>
-            <label>Alias</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>SYNCEDQUOTE.NAME</field>
-            <label>Quote Name</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.CLOSED</field>
-            <label>Closed</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.WON</field>
-            <label>Won</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>ACCOUNT.SITE</field>
-            <label>Account Site</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.FISCAL_YEAR</field>
-            <label>Fiscal Year</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.FISCAL_QUARTER</field>
-            <label>Fiscal Quarter</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.FISCAL_PERIOD</field>
-            <label>Fiscal Period</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.LAST_ACTIVITY</field>
-            <label>Last Activity</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.CREATED_DATE</field>
-            <label>Created Date</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>OPPORTUNITY.LAST_UPDATE</field>
-            <label>Last Modified Date</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdd</field>
-            <label>Current Generator(s)</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaSqI</field>
-            <label>Custom phone</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t00000BaU71</field>
-            <label>Custom phone home</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYde</field>
-            <label>Delivery/Installation Status</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdf</field>
-            <label>Main Competitor(s)</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdg</field>
-            <label>Order Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N1t000004xYdh</field>
-            <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsSelectedSettings>
-            <field>OPPORTUNITY.NAME</field>
-            <field>ACCOUNT.NAME</field>
-            <field>OPPORTUNITY.AMOUNT</field>
-            <field>OPPORTUNITY.CLOSE_DATE</field>
-            <field>OPPORTUNITY.STAGE_NAME</field>
-            <field>OPPORTUNITY.PROBABILITY</field>
-            <field>FORECAST_CATEGORY</field>
-            <field>FULL_NAME</field>
-        </opportunityListFieldsSelectedSettings>
-        <opportunityListFieldsUnselectedSettings>
-            <field>CONTRACT.CONTRACT_NUMBER</field>
-            <field>CONTRACT.NAME</field>
-            <field>CORE.USERS.ALIAS</field>
-            <field>CORE.USERS.FIRST_NAME</field>
-            <field>CORE.USERS.LAST_NAME</field>
-            <field>DESCRIPTION</field>
-            <field>OPPORTUNITY.EXP_AMOUNT</field>
-            <field>OPPORTUNITY.LEAD_SOURCE</field>
-            <field>OPPORTUNITY.NEXT_STEP</field>
-            <field>OPPORTUNITY.PRIVATE</field>
-            <field>OPPORTUNITY.QUANTITY</field>
-            <field>OPPORTUNITY.TYPE</field>
-            <field>UPDATEDBY_USER.ALIAS</field>
-            <field>CREATEDBY_USER.ALIAS</field>
-            <field>SYNCEDQUOTE.NAME</field>
-            <field>OPPORTUNITY.CLOSED</field>
-            <field>OPPORTUNITY.WON</field>
-            <field>ACCOUNT.SITE</field>
-            <field>OPPORTUNITY.FISCAL_YEAR</field>
-            <field>OPPORTUNITY.FISCAL_QUARTER</field>
-            <field>OPPORTUNITY.FISCAL_PERIOD</field>
-            <field>OPPORTUNITY.LAST_ACTIVITY</field>
-            <field>OPPORTUNITY.CREATED_DATE</field>
-            <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N1t000004xYdd</field>
-            <field>00N1t00000BaSqI</field>
-            <field>00N1t00000BaU71</field>
-            <field>00N1t000004xYde</field>
-            <field>00N1t000004xYdf</field>
-            <field>00N1t000004xYdg</field>
-            <field>00N1t000004xYdh</field>
+            <field>00N2p000007ed13</field>
+            <field>00N2p000007ed14</field>
+            <field>00N2p000007ed15</field>
+            <field>00N2p000007ed16</field>
+            <field>00N2p000007ed17</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>

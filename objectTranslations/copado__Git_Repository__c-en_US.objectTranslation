@@ -44,10 +44,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Password --></label>
-        <name>copado__Password__c</name>
-    </fields>
-    <fields>
         <help><!-- Base URL of your Repository, e.g.: https://github.com/[COMPANY]/[REPOSITORY]/ https://bitbucket.org/[COMPANY]/[REPOSITORY]/ https://gitlab.org/[COMPANY]/[REPOSITORY]/ --></help>
         <label><!-- Pull Request Base URL --></label>
         <name>copado__Pull_Request_Base_URL__c</name>
@@ -61,9 +57,5 @@
         <help><!-- HTTPS or SSH URL to connect to the Git Repository. --></help>
         <label><!-- URI --></label>
         <name>copado__URI__c</name>
-    </fields>
-    <fields>
-        <label><!-- Username --></label>
-        <name>copado__Username__c</name>
     </fields>
 </CustomObjectTranslation>

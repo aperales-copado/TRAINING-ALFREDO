@@ -3,5 +3,5 @@
     <description>This remote is needed to perform deployments</description>
     <disableProtocolSecurity>false</disableProtocolSecurity>
     <isActive>true</isActive>
-    <url>https://copado.herokuapp.com</url>
+    <url>https://app-api.copa.do</url>
 </RemoteSiteSetting>

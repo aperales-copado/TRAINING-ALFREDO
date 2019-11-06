@@ -125,10 +125,6 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Password --></label>
-        <name>copado__Password__c</name>
-    </fields>
-    <fields>
         <label><!-- Profile Name --></label>
         <name>copado__Profile_Name__c</name>
     </fields>

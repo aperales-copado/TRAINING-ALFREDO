@@ -91,6 +91,22 @@
             <masterLabel>41.0</masterLabel>
             <translation><!-- 41.0 --></translation>
         </picklistValues>
+        <picklistValues>
+            <masterLabel>42.0</masterLabel>
+            <translation><!-- 42.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>43.0</masterLabel>
+            <translation><!-- 43.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>44.0</masterLabel>
+            <translation><!-- 44.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45.0</masterLabel>
+            <translation><!-- 45.0 --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Developer Hub Org --></label>
@@ -108,6 +124,38 @@
     <fields>
         <label><!-- SFDC Login Url --></label>
         <name>copado__SFDC_Login_Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Metadata Type --></label>
+        <name>copado__Source_Metadata_Type__c</name>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Git Artifacts</masterLabel>
+            <translation><!-- Git Artifacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metadata</masterLabel>
+            <translation><!-- Metadata --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patch a Release (Beta)</masterLabel>
+            <translation><!-- Patch a Release (Beta) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second-Generation Packages</masterLabel>
+            <translation><!-- Second-Generation Packages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unlocked Packages</masterLabel>
+            <translation><!-- Unlocked Packages --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unmanaged Packages</masterLabel>
+            <translation><!-- Unmanaged Packages --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Source Org Credential --></label>
