@@ -4,9 +4,5 @@
         <members>Familia__b</members>
         <name>CustomObject</name>
     </types>
-    <types>
-        <members>Familia__b.Miembros</members>
-        <name>Index</name>
-    </types>
     <version>46.0</version>
 </Package>
