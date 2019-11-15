@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Blue</members>
-        <members>Green</members>
-        <name>CustomLabel</name>
+        <members>Familia__b.Casa__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Familia__b</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Familia__b-es</members>
+        <name>CustomObjectTranslation</name>
+    </types>
+    <types>
+        <members>Familia__b.Miembros</members>
+        <name>Index</name>
     </types>
     <version>46.0</version>
 </Package>
