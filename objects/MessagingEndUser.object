@@ -15,20 +15,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Clone</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -67,20 +53,6 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>List</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -129,7 +101,38 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <fields>
-        <fullName>Description</fullName>
+        <fullName>AccountId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>HasInitialResponseSent</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsOptedOut</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Locale</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MessageType</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MessagingChannelId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MessagingPlatformKey</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -137,23 +140,35 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Source</fullName>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProfilePictureUrl</fullName>
         <trackHistory>false</trackHistory>
     </fields>
-    <listViews>
-        <fullName>All_DataUseLegalBases</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Data Use Legal Bases</label>
-    </listViews>
     <searchLayouts>
-        <customTabListAdditionalFields>Source</customTabListAdditionalFields>
-        <customTabListAdditionalFields>Description</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>Source</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Description</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
+        <customTabListAdditionalFields>MessagingPlatformKey</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MessagingChannel</customTabListAdditionalFields>
+        <customTabListAdditionalFields>MessageType</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Locale</customTabListAdditionalFields>
+        <customTabListAdditionalFields>IsOptedOut</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>MessagingPlatformKey</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MessagingChannel</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>MessageType</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Locale</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>IsOptedOut</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MessagingPlatformKey</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MessagingChannel</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>MessageType</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Locale</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>IsOptedOut</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>MessagingPlatformKey</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MessagingChannel</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MessageType</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Locale</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IsOptedOut</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>Private</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
 </CustomObject>
