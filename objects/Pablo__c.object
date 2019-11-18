@@ -625,7 +625,7 @@
             </values>
         </picklistValues>
     </recordTypes>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
