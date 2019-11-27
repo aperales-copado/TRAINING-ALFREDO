@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Pablo__c.Yayo__c</members>
+        <members>Contact.volvo__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Pablo__c.AlfredoRT1</members>
+        <members>Volvo_values</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>PersonAccount.Person_Account</members>
         <name>RecordType</name>
     </types>
     <version>46.0</version>
