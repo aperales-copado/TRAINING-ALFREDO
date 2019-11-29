@@ -35,6 +35,16 @@
         <default>false</default>
         <label>Volvo7</label>
     </customValue>
+    <customValue>
+        <fullName>VolvoTrucks1</fullName>
+        <default>false</default>
+        <label>VolvoTrucks1</label>
+    </customValue>
+    <customValue>
+        <fullName>VolvoTrucks2</fullName>
+        <default>false</default>
+        <label>VolvoTrucks2</label>
+    </customValue>
     <masterLabel>Volvo values</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>
