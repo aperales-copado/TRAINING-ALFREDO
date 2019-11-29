@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Volvo1</fullName>
+        <default>false</default>
+        <label>Volvo1</label>
+    </customValue>
+    <customValue>
+        <fullName>Volvo2</fullName>
+        <default>false</default>
+        <label>Volvo2</label>
+    </customValue>
+    <customValue>
+        <fullName>Volvo3</fullName>
+        <default>false</default>
+        <label>Volvo3</label>
+    </customValue>
+    <customValue>
+        <fullName>Volvo4</fullName>
+        <default>false</default>
+        <label>Volvo4</label>
+    </customValue>
+    <customValue>
+        <fullName>Volvo5</fullName>
+        <default>false</default>
+        <label>Volvo5</label>
+    </customValue>
+    <customValue>
+        <fullName>Volvo6</fullName>
+        <default>false</default>
+        <label>Volvo6</label>
+    </customValue>
+    <customValue>
+        <fullName>Volvo7</fullName>
+        <default>false</default>
+        <label>Volvo7</label>
+    </customValue>
+    <masterLabel>Volvo values</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
