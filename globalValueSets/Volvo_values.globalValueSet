@@ -20,6 +20,21 @@
         <default>false</default>
         <label>Volvo4</label>
     </customValue>
+    <customValue>
+        <fullName>Volvo5</fullName>
+        <default>false</default>
+        <label>Volvo5</label>
+    </customValue>
+    <customValue>
+        <fullName>Volvo6</fullName>
+        <default>false</default>
+        <label>Volvo6</label>
+    </customValue>
+    <customValue>
+        <fullName>Volvo7</fullName>
+        <default>false</default>
+        <label>Volvo7</label>
+    </customValue>
     <masterLabel>Volvo values</masterLabel>
     <sorted>false</sorted>
 </GlobalValueSet>
