@@ -5,6 +5,21 @@
         <active>true</active>
         <label>Person Account</label>
         <picklistValues>
+            <picklist>Volvo_test__pc</picklist>
+            <values>
+                <fullName>Volvo c30</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Volvo c40</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Volvo c60</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
                 <fullName>Other</fullName>
