@@ -26,4 +26,9 @@
         <default>false</default>
         <label>Other</label>
     </standardValue>
+    <standardValue>
+        <fullName>Alfredo/Esther</fullName>
+        <default>false</default>
+        <label>Alfredo / Esther</label>
+    </standardValue>
 </StandardValueSet>
