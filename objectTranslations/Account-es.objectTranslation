@@ -1,139 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldSets>
-        <label><!-- EC Field Set --></label>
+        <label></label>
         <name>TRIMEC__EC_Field_Set</name>
     </fieldSets>
     <fields>
-        <label><!-- Active --></label>
+        <label></label>
         <name>Active__c</name>
         <picklistValues>
             <masterLabel>No</masterLabel>
-            <translation><!-- No --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Yes</masterLabel>
-            <translation><!-- Yes --></translation>
+            <translation></translation>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Argumentos --></label>
+        <label></label>
         <name>Argumentos__c</name>
     </fields>
     <fields>
-        <label><!-- Color Target --></label>
+        <label></label>
         <name>Color_Target__c</name>
         <picklistValues>
             <masterLabel>Black</masterLabel>
-            <translation><!-- Black --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Blue</masterLabel>
-            <translation><!-- Blue --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Red</masterLabel>
-            <translation><!-- Red --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Select one</masterLabel>
-            <translation><!-- Select one --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>White</masterLabel>
-            <translation><!-- White --></translation>
+            <translation></translation>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Customer Priority --></label>
+        <label></label>
         <name>CustomerPriority__c</name>
         <picklistValues>
             <masterLabel>High</masterLabel>
-            <translation><!-- High --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Low</masterLabel>
-            <translation><!-- Low --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Medium</masterLabel>
-            <translation><!-- Medium --></translation>
+            <translation></translation>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Number of Locations --></label>
+        <label></label>
         <name>NumberofLocations__c</name>
     </fields>
     <fields>
-        <label><!-- SLA Expiration Date --></label>
+        <label></label>
         <name>SLAExpirationDate__c</name>
     </fields>
     <fields>
-        <label><!-- SLA Serial Number --></label>
+        <label></label>
         <name>SLASerialNumber__c</name>
     </fields>
     <fields>
-        <label><!-- SLA --></label>
+        <label></label>
         <name>SLA__c</name>
         <picklistValues>
             <masterLabel>Bronze</masterLabel>
-            <translation><!-- Bronze --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Gold</masterLabel>
-            <translation><!-- Gold --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Platinum</masterLabel>
-            <translation><!-- Platinum --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Silver</masterLabel>
-            <translation><!-- Silver --></translation>
+            <translation></translation>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Entry Check Status --></label>
+        <label></label>
         <name>TRIMEC__EC_DupeStatus__c</name>
     </fields>
     <fields>
-        <label><!-- Entry Check Status (DO NOT USE) --></label>
+        <label></label>
         <name>TRIMEC__EC_Status__c</name>
     </fields>
     <fields>
-        <label><!-- MatchKey --></label>
+        <label></label>
         <name>TRIMEC__MatchKey__c</name>
     </fields>
     <fields>
-        <label><!-- Match Level --></label>
+        <label></label>
         <name>TRIMEC__MatchLevel__c</name>
     </fields>
     <fields>
-        <label><!-- MatchScore --></label>
+        <label></label>
         <name>TRIMEC__MatchScore__c</name>
     </fields>
     <fields>
-        <label><!-- Upsell Opportunity --></label>
+        <label></label>
         <name>UpsellOpportunity__c</name>
         <picklistValues>
             <masterLabel>Maybe</masterLabel>
-            <translation><!-- Maybe --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>No</masterLabel>
-            <translation><!-- No --></translation>
+            <translation></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Yes</masterLabel>
-            <translation><!-- Yes --></translation>
+            <translation></translation>
         </picklistValues>
     </fields>
+    <validationRules>
+        <errorMessage>Hola Mundo</errorMessage>
+        <name>Test_translation</name>
+    </validationRules>
     <webLinks>
-        <label><!-- Billing --></label>
+        <label></label>
         <name>Billing</name>
     </webLinks>
     <webLinks>
-        <label><!-- Merge --></label>
+        <label></label>
         <name>TRIMEC__Merge</name>
     </webLinks>
 </CustomObjectTranslation>
