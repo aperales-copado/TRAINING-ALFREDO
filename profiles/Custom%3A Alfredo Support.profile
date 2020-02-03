@@ -5416,7 +5416,11 @@
         <layout>CampaignMember-Campaign Member Page Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Case-Case %28Support%29 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Case-Case Layout</layout>
+        <recordType>Case.AlfredoPG</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>CaseClose-Close Case Layout</layout>
@@ -5471,10 +5475,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead-Lead Layout</layout>
-        <recordType>Lead.Esther</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead-Lead Layout</layout>
+        <recordType>Lead.Esther</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Lead-Lead Layout</layout>
@@ -5489,10 +5493,10 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Metric-Metric Layout</layout>
+        <recordType>Metric.Progress</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Metric-Metric Layout</layout>
-        <recordType>Metric.Progress</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>MetricDataLink-Metric Data Link Layout</layout>
@@ -5514,10 +5518,7 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pablo__c-Pablo Layout</layout>
-        <recordType>Pablo__c.Business_Account</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Pablo__c-Pablo Layout</layout>
+        <recordType>Pablo__c.Person_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pablo__c-Pablo Layout</layout>
@@ -5525,11 +5526,14 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pablo__c-Pablo Layout</layout>
-        <recordType>Pablo__c.Person_Account</recordType>
+        <recordType>Pablo__c.Person_Account_Default</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pablo__c-Pablo Layout</layout>
-        <recordType>Pablo__c.Person_Account_Default</recordType>
+        <recordType>Pablo__c.Business_Account</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Pablo__c-Pablo Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pricebook2-Price Book Layout</layout>
@@ -5798,6 +5802,11 @@
         <object>StreamingChannel</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Case.AlfredoPG</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
