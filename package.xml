@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Account-es</members>
-        <name>CustomObjectTranslation</name>
-    </types>
-    <types>
-        <members>Account.Test_translation</members>
-        <name>ValidationRule</name>
+        <members>Custom%3A Alfredo Support</members>
+        <members>Custom%3A Marketing Profile</members>
+        <name>Profile</name>
     </types>
     <version>47.0</version>
 </Package>
