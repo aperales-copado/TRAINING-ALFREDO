@@ -592,6 +592,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Case.Esther__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Case.IsClosedOnCreate</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -5518,7 +5523,7 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pablo__c-Pablo Layout</layout>
-        <recordType>Pablo__c.Person_Account</recordType>
+        <recordType>Pablo__c.Business_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pablo__c-Pablo Layout</layout>
@@ -5526,11 +5531,11 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pablo__c-Pablo Layout</layout>
-        <recordType>Pablo__c.Person_Account_Default</recordType>
+        <recordType>Pablo__c.Person_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pablo__c-Pablo Layout</layout>
-        <recordType>Pablo__c.Business_Account</recordType>
+        <recordType>Pablo__c.Person_Account_Default</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pablo__c-Pablo Layout</layout>
