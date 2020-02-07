@@ -224,6 +224,26 @@
                     <default>false</default>
                     <label>d</label>
                 </value>
+                <value>
+                    <fullName>eee</fullName>
+                    <default>false</default>
+                    <label>eee</label>
+                </value>
+                <value>
+                    <fullName>fff</fullName>
+                    <default>false</default>
+                    <label>fff</label>
+                </value>
+                <value>
+                    <fullName>ggg</fullName>
+                    <default>false</default>
+                    <label>ggg</label>
+                </value>
+                <value>
+                    <fullName>hhh</fullName>
+                    <default>false</default>
+                    <label>hhh</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -505,6 +525,22 @@
             </values>
             <values>
                 <fullName>d</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ggg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>hhh</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
