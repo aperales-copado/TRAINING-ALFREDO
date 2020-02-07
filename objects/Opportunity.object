@@ -202,6 +202,7 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>Type</controllingField>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
@@ -245,6 +246,49 @@
                     <label>hhh</label>
                 </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Downgrade</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <valueName>eee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Downgrade</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <valueName>fff</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Downgrade</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <controllingFieldValue>New Customer</controllingFieldValue>
+                <valueName>ggg</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Downgrade</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <valueName>hhh</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Replacement</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <controllingFieldValue>New Customer</controllingFieldValue>
+                <valueName>a</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Replacement</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <valueName>b</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Replacement</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <valueName>c</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Replacement</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <controllingFieldValue>New Customer</controllingFieldValue>
+                <valueName>d</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <fields>
