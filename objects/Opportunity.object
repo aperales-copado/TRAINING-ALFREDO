@@ -542,6 +542,14 @@
                 <fullName>h2</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>h5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h6</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>ForecastCategoryName</picklist>
@@ -645,6 +653,14 @@
             </values>
             <values>
                 <fullName>h2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h6</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
