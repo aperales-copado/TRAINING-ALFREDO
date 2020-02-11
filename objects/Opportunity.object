@@ -745,6 +745,77 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Customer - Downgrade</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Customer - Replacement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Customer - Upgrade</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Opportunity_RT2</fullName>
+        <active>true</active>
+        <businessProcess>Sales1</businessProcess>
+        <label>Opportunity RT2</label>
+        <picklistValues>
+            <picklist>Alfredo2__c</picklist>
+            <values>
+                <fullName>h</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>ForecastCategoryName</picklist>
             <values>
                 <fullName>Best Case</fullName>
