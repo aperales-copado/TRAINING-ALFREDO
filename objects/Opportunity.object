@@ -265,11 +265,6 @@
                     <label>d</label>
                 </value>
                 <value>
-                    <fullName>eee</fullName>
-                    <default>false</default>
-                    <label>eee</label>
-                </value>
-                <value>
                     <fullName>fff</fullName>
                     <default>false</default>
                     <label>fff</label>
@@ -284,12 +279,17 @@
                     <default>false</default>
                     <label>hhh</label>
                 </value>
+                <value>
+                    <fullName>h5</fullName>
+                    <default>false</default>
+                    <label>h5</label>
+                </value>
+                <value>
+                    <fullName>h6</fullName>
+                    <default>false</default>
+                    <label>h6</label>
+                </value>
             </valueSetDefinition>
-            <valueSettings>
-                <controllingFieldValue>Existing Customer - Downgrade</controllingFieldValue>
-                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
-                <valueName>eee</valueName>
-            </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Existing Customer - Downgrade</controllingFieldValue>
                 <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
@@ -593,17 +593,29 @@
         <businessProcess>Sales1</businessProcess>
         <label>Opportunity RT</label>
         <picklistValues>
-            <picklist>Alfredo2__c</picklist>
+            <picklist>Alfredo__c</picklist>
             <values>
-                <fullName>h</fullName>
+                <fullName>a</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>h1</fullName>
+                <fullName>b</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>h2</fullName>
+                <fullName>c</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>d</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ggg</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -612,6 +624,10 @@
             </values>
             <values>
                 <fullName>h6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>hhh</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -638,6 +654,77 @@
                 <default>false</default>
             </values>
         </picklistValues>
+        <picklistValues>
+            <picklist>Alfredo2__c</picklist>
+            <values>
+                <fullName>h</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Customer - Downgrade</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Customer - Replacement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Customer - Upgrade</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Opportunity_RT2</fullName>
+        <active>true</active>
+        <businessProcess>Sales1</businessProcess>
+        <label>Opportunity RT2</label>
         <picklistValues>
             <picklist>Alfredo__c</picklist>
             <values>
@@ -657,10 +744,6 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>eee</fullName>
-                <default>false</default>
-            </values>
-            <values>
                 <fullName>fff</fullName>
                 <default>false</default>
             </values>
@@ -669,149 +752,15 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>h5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h6</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>hhh</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>LeadSource</picklist>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner Referral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone Inquiry</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Purchased List</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Type</picklist>
-            <values>
-                <fullName>Existing Customer - Downgrade</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Existing Customer - Replacement</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Existing Customer - Upgrade</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>New Customer</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
-    <recordTypes>
-        <fullName>Opportunity_RT2</fullName>
-        <active>true</active>
-        <businessProcess>Sales1</businessProcess>
-        <label>Opportunity RT2</label>
-        <picklistValues>
-            <picklist>Alfredo2__c</picklist>
-            <values>
-                <fullName>h</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>h1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>h2</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>h5</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>h6</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>LeadSource</picklist>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner Referral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone Inquiry</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Purchased List</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Web</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Type</picklist>
-            <values>
-                <fullName>Existing Customer - Downgrade</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Existing Customer - Replacement</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Existing Customer - Upgrade</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>New Customer</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
-    <recordTypes>
-        <fullName>Opportunity_RT2</fullName>
-        <active>true</active>
-        <businessProcess>Sales1</businessProcess>
-        <label>Opportunity RT2</label>
-        <picklistValues>
-            <picklist>Alfredo2__c</picklist>
-            <values>
-                <fullName>h</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>h1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>h2</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>h5</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>h6</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -835,6 +784,94 @@
             </values>
             <values>
                 <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Alfredo2__c</picklist>
+            <values>
+                <fullName>h</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Customer - Downgrade</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Customer - Replacement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Customer - Upgrade</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Alfredo2__c</picklist>
+            <values>
+                <fullName>h</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h6</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
