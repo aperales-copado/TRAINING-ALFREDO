@@ -241,6 +241,7 @@
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>Type</controllingField>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
@@ -263,7 +264,70 @@
                     <default>false</default>
                     <label>d</label>
                 </value>
+                <value>
+                    <fullName>fff</fullName>
+                    <default>false</default>
+                    <label>fff</label>
+                </value>
+                <value>
+                    <fullName>ggg</fullName>
+                    <default>false</default>
+                    <label>ggg</label>
+                </value>
+                <value>
+                    <fullName>hhh</fullName>
+                    <default>false</default>
+                    <label>hhh</label>
+                </value>
+                <value>
+                    <fullName>h5</fullName>
+                    <default>false</default>
+                    <label>h5</label>
+                </value>
+                <value>
+                    <fullName>h6</fullName>
+                    <default>false</default>
+                    <label>h6</label>
+                </value>
             </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Downgrade</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <valueName>fff</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Downgrade</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <controllingFieldValue>New Customer</controllingFieldValue>
+                <valueName>ggg</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Downgrade</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <valueName>hhh</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Replacement</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <controllingFieldValue>New Customer</controllingFieldValue>
+                <valueName>a</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Replacement</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <valueName>b</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Replacement</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <valueName>c</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Existing Customer - Replacement</controllingFieldValue>
+                <controllingFieldValue>Existing Customer - Upgrade</controllingFieldValue>
+                <controllingFieldValue>New Customer</controllingFieldValue>
+                <valueName>d</valueName>
+            </valueSettings>
         </valueSet>
     </fields>
     <fields>
@@ -529,17 +593,41 @@
         <businessProcess>Sales1</businessProcess>
         <label>Opportunity RT</label>
         <picklistValues>
-            <picklist>Alfredo2__c</picklist>
+            <picklist>Alfredo__c</picklist>
             <values>
-                <fullName>h</fullName>
+                <fullName>a</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>h1</fullName>
+                <fullName>b</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>h2</fullName>
+                <fullName>c</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>d</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ggg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>hhh</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -567,21 +655,17 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Alfredo__c</picklist>
+            <picklist>Alfredo2__c</picklist>
             <values>
-                <fullName>a</fullName>
+                <fullName>h</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>b</fullName>
+                <fullName>h1</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>c</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>d</fullName>
+                <fullName>h2</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -634,17 +718,41 @@
         <businessProcess>Sales1</businessProcess>
         <label>Opportunity RT2</label>
         <picklistValues>
-            <picklist>Alfredo2__c</picklist>
+            <picklist>Alfredo__c</picklist>
             <values>
-                <fullName>h</fullName>
+                <fullName>a</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>h1</fullName>
+                <fullName>b</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>h2</fullName>
+                <fullName>c</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>d</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ggg</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>hhh</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -668,6 +776,21 @@
             </values>
             <values>
                 <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Alfredo2__c</picklist>
+            <values>
+                <fullName>h</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>h2</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
