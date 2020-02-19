@@ -1,3 +1,7 @@
 <aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    //test
+    //test
+    //test
+    //test
 	
 </aura:component>
