@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Opportunity.Alfredo__c</members>
-        <name>CustomField</name>
+        <members>Perales</members>
+        <name>CustomSite</name>
     </types>
     <types>
-        <members>Opportunity.Opportunity_RT</members>
-        <members>Opportunity.Opportunity_RT2</members>
-        <name>RecordType</name>
+        <members>Alfredo_is_your_friend</members>
+        <name>EmbeddedServiceConfig</name>
+    </types>
+    <types>
+        <members>EmbeddedServiceLiveAgent_Parent04I5J0000004LAZUA2_1705d57ed9f</members>
+        <name>EmbeddedServiceLiveAgent</name>
+    </types>
+    <types>
+        <members>Perales</members>
+        <name>Network</name>
+    </types>
+    <types>
+        <members>Perales1</members>
+        <name>SiteDotCom</name>
     </types>
     <version>47.0</version>
 </Package>
