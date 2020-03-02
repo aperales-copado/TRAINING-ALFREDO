@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>TestAuraAlfredo</members>
-        <name>AuraDefinitionBundle</name>
+        <members>Alfredo_Check</members>
+        <name>EmbeddedServiceConfig</name>
+    </types>
+    <types>
+        <members>EmbeddedServiceLiveAgent_Parent04I5J0000004LFLUA2_1709afc9d97</members>
+        <name>EmbeddedServiceLiveAgent</name>
     </types>
     <version>47.0</version>
 </Package>
