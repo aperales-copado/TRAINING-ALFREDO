@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Snapins_Contact_PrechatQuickAction_08h6g0000004F5x_1583255176675</members>
+        <members>Snapins_Case_PrechatQuickAction_08h6g0000004F5x_1583255176826</members>
         <name>QuickAction</name>
     </types>
     <version>47.0</version>
