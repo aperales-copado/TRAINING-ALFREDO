@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>TestAuraAlfredo</members>
-        <name>AuraDefinitionBundle</name>
+        <members>Final_Test</members>
+        <name>EmbeddedServiceConfig</name>
+    </types>
+    <types>
+        <members>EmbeddedServiceLiveAgent_Parent04I5J0000004LJsUAM_170a2211c88</members>
+        <name>EmbeddedServiceLiveAgent</name>
+    </types>
+    <types>
+        <members>Snapins_Case_PrechatQuickAction_08h5J0000004Cag_1583268044211</members>
+        <members>Snapins_Contact_PrechatQuickAction_08h5J0000004Cag_1583268044024</members>
+        <name>QuickAction</name>
     </types>
     <version>47.0</version>
 </Package>
