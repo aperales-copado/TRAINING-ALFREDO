@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Alfredo_Chat_Agent</members>
-        <name>LiveChatAgentConfig</name>
+        <members>Alfredo_Embedded</members>
+        <name>EmbeddedServiceConfig</name>
     </types>
     <types>
-        <members>Alfredo_Chat_Button</members>
-        <name>LiveChatButton</name>
+        <members>EmbeddedServiceLiveAgent_Parent04I3X000000kRUGUA2_170a59e38aa</members>
+        <name>EmbeddedServiceLiveAgent</name>
     </types>
     <types>
-        <members>Alfredo_Chat_Deployment</members>
-        <name>LiveChatDeployment</name>
-    </types>
-    <types>
-        <members>Alfredo_Skills</members>
-        <name>Skill</name>
+        <members>Snapins_Case_PrechatQuickAction_08h3X000000kAef_1583326574977</members>
+        <members>Snapins_Contact_PrechatQuickAction_08h3X000000kAef_1583326574853</members>
+        <name>QuickAction</name>
     </types>
     <version>47.0</version>
 </Package>
