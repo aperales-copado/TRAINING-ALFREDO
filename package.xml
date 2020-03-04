@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>TestAuraAlfredo</members>
-        <name>AuraDefinitionBundle</name>
+        <members>Alfredo_Chat_Agent</members>
+        <name>LiveChatAgentConfig</name>
+    </types>
+    <types>
+        <members>Alfredo_Chat_Button</members>
+        <name>LiveChatButton</name>
+    </types>
+    <types>
+        <members>Alfredo_Chat_Deployment</members>
+        <name>LiveChatDeployment</name>
+    </types>
+    <types>
+        <members>Alfredo_Skills</members>
+        <name>Skill</name>
     </types>
     <version>47.0</version>
 </Package>
