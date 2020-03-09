@@ -8,5 +8,10 @@
         <members>EmbeddedServiceLiveAgent_Parent04I5J0000004LK2UAM_170bf104b88</members>
         <name>EmbeddedServiceLiveAgent</name>
     </types>
+    <types>
+        <members>Snapins_Case_PrechatQuickAction_08h5J0000004Caq_1583753481340</members>
+        <members>Snapins_Contact_PrechatQuickAction_08h5J0000004Caq_1583753481203</members>
+        <name>QuickAction</name>
+    </types>
     <version>47.0</version>
 </Package>
