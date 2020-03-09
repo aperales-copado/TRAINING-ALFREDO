@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Copado_chat_deployment</members>
-        <name>LiveChatDeployment</name>
+        <members>Alf_Test_9Marzo</members>
+        <name>EmbeddedServiceConfig</name>
+    </types>
+    <types>
+        <members>EmbeddedServiceLiveAgent_Parent04I5J0000004LK2UAM_170bf104b88</members>
+        <name>EmbeddedServiceLiveAgent</name>
     </types>
     <version>47.0</version>
 </Package>
