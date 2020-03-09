@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Alfredo_Test_2</members>
+        <members>Alfredo_Test_9Marzo</members>
         <name>EmbeddedServiceConfig</name>
     </types>
     <types>
-        <members>EmbeddedServiceLiveAgent_Parent04I6g0000005DVmEAM_170a5cd9582</members>
+        <members>EmbeddedServiceLiveAgent_Parent04I6g0000005H0sEAE_170bef89d86</members>
         <name>EmbeddedServiceLiveAgent</name>
     </types>
     <version>47.0</version>
